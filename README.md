@@ -4,13 +4,13 @@ Features dynamic tools, educational resources, and systems engineering solutions
 https://johnryanzelling.github.io/interactive-portfolio/ 
 
 ### About  
-- Licensed substitute teacher currently pursuing an MA in Teaching Mathematics (expected 2027). 
-- Experienced in oilfield operations, surveying, and technical design. 
+- Licensed substitute teacher currently pursuing an MA in Teaching Mathematics (expected 2027)
+- Experienced in oilfield operations, surveying, and engineering design 
 
 ---
 
 ### Research Interests  
-- Mathematics education.  
+- Mathematics/Technical education 
 
 ---
 

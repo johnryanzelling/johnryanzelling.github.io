@@ -4,7 +4,7 @@ window.modules = [
     title: "Module 1",
     focus: "Course Foundations and Technology Goals",
     reflection: "Add a reflection about your starting point, teaching context, and goals for building a digital toolbox.",
-    classroomConnection: "Identify one technology routine you want to strengthen in your classroom. Oh yea!",
+    classroomConnection: "Identify one technology routine you want to strengthen in your classroom. Oh yea! I want to strengthen my use of lesson planning technology through use of my ndMathStandards project and mathFoundationsBook that I'm currently developing. They will be made available via the Tools section soon!",
     source: "modules/module1/README.md"
   },
   {

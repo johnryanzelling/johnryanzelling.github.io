@@ -16,6 +16,8 @@ const manifests = [
 const liveDataTarget = path.join("assets", "js", "live-data.js");
 const moduleDataTarget = path.join("assets", "js", "module-data.js");
 const toolDataTarget = path.join("assets", "js", "tools-data.js");
+const toolImagesPath = path.join("assets", "images", "tools");
+const supportedScreenshotExtensions = new Set([".png", ".jpg", ".jpeg", ".webp", ".svg"]);
 
 function normalizeSlug(value) {
   return String(value || "")
@@ -178,6 +180,72 @@ function getScreenshotItems(sections) {
   return screenshots.filter((item) => item.src);
 }
 
+function getScreenshotTimestamp(fileName) {
+  const match = String(fileName || "").match(/(20\d{2})[-_. ]?(\d{2})[-_. ]?(\d{2})\D*(\d{2})[-_. ]?(\d{2})[-_. ]?(\d{2})/);
+  if (!match) return null;
+
+  const [, year, month, day, hour, minute, second] = match;
+  const timestamp = new Date(
+    Number(year),
+    Number(month) - 1,
+    Number(day),
+    Number(hour),
+    Number(minute),
+    Number(second)
+  ).getTime();
+
+  return Number.isNaN(timestamp) ? null : timestamp;
+}
+
+function getScreenshotSortValue(item) {
+  const timestamp = getScreenshotTimestamp(item.name);
+  if (timestamp !== null) return timestamp;
+
+  return item.stats.birthtimeMs || item.stats.mtimeMs || null;
+}
+
+function sortScreenshotFiles(first, second) {
+  const firstValue = getScreenshotSortValue(first);
+  const secondValue = getScreenshotSortValue(second);
+
+  if (firstValue !== null && secondValue !== null && firstValue !== secondValue) {
+    return firstValue - secondValue;
+  }
+
+  if (firstValue !== null && secondValue === null) return -1;
+  if (firstValue === null && secondValue !== null) return 1;
+
+  return first.name.localeCompare(second.name, undefined, { numeric: true, sensitivity: "base" });
+}
+
+function getFolderScreenshotItems(slug, toolName, readmeScreenshots) {
+  const imageDirectory = path.join(process.cwd(), toolImagesPath, slug);
+  if (!fs.existsSync(imageDirectory)) {
+    return [];
+  }
+
+  const readmeScreenshotMap = new Map((readmeScreenshots || []).map((item) => [item.src, item]));
+
+  return fs.readdirSync(imageDirectory, { withFileTypes: true })
+    .filter((entry) => entry.isFile())
+    .filter((entry) => supportedScreenshotExtensions.has(path.extname(entry.name).toLowerCase()))
+    .map((entry) => ({
+      name: entry.name,
+      stats: fs.statSync(path.join(imageDirectory, entry.name))
+    }))
+    .sort(sortScreenshotFiles)
+    .map((item, index) => {
+      const src = path.join(toolImagesPath, slug, item.name).replace(/\\/g, "/");
+      const readmeScreenshot = readmeScreenshotMap.get(src);
+
+      return {
+        src,
+        alt: readmeScreenshot && readmeScreenshot.alt ? readmeScreenshot.alt : `${toolName} screenshot ${index + 1}`,
+        caption: readmeScreenshot && readmeScreenshot.caption ? readmeScreenshot.caption : `${toolName} Screenshot ${index + 1}`
+      };
+    });
+}
+
 function getToolReadmePath(slug) {
   return path.join(process.cwd(), "tools", slug, "README.md");
 }
@@ -191,6 +259,8 @@ function getToolFromMarkdown(slug) {
   const markdown = fs.readFileSync(readmePath, "utf8");
   const parsed = getMarkdownSections(markdown);
   const name = getSectionText(parsed.sections, "name") || parsed.title || slug;
+  const readmeScreenshots = getScreenshotItems(parsed.sections);
+  const folderScreenshots = getFolderScreenshotItems(slug, name, readmeScreenshots);
 
   return {
     slug,
@@ -202,7 +272,7 @@ function getToolFromMarkdown(slug) {
     pedagogicalUses: getSectionText(parsed.sections, "pedagogical uses"),
     teacherValue: getSectionText(parsed.sections, "teacher value"),
     artifact: getSectionText(parsed.sections, "artifact"),
-    screenshots: getScreenshotItems(parsed.sections),
+    screenshots: folderScreenshots.length ? folderScreenshots : readmeScreenshots,
     pros: getSectionList(parsed.sections, "pros"),
     cons: getSectionList(parsed.sections, "cons"),
     iste: getSectionList(parsed.sections, "iste standards"),

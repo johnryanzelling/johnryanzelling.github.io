@@ -11,6 +11,26 @@ window.tools = [
     "artifact": "Add sample infographic or teacher handout.",
     "screenshots": [
       {
+        "src": "assets/images/tools/canva/canva-placeholder-1.svg",
+        "alt": "Canva screenshot 1",
+        "caption": "Canva Screenshot 1"
+      },
+      {
+        "src": "assets/images/tools/canva/canva-placeholder-2.svg",
+        "alt": "Canva screenshot 2",
+        "caption": "Canva Screenshot 2"
+      },
+      {
+        "src": "assets/images/tools/canva/canva-placeholder-3.svg",
+        "alt": "Canva screenshot 3",
+        "caption": "Canva Screenshot 3"
+      },
+      {
+        "src": "assets/images/tools/canva/canva-placeholder-4.svg",
+        "alt": "Canva screenshot 4",
+        "caption": "Canva Screenshot 4"
+      },
+      {
         "src": "assets/images/tools/canva/canva-representation-01.svg",
         "alt": "Canva Design editor representation",
         "caption": "Canva: Design editor"
@@ -139,54 +159,39 @@ window.tools = [
     "artifact": "Add top five strengths screenshot or reflection activity.",
     "screenshots": [
       {
-        "src": "assets/images/tools/high5test/high5test-representation-01.svg",
-        "alt": "HIGH5TEST Strengths results representation",
-        "caption": "HIGH5TEST: Strengths results"
+        "src": "assets/images/tools/high5test/Screenshot 2026-06-13 103602.png",
+        "alt": "HIGH5TEST screenshot 1",
+        "caption": "HIGH5TEST Screenshot 1"
       },
       {
-        "src": "assets/images/tools/high5test/high5test-representation-02.svg",
-        "alt": "HIGH5TEST Top 5 strengths representation",
-        "caption": "HIGH5TEST: Top 5 strengths"
+        "src": "assets/images/tools/high5test/Screenshot 2026-06-13 103707.png",
+        "alt": "HIGH5TEST screenshot 2",
+        "caption": "HIGH5TEST Screenshot 2"
       },
       {
-        "src": "assets/images/tools/high5test/high5test-representation-03.svg",
-        "alt": "HIGH5TEST Reflection report representation",
-        "caption": "HIGH5TEST: Reflection report"
+        "src": "assets/images/tools/high5test/Screenshot 2026-06-13 103739.png",
+        "alt": "HIGH5TEST screenshot 3",
+        "caption": "HIGH5TEST Screenshot 3"
       },
       {
-        "src": "assets/images/tools/high5test/high5test-representation-04.svg",
-        "alt": "HIGH5TEST Team comparison representation",
-        "caption": "HIGH5TEST: Team comparison"
+        "src": "assets/images/tools/high5test/Screenshot 2026-06-13 103759.png",
+        "alt": "HIGH5TEST screenshot 4",
+        "caption": "HIGH5TEST Screenshot 4"
       },
       {
-        "src": "assets/images/tools/high5test/high5test-representation-05.svg",
-        "alt": "HIGH5TEST Personal growth plan representation",
-        "caption": "HIGH5TEST: Personal growth plan"
+        "src": "assets/images/tools/high5test/Screenshot 2026-06-13 103812.png",
+        "alt": "HIGH5TEST screenshot 5",
+        "caption": "HIGH5TEST Screenshot 5"
       },
       {
-        "src": "assets/images/tools/high5test/high5test-representation-06.svg",
-        "alt": "HIGH5TEST Strength description representation",
-        "caption": "HIGH5TEST: Strength description"
+        "src": "assets/images/tools/high5test/Screenshot 2026-06-13 103824.png",
+        "alt": "HIGH5TEST screenshot 6",
+        "caption": "HIGH5TEST Screenshot 6"
       },
       {
-        "src": "assets/images/tools/high5test/high5test-representation-07.svg",
-        "alt": "HIGH5TEST Class discussion representation",
-        "caption": "HIGH5TEST: Class discussion"
-      },
-      {
-        "src": "assets/images/tools/high5test/high5test-representation-08.svg",
-        "alt": "HIGH5TEST Career connection representation",
-        "caption": "HIGH5TEST: Career connection"
-      },
-      {
-        "src": "assets/images/tools/high5test/high5test-representation-09.svg",
-        "alt": "HIGH5TEST Teacher reflection representation",
-        "caption": "HIGH5TEST: Teacher reflection"
-      },
-      {
-        "src": "assets/images/tools/high5test/high5test-representation-10.svg",
-        "alt": "HIGH5TEST Action steps representation",
-        "caption": "HIGH5TEST: Action steps"
+        "src": "assets/images/tools/high5test/Screenshot 2026-06-13 103834.png",
+        "alt": "HIGH5TEST screenshot 7",
+        "caption": "HIGH5TEST Screenshot 7"
       }
     ],
     "pros": [

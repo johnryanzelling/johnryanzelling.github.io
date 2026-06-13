@@ -1,7 +1,6 @@
 window.liveExamples = [
   "canva",
-  "powerpoint",
-  "desmos"
+  "powerpoint"
 ];
 
 window.liveModules = [

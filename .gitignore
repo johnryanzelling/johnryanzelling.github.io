@@ -7,6 +7,7 @@ LIVE_MODULES.md
 *.local.md
 *.dev.md
 *.draft.md
+*.cmd
 
 # Local logs and temporary files
 *.log

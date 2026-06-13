@@ -1,6 +1,7 @@
-window.liveExamples = [
+window.liveTools = [
   "canva",
-  "powerpoint"
+  "powerpoint",
+  "high5test"
 ];
 
 window.liveModules = [

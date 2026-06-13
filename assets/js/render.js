@@ -1,7 +1,7 @@
 (function () {
-  const LIVE_EXAMPLES_DATA = "data/live_examples.json";
+  const LIVE_TOOLS_DATA = "data/live_tools.json";
   const LIVE_MODULES_DATA = "data/live_modules.json";
-  const FALLBACK_LIVE_EXAMPLES = [];
+  const FALLBACK_LIVE_TOOLS = [];
   const FALLBACK_LIVE_MODULES = [];
   const toolList = document.querySelector("#tool-list");
   const toolCount = document.querySelector("#tool-count");
@@ -10,8 +10,8 @@
   const moduleCountTargets = document.querySelectorAll("[data-live-count='modules']");
   const toolLabelTargets = document.querySelectorAll("[data-live-label='tools']");
   const moduleLabelTargets = document.querySelectorAll("[data-live-label='modules']");
-  let liveExampleSlugs = null;
-  let liveExampleOrder = new Map();
+  let liveToolSlugs = null;
+  let liveToolOrder = new Map();
   let liveModuleSlugs = null;
   let liveModuleOrder = new Map();
 
@@ -69,7 +69,7 @@
     }
   }
 
-  function hasLiveExampleConsumers() {
+  function hasLiveToolConsumers() {
     return toolList || toolCountTargets.length || toolLabelTargets.length;
   }
 
@@ -77,29 +77,29 @@
     return moduleList || moduleCountTargets.length || moduleLabelTargets.length;
   }
 
-  async function loadLiveExampleSlugs() {
-    if (!hasLiveExampleConsumers()) return;
+  async function loadLiveToolSlugs() {
+    if (!hasLiveToolConsumers()) return;
 
-    if (Array.isArray(window.liveExamples)) {
-      const slugs = normalizeManifestItems(window.liveExamples);
-      liveExampleSlugs = new Set(slugs);
-      liveExampleOrder = new Map(slugs.map((slug, index) => [slug, index]));
+    if (Array.isArray(window.liveTools)) {
+      const slugs = normalizeManifestItems(window.liveTools);
+      liveToolSlugs = new Set(slugs);
+      liveToolOrder = new Map(slugs.map((slug, index) => [slug, index]));
       return;
     }
 
     try {
-      const response = await fetch(LIVE_EXAMPLES_DATA, { cache: "no-cache" });
+      const response = await fetch(LIVE_TOOLS_DATA, { cache: "no-cache" });
       if (!response.ok) {
-        throw new Error(`Unable to load ${LIVE_EXAMPLES_DATA}`);
+        throw new Error(`Unable to load ${LIVE_TOOLS_DATA}`);
       }
 
       const slugs = parseManifestPayload(await response.text());
-      liveExampleSlugs = new Set(slugs);
-      liveExampleOrder = new Map(slugs.map((slug, index) => [slug, index]));
+      liveToolSlugs = new Set(slugs);
+      liveToolOrder = new Map(slugs.map((slug, index) => [slug, index]));
     } catch (error) {
       console.warn(error);
-      liveExampleSlugs = new Set(FALLBACK_LIVE_EXAMPLES);
-      liveExampleOrder = new Map(FALLBACK_LIVE_EXAMPLES.map((slug, index) => [slug, index]));
+      liveToolSlugs = new Set(FALLBACK_LIVE_TOOLS);
+      liveToolOrder = new Map(FALLBACK_LIVE_TOOLS.map((slug, index) => [slug, index]));
     }
   }
 
@@ -139,11 +139,11 @@
 
   function getLiveTools() {
     if (!window.tools) return [];
-    if (!liveExampleSlugs) return window.tools;
+    if (!liveToolSlugs) return window.tools;
 
     return window.tools
-      .filter((tool) => liveExampleSlugs.has(getToolSlug(tool)))
-      .sort((first, second) => liveExampleOrder.get(getToolSlug(first)) - liveExampleOrder.get(getToolSlug(second)));
+      .filter((tool) => liveToolSlugs.has(getToolSlug(tool)))
+      .sort((first, second) => liveToolOrder.get(getToolSlug(first)) - liveToolOrder.get(getToolSlug(second)));
   }
 
   function getLiveModules() {
@@ -161,7 +161,7 @@
 
   function getLiveCount(type) {
     if (type === "tools") {
-      return liveExampleSlugs ? liveExampleSlugs.size : 0;
+      return liveToolSlugs ? liveToolSlugs.size : 0;
     }
 
     if (type === "modules") {
@@ -391,7 +391,7 @@
 
   async function initialize() {
     await Promise.all([
-      loadLiveExampleSlugs(),
+      loadLiveToolSlugs(),
       loadLiveModuleSlugs()
     ]);
     updateLiveCountsAndLabels();

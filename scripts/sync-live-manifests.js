@@ -3,9 +3,9 @@ const path = require("path");
 
 const manifests = [
   {
-    source: "LIVE_EXAMPLES.md",
-    target: path.join("data", "live_examples.json"),
-    globalName: "liveExamples"
+    source: "LIVE_TOOLS.md",
+    target: path.join("data", "live_tools.json"),
+    globalName: "liveTools"
   },
   {
     source: "LIVE_MODULES.md",
@@ -150,7 +150,7 @@ for (const manifest of manifests) {
 
 const liveDataPath = path.join(process.cwd(), liveDataTarget);
 const liveDataOutput = [
-  `window.liveExamples = ${JSON.stringify(liveData.liveExamples || [], null, 2)};`,
+  `window.liveTools = ${JSON.stringify(liveData.liveTools || [], null, 2)};`,
   `window.liveModules = ${JSON.stringify(liveData.liveModules || [], null, 2)};`
 ].join("\n\n");
 

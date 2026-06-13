@@ -205,5 +205,56 @@ window.tools = [
     "sources": [
       "HIGH5TEST official website"
     ]
+  },
+  {
+    "slug": "holland-code-career-test",
+    "name": "Holland Code Career Test",
+    "category": "Collaboration and Productivity",
+    "location": "https://www.truity.com/test/holland-code-career-test",
+    "cost": "Free basic quiz with paid upgrade options",
+    "description": "An online career interest quiz from Truity that uses the Holland Code system to help students connect interests, talents, and aptitude to possible career paths across six major job areas.",
+    "pedagogicalUses": "Students can use the quiz during advisory, career exploration, college and career readiness lessons, STEM career discussions, or personal reflection activities. Results can support conversations about interests, preferred work activities, career clusters, and future planning.",
+    "teacherValue": "The tool gives teachers and counselors a structured way to support career reflection, classroom discussion, goal setting, and student self-awareness. It can connect academic subjects to real-world pathways and help students explain why certain careers may fit their interests.",
+    "artifact": "Add a career reflection worksheet, career exploration activity, or student planning prompt connected to Holland Code results.",
+    "screenshots": [
+      {
+        "src": "assets/images/tools/holland-code-career-test/holland-code-career-test-placeholder-1.svg",
+        "alt": "Holland Code Career Test career interest profile placeholder",
+        "caption": "Holland Code Career Test: Interest profile"
+      },
+      {
+        "src": "assets/images/tools/holland-code-career-test/holland-code-career-test-placeholder-2.svg",
+        "alt": "Holland Code Career Test RIASEC themes chart placeholder",
+        "caption": "Holland Code Career Test: RIASEC themes"
+      },
+      {
+        "src": "assets/images/tools/holland-code-career-test/holland-code-career-test-placeholder-3.svg",
+        "alt": "Holland Code Career Test student reflection worksheet placeholder",
+        "caption": "Holland Code Career Test: Student reflection"
+      },
+      {
+        "src": "assets/images/tools/holland-code-career-test/holland-code-career-test-placeholder-4.svg",
+        "alt": "Holland Code Career Test career pathway comparison placeholder",
+        "caption": "Holland Code Career Test: Career pathways"
+      }
+    ],
+    "pros": [
+      "Supports career exploration and student reflection",
+      "Connects interests to possible career pathways",
+      "Useful for advisory, counseling, and college or career readiness lessons"
+    ],
+    "cons": [
+      "Results should be discussed as guidance rather than a fixed career answer",
+      "Full reports or extra features may require payment",
+      "Students may need support interpreting results thoughtfully"
+    ],
+    "iste": [
+      "ISTE Student 1.1 Empowered Learner",
+      "ISTE Student 1.3 Knowledge Constructor",
+      "ISTE Educator 2.3 Citizen"
+    ],
+    "sources": [
+      "Truity Holland Code Career Test official page"
+    ]
   }
 ];

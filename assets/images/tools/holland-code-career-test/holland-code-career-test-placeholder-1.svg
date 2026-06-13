@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Holland Code Career Test Interest Profile</title>
+  <desc id="desc">A classroom placeholder image for a Holland Code career interest profile.</desc>
+  <rect width="1280" height="720" fill="#f8fafc"/>
+  <rect x="64" y="56" width="1152" height="608" rx="18" fill="#ffffff" stroke="#c9d8d3" stroke-width="4"/>
+  <rect x="64" y="56" width="1152" height="84" rx="18" fill="#0f766e"/>
+  <text x="104" y="109" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">Holland Code Career Test</text>
+  <text x="104" y="174" fill="#17202a" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Career interest profile</text>
+  <rect x="132" y="228" width="1016" height="320" rx="12" fill="#f5f8f5" stroke="#c9d8d3" stroke-width="3"/>
+  <text x="176" y="284" fill="#17202a" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Top interest areas</text>
+  <rect x="176" y="326" width="520" height="32" rx="16" fill="#0f766e" opacity="0.78"/>
+  <rect x="176" y="382" width="440" height="32" rx="16" fill="#d89b25" opacity="0.72"/>
+  <rect x="176" y="438" width="350" height="32" rx="16" fill="#2563a6" opacity="0.64"/>
+  <circle cx="918" cy="392" r="112" fill="#e4f2ef" stroke="#0f766e" stroke-width="5"/>
+  <text x="864" y="382" fill="#0f766e" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">RIASEC</text>
+  <text x="878" y="426" fill="#5f6b78" font-family="Arial, Helvetica, sans-serif" font-size="22">profile</text>
+  <text x="104" y="620" fill="#17202a" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Placeholder 1</text>
+  <text x="294" y="620" fill="#5f6b78" font-family="Arial, Helvetica, sans-serif" font-size="24">Add interest profile artifact</text>
+</svg>

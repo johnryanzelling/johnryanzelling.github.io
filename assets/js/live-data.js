@@ -1,7 +1,8 @@
 window.liveTools = [
   "canva",
   "powerpoint",
-  "high5test"
+  "high5test",
+  "holland-code-career-test"
 ];
 
 window.liveModules = [

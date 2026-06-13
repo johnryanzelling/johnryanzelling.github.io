@@ -344,6 +344,51 @@ main {
   color: var(--muted);
 }
 
+.content-block p + p {
+  margin-top: 12px;
+}
+
+.about-section .content-block {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.resume-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.resume-entry {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr);
+  gap: 14px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f5f8f5;
+}
+
+.resume-entry h3 {
+  margin: 0 0 4px;
+}
+
+.resume-entry p + p {
+  margin-top: 4px;
+}
+
+.resume-meta {
+  font-weight: 700;
+}
+
+.logo-slot {
+  width: 56px;
+  height: 56px;
+  border: 1px dashed #b7c7c2;
+  border-radius: 8px;
+  background: var(--surface);
+}
+
 .tool-details {
   display: grid;
   gap: 10px;
@@ -614,7 +659,8 @@ main {
 
   .columns,
   .tool-card-top,
-  .source-row {
+  .source-row,
+  .resume-entry {
     grid-template-columns: 1fr;
     flex-direction: column;
     align-items: flex-start;

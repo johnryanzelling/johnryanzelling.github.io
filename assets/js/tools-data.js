@@ -11,119 +11,49 @@ window.tools = [
     "artifact": "Add sample infographic or teacher handout.",
     "screenshots": [
       {
-        "src": "assets/images/tools/canva/canva-placeholder-1.svg",
+        "src": "assets/images/tools/canva/Screenshot 2026-06-13 112253.png",
         "alt": "Canva screenshot 1",
         "caption": "Canva Screenshot 1"
       },
       {
-        "src": "assets/images/tools/canva/canva-placeholder-2.svg",
+        "src": "assets/images/tools/canva/Screenshot 2026-06-13 112328.png",
         "alt": "Canva screenshot 2",
         "caption": "Canva Screenshot 2"
       },
       {
-        "src": "assets/images/tools/canva/canva-placeholder-3.svg",
+        "src": "assets/images/tools/canva/Screenshot 2026-06-13 112404.png",
         "alt": "Canva screenshot 3",
         "caption": "Canva Screenshot 3"
       },
       {
-        "src": "assets/images/tools/canva/canva-placeholder-4.svg",
+        "src": "assets/images/tools/canva/Screenshot 2026-06-13 112508.png",
         "alt": "Canva screenshot 4",
         "caption": "Canva Screenshot 4"
       },
       {
-        "src": "assets/images/tools/canva/canva-representation-01.svg",
-        "alt": "Canva Design editor representation",
-        "caption": "Canva: Design editor"
-      },
-      {
-        "src": "assets/images/tools/canva/canva-representation-02.svg",
-        "alt": "Canva Template library representation",
-        "caption": "Canva: Template library"
-      },
-      {
-        "src": "assets/images/tools/canva/canva-representation-03.svg",
-        "alt": "Canva Infographic project representation",
-        "caption": "Canva: Infographic project"
-      },
-      {
-        "src": "assets/images/tools/canva/canva-representation-04.svg",
-        "alt": "Canva Presentation slide representation",
-        "caption": "Canva: Presentation slide"
-      },
-      {
-        "src": "assets/images/tools/canva/canva-representation-05.svg",
-        "alt": "Canva Poster layout representation",
-        "caption": "Canva: Poster layout"
-      },
-      {
-        "src": "assets/images/tools/canva/canva-representation-06.svg",
-        "alt": "Canva Brand kit representation",
-        "caption": "Canva: Brand kit"
-      },
-      {
-        "src": "assets/images/tools/canva/canva-representation-07.svg",
-        "alt": "Canva Video design representation",
-        "caption": "Canva: Video design"
-      },
-      {
-        "src": "assets/images/tools/canva/canva-representation-08.svg",
-        "alt": "Canva Share menu representation",
-        "caption": "Canva: Share menu"
-      },
-      {
-        "src": "assets/images/tools/canva/canva-representation-09.svg",
-        "alt": "Canva Student product representation",
-        "caption": "Canva: Student product"
-      },
-      {
-        "src": "assets/images/tools/canva/canva-representation-10.svg",
-        "alt": "Canva Teacher handout representation",
-        "caption": "Canva: Teacher handout"
-      },
-      {
-        "src": "assets/images/tools/canva/Screenshot 2026-06-13 112253.png",
-        "alt": "Canva screenshot 15",
-        "caption": "Canva Screenshot 15"
-      },
-      {
-        "src": "assets/images/tools/canva/Screenshot 2026-06-13 112328.png",
-        "alt": "Canva screenshot 16",
-        "caption": "Canva Screenshot 16"
-      },
-      {
-        "src": "assets/images/tools/canva/Screenshot 2026-06-13 112404.png",
-        "alt": "Canva screenshot 17",
-        "caption": "Canva Screenshot 17"
-      },
-      {
-        "src": "assets/images/tools/canva/Screenshot 2026-06-13 112508.png",
-        "alt": "Canva screenshot 18",
-        "caption": "Canva Screenshot 18"
-      },
-      {
         "src": "assets/images/tools/canva/Screenshot 2026-06-13 112526.png",
-        "alt": "Canva screenshot 19",
-        "caption": "Canva Screenshot 19"
+        "alt": "Canva screenshot 5",
+        "caption": "Canva Screenshot 5"
       },
       {
         "src": "assets/images/tools/canva/Screenshot 2026-06-13 112546.png",
-        "alt": "Canva screenshot 20",
-        "caption": "Canva Screenshot 20"
+        "alt": "Canva screenshot 6",
+        "caption": "Canva Screenshot 6"
       },
       {
         "src": "assets/images/tools/canva/Screenshot 2026-06-13 112650.png",
-        "alt": "Canva screenshot 21",
-        "caption": "Canva Screenshot 21"
+        "alt": "Canva screenshot 7",
+        "caption": "Canva Screenshot 7"
       },
       {
         "src": "assets/images/tools/canva/Screenshot 2026-06-13 112712.png",
-        "alt": "Canva screenshot 22",
-        "caption": "Canva Screenshot 22"
+        "alt": "Canva screenshot 8",
+        "caption": "Canva Screenshot 8"
       },
       {
         "src": "assets/images/tools/canva/Screenshot 2026-06-13 112735.png",
-        "alt": "Canva screenshot 23",
-        "caption": "Canva Screenshot 23"
+        "alt": "Canva screenshot 9",
+        "caption": "Canva Screenshot 9"
       }
     ],
     "pros": [

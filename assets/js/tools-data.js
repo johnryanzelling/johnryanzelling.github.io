@@ -11,19 +11,24 @@ window.tools = [
     "artifact": "Add a screenshot or link to the completed Bitmoji Interactive Classroom.",
     "screenshots": [
       {
-        "src": "assets/images/tools/bitmoji-interactive-classroom/Screenshot 2026-06-13 135643.png",
+        "src": "assets/images/tools/bitmoji-interactive-classroom/Screenshot 2026-06-13 135411.png",
         "alt": "Bitmoji Interactive Classroom screenshot 1",
         "caption": "Bitmoji Interactive Classroom Screenshot 1"
       },
       {
-        "src": "assets/images/tools/bitmoji-interactive-classroom/Screenshot 2026-06-13 135826.png",
+        "src": "assets/images/tools/bitmoji-interactive-classroom/Screenshot 2026-06-13 135643.png",
         "alt": "Bitmoji Interactive Classroom screenshot 2",
         "caption": "Bitmoji Interactive Classroom Screenshot 2"
       },
       {
-        "src": "assets/images/tools/bitmoji-interactive-classroom/Screenshot 2026-06-13 140456.png",
+        "src": "assets/images/tools/bitmoji-interactive-classroom/Screenshot 2026-06-13 135826.png",
         "alt": "Bitmoji Interactive Classroom screenshot 3",
         "caption": "Bitmoji Interactive Classroom Screenshot 3"
+      },
+      {
+        "src": "assets/images/tools/bitmoji-interactive-classroom/Screenshot 2026-06-13 141005.png",
+        "alt": "Bitmoji Interactive Classroom screenshot 4",
+        "caption": "Bitmoji Interactive Classroom Screenshot 4"
       }
     ],
     "pros": [

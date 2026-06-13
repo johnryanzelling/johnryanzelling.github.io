@@ -128,6 +128,51 @@ window.tools = [
         "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 114108.png",
         "alt": "PowerPoint screenshot 9",
         "caption": "PowerPoint Screenshot 9"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 120552.png",
+        "alt": "PowerPoint screenshot 10",
+        "caption": "PowerPoint Screenshot 10"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 120608.png",
+        "alt": "PowerPoint screenshot 11",
+        "caption": "PowerPoint Screenshot 11"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 120627.png",
+        "alt": "PowerPoint screenshot 12",
+        "caption": "PowerPoint Screenshot 12"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 120643.png",
+        "alt": "PowerPoint screenshot 13",
+        "caption": "PowerPoint Screenshot 13"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 120657.png",
+        "alt": "PowerPoint screenshot 14",
+        "caption": "PowerPoint Screenshot 14"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 120710.png",
+        "alt": "PowerPoint screenshot 15",
+        "caption": "PowerPoint Screenshot 15"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 132043.png",
+        "alt": "PowerPoint screenshot 16",
+        "caption": "PowerPoint Screenshot 16"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 132103.png",
+        "alt": "PowerPoint screenshot 17",
+        "caption": "PowerPoint Screenshot 17"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 132115.png",
+        "alt": "PowerPoint screenshot 18",
+        "caption": "PowerPoint Screenshot 18"
       }
     ],
     "pros": [

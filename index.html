@@ -19,7 +19,7 @@
         <a class="active" href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="modules.html">Modules</a>
-        <a href="tools.html">21 Tools</a>
+        <a href="tools.html" data-live-label="tools" data-live-singular="{count} Tool" data-live-plural="{count} Tools">Tools</a>
         <a href="resources.html">Resources</a>
       </nav>
     </header>
@@ -34,18 +34,18 @@
             classroom-use ideas, ISTE connections, examples, and module reflections.
           </p>
           <div class="action-row">
-            <a class="button primary" href="tools.html">Explore 21 Tools</a>
+            <a class="button primary" href="tools.html" data-live-label="tools" data-live-singular="Explore {count} Tool" data-live-plural="Explore {count} Tools">Explore Tools</a>
             <a class="button secondary" href="modules.html">Read Reflections</a>
           </div>
         </div>
         <div class="hero-panel" aria-label="Toolbox snapshot">
           <div class="metric">
-            <span class="metric-value">21</span>
-            <span class="metric-label">teacher tools</span>
+            <span class="metric-value" data-live-count="tools"></span>
+            <span class="metric-label" data-live-label="tools" data-live-singular="teacher tool" data-live-plural="teacher tools">teacher tools</span>
           </div>
           <div class="metric">
-            <span class="metric-value">6</span>
-            <span class="metric-label">module reflections</span>
+            <span class="metric-value" data-live-count="modules"></span>
+            <span class="metric-label" data-live-label="modules" data-live-singular="module reflection" data-live-plural="module reflections">module reflections</span>
           </div>
           <div class="metric">
             <span class="metric-value">5</span>
@@ -97,5 +97,7 @@
       <p>EDUC 675 Digital Toolbox</p>
       <p>Designed for GitHub Pages with HTML, CSS, and JavaScript.</p>
     </footer>
+    <script src="assets/js/live-data.js"></script>
+    <script src="assets/js/render.js"></script>
   </body>
 </html>

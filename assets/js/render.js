@@ -1,17 +1,15 @@
 (function () {
   const LIVE_EXAMPLES_DATA = "data/live_examples.json";
   const LIVE_MODULES_DATA = "data/live_modules.json";
-  const FALLBACK_LIVE_EXAMPLES = [
-    "canva",
-    "mathematica",
-    "powerpoint"
-  ];
-  const FALLBACK_LIVE_MODULES = [
-    "module1"
-  ];
+  const FALLBACK_LIVE_EXAMPLES = [];
+  const FALLBACK_LIVE_MODULES = [];
   const toolList = document.querySelector("#tool-list");
   const toolCount = document.querySelector("#tool-count");
   const moduleList = document.querySelector("#module-list");
+  const toolCountTargets = document.querySelectorAll("[data-live-count='tools']");
+  const moduleCountTargets = document.querySelectorAll("[data-live-count='modules']");
+  const toolLabelTargets = document.querySelectorAll("[data-live-label='tools']");
+  const moduleLabelTargets = document.querySelectorAll("[data-live-label='modules']");
   let liveExampleSlugs = null;
   let liveExampleOrder = new Map();
   let liveModuleSlugs = null;
@@ -71,8 +69,23 @@
     }
   }
 
+  function hasLiveExampleConsumers() {
+    return toolList || toolCountTargets.length || toolLabelTargets.length;
+  }
+
+  function hasLiveModuleConsumers() {
+    return moduleList || moduleCountTargets.length || moduleLabelTargets.length;
+  }
+
   async function loadLiveExampleSlugs() {
-    if (!toolList) return;
+    if (!hasLiveExampleConsumers()) return;
+
+    if (Array.isArray(window.liveExamples)) {
+      const slugs = normalizeManifestItems(window.liveExamples);
+      liveExampleSlugs = new Set(slugs);
+      liveExampleOrder = new Map(slugs.map((slug, index) => [slug, index]));
+      return;
+    }
 
     try {
       const response = await fetch(LIVE_EXAMPLES_DATA, { cache: "no-cache" });
@@ -91,7 +104,14 @@
   }
 
   async function loadLiveModuleSlugs() {
-    if (!moduleList) return;
+    if (!hasLiveModuleConsumers()) return;
+
+    if (Array.isArray(window.liveModules)) {
+      const slugs = normalizeManifestItems(window.liveModules);
+      liveModuleSlugs = new Set(slugs);
+      liveModuleOrder = new Map(slugs.map((slug, index) => [slug, index]));
+      return;
+    }
 
     try {
       const response = await fetch(LIVE_MODULES_DATA, { cache: "no-cache" });
@@ -137,6 +157,51 @@
 
   function listItems(items) {
     return items.map((item) => `<li>${item}</li>`).join("");
+  }
+
+  function getLiveCount(type) {
+    if (type === "tools") {
+      return liveExampleSlugs ? liveExampleSlugs.size : 0;
+    }
+
+    if (type === "modules") {
+      return liveModuleSlugs ? liveModuleSlugs.size : 0;
+    }
+
+    return 0;
+  }
+
+  function formatLiveTemplate(element, count) {
+    const template = count === 1 ? element.dataset.liveSingular : element.dataset.livePlural;
+    return String(template || "").replace("{count}", count);
+  }
+
+  function updateLiveCountsAndLabels() {
+    const toolCountValue = getLiveCount("tools");
+    const moduleCountValue = getLiveCount("modules");
+
+    toolCountTargets.forEach((element) => {
+      element.textContent = String(toolCountValue);
+    });
+
+    moduleCountTargets.forEach((element) => {
+      element.textContent = String(moduleCountValue);
+    });
+
+    toolLabelTargets.forEach((element) => {
+      element.textContent = formatLiveTemplate(element, toolCountValue);
+    });
+
+    moduleLabelTargets.forEach((element) => {
+      element.textContent = formatLiveTemplate(element, moduleCountValue);
+    });
+
+    const titleTemplate = document.body
+      ? (toolCountValue === 1 ? document.body.dataset.liveTitleToolsSingular : document.body.dataset.liveTitleToolsPlural)
+      : "";
+    if (titleTemplate) {
+      document.title = titleTemplate.replace("{count}", toolCountValue);
+    }
   }
 
   function getGalleryItems(tool) {
@@ -329,6 +394,7 @@
       loadLiveExampleSlugs(),
       loadLiveModuleSlugs()
     ]);
+    updateLiveCountsAndLabels();
     renderTools();
     renderModules();
   }

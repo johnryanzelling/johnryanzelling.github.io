@@ -4,13 +4,16 @@ const path = require("path");
 const manifests = [
   {
     source: "LIVE_EXAMPLES.md",
-    target: path.join("data", "live_examples.json")
+    target: path.join("data", "live_examples.json"),
+    globalName: "liveExamples"
   },
   {
     source: "LIVE_MODULES.md",
-    target: path.join("data", "live_modules.json")
+    target: path.join("data", "live_modules.json"),
+    globalName: "liveModules"
   }
 ];
+const liveDataTarget = path.join("assets", "js", "live-data.js");
 
 function normalizeSlug(value) {
   return String(value || "")
@@ -47,12 +50,25 @@ function parseManifest(text) {
     .map(normalizeManifestEntry);
 }
 
+const liveData = {};
+
 for (const manifest of manifests) {
   const sourcePath = path.join(process.cwd(), manifest.source);
   const targetPath = path.join(process.cwd(), manifest.target);
   const slugs = parseManifest(fs.readFileSync(sourcePath, "utf8"));
+  liveData[manifest.globalName] = slugs;
 
   fs.mkdirSync(path.dirname(targetPath), { recursive: true });
   fs.writeFileSync(targetPath, `${JSON.stringify(slugs, null, 2)}\n`);
   console.log(`${manifest.source} -> ${manifest.target}: ${slugs.join(", ")}`);
 }
+
+const liveDataPath = path.join(process.cwd(), liveDataTarget);
+const liveDataOutput = [
+  `window.liveExamples = ${JSON.stringify(liveData.liveExamples || [], null, 2)};`,
+  `window.liveModules = ${JSON.stringify(liveData.liveModules || [], null, 2)};`
+].join("\n\n");
+
+fs.mkdirSync(path.dirname(liveDataPath), { recursive: true });
+fs.writeFileSync(liveDataPath, `${liveDataOutput}\n`);
+console.log(`Generated ${liveDataTarget}`);

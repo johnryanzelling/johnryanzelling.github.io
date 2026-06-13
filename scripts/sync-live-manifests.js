@@ -15,6 +15,7 @@ const manifests = [
 ];
 const liveDataTarget = path.join("assets", "js", "live-data.js");
 const moduleDataTarget = path.join("assets", "js", "module-data.js");
+const toolDataTarget = path.join("assets", "js", "tools-data.js");
 
 function normalizeSlug(value) {
   return String(value || "")
@@ -135,6 +136,84 @@ function getModules() {
     .sort((first, second) => getModuleSortValue(first.slug) - getModuleSortValue(second.slug));
 }
 
+function getSectionText(sections, name) {
+  return cleanMarkdownSection(sections[String(name || "").toLowerCase()]);
+}
+
+function getSectionList(sections, name) {
+  return (sections[String(name || "").toLowerCase()] || [])
+    .map((line) => line.trim())
+    .filter((line) => line.startsWith("- "))
+    .map((line) => line.replace(/^-\s*/, "").trim())
+    .filter(Boolean);
+}
+
+function getScreenshotItems(sections) {
+  const lines = sections.screenshots || [];
+  const screenshots = [];
+  let current = null;
+
+  for (const rawLine of lines) {
+    const line = rawLine.trim();
+    const srcMatch = line.match(/^-\s*src:\s*(.*)$/i);
+    const altMatch = line.match(/^alt:\s*(.*)$/i);
+    const captionMatch = line.match(/^caption:\s*(.*)$/i);
+
+    if (srcMatch) {
+      current = { src: srcMatch[1].trim(), alt: "", caption: "" };
+      screenshots.push(current);
+      continue;
+    }
+
+    if (current && altMatch) {
+      current.alt = altMatch[1].trim();
+      continue;
+    }
+
+    if (current && captionMatch) {
+      current.caption = captionMatch[1].trim();
+    }
+  }
+
+  return screenshots.filter((item) => item.src);
+}
+
+function getToolReadmePath(slug) {
+  return path.join(process.cwd(), "tools", slug, "README.md");
+}
+
+function getToolFromMarkdown(slug) {
+  const readmePath = getToolReadmePath(slug);
+  if (!fs.existsSync(readmePath)) {
+    throw new Error(`Missing README for live tool "${slug}" at tools/${slug}/README.md`);
+  }
+
+  const markdown = fs.readFileSync(readmePath, "utf8");
+  const parsed = getMarkdownSections(markdown);
+  const name = getSectionText(parsed.sections, "name") || parsed.title || slug;
+
+  return {
+    slug,
+    name,
+    category: getSectionText(parsed.sections, "category"),
+    location: getSectionText(parsed.sections, "location"),
+    cost: getSectionText(parsed.sections, "cost"),
+    description: getSectionText(parsed.sections, "description"),
+    pedagogicalUses: getSectionText(parsed.sections, "pedagogical uses"),
+    teacherValue: getSectionText(parsed.sections, "teacher value"),
+    artifact: getSectionText(parsed.sections, "artifact"),
+    screenshots: getScreenshotItems(parsed.sections),
+    pros: getSectionList(parsed.sections, "pros"),
+    cons: getSectionList(parsed.sections, "cons"),
+    iste: getSectionList(parsed.sections, "iste standards"),
+    sources: getSectionList(parsed.sections, "sources")
+  };
+}
+
+function getLiveTools(slugs) {
+  return (slugs || []).map(getToolFromMarkdown);
+}
+
 const liveData = {};
 
 for (const manifest of manifests) {
@@ -174,3 +253,9 @@ const moduleDataOutput = [
 
 fs.writeFileSync(moduleDataPath, `${moduleDataOutput}\n`);
 console.log(`Generated ${moduleDataTarget}`);
+
+const toolDataPath = path.join(process.cwd(), toolDataTarget);
+const toolDataOutput = `window.tools = ${JSON.stringify(getLiveTools(liveData.liveTools), null, 2)};`;
+
+fs.writeFileSync(toolDataPath, `${toolDataOutput}\n`);
+console.log(`Generated ${toolDataTarget}`);

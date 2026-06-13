@@ -1,8 +1,9 @@
 # Local Codex and project workflow files
 /AGENTS.md
 /TODO/
+/tools/
+/modules/
 README.md
-!tools/*/README.md
 /LIVE_TOOLS.md
 /LIVE_MODULES.md
 *.local.md

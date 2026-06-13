@@ -1,5 +1,58 @@
 window.tools = [
   {
+    "slug": "bitmoji-interactive-classroom",
+    "name": "Bitmoji Interactive Classroom",
+    "category": "Classroom Organization, Student Engagement, Digital Learning Resource",
+    "location": "https://www.bitmoji.com/",
+    "cost": "Free",
+    "description": "Bitmoji is a digital avatar tool that allows teachers to create a cartoon version of themselves and place it inside a virtual classroom scene. When used with Canva, Google Slides, or PowerPoint, a Bitmoji classroom can become interactive by linking objects in the room to classroom resources, assignments, videos, websites, directions, or student support materials.",
+    "pedagogicalUses": "Students can use an interactive Bitmoji classroom to access assignments, directions, videos, practice activities, review materials, and classroom support links from one organized visual space.",
+    "teacherValue": "Bitmoji classrooms help teachers organize classroom resources in a student-friendly format. They can also make a digital classroom feel more welcoming, especially when students are learning online, completing independent work, or using a classroom resource hub.",
+    "artifact": "Add a screenshot or link to the completed Bitmoji Interactive Classroom.",
+    "screenshots": [
+      {
+        "src": "assets/images/tools/bitmoji-interactive-classroom/Screenshot 2026-06-13 135643.png",
+        "alt": "Bitmoji Interactive Classroom screenshot 1",
+        "caption": "Bitmoji Interactive Classroom Screenshot 1"
+      },
+      {
+        "src": "assets/images/tools/bitmoji-interactive-classroom/Screenshot 2026-06-13 135826.png",
+        "alt": "Bitmoji Interactive Classroom screenshot 2",
+        "caption": "Bitmoji Interactive Classroom Screenshot 2"
+      },
+      {
+        "src": "assets/images/tools/bitmoji-interactive-classroom/Screenshot 2026-06-13 140456.png",
+        "alt": "Bitmoji Interactive Classroom screenshot 3",
+        "caption": "Bitmoji Interactive Classroom Screenshot 3"
+      }
+    ],
+    "pros": [
+      "Visual and engaging for students",
+      "Helps organize classroom links and resources",
+      "Can be updated and reused throughout the year",
+      "Supports student independence",
+      "Useful for substitute plans, review activities, and digital classroom hubs"
+    ],
+    "cons": [
+      "Can become decorative instead of instructional if links are not meaningful",
+      "Requires time to design and organize",
+      "Students need internet access",
+      "Teachers need to keep links updated"
+    ],
+    "iste": [
+      "ISTE Student 1.1 Empowered Learner",
+      "ISTE Student 1.6 Creative Communicator",
+      "ISTE Educator 2.5 Designer",
+      "ISTE Educator 2.6 Facilitator"
+    ],
+    "sources": [
+      "Bitmoji official website",
+      "Canva",
+      "Google Slides",
+      "Microsoft PowerPoint"
+    ]
+  },
+  {
     "slug": "canva",
     "name": "Canva",
     "category": "Creativity and Media",
@@ -71,125 +124,6 @@ window.tools = [
     ],
     "sources": [
       "Canva official website"
-    ]
-  },
-  {
-    "slug": "powerpoint",
-    "name": "PowerPoint",
-    "category": "Creativity and Media",
-    "location": "https://www.microsoft.com/microsoft-365/powerpoint",
-    "cost": "Paid with education access options",
-    "description": "A presentation tool for creating slide decks, visuals, narrated lessons, and student communication products.",
-    "pedagogicalUses": "Students can build presentations, explain processes, organize research, and create visual summaries of learning.",
-    "teacherValue": "PowerPoint supports direct instruction, visual scaffolds, student presentations, and reusable classroom materials.",
-    "artifact": "Add a slide deck example, lesson visual, or narrated presentation.",
-    "screenshots": [
-      {
-        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113455.png",
-        "alt": "PowerPoint screenshot 1",
-        "caption": "PowerPoint Screenshot 1"
-      },
-      {
-        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113522.png",
-        "alt": "PowerPoint screenshot 2",
-        "caption": "PowerPoint Screenshot 2"
-      },
-      {
-        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113541.png",
-        "alt": "PowerPoint screenshot 3",
-        "caption": "PowerPoint Screenshot 3"
-      },
-      {
-        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113640.png",
-        "alt": "PowerPoint screenshot 4",
-        "caption": "PowerPoint Screenshot 4"
-      },
-      {
-        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113712.png",
-        "alt": "PowerPoint screenshot 5",
-        "caption": "PowerPoint Screenshot 5"
-      },
-      {
-        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113826.png",
-        "alt": "PowerPoint screenshot 6",
-        "caption": "PowerPoint Screenshot 6"
-      },
-      {
-        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113917.png",
-        "alt": "PowerPoint screenshot 7",
-        "caption": "PowerPoint Screenshot 7"
-      },
-      {
-        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113936.png",
-        "alt": "PowerPoint screenshot 8",
-        "caption": "PowerPoint Screenshot 8"
-      },
-      {
-        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 114108.png",
-        "alt": "PowerPoint screenshot 9",
-        "caption": "PowerPoint Screenshot 9"
-      },
-      {
-        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 120552.png",
-        "alt": "PowerPoint screenshot 10",
-        "caption": "PowerPoint Screenshot 10"
-      },
-      {
-        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 120608.png",
-        "alt": "PowerPoint screenshot 11",
-        "caption": "PowerPoint Screenshot 11"
-      },
-      {
-        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 120627.png",
-        "alt": "PowerPoint screenshot 12",
-        "caption": "PowerPoint Screenshot 12"
-      },
-      {
-        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 120643.png",
-        "alt": "PowerPoint screenshot 13",
-        "caption": "PowerPoint Screenshot 13"
-      },
-      {
-        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 120657.png",
-        "alt": "PowerPoint screenshot 14",
-        "caption": "PowerPoint Screenshot 14"
-      },
-      {
-        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 120710.png",
-        "alt": "PowerPoint screenshot 15",
-        "caption": "PowerPoint Screenshot 15"
-      },
-      {
-        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 132043.png",
-        "alt": "PowerPoint screenshot 16",
-        "caption": "PowerPoint Screenshot 16"
-      },
-      {
-        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 132103.png",
-        "alt": "PowerPoint screenshot 17",
-        "caption": "PowerPoint Screenshot 17"
-      },
-      {
-        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 132115.png",
-        "alt": "PowerPoint screenshot 18",
-        "caption": "PowerPoint Screenshot 18"
-      }
-    ],
-    "pros": [
-      "Familiar presentation format",
-      "Works well for visuals and narration",
-      "Strong classroom communication uses"
-    ],
-    "cons": [
-      "Design quality depends on guidance",
-      "Full access may require Microsoft 365"
-    ],
-    "iste": [
-      "ISTE Student 1.6 Creative Communicator",
-      "ISTE Educator 2.5 Designer"
-    ],
-    "sources": [
-      "Microsoft PowerPoint official website"
     ]
   },
   {
@@ -318,40 +252,122 @@ window.tools = [
     ]
   },
   {
-    "slug": "bitmoji-interactive-classroom",
-    "name": "Bitmoji Interactive Classroom",
-    "category": "Classroom Organization, Student Engagement, Digital Learning Resource",
-    "location": "https://www.bitmoji.com/",
-    "cost": "Free",
-    "description": "Bitmoji is a digital avatar tool that allows teachers to create a cartoon version of themselves and place it inside a virtual classroom scene. When used with Canva, Google Slides, or PowerPoint, a Bitmoji classroom can become interactive by linking objects in the room to classroom resources, assignments, videos, websites, directions, or student support materials.",
-    "pedagogicalUses": "Students can use an interactive Bitmoji classroom to access assignments, directions, videos, practice activities, review materials, and classroom support links from one organized visual space.",
-    "teacherValue": "Bitmoji classrooms help teachers organize classroom resources in a student-friendly format. They can also make a digital classroom feel more welcoming, especially when students are learning online, completing independent work, or using a classroom resource hub.",
-    "artifact": "Add a screenshot or link to the completed Bitmoji Interactive Classroom.",
-    "screenshots": [],
+    "slug": "powerpoint",
+    "name": "PowerPoint",
+    "category": "Creativity and Media",
+    "location": "https://www.microsoft.com/microsoft-365/powerpoint",
+    "cost": "Paid with education access options",
+    "description": "A presentation tool for creating slide decks, visuals, narrated lessons, and student communication products.",
+    "pedagogicalUses": "Students can build presentations, explain processes, organize research, and create visual summaries of learning.",
+    "teacherValue": "PowerPoint supports direct instruction, visual scaffolds, student presentations, and reusable classroom materials.",
+    "artifact": "Add a slide deck example, lesson visual, or narrated presentation.",
+    "screenshots": [
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113455.png",
+        "alt": "PowerPoint screenshot 1",
+        "caption": "PowerPoint Screenshot 1"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113522.png",
+        "alt": "PowerPoint screenshot 2",
+        "caption": "PowerPoint Screenshot 2"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113541.png",
+        "alt": "PowerPoint screenshot 3",
+        "caption": "PowerPoint Screenshot 3"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113640.png",
+        "alt": "PowerPoint screenshot 4",
+        "caption": "PowerPoint Screenshot 4"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113712.png",
+        "alt": "PowerPoint screenshot 5",
+        "caption": "PowerPoint Screenshot 5"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113826.png",
+        "alt": "PowerPoint screenshot 6",
+        "caption": "PowerPoint Screenshot 6"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113917.png",
+        "alt": "PowerPoint screenshot 7",
+        "caption": "PowerPoint Screenshot 7"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113936.png",
+        "alt": "PowerPoint screenshot 8",
+        "caption": "PowerPoint Screenshot 8"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 114108.png",
+        "alt": "PowerPoint screenshot 9",
+        "caption": "PowerPoint Screenshot 9"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 120552.png",
+        "alt": "PowerPoint screenshot 10",
+        "caption": "PowerPoint Screenshot 10"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 120608.png",
+        "alt": "PowerPoint screenshot 11",
+        "caption": "PowerPoint Screenshot 11"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 120627.png",
+        "alt": "PowerPoint screenshot 12",
+        "caption": "PowerPoint Screenshot 12"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 120643.png",
+        "alt": "PowerPoint screenshot 13",
+        "caption": "PowerPoint Screenshot 13"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 120657.png",
+        "alt": "PowerPoint screenshot 14",
+        "caption": "PowerPoint Screenshot 14"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 120710.png",
+        "alt": "PowerPoint screenshot 15",
+        "caption": "PowerPoint Screenshot 15"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 132043.png",
+        "alt": "PowerPoint screenshot 16",
+        "caption": "PowerPoint Screenshot 16"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 132103.png",
+        "alt": "PowerPoint screenshot 17",
+        "caption": "PowerPoint Screenshot 17"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 132115.png",
+        "alt": "PowerPoint screenshot 18",
+        "caption": "PowerPoint Screenshot 18"
+      }
+    ],
     "pros": [
-      "Visual and engaging for students",
-      "Helps organize classroom links and resources",
-      "Can be updated and reused throughout the year",
-      "Supports student independence",
-      "Useful for substitute plans, review activities, and digital classroom hubs"
+      "Familiar presentation format",
+      "Works well for visuals and narration",
+      "Strong classroom communication uses"
     ],
     "cons": [
-      "Can become decorative instead of instructional if links are not meaningful",
-      "Requires time to design and organize",
-      "Students need internet access",
-      "Teachers need to keep links updated"
+      "Design quality depends on guidance",
+      "Full access may require Microsoft 365"
     ],
     "iste": [
-      "ISTE Student 1.1 Empowered Learner",
       "ISTE Student 1.6 Creative Communicator",
-      "ISTE Educator 2.5 Designer",
-      "ISTE Educator 2.6 Facilitator"
+      "ISTE Educator 2.5 Designer"
     ],
     "sources": [
-      "Bitmoji official website",
-      "Canva",
-      "Google Slides",
-      "Microsoft PowerPoint"
+      "Microsoft PowerPoint official website"
     ]
   }
 ];

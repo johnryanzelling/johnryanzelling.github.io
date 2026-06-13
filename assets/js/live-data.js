@@ -1,9 +1,9 @@
 window.liveTools = [
+  "bitmoji-interactive-classroom",
   "canva",
-  "powerpoint",
   "high5test",
   "holland-code-career-test",
-  "bitmoji-interactive-classroom"
+  "powerpoint"
 ];
 
 window.liveModules = [

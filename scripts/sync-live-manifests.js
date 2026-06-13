@@ -14,6 +14,7 @@ const manifests = [
   }
 ];
 const liveDataTarget = path.join("assets", "js", "live-data.js");
+const moduleDataTarget = path.join("assets", "js", "module-data.js");
 
 function normalizeSlug(value) {
   return String(value || "")
@@ -50,6 +51,90 @@ function parseManifest(text) {
     .map(normalizeManifestEntry);
 }
 
+function escapeJsString(value) {
+  return JSON.stringify(String(value || ""));
+}
+
+function getModuleSortValue(slug) {
+  const match = String(slug || "").match(/^module(\d+)$/i);
+  return match ? Number(match[1]) : Number.MAX_SAFE_INTEGER;
+}
+
+function getMarkdownHeadingText(line) {
+  return String(line || "").replace(/^#+\s*/, "").trim();
+}
+
+function getMarkdownSections(text) {
+  const lines = String(text || "").split(/\r?\n/);
+  const sections = {};
+  let title = "";
+  let currentSection = "";
+
+  for (const line of lines) {
+    if (/^#\s+/.test(line)) {
+      title = getMarkdownHeadingText(line);
+      currentSection = "";
+      continue;
+    }
+
+    if (/^##\s+/.test(line)) {
+      currentSection = getMarkdownHeadingText(line).toLowerCase();
+      sections[currentSection] = [];
+      continue;
+    }
+
+    if (currentSection) {
+      sections[currentSection].push(line);
+    }
+  }
+
+  return { title, sections };
+}
+
+function cleanMarkdownSection(lines) {
+  return (lines || [])
+    .join("\n")
+    .trim()
+    .replace(/\n{3,}/g, "\n\n");
+}
+
+function readModuleMarkdown(moduleDirectory) {
+  const readmePath = path.join(moduleDirectory, "README.md");
+  if (fs.existsSync(readmePath)) {
+    return fs.readFileSync(readmePath, "utf8");
+  }
+
+  return "";
+}
+
+function getModuleFromMarkdown(moduleDirectory) {
+  const slug = path.basename(moduleDirectory);
+  const markdown = readModuleMarkdown(moduleDirectory);
+  const parsed = getMarkdownSections(markdown);
+
+  return {
+    slug,
+    title: parsed.title || slug,
+    focus: cleanMarkdownSection(parsed.sections.focus),
+    reflection: cleanMarkdownSection(parsed.sections["reflection draft"] || parsed.sections.reflection),
+    classroomConnection: cleanMarkdownSection(parsed.sections["classroom connection"]),
+    source: path.join("modules", slug, "README.md").replace(/\\/g, "/")
+  };
+}
+
+function getModules() {
+  const modulesPath = path.join(process.cwd(), "modules");
+  if (!fs.existsSync(modulesPath)) {
+    return [];
+  }
+
+  return fs.readdirSync(modulesPath, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => path.join(modulesPath, entry.name))
+    .map(getModuleFromMarkdown)
+    .sort((first, second) => getModuleSortValue(first.slug) - getModuleSortValue(second.slug));
+}
+
 const liveData = {};
 
 for (const manifest of manifests) {
@@ -72,3 +157,20 @@ const liveDataOutput = [
 fs.mkdirSync(path.dirname(liveDataPath), { recursive: true });
 fs.writeFileSync(liveDataPath, `${liveDataOutput}\n`);
 console.log(`Generated ${liveDataTarget}`);
+
+const moduleDataPath = path.join(process.cwd(), moduleDataTarget);
+const moduleDataOutput = [
+  "window.modules = [",
+  getModules().map((module) => `  {
+    slug: ${escapeJsString(module.slug)},
+    title: ${escapeJsString(module.title)},
+    focus: ${escapeJsString(module.focus)},
+    reflection: ${escapeJsString(module.reflection)},
+    classroomConnection: ${escapeJsString(module.classroomConnection)},
+    source: ${escapeJsString(module.source)}
+  }`).join(",\n"),
+  "];"
+].join("\n");
+
+fs.writeFileSync(moduleDataPath, `${moduleDataOutput}\n`);
+console.log(`Generated ${moduleDataTarget}`);

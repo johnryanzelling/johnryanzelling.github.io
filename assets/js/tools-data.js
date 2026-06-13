@@ -85,24 +85,49 @@ window.tools = [
     "artifact": "Add a slide deck example, lesson visual, or narrated presentation.",
     "screenshots": [
       {
-        "src": "assets/images/tools/powerpoint/powerpoint-placeholder-1.svg",
-        "alt": "PowerPoint lesson slide placeholder",
-        "caption": "PowerPoint: Add lesson slide"
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113455.png",
+        "alt": "PowerPoint screenshot 1",
+        "caption": "PowerPoint Screenshot 1"
       },
       {
-        "src": "assets/images/tools/powerpoint/powerpoint-placeholder-2.svg",
-        "alt": "PowerPoint student presentation placeholder",
-        "caption": "PowerPoint: Add student presentation"
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113522.png",
+        "alt": "PowerPoint screenshot 2",
+        "caption": "PowerPoint Screenshot 2"
       },
       {
-        "src": "assets/images/tools/powerpoint/powerpoint-placeholder-3.svg",
-        "alt": "PowerPoint narrated lesson placeholder",
-        "caption": "PowerPoint: Add narrated lesson"
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113541.png",
+        "alt": "PowerPoint screenshot 3",
+        "caption": "PowerPoint Screenshot 3"
       },
       {
-        "src": "assets/images/tools/powerpoint/powerpoint-placeholder-4.svg",
-        "alt": "PowerPoint visual summary placeholder",
-        "caption": "PowerPoint: Add visual summary"
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113640.png",
+        "alt": "PowerPoint screenshot 4",
+        "caption": "PowerPoint Screenshot 4"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113712.png",
+        "alt": "PowerPoint screenshot 5",
+        "caption": "PowerPoint Screenshot 5"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113826.png",
+        "alt": "PowerPoint screenshot 6",
+        "caption": "PowerPoint Screenshot 6"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113917.png",
+        "alt": "PowerPoint screenshot 7",
+        "caption": "PowerPoint Screenshot 7"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113936.png",
+        "alt": "PowerPoint screenshot 8",
+        "caption": "PowerPoint Screenshot 8"
+      },
+      {
+        "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 114108.png",
+        "alt": "PowerPoint screenshot 9",
+        "caption": "PowerPoint Screenshot 9"
       }
     ],
     "pros": [

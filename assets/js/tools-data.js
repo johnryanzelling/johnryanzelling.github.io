@@ -79,6 +79,51 @@ window.tools = [
         "src": "assets/images/tools/canva/canva-representation-10.svg",
         "alt": "Canva Teacher handout representation",
         "caption": "Canva: Teacher handout"
+      },
+      {
+        "src": "assets/images/tools/canva/Screenshot 2026-06-13 112253.png",
+        "alt": "Canva screenshot 15",
+        "caption": "Canva Screenshot 15"
+      },
+      {
+        "src": "assets/images/tools/canva/Screenshot 2026-06-13 112328.png",
+        "alt": "Canva screenshot 16",
+        "caption": "Canva Screenshot 16"
+      },
+      {
+        "src": "assets/images/tools/canva/Screenshot 2026-06-13 112404.png",
+        "alt": "Canva screenshot 17",
+        "caption": "Canva Screenshot 17"
+      },
+      {
+        "src": "assets/images/tools/canva/Screenshot 2026-06-13 112508.png",
+        "alt": "Canva screenshot 18",
+        "caption": "Canva Screenshot 18"
+      },
+      {
+        "src": "assets/images/tools/canva/Screenshot 2026-06-13 112526.png",
+        "alt": "Canva screenshot 19",
+        "caption": "Canva Screenshot 19"
+      },
+      {
+        "src": "assets/images/tools/canva/Screenshot 2026-06-13 112546.png",
+        "alt": "Canva screenshot 20",
+        "caption": "Canva Screenshot 20"
+      },
+      {
+        "src": "assets/images/tools/canva/Screenshot 2026-06-13 112650.png",
+        "alt": "Canva screenshot 21",
+        "caption": "Canva Screenshot 21"
+      },
+      {
+        "src": "assets/images/tools/canva/Screenshot 2026-06-13 112712.png",
+        "alt": "Canva screenshot 22",
+        "caption": "Canva Screenshot 22"
+      },
+      {
+        "src": "assets/images/tools/canva/Screenshot 2026-06-13 112735.png",
+        "alt": "Canva screenshot 23",
+        "caption": "Canva Screenshot 23"
       }
     ],
     "pros": [

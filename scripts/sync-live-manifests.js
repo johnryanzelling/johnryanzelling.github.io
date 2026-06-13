@@ -21,8 +21,20 @@ function normalizeSlug(value) {
     .replace(/^-+|-+$/g, "");
 }
 
-function isPlainSlug(value) {
-  return /^[a-z0-9][a-z0-9-]*$/i.test(String(value || "").trim());
+function normalizeManifestEntry(value) {
+  const entry = String(value || "").trim();
+  const moduleMatch = entry.match(/^module\s+(\d+)$/i);
+
+  if (moduleMatch) {
+    return `module${moduleMatch[1]}`;
+  }
+
+  return normalizeSlug(entry);
+}
+
+function isManifestEntry(value) {
+  const entry = String(value || "").trim();
+  return /^[a-z0-9][a-z0-9-]*$/i.test(entry) || /^module\s+\d+$/i.test(entry);
 }
 
 function parseManifest(text) {
@@ -31,8 +43,8 @@ function parseManifest(text) {
     .split(/\r?\n/)
     .map((line) => line.trim())
     .filter((line) => line && !line.startsWith("#"))
-    .filter(isPlainSlug)
-    .map(normalizeSlug);
+    .filter(isManifestEntry)
+    .map(normalizeManifestEntry);
 }
 
 for (const manifest of manifests) {

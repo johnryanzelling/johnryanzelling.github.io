@@ -316,5 +316,42 @@ window.tools = [
     "sources": [
       "Truity Holland Code Career Test official page"
     ]
+  },
+  {
+    "slug": "bitmoji-interactive-classroom",
+    "name": "Bitmoji Interactive Classroom",
+    "category": "Classroom Organization, Student Engagement, Digital Learning Resource",
+    "location": "https://www.bitmoji.com/",
+    "cost": "Free",
+    "description": "Bitmoji is a digital avatar tool that allows teachers to create a cartoon version of themselves and place it inside a virtual classroom scene. When used with Canva, Google Slides, or PowerPoint, a Bitmoji classroom can become interactive by linking objects in the room to classroom resources, assignments, videos, websites, directions, or student support materials.",
+    "pedagogicalUses": "Students can use an interactive Bitmoji classroom to access assignments, directions, videos, practice activities, review materials, and classroom support links from one organized visual space.",
+    "teacherValue": "Bitmoji classrooms help teachers organize classroom resources in a student-friendly format. They can also make a digital classroom feel more welcoming, especially when students are learning online, completing independent work, or using a classroom resource hub.",
+    "artifact": "Add a screenshot or link to the completed Bitmoji Interactive Classroom.",
+    "screenshots": [],
+    "pros": [
+      "Visual and engaging for students",
+      "Helps organize classroom links and resources",
+      "Can be updated and reused throughout the year",
+      "Supports student independence",
+      "Useful for substitute plans, review activities, and digital classroom hubs"
+    ],
+    "cons": [
+      "Can become decorative instead of instructional if links are not meaningful",
+      "Requires time to design and organize",
+      "Students need internet access",
+      "Teachers need to keep links updated"
+    ],
+    "iste": [
+      "ISTE Student 1.1 Empowered Learner",
+      "ISTE Student 1.6 Creative Communicator",
+      "ISTE Educator 2.5 Designer",
+      "ISTE Educator 2.6 Facilitator"
+    ],
+    "sources": [
+      "Bitmoji official website",
+      "Canva",
+      "Google Slides",
+      "Microsoft PowerPoint"
+    ]
   }
 ];

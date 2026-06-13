@@ -223,24 +223,34 @@ window.tools = [
     "artifact": "Add a career reflection worksheet, career exploration activity, or student planning prompt connected to Holland Code results.",
     "screenshots": [
       {
-        "src": "assets/images/tools/holland-code-career-test/holland-code-career-test-placeholder-1.svg",
-        "alt": "Holland Code Career Test career interest profile placeholder",
-        "caption": "Holland Code Career Test: Interest profile"
+        "src": "assets/images/tools/holland-code-career-test/Screenshot 2026-06-13 110914.png",
+        "alt": "Holland Code Career Test screenshot 1",
+        "caption": "Holland Code Career Test Screenshot 1"
       },
       {
-        "src": "assets/images/tools/holland-code-career-test/holland-code-career-test-placeholder-2.svg",
-        "alt": "Holland Code Career Test RIASEC themes chart placeholder",
-        "caption": "Holland Code Career Test: RIASEC themes"
+        "src": "assets/images/tools/holland-code-career-test/Screenshot 2026-06-13 110930.png",
+        "alt": "Holland Code Career Test screenshot 2",
+        "caption": "Holland Code Career Test Screenshot 2"
       },
       {
-        "src": "assets/images/tools/holland-code-career-test/holland-code-career-test-placeholder-3.svg",
-        "alt": "Holland Code Career Test student reflection worksheet placeholder",
-        "caption": "Holland Code Career Test: Student reflection"
+        "src": "assets/images/tools/holland-code-career-test/Screenshot 2026-06-13 111005.png",
+        "alt": "Holland Code Career Test screenshot 3",
+        "caption": "Holland Code Career Test Screenshot 3"
       },
       {
-        "src": "assets/images/tools/holland-code-career-test/holland-code-career-test-placeholder-4.svg",
-        "alt": "Holland Code Career Test career pathway comparison placeholder",
-        "caption": "Holland Code Career Test: Career pathways"
+        "src": "assets/images/tools/holland-code-career-test/Screenshot 2026-06-13 111107.png",
+        "alt": "Holland Code Career Test screenshot 4",
+        "caption": "Holland Code Career Test Screenshot 4"
+      },
+      {
+        "src": "assets/images/tools/holland-code-career-test/Screenshot 2026-06-13 111125.png",
+        "alt": "Holland Code Career Test screenshot 5",
+        "caption": "Holland Code Career Test Screenshot 5"
+      },
+      {
+        "src": "assets/images/tools/holland-code-career-test/Screenshot 2026-06-13 111145.png",
+        "alt": "Holland Code Career Test screenshot 6",
+        "caption": "Holland Code Career Test Screenshot 6"
       }
     ],
     "pros": [

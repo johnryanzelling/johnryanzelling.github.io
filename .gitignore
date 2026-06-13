@@ -1,0 +1,27 @@
+# Local Codex and project workflow files
+AGENTS.md
+TODO/
+README.md
+LIVE_EXAMPLES.md
+LIVE_MODULES.md
+*.local.md
+*.dev.md
+*.draft.md
+
+# Local logs and temporary files
+*.log
+*.tmp
+tmp/
+temp/
+
+# Temporary Office files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# Editor and OS files
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store

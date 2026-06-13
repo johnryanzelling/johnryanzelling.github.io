@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">HIGH5TEST Strengths results</title>
+  <desc id="desc">A generated classroom-oriented representation of HIGH5TEST: Strengths results.</desc>
+  <rect width="1280" height="720" fill="#f7fbfa"/>
+  <rect x="56" y="46" width="1168" height="628" rx="22" fill="#ffffff" stroke="#c9d8d3" stroke-width="4"/>
+  <rect x="56" y="46" width="1168" height="76" rx="22" fill="#ed7d31"/>
+  <circle cx="96" cy="84" r="10" fill="#ffffff" opacity="0.9"/>
+  <circle cx="130" cy="84" r="10" fill="#ffffff" opacity="0.65"/>
+  <circle cx="164" cy="84" r="10" fill="#ffffff" opacity="0.45"/>
+  <text x="208" y="94" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">HIGH5TEST</text>
+  <rect x="88" y="154" width="268" height="480" rx="14" fill="#f5f8f5" stroke="#d9e2dc" stroke-width="3"/>
+  <text x="116" y="204" fill="#17202a" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Strengths results</text>
+  <rect x="116" y="236" width="190" height="16" rx="8" fill="#ed7d31" opacity="0.8"/>
+  <rect x="116" y="282" width="212" height="14" rx="7" fill="#8aa19a" opacity="0.45"/>
+  <rect x="116" y="326" width="174" height="14" rx="7" fill="#8aa19a" opacity="0.45"/>
+  <rect x="116" y="370" width="206" height="14" rx="7" fill="#8aa19a" opacity="0.45"/>
+  <rect x="116" y="438" width="104" height="42" rx="8" fill="#0f766e" opacity="0.85"/>
+  <rect x="236" y="438" width="74" height="42" rx="8" fill="#ed7d31" opacity="0.25"/>
+  <text x="116" y="558" fill="#5f6b78" font-family="Arial, Helvetica, sans-serif" font-size="20">strength 1</text>
+  <text x="116" y="590" fill="#5f6b78" font-family="Arial, Helvetica, sans-serif" font-size="20">strength 2</text>
+  <rect x="400" y="154" width="780" height="480" rx="14" fill="#ffffff" stroke="#d9e2dc" stroke-width="3"/>
+  <text x="438" y="206" fill="#17202a" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700">Collaboration and Productivity</text>
+  <rect x="438" y="238" width="230" height="18" rx="9" fill="#ed7d31" opacity="0.68"/>
+  <rect x="438" y="286" width="202" height="16" rx="8" fill="#8aa19a" opacity="0.42"/>
+  <rect x="438" y="326" width="240" height="16" rx="8" fill="#8aa19a" opacity="0.36"/>
+  <rect x="438" y="366" width="180" height="16" rx="8" fill="#8aa19a" opacity="0.36"/>
+  <rect x="438" y="434" width="214" height="86" rx="12" fill="#edf6f3" stroke="#c9d8d3" stroke-width="3"/>
+  <text x="462" y="486" fill="#17202a" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">reflection</text>
+  <line x1="700" y1="550" x2="1136" y2="550" stroke="#d9e2dc" stroke-width="4"/>
+  <line x1="700" y1="236" x2="700" y2="550" stroke="#d9e2dc" stroke-width="4"/>
+  <rect x="712" y="414" width="74" height="136" rx="8" fill="#ed7d31" opacity="0.82"/>
+  <rect x="822" y="357" width="74" height="193" rx="8" fill="#0f766e" opacity="0.8"/>
+  <rect x="932" y="448" width="74" height="102" rx="8" fill="#8aa19a"/>
+  <rect x="1042" y="315" width="74" height="235" rx="8" fill="#ed7d31" opacity="0.55"/>
+  <text x="438" y="594" fill="#5f6b78" font-family="Arial, Helvetica, sans-serif" font-size="21">Carousel image 1 of 10</text>
+</svg>

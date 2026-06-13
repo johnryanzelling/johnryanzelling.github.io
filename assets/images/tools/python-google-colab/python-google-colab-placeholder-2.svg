@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Python / Google Colab Placeholder 2</title>
+  <desc id="desc">A placeholder image for the Python / Google Colab tool carousel.</desc>
+  <rect width="1280" height="720" fill="#f7fbfa"/>
+  <rect x="64" y="56" width="1152" height="608" rx="18" fill="#ffffff" stroke="#c9d8d3" stroke-width="4"/>
+  <rect x="64" y="56" width="1152" height="84" rx="18" fill="#2563a6"/>
+  <text x="104" y="109" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">Python / Google Colab</text>
+  <text x="104" y="174" fill="#17202a" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Math, STEM, and Coding</text>
+  <rect x="104" y="214" width="1072" height="354" rx="14" fill="#f5f8f5" stroke="#c9d8d3" stroke-width="3"/>
+  <g opacity="0.95">
+    <rect x="154" y="264" width="288" height="224" rx="12" fill="#ffffff" stroke="#d9e2dc" stroke-width="3"/>
+    <path d="M186 436 L254 360 L318 410 L370 336 L414 436 Z" fill="#2563a6" opacity="0.26"/>
+    <circle cx="248" cy="326" r="28" fill="#2563a6" opacity="0.45"/>
+    <rect x="500" y="292" width="566" height="22" rx="11" fill="#2563a6" opacity="0.75"/>
+    <rect x="500" y="346" width="482" height="18" rx="9" fill="#8aa19a" opacity="0.5"/>
+    <rect x="500" y="390" width="540" height="18" rx="9" fill="#8aa19a" opacity="0.36"/>
+    <rect x="500" y="434" width="388" height="18" rx="9" fill="#8aa19a" opacity="0.36"/>
+  </g>
+  <text x="104" y="620" fill="#17202a" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Placeholder 2</text>
+  <text x="294" y="620" fill="#5f6b78" font-family="Arial, Helvetica, sans-serif" font-size="24">Add student work</text>
+</svg>

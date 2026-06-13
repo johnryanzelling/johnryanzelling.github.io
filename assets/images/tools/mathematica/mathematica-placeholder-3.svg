@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Mathematica Placeholder 3</title>
+  <desc id="desc">A placeholder image for a Mathematica classroom model.</desc>
+  <rect width="1280" height="720" fill="#f8fafc"/>
+  <rect x="64" y="56" width="1152" height="608" rx="18" fill="#ffffff" stroke="#c9d8d3" stroke-width="4"/>
+  <rect x="64" y="56" width="1152" height="84" rx="18" fill="#b4535a"/>
+  <text x="104" y="109" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">Mathematica</text>
+  <text x="104" y="174" fill="#17202a" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">Classroom model</text>
+  <rect x="104" y="214" width="1072" height="354" rx="14" fill="#f5f8f5" stroke="#c9d8d3" stroke-width="3"/>
+  <circle cx="364" cy="390" r="94" fill="#b4535a" opacity="0.22"/>
+  <circle cx="364" cy="390" r="12" fill="#b4535a"/>
+  <path d="M364 390 L540 302 L744 348 L934 286" fill="none" stroke="#b4535a" stroke-width="8"/>
+  <rect x="540" y="420" width="476" height="22" rx="11" fill="#8aa19a" opacity="0.55"/>
+  <rect x="540" y="466" width="388" height="22" rx="11" fill="#8aa19a" opacity="0.38"/>
+  <text x="104" y="620" fill="#17202a" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Placeholder 3</text>
+  <text x="294" y="620" fill="#5f6b78" font-family="Arial, Helvetica, sans-serif" font-size="24">Add classroom model</text>
+</svg>

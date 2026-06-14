@@ -2,13 +2,13 @@ window.tools = [
   {
     "slug": "bitmoji-interactive-classroom",
     "name": "Bitmoji Interactive Classroom",
-    "category": "Classroom Organization, Student Engagement, Digital Learning Resource",
+    "category": "Student Engagement, Digital Learning Resource",
     "location": "https://www.bitmoji.com/",
     "cost": "Free",
-    "description": "Bitmoji is a digital avatar tool that allows teachers to create a cartoon version of themselves and place it inside a virtual classroom scene. When used with Canva, Google Slides, or PowerPoint, a Bitmoji classroom can become interactive by linking objects in the room to classroom resources, assignments, videos, websites, directions, or student support materials.",
-    "pedagogicalUses": "Students can use an interactive Bitmoji classroom to access assignments, directions, videos, practice activities, review materials, and classroom support links from one organized visual space.",
-    "teacherValue": "Bitmoji classrooms help teachers organize classroom resources in a student-friendly format. They can also make a digital classroom feel more welcoming, especially when students are learning online, completing independent work, or using a classroom resource hub.",
-    "artifact": "Add a screenshot or link to the completed Bitmoji Interactive Classroom.",
+    "description": "Bitmoji is a digital avatar tool that allows teachers to create a cartoon version of themselves and place it inside a virtual classroom scene with Canva, Google Slides, or PowerPoint. Bitmoji avatars can become interactive linking with classroom resources, assignments, videos, websites, directions, or student support materials.",
+    "pedagogicalUses": "Students can use Bitmoji avatars in assignments, directions, videos, practice activities, review materials, and classroom support links.",
+    "teacherValue": "Bitmoji helps teachers personalize classroom resources in a student-friendly format. They can also make a digital classroom feel more welcoming, especially when students are learning online, completing independent work, or using a classroom resource hub.",
+    "artifact": "The slides above show bitmoji used in some classroom materials.",
     "screenshots": [
       {
         "src": "assets/images/tools/bitmoji-interactive-classroom/Screenshot 2026-06-13 135411.png",
@@ -33,16 +33,13 @@ window.tools = [
     ],
     "pros": [
       "Visual and engaging for students",
-      "Helps organize classroom links and resources",
-      "Can be updated and reused throughout the year",
-      "Supports student independence",
-      "Useful for substitute plans, review activities, and digital classroom hubs"
+      "Personalize classroom resources",
+      "Can be updated and reused throughout the year"
     ],
     "cons": [
-      "Can become decorative instead of instructional if links are not meaningful",
+      "Can become decorative instead of instructional if focus is not on learning",
       "Requires time to design and organize",
-      "Students need internet access",
-      "Teachers need to keep links updated"
+      "May not be useful outside of classroom resources"
     ],
     "iste": [
       "ISTE Student 1.1 Empowered Learner",
@@ -51,10 +48,7 @@ window.tools = [
       "ISTE Educator 2.6 Facilitator"
     ],
     "sources": [
-      "Bitmoji official website",
-      "Canva",
-      "Google Slides",
-      "Microsoft PowerPoint"
+      "Bitmoji official website"
     ]
   },
   {
@@ -63,10 +57,10 @@ window.tools = [
     "category": "Creativity and Media",
     "location": "https://www.canva.com",
     "cost": "Free education options with paid plans",
-    "description": "A graphic design platform for presentations, posters, infographics, videos, and classroom materials.",
+    "description": "Canva is a graphic design platform for presentations, posters, infographics, videos, and classroom materials.",
     "pedagogicalUses": "Students can create visual explanations, math posters, infographics, and multimedia projects.",
     "teacherValue": "Canva supports polished communication and gives students accessible design tools.",
-    "artifact": "Add sample infographic or teacher handout.",
+    "artifact": "The sample infographics show some of the ways to communitcate with canva at the beginning of class. It also can be used to create graphics, such as an email signature line. Canva is perhaps best known for creating teacher handouts, calendars, and planners that can be customized and printed or sold.",
     "screenshots": [
       {
         "src": "assets/images/tools/canva/Screenshot 2026-06-13 112253.png",
@@ -116,12 +110,12 @@ window.tools = [
     ],
     "pros": [
       "Many templates",
-      "Great for student products",
+      "Great for teacher and student products",
       "Education features available"
     ],
     "cons": [
       "Templates can lead to similar-looking work",
-      "Students need copyright guidance"
+      "Students may need copyright guidance"
     ],
     "iste": [
       "ISTE Student 1.6 Creative Communicator",
@@ -134,13 +128,13 @@ window.tools = [
   {
     "slug": "high5test",
     "name": "HIGH5TEST",
-    "category": "Collaboration and Productivity",
+    "category": "Productivity, Collaboration, Personal Development",
     "location": "https://high5test.com",
     "cost": "Free with paid upgrades",
     "description": "A strengths assessment that identifies a user's top five strengths and provides reflection language.",
     "pedagogicalUses": "Students can reflect on strengths, group roles, collaboration habits, career interests, and personal growth goals.",
     "teacherValue": "HIGH5TEST can support advisory lessons, team formation, reflection, and strengths-based classroom culture.",
-    "artifact": "Add top five strengths screenshot or reflection activity.",
+    "artifact": "My own personal top five strengths reflection indicates five areas I can focus on personal development.",
     "screenshots": [
       {
         "src": "assets/images/tools/high5test/Screenshot 2026-06-13 103602.png",
@@ -180,12 +174,13 @@ window.tools = [
     ],
     "pros": [
       "Strengths-based language",
-      "Useful for reflection",
+      "Useful for reflection and personal development",
       "Supports collaboration conversations"
     ],
     "cons": [
       "Results need thoughtful discussion",
-      "Personal data and privacy expectations should be clear"
+      "Personal data and privacy expectations should be clear",
+      "Some students may be too young"
     ],
     "iste": [
       "ISTE Student 1.1 Empowered Learner",
@@ -198,13 +193,13 @@ window.tools = [
   {
     "slug": "holland-code-career-test",
     "name": "Holland Code Career Test",
-    "category": "Collaboration and Productivity",
+    "category": "Productivity, Collaboration, Personal Development",
     "location": "https://www.truity.com/test/holland-code-career-test",
-    "cost": "Free basic quiz with paid upgrade options",
+    "cost": "Free quiz results with paid upgrade options",
     "description": "An online career interest quiz from Truity that uses the Holland Code system to help students connect interests, talents, and aptitude to possible career paths across six major job areas.",
     "pedagogicalUses": "Students can use the quiz during advisory, career exploration, college and career readiness lessons, STEM career discussions, or personal reflection activities. Results can support conversations about interests, preferred work activities, career clusters, and future planning.",
     "teacherValue": "The tool gives teachers and counselors a structured way to support career reflection, classroom discussion, goal setting, and student self-awareness. It can connect academic subjects to real-world pathways and help students explain why certain careers may fit their interests.",
-    "artifact": "Add a career reflection worksheet, career exploration activity, or student planning prompt connected to Holland Code results.",
+    "artifact": "The images partially show my own career reflection results.",
     "screenshots": [
       {
         "src": "assets/images/tools/holland-code-career-test/Screenshot 2026-06-13 110914.png",
@@ -262,10 +257,10 @@ window.tools = [
     "category": "Creativity and Media",
     "location": "https://www.microsoft.com/microsoft-365/powerpoint",
     "cost": "Paid with education access options",
-    "description": "A presentation tool for creating slide decks, visuals, narrated lessons, and student communication products.",
+    "description": "A presentation tool for creating slide decks, visuals, lessons, and student communication products.",
     "pedagogicalUses": "Students can build presentations, explain processes, organize research, and create visual summaries of learning.",
     "teacherValue": "PowerPoint supports direct instruction, visual scaffolds, student presentations, and reusable classroom materials.",
-    "artifact": "Add a slide deck example, lesson visual, or narrated presentation.",
+    "artifact": "The slides show several examples of presentations.",
     "screenshots": [
       {
         "src": "assets/images/tools/powerpoint/Screenshot 2026-06-13 113455.png",

@@ -382,11 +382,14 @@ main {
 }
 
 .logo-slot {
+  display: block;
   width: 56px;
   height: 56px;
   border: 1px dashed #b7c7c2;
   border-radius: 8px;
   background: var(--surface);
+  object-fit: contain;
+  padding: 6px;
 }
 
 .tool-details {

@@ -137,6 +137,30 @@
     return normalizeSlug(module.slug || module.id || module.title);
   }
 
+  function getCategoryTerms(value) {
+    return normalizeSlug(value)
+      .split("-")
+      .filter((term) => term && term !== "and");
+  }
+
+  function matchesToolCategory(tool, filter) {
+    if (filter === "All") return true;
+    if (tool.category === filter) return true;
+
+    const categoryTerms = new Set(getCategoryTerms(tool.category));
+    const filterTermGroups = {
+      "math-stem-and-coding": [["math"], ["stem"], ["coding"]],
+      "assessment-and-review": [["assessment"], ["review"]],
+      "creativity-and-media": [["creativity"], ["media"]],
+      "collaboration-and-productivity": [["collaboration"], ["productivity"]],
+      "communication-and-classroom-management": [["communication"], ["classroom"], ["management"], ["student", "engagement"], ["digital", "learning"]],
+      "ai-and-teacher-productivity": [["ai"], ["teacher", "productivity"]]
+    };
+    const filterTerms = filterTermGroups[normalizeSlug(filter)] || getCategoryTerms(filter).map((term) => [term]);
+
+    return filterTerms.some((terms) => terms.every((term) => categoryTerms.has(term)));
+  }
+
   function getLiveTools() {
     if (!window.tools) return [];
     if (!liveToolSlugs) return window.tools;
@@ -313,7 +337,7 @@
     if (!toolList || !window.tools) return;
 
     const liveTools = getLiveTools();
-    const filtered = filter === "All" ? liveTools : liveTools.filter((tool) => tool.category === filter);
+    const filtered = liveTools.filter((tool) => matchesToolCategory(tool, filter));
     toolList.innerHTML = filtered.map((tool, toolIndex) => `
       <article class="tool-card">
         <div class="tool-card-top">

@@ -388,6 +388,23 @@ main {
   margin: 0 auto;
 }
 
+.profile-image-block {
+  display: flex;
+  justify-content: center;
+  padding: 0 clamp(18px, 6vw, 84px) clamp(24px, 4vw, 42px);
+}
+
+.profile-image {
+  display: block;
+  width: clamp(150px, 22vw, 220px);
+  aspect-ratio: 1;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 10px 28px rgba(23, 32, 42, 0.06);
+  object-fit: cover;
+}
+
 .resume-list {
   display: grid;
   gap: 14px;

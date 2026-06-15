@@ -17,6 +17,8 @@ const liveDataTarget = path.join("assets", "js", "live-data.js");
 const moduleDataTarget = path.join("assets", "js", "module-data.js");
 const toolDataTarget = path.join("assets", "js", "tools-data.js");
 const toolImagesPath = path.join("assets", "images", "tools");
+const aboutProfileImagesPath = path.join("assets", "images", "about", "profile-picture");
+const aboutPagePath = "about.html";
 const supportedScreenshotExtensions = new Set([".png", ".jpg", ".jpeg", ".webp", ".svg"]);
 
 function normalizeSlug(value) {
@@ -300,6 +302,64 @@ function getLiveTools(slugs) {
   return (slugs || []).map(getToolFromMarkdown);
 }
 
+function sortNewestFirst(first, second) {
+  return second.stats.mtimeMs - first.stats.mtimeMs || first.name.localeCompare(second.name, undefined, {
+    numeric: true,
+    sensitivity: "base"
+  });
+}
+
+function getAboutProfileImagePath() {
+  const imageDirectory = path.join(process.cwd(), aboutProfileImagesPath);
+  if (!fs.existsSync(imageDirectory)) {
+    return "";
+  }
+
+  const images = fs.readdirSync(imageDirectory, { withFileTypes: true })
+    .filter((entry) => entry.isFile())
+    .filter((entry) => supportedScreenshotExtensions.has(path.extname(entry.name).toLowerCase()))
+    .map((entry) => ({
+      name: entry.name,
+      stats: fs.statSync(path.join(imageDirectory, entry.name))
+    }))
+    .sort(sortNewestFirst);
+
+  const selected = images.find((image) => !/placeholder/i.test(image.name)) || images[0];
+  if (!selected) {
+    return "";
+  }
+
+  return path.join(aboutProfileImagesPath, selected.name).replace(/\\/g, "/");
+}
+
+function updateAboutProfileImage() {
+  const profileImagePath = getAboutProfileImagePath();
+  if (!profileImagePath) {
+    console.log(`No profile image found in ${aboutProfileImagesPath}`);
+    return;
+  }
+
+  const targetPath = path.join(process.cwd(), aboutPagePath);
+  if (!fs.existsSync(targetPath)) {
+    console.log(`Skipped profile image update; ${aboutPagePath} was not found`);
+    return;
+  }
+
+  const aboutHtml = fs.readFileSync(targetPath, "utf8");
+  const updatedHtml = aboutHtml.replace(
+    /(<img class="profile-image" src=")[^"]+(" alt=")[^"]+(">\s*)/,
+    `$1${profileImagePath}$2Profile picture for John Ryan Zelling$3`
+  );
+
+  if (updatedHtml === aboutHtml) {
+    console.log(`Skipped profile image update; profile image markup was not found in ${aboutPagePath}`);
+    return;
+  }
+
+  fs.writeFileSync(targetPath, updatedHtml);
+  console.log(`Updated ${aboutPagePath} profile image: ${profileImagePath}`);
+}
+
 const liveData = {};
 
 for (const manifest of manifests) {
@@ -346,3 +406,5 @@ const toolDataOutput = `window.tools = ${JSON.stringify(getLiveTools(liveData.li
 
 fs.writeFileSync(toolDataPath, `${toolDataOutput}\n`);
 console.log(`Generated ${toolDataTarget}`);
+
+updateAboutProfileImage();

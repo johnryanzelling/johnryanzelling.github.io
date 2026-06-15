@@ -118,11 +118,27 @@ function getModuleFromMarkdown(moduleDirectory) {
   return {
     slug,
     title: parsed.title || slug,
+    markdown: markdown.trim(),
     focus: cleanMarkdownSection(parsed.sections.focus),
     reflection: cleanMarkdownSection(parsed.sections["reflection draft"] || parsed.sections.reflection),
     classroomConnection: cleanMarkdownSection(parsed.sections["classroom connection"]),
     source: path.join("modules", slug, "README.md").replace(/\\/g, "/")
   };
+}
+
+function getLiveModules(slugs) {
+  const modulesPath = path.join(process.cwd(), "modules");
+
+  return (slugs || []).map((slug) => {
+    const moduleDirectory = path.join(modulesPath, slug);
+    const readmePath = path.join(moduleDirectory, "README.md");
+
+    if (!fs.existsSync(readmePath)) {
+      throw new Error(`Missing README for live module "${slug}" at modules/${slug}/README.md`);
+    }
+
+    return getModuleFromMarkdown(moduleDirectory);
+  });
 }
 
 function getModules() {
@@ -310,9 +326,10 @@ console.log(`Generated ${liveDataTarget}`);
 const moduleDataPath = path.join(process.cwd(), moduleDataTarget);
 const moduleDataOutput = [
   "window.modules = [",
-  getModules().map((module) => `  {
+  getLiveModules(liveData.liveModules).map((module) => `  {
     slug: ${escapeJsString(module.slug)},
     title: ${escapeJsString(module.title)},
+    markdown: ${escapeJsString(module.markdown)},
     focus: ${escapeJsString(module.focus)},
     reflection: ${escapeJsString(module.reflection)},
     classroomConnection: ${escapeJsString(module.classroomConnection)},

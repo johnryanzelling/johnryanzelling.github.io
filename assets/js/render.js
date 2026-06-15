@@ -183,6 +183,94 @@
     return items.map((item) => `<li>${item}</li>`).join("");
   }
 
+  function escapeHtml(value) {
+    return String(value || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
+  function renderInlineMarkdown(value) {
+    return escapeHtml(value)
+      .replace(/`([^`]+)`/g, "<code>$1</code>")
+      .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+      .replace(/\*([^*]+)\*/g, "<em>$1</em>");
+  }
+
+  function renderMarkdown(markdown) {
+    const lines = String(markdown || "").replace(/\r\n/g, "\n").split("\n");
+    const output = [];
+    let paragraph = [];
+    let listItemsBuffer = [];
+    let listTag = "";
+
+    function flushParagraph() {
+      if (!paragraph.length) return;
+      output.push(`<p>${renderInlineMarkdown(paragraph.join(" "))}</p>`);
+      paragraph = [];
+    }
+
+    function flushList() {
+      if (!listItemsBuffer.length) return;
+      output.push(`<${listTag}>${listItemsBuffer.join("")}</${listTag}>`);
+      listItemsBuffer = [];
+      listTag = "";
+    }
+
+    lines.forEach((rawLine) => {
+      const line = rawLine.trim();
+
+      if (!line) {
+        flushParagraph();
+        flushList();
+        return;
+      }
+
+      const headingMatch = line.match(/^(#{1,6})\s+(.+)$/);
+      if (headingMatch) {
+        flushParagraph();
+        flushList();
+        const level = Math.min(headingMatch[1].length + 1, 6);
+        output.push(`<h${level}>${renderInlineMarkdown(headingMatch[2])}</h${level}>`);
+        return;
+      }
+
+      const unorderedMatch = line.match(/^[-*+]\s+(.+)$/);
+      const orderedMatch = line.match(/^\d+[.)]\s+(.+)$/);
+      if (unorderedMatch || orderedMatch) {
+        flushParagraph();
+        const nextListTag = unorderedMatch ? "ul" : "ol";
+        if (listTag && listTag !== nextListTag) {
+          flushList();
+        }
+        listTag = nextListTag;
+        listItemsBuffer.push(`<li>${renderInlineMarkdown((unorderedMatch || orderedMatch)[1])}</li>`);
+        return;
+      }
+
+      flushList();
+      paragraph.push(line);
+    });
+
+    flushParagraph();
+    flushList();
+
+    return output.join("");
+  }
+
+  function getModuleMarkdown(module) {
+    if (module.markdown) return module.markdown;
+
+    return [
+      `# ${module.title || "Module"}`,
+      module.focus ? `## Focus\n${module.focus}` : "",
+      module.reflection ? `## Reflection\n${module.reflection}` : "",
+      module.classroomConnection ? `## Classroom Connection\n${module.classroomConnection}` : ""
+    ].filter(Boolean).join("\n\n");
+  }
+
   function getLiveCount(type) {
     if (type === "tools") {
       return liveToolSlugs ? liveToolSlugs.size : 0;
@@ -394,12 +482,8 @@
 
     moduleList.innerHTML = getLiveModules().map((module) => `
       <article class="module-card">
-        <span class="category-pill">${module.title}</span>
-        <h2>${module.focus}</h2>
-        <p>${module.reflection}</p>
-        <div class="reflection-note">
-          <strong>Classroom connection</strong>
-          <span>${module.classroomConnection}</span>
+        <div class="module-markdown">
+          ${renderMarkdown(getModuleMarkdown(module))}
         </div>
       </article>
     `).join("");

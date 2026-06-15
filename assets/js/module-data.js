@@ -2,49 +2,19 @@ window.modules = [
   {
     slug: "module1",
     title: "Module 1",
-    focus: "Course Foundations and Technology Goals",
-    reflection: "Add a reflection about your starting point, teaching context, and goals for building a digital toolbox.",
-    classroomConnection: "Identify one technology routine you want to strengthen in your classroom. Oh yea! I want to strengthen my use of lesson planning technology through use of my ndMathStandards project and mathFoundationsBook that I'm currently developing. They will be made available via the Tools section soon!",
+    markdown: "# Module 1\n\n## Focus\nCourse Foundations and Technology Goals\n\n### Course Foundations\n\nThe structure of EDUC 675 was established in Module 1 along with the long-term purpose of this Digital Toolbox final project.\n\nThis resource is not simply a collection of technology links, it is meant to become a professional reference that connects technology tools to classroom practice, instructional decision-making, student engagement, and reflection.\n\nThe structure will contintue to evolve to make the project feel more manageable, and as each module contributes.\n\n### Personal Technology Reflection\n\nThis module had me to think carefully about my own relationship with technology.\n\nIt made me reflect on how often I use technology, and what I use it for. It's a step towards understanding why sometimes it can feel difficult to disconnect from it, but also understanding when it's okay to disconnect.\n\nTechnology is deeply built into my personal, academic, and professional life. I use technology for communication, planning, coursework, teaching support, and productivity.\n\nAt the same time, some technology use is automatic rather than intentional. This distinction is important for teaching because students also need guidance in learning how to use technology with purpose rather than simply having constant access to it.\n\n### Instructional Purpose\n\nAs an educator, I frame technology as something that should support learning rather than distract from it.\n\nIn the classroom, technology can help organize instruction, provide access to resources, support student practice, and create more engaging learning experiences.\n\nModule 1 helped me begin thinking about how I want to evaluate tools by whether they have a meaningful instructional purpose.\n\n### Moving Forward\n\nOverall, the importance of building this toolbox will extend beyond EDUC 675.\n\nThis understanding was gained by reflecting on my own technology habits and how those habits influence my views on student technology use.\n\nMoving forward, this digital resource will continue to reflect practical classroom application, professional reflection, and intentional technology integration.\n\n## Classroom Connection\n\n### Technology Routine to Strengthen\n\nIdentify one technology routine you want to strengthen in your classroom.\n\nOh yea! I want to strengthen my use of lesson planning technology through use of my ndMathStandards project and mathFoundationsBook that I'm currently developing.\n\nThey will be made available via the Tools section soon!",
+    focus: "Course Foundations and Technology Goals\n\n### Course Foundations\n\nThe structure of EDUC 675 was established in Module 1 along with the long-term purpose of this Digital Toolbox final project.\n\nThis resource is not simply a collection of technology links, it is meant to become a professional reference that connects technology tools to classroom practice, instructional decision-making, student engagement, and reflection.\n\nThe structure will contintue to evolve to make the project feel more manageable, and as each module contributes.\n\n### Personal Technology Reflection\n\nThis module had me to think carefully about my own relationship with technology.\n\nIt made me reflect on how often I use technology, and what I use it for. It's a step towards understanding why sometimes it can feel difficult to disconnect from it, but also understanding when it's okay to disconnect.\n\nTechnology is deeply built into my personal, academic, and professional life. I use technology for communication, planning, coursework, teaching support, and productivity.\n\nAt the same time, some technology use is automatic rather than intentional. This distinction is important for teaching because students also need guidance in learning how to use technology with purpose rather than simply having constant access to it.\n\n### Instructional Purpose\n\nAs an educator, I frame technology as something that should support learning rather than distract from it.\n\nIn the classroom, technology can help organize instruction, provide access to resources, support student practice, and create more engaging learning experiences.\n\nModule 1 helped me begin thinking about how I want to evaluate tools by whether they have a meaningful instructional purpose.\n\n### Moving Forward\n\nOverall, the importance of building this toolbox will extend beyond EDUC 675.\n\nThis understanding was gained by reflecting on my own technology habits and how those habits influence my views on student technology use.\n\nMoving forward, this digital resource will continue to reflect practical classroom application, professional reflection, and intentional technology integration.",
+    reflection: "",
+    classroomConnection: "### Technology Routine to Strengthen\n\nIdentify one technology routine you want to strengthen in your classroom.\n\nOh yea! I want to strengthen my use of lesson planning technology through use of my ndMathStandards project and mathFoundationsBook that I'm currently developing.\n\nThey will be made available via the Tools section soon!",
     source: "modules/module1/README.md"
   },
   {
     slug: "module2",
     title: "Module 2",
+    markdown: "# Module 2\n\n## Focus\n\nInstructional Design and Student Engagement\n\n## Reflection Draft\n\nAdd notes about how technology can support engagement while staying connected to learning objectives.\n\n## Classroom Connection\n\nDescribe one tool-supported lesson idea you could try with students.",
     focus: "Instructional Design and Student Engagement",
     reflection: "Add notes about how technology can support engagement while staying connected to learning objectives.",
     classroomConnection: "Describe one tool-supported lesson idea you could try with students.",
     source: "modules/module2/README.md"
-  },
-  {
-    slug: "module3",
-    title: "Module 3",
-    focus: "Assessment and Feedback",
-    reflection: "Add a reflection about formative assessment, feedback cycles, and data-informed teaching.",
-    classroomConnection: "Connect one assessment tool to a real classroom check for understanding.",
-    source: "modules/module3/README.md"
-  },
-  {
-    slug: "module4",
-    title: "Module 4",
-    focus: "Creativity, Media, and Student Voice",
-    reflection: "Add a reflection about student-created products, multimedia learning, and communication.",
-    classroomConnection: "Describe a project where students explain their thinking through media.",
-    source: "modules/module4/README.md"
-  },
-  {
-    slug: "module5",
-    title: "Module 5",
-    focus: "Collaboration, Accessibility, and Digital Citizenship",
-    reflection: "Add a reflection about equitable access, responsible technology use, and collaborative learning.",
-    classroomConnection: "Explain how you would set norms for one collaborative digital space.",
-    source: "modules/module5/README.md"
-  },
-  {
-    slug: "module6",
-    title: "Module 6",
-    focus: "Final Toolbox Reflection",
-    reflection: "Add your final reflection about the 21-tool collection, what you learned, and what you will use after the course.",
-    classroomConnection: "Name the tools you are most likely to use first and why.",
-    source: "modules/module6/README.md"
   }
 ];

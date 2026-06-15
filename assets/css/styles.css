@@ -239,6 +239,41 @@ main {
   margin: 0 0 10px;
 }
 
+.module-markdown {
+  display: grid;
+  gap: 12px;
+}
+
+.module-markdown h2,
+.module-markdown h3,
+.module-markdown h4,
+.module-markdown p,
+.module-markdown ul,
+.module-markdown ol {
+  margin: 0;
+}
+
+.module-markdown h2 {
+  font-size: 1.45rem;
+  line-height: 1.15;
+}
+
+.module-markdown h3 {
+  color: var(--teal-dark);
+  font-size: 1.08rem;
+}
+
+.module-markdown h4 {
+  color: var(--ink);
+  font-size: 1rem;
+}
+
+.module-markdown ul,
+.module-markdown ol {
+  padding-left: 20px;
+  color: var(--muted);
+}
+
 .split {
   display: grid;
   grid-template-columns: minmax(0, 0.8fr) minmax(300px, 1.2fr);

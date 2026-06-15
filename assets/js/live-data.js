@@ -7,5 +7,6 @@ window.liveTools = [
 ];
 
 window.liveModules = [
-  "module1"
+  "module1",
+  "module2"
 ];

@@ -446,6 +446,26 @@ window.tools = [
         "src": "assets/images/tools/desmos/Screenshot 2026-06-21 144004.png",
         "alt": "Desmos screenshot 4",
         "caption": "Desmos Screenshot 4"
+      },
+      {
+        "src": "assets/images/tools/desmos/Screenshot 2026-06-21 145256.png",
+        "alt": "Desmos screenshot 5",
+        "caption": "Desmos Screenshot 5"
+      },
+      {
+        "src": "assets/images/tools/desmos/Screenshot 2026-06-21 145401.png",
+        "alt": "Desmos screenshot 6",
+        "caption": "Desmos Screenshot 6"
+      },
+      {
+        "src": "assets/images/tools/desmos/Screenshot 2026-06-21 145428.png",
+        "alt": "Desmos screenshot 7",
+        "caption": "Desmos Screenshot 7"
+      },
+      {
+        "src": "assets/images/tools/desmos/Screenshot 2026-06-21 145443.png",
+        "alt": "Desmos screenshot 8",
+        "caption": "Desmos Screenshot 8"
       }
     ],
     "pros": [

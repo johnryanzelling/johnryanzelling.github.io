@@ -3,7 +3,9 @@ window.liveTools = [
   "canva",
   "high5test",
   "holland-code-career-test",
-  "powerpoint"
+  "powerpoint",
+  "ixl",
+  "desmos"
 ];
 
 window.liveModules = [

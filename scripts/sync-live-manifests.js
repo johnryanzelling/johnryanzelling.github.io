@@ -198,6 +198,23 @@ function getScreenshotItems(sections) {
   return screenshots.filter((item) => item.src);
 }
 
+function isRemoteScreenshotPath(src) {
+  return /^(https?:)?\/\//i.test(String(src || "")) || /^data:/i.test(String(src || ""));
+}
+
+function localScreenshotExists(src) {
+  if (!src || isRemoteScreenshotPath(src)) {
+    return true;
+  }
+
+  const localPath = path.resolve(process.cwd(), String(src).replace(/\\/g, path.sep));
+  return fs.existsSync(localPath);
+}
+
+function getExistingScreenshotItems(items) {
+  return (items || []).filter((item) => localScreenshotExists(item.src));
+}
+
 function getScreenshotTimestamp(fileName) {
   const match = String(fileName || "").match(/(20\d{2})[-_. ]?(\d{2})[-_. ]?(\d{2})\D*(\d{2})[-_. ]?(\d{2})[-_. ]?(\d{2})/);
   if (!match) return null;
@@ -278,7 +295,8 @@ function getToolFromMarkdown(slug) {
   const parsed = getMarkdownSections(markdown);
   const name = getSectionText(parsed.sections, "name") || parsed.title || slug;
   const readmeScreenshots = getScreenshotItems(parsed.sections);
-  const folderScreenshots = getFolderScreenshotItems(slug, name, readmeScreenshots);
+  const existingReadmeScreenshots = getExistingScreenshotItems(readmeScreenshots);
+  const folderScreenshots = getFolderScreenshotItems(slug, name, existingReadmeScreenshots);
 
   return {
     slug,
@@ -290,7 +308,7 @@ function getToolFromMarkdown(slug) {
     pedagogicalUses: getSectionText(parsed.sections, "pedagogical uses"),
     teacherValue: getSectionText(parsed.sections, "teacher value"),
     artifact: getSectionText(parsed.sections, "artifact"),
-    screenshots: folderScreenshots.length ? folderScreenshots : readmeScreenshots,
+    screenshots: folderScreenshots.length ? folderScreenshots : existingReadmeScreenshots,
     pros: getSectionList(parsed.sections, "pros"),
     cons: getSectionList(parsed.sections, "cons"),
     iste: getSectionList(parsed.sections, "iste standards"),

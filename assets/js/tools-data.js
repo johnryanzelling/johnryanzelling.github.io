@@ -369,5 +369,100 @@ window.tools = [
     "sources": [
       "Microsoft PowerPoint official website"
     ]
+  },
+  {
+    "slug": "ixl",
+    "name": "IXL",
+    "category": "Math, STEM, and Coding",
+    "location": "https://www.ixl.com/materials/i_guides/IXL_for_Daily_Instruction_Implementation_Guide.pdf",
+    "cost": "Paid subscription with family, classroom, school, and district options",
+    "description": "IXL is a personalized learning platform with standards-aligned practice, diagnostics, recommendations, and analytics across math and other K-12 subjects.",
+    "pedagogicalUses": "Students can practice targeted math skills, receive immediate feedback, build fluency, and work from diagnostic recommendations that support intervention, enrichment, and standards review.",
+    "teacherValue": "IXL helps teachers identify skill gaps, assign standards-aligned math practice, monitor progress, and use analytics to plan reteaching or small-group support.",
+    "artifact": "Add screenshot or sample standards-aligned math skill practice.",
+    "screenshots": [
+      {
+        "src": "assets/images/tools/ixl/Screenshot 2026-06-21 144027.png",
+        "alt": "IXL screenshot 1",
+        "caption": "IXL Screenshot 1"
+      },
+      {
+        "src": "assets/images/tools/ixl/Screenshot 2026-06-21 144116.png",
+        "alt": "IXL screenshot 2",
+        "caption": "IXL Screenshot 2"
+      },
+      {
+        "src": "assets/images/tools/ixl/Screenshot 2026-06-21 144204.png",
+        "alt": "IXL screenshot 3",
+        "caption": "IXL Screenshot 3"
+      }
+    ],
+    "pros": [
+      "Large bank of standards-aligned math practice",
+      "Immediate feedback for students",
+      "Analytics can support differentiation and intervention planning"
+    ],
+    "cons": [
+      "Full access requires a paid membership or school subscription",
+      "Practice can feel repetitive without teacher framing",
+      "Best used alongside discussion, modeling, and problem-solving tasks"
+    ],
+    "iste": [
+      "ISTE Student 1.1 Empowered Learner",
+      "ISTE Student 1.3 Knowledge Constructor",
+      "ISTE Educator 2.7 Analyst"
+    ],
+    "sources": [
+      "IXL official website"
+    ]
+  },
+  {
+    "slug": "desmos",
+    "name": "Desmos",
+    "category": "Math, STEM, and Coding",
+    "location": "https://www.desmos.com",
+    "cost": "Free",
+    "description": "An online graphing calculator and activity platform for mathematics instruction.",
+    "pedagogicalUses": "Students can explore functions, transformations, systems of equations, and mathematical modeling through visual, interactive tasks.",
+    "teacherValue": "Desmos helps make abstract math concepts visible and supports inquiry-based lessons.",
+    "artifact": "The screenshots show some interactive examples from Desmos.",
+    "screenshots": [
+      {
+        "src": "assets/images/tools/desmos/Screenshot 2026-06-21 143718.png",
+        "alt": "Desmos screenshot 1",
+        "caption": "Desmos Screenshot 1"
+      },
+      {
+        "src": "assets/images/tools/desmos/Screenshot 2026-06-21 143802.png",
+        "alt": "Desmos screenshot 2",
+        "caption": "Desmos Screenshot 2"
+      },
+      {
+        "src": "assets/images/tools/desmos/Screenshot 2026-06-21 143838.png",
+        "alt": "Desmos screenshot 3",
+        "caption": "Desmos Screenshot 3"
+      },
+      {
+        "src": "assets/images/tools/desmos/Screenshot 2026-06-21 144004.png",
+        "alt": "Desmos screenshot 4",
+        "caption": "Desmos Screenshot 4"
+      }
+    ],
+    "pros": [
+      "Strong visual math support",
+      "Easy student access",
+      "Useful activity library"
+    ],
+    "cons": [
+      "Requires internet access",
+      "Advanced activity creation takes practice"
+    ],
+    "iste": [
+      "ISTE Student 1.4 Innovative Designer",
+      "ISTE Student 1.5 Computational Thinker"
+    ],
+    "sources": [
+      "Desmos official website"
+    ]
   }
 ];

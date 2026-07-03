@@ -1,0 +1,37 @@
+# Local Codex and project workflow files
+/AGENTS.md
+/TODO/
+# Keep local tool source files ignored while publishing tool gallery images.
+/tools/*
+!/tools/*/
+/tools/*/*
+!/tools/*/images/
+!/tools/*/images/**
+/modules/
+/scripts/
+README.md
+/LIVE_TOOLS.md
+/LIVE_MODULES.md
+/IDEAS.md
+*.local.md
+*.dev.md
+*.draft.md
+*.cmd
+
+# Local logs and temporary files
+*.log
+*.tmp
+tmp/
+temp/
+
+# Temporary Office files
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# Editor and OS files
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store

@@ -52,6 +52,37 @@ window.tools = [
     ]
   },
   {
+    "slug": "camtasia",
+    "name": "Camtasia",
+    "category": "Creativity and Media",
+    "location": "https://www.techsmith.com/camtasia/",
+    "cost": "Paid subscription with free download or trial options and education/team licensing options",
+    "description": "Camtasia is a screen recording and video editing tool for creating instructional videos, tutorials, demonstrations, narrated lessons, and polished classroom media.",
+    "pedagogicalUses": "Teachers can use Camtasia to record mini-lessons, model software steps, create flipped classroom videos, add captions, and build reusable explanations for students who need review or absent-work support. Students can also use it to produce narrated process videos or project reflections when video creation is part of the assignment.",
+    "teacherValue": "Camtasia is valuable when a teacher needs clearer video than a quick screen capture can provide. It gives teachers a practical way to record, edit, caption, and reuse explanations so direct instruction can be paused, replayed, and revisited outside the live lesson.",
+    "artifact": "Create a short video walkthrough that explains how to solve a multi-step math problem, with screen recording, voice narration, callouts, and captions for accessibility.",
+    "screenshots": [],
+    "pros": [
+      "Strong screen recording and editing tools in one program",
+      "Useful for flipped lessons, tutorials, and substitute plans",
+      "Captions, callouts, cursor effects, and templates can make videos easier to follow"
+    ],
+    "cons": [
+      "Full access requires a paid plan",
+      "Video editing takes time if the teacher wants a polished final product",
+      "Large video files may need careful storage and sharing decisions"
+    ],
+    "iste": [
+      "ISTE Educator 2.5 Designer",
+      "ISTE Educator 2.6 Facilitator",
+      "ISTE Student 1.6 Creative Communicator"
+    ],
+    "sources": [
+      "TechSmith Camtasia official website",
+      "TechSmith Camtasia pricing page"
+    ]
+  },
+  {
     "slug": "canva",
     "name": "Canva",
     "category": "Creativity and Media",
@@ -123,6 +154,217 @@ window.tools = [
     ],
     "sources": [
       "Canva official website"
+    ]
+  },
+  {
+    "slug": "chatgpt",
+    "name": "ChatGPT",
+    "category": "AI",
+    "location": "https://chatgpt.com",
+    "cost": "Free with paid upgrades",
+    "description": "ChatGPT is an AI is a useful support tool for teachers. ChatGPT can help with brainstorming and creating lesson materials.",
+    "pedagogicalUses": "Teachers can use ChatGPT to come up with lesson ideas, create examples, adjust materials for different student levels, and draft feedback. The teacher still needs to review everything and make sure it fits the class, the lesson objective, and the students.",
+    "teacherValue": "ChatGPT can save time during planning and help teachers think through different ways to teach the same concept.",
+    "artifact": "Example Teacher Prompt: Create an 8th grade science lesson about Photosynthesis. The lesson should take about 45 minutes and include a short introduction, one hands-on activity, vocabulary words, and a short exit ticket. Keep the language appropriate for middle school students and make sure the lesson connects to real-life examples.",
+    "screenshots": [
+      {
+        "src": "tools/chatgpt/images/Screenshot 2026-07-02 161200.png",
+        "alt": "ChatGPT screenshot 1",
+        "caption": "ChatGPT Screenshot 1"
+      },
+      {
+        "src": "tools/chatgpt/images/Screenshot 2026-07-02 161827.png",
+        "alt": "ChatGPT screenshot 2",
+        "caption": "ChatGPT Screenshot 2"
+      },
+      {
+        "src": "tools/chatgpt/images/Screenshot 2026-07-02 162037.png",
+        "alt": "ChatGPT screenshot 3",
+        "caption": "ChatGPT Screenshot 3"
+      }
+    ],
+    "pros": [
+      "Fast brainstorming, generate ideas quickly",
+      "Helpful for differentiation",
+      "Good for revising and improving drafts"
+    ],
+    "cons": [
+      "Information needs to be checked repeatedly",
+      "Teachers need to be careful with student privacy",
+      "Work should be cited properly"
+    ],
+    "iste": [
+      "ISTE Educator 2.4 Collaborator",
+      "ISTE Educator 2.5 Designer"
+    ],
+    "sources": [
+      "OpenAI ChatGPT website"
+    ]
+  },
+  {
+    "slug": "coursera",
+    "name": "Coursera",
+    "category": "Collaboration and Productivity",
+    "location": "https://www.coursera.org/",
+    "cost": "Free account options with paid certificates, subscriptions, degree programs, and institutional plans",
+    "description": "Coursera is an online learning platform that offers courses, professional certificates, guided projects, and degree programs from universities, companies, and other expert partners.",
+    "pedagogicalUses": "Teachers can use Coursera as an enrichment or professional learning resource, especially for career-connected topics such as technology, business, data, AI, and project management. For older students, selected courses or course previews can support independent study, career exploration, and extension work connected to college and workforce readiness.",
+    "teacherValue": "Coursera gives teachers access to structured, expert-developed learning materials that can support personal professional growth or help students see how classroom skills connect to real careers. It is most useful when a teacher curates a specific course, module, or certificate pathway instead of sending students into the catalog without direction.",
+    "artifact": "Create a career exploration choice board that links students to selected Coursera course previews or professional certificate pages related to computer science, data analytics, education, or business careers.",
+    "screenshots": [],
+    "pros": [
+      "Large catalog from universities and industry partners",
+      "Strong fit for professional learning and career exploration",
+      "Certificates and guided projects can help learners document skill growth"
+    ],
+    "cons": [
+      "Full certificates and many programs require payment",
+      "The catalog can overwhelm students without teacher curation",
+      "Course difficulty and time commitment vary widely"
+    ],
+    "iste": [
+      "ISTE Student 1.1 Empowered Learner",
+      "ISTE Student 1.3 Knowledge Constructor",
+      "ISTE Educator 2.1 Learner"
+    ],
+    "sources": [
+      "Coursera official website",
+      "Coursera Plus official page",
+      "Coursera for Campus official page"
+    ]
+  },
+  {
+    "slug": "desmos",
+    "name": "Desmos",
+    "category": "Math, STEM, and Coding",
+    "location": "https://www.desmos.com",
+    "cost": "Free",
+    "description": "An online graphing calculator and activity platform for mathematics instruction.",
+    "pedagogicalUses": "Students can explore functions, transformations, systems of equations, and mathematical modeling through visual, interactive tasks.",
+    "teacherValue": "Desmos helps make abstract math concepts visible and supports inquiry-based lessons. It has graphing applications for math visualizations.",
+    "artifact": "The screenshots show some interactive examples from Desmos.",
+    "screenshots": [
+      {
+        "src": "tools/desmos/images/Screenshot 2026-06-21 143718.png",
+        "alt": "Desmos screenshot 1",
+        "caption": "Desmos Screenshot 1"
+      },
+      {
+        "src": "tools/desmos/images/Screenshot 2026-06-21 143802.png",
+        "alt": "Desmos screenshot 2",
+        "caption": "Desmos Screenshot 2"
+      },
+      {
+        "src": "tools/desmos/images/Screenshot 2026-06-21 143838.png",
+        "alt": "Desmos screenshot 3",
+        "caption": "Desmos Screenshot 3"
+      },
+      {
+        "src": "tools/desmos/images/Screenshot 2026-06-21 144004.png",
+        "alt": "Desmos screenshot 4",
+        "caption": "Desmos Screenshot 4"
+      },
+      {
+        "src": "tools/desmos/images/Screenshot 2026-06-21 145256.png",
+        "alt": "Desmos screenshot 5",
+        "caption": "Desmos Screenshot 5"
+      },
+      {
+        "src": "tools/desmos/images/Screenshot 2026-06-21 145401.png",
+        "alt": "Desmos screenshot 6",
+        "caption": "Desmos Screenshot 6"
+      },
+      {
+        "src": "tools/desmos/images/Screenshot 2026-06-21 145428.png",
+        "alt": "Desmos screenshot 7",
+        "caption": "Desmos Screenshot 7"
+      },
+      {
+        "src": "tools/desmos/images/Screenshot 2026-06-21 145443.png",
+        "alt": "Desmos screenshot 8",
+        "caption": "Desmos Screenshot 8"
+      }
+    ],
+    "pros": [
+      "Strong visual math support",
+      "Easy student access",
+      "Useful activity library"
+    ],
+    "cons": [
+      "Requires internet access",
+      "Advanced activity creation takes practice"
+    ],
+    "iste": [
+      "ISTE Student 1.4 Innovative Designer",
+      "ISTE Student 1.5 Computational Thinker"
+    ],
+    "sources": [
+      "Desmos official website"
+    ]
+  },
+  {
+    "slug": "github",
+    "name": "GitHub",
+    "category": "Math, STEM, and Coding",
+    "location": "https://github.com/",
+    "cost": "Free individual accounts with paid team and enterprise plans; GitHub Education benefits are available at no cost for eligible students, teachers, and schools",
+    "description": "GitHub is a cloud platform for storing code, tracking changes with Git, collaborating on projects, reviewing work, managing issues, and publishing software or documentation.",
+    "pedagogicalUses": "Teachers can use GitHub in coding, STEM, robotics, data, and web design courses to help students practice version control, document projects, collaborate on code, and build portfolios. GitHub Classroom can support distributing assignments, collecting student work, and using automated checks when that workflow fits the course.",
+    "teacherValue": "GitHub helps teachers move student coding work beyond isolated files. It gives students a professional workflow for saving progress, explaining changes, collaborating responsibly, and showing evidence of learning over time.",
+    "artifact": "Create a class repository where students publish a simple HTML project, use commits to document progress, and write a README explaining the purpose of their code.",
+    "screenshots": [],
+    "pros": [
+      "Industry-standard workflow for code, version control, and collaboration",
+      "Strong portfolio value for students",
+      "Education resources and classroom workflows are available for eligible educators"
+    ],
+    "cons": [
+      "Git concepts can be confusing for beginners",
+      "Public/private repository settings require careful teacher setup",
+      "Students need clear expectations for collaboration, attribution, and academic honesty"
+    ],
+    "iste": [
+      "ISTE Student 1.4 Innovative Designer",
+      "ISTE Student 1.5 Computational Thinker",
+      "ISTE Student 1.6 Creative Communicator"
+    ],
+    "sources": [
+      "GitHub official website",
+      "GitHub Docs: What is GitHub?",
+      "GitHub Education official page",
+      "GitHub Classroom official page"
+    ]
+  },
+  {
+    "slug": "google-classroom",
+    "name": "Google Classroom",
+    "category": "Communication and Classroom Management",
+    "location": "https://classroom.google.com/",
+    "cost": "Included with Google Workspace for Education; Education Fundamentals is no cost for qualifying institutions, with paid editions and add-ons available",
+    "description": "Google Classroom is a classroom management and assignment platform that helps teachers create classes, post materials, assign work, collect submissions, give feedback, and communicate with students.",
+    "pedagogicalUses": "Teachers can use Google Classroom to organize daily lessons, share directions, attach Google Drive files, collect assignments, post announcements, grade work, and give real-time feedback. Students can use it to track classwork, submit assignments, review grades, and find resources in one consistent place.",
+    "teacherValue": "Google Classroom is valuable because it reduces the friction around distributing work and collecting evidence of learning. It works especially well when teachers already use Google Docs, Slides, Forms, Drive, Calendar, and Meet.",
+    "artifact": "Create a weekly topic in Google Classroom with lesson materials, one assignment, a Google Forms exit ticket, and a class announcement that summarizes the learning target.",
+    "screenshots": [],
+    "pros": [
+      "Familiar workflow for schools using Google Workspace",
+      "Central place for assignments, materials, feedback, and communication",
+      "Integrates with Docs, Drive, Forms, Calendar, and other Google tools"
+    ],
+    "cons": [
+      "Works best when students and teachers already have managed Google accounts",
+      "Classroom organization depends on consistent teacher naming and posting habits",
+      "Some advanced features require paid Workspace editions or add-ons"
+    ],
+    "iste": [
+      "ISTE Educator 2.5 Designer",
+      "ISTE Educator 2.6 Facilitator",
+      "ISTE Student 1.1 Empowered Learner"
+    ],
+    "sources": [
+      "Google Classroom official product page",
+      "Google Classroom Help: About Classroom",
+      "Google Workspace for Education editions page"
     ]
   },
   {
@@ -252,6 +494,264 @@ window.tools = [
     ]
   },
   {
+    "slug": "ixl",
+    "name": "IXL",
+    "category": "Math, STEM, and Coding",
+    "location": "https://www.ixl.com/materials/i_guides/IXL_for_Daily_Instruction_Implementation_Guide.pdf",
+    "cost": "Paid subscription with family, classroom, school, and district options",
+    "description": "IXL is a personalized learning platform with standards-aligned practice, diagnostics, recommendations, and analytics across math and other K-12 subjects.",
+    "pedagogicalUses": "Students can practice targeted math skills, receive immediate feedback, build fluency, and work from diagnostic recommendations that support intervention, enrichment, and standards review.",
+    "teacherValue": "IXL helps teachers identify skill gaps, assign standards-aligned math practice, monitor progress, and use analytics to plan reteaching or small-group support.",
+    "artifact": "Add screenshot or sample standards-aligned math skill practice.",
+    "screenshots": [
+      {
+        "src": "tools/ixl/images/Screenshot 2026-06-21 144027.png",
+        "alt": "IXL screenshot 1",
+        "caption": "IXL Screenshot 1"
+      },
+      {
+        "src": "tools/ixl/images/Screenshot 2026-06-21 144116.png",
+        "alt": "IXL screenshot 2",
+        "caption": "IXL Screenshot 2"
+      },
+      {
+        "src": "tools/ixl/images/Screenshot 2026-06-21 144204.png",
+        "alt": "IXL screenshot 3",
+        "caption": "IXL Screenshot 3"
+      }
+    ],
+    "pros": [
+      "Large bank of standards-aligned math practice",
+      "Immediate feedback for students",
+      "Analytics can support differentiation and intervention planning"
+    ],
+    "cons": [
+      "Full access requires a paid membership or school subscription",
+      "Practice can feel repetitive without teacher framing",
+      "Best used alongside discussion, modeling, and problem-solving tasks"
+    ],
+    "iste": [
+      "ISTE Student 1.1 Empowered Learner",
+      "ISTE Student 1.3 Knowledge Constructor",
+      "ISTE Educator 2.7 Analyst"
+    ],
+    "sources": [
+      "IXL official website"
+    ]
+  },
+  {
+    "slug": "khan-academy",
+    "name": "Khan Academy",
+    "category": "Assessment and Review",
+    "location": "https://www.khanacademy.org/",
+    "cost": "Free",
+    "description": "Khan Academy is a nonprofit learning platform with instructional videos, articles, practice exercises, mastery learning tools, teacher dashboards, and resources across math, science, computing, humanities, test preparation, and more.",
+    "pedagogicalUses": "Teachers can use Khan Academy for skill practice, review stations, intervention, enrichment, flipped learning, and independent practice. Students can work through assigned skills, receive immediate feedback, and revisit explanations at their own pace.",
+    "teacherValue": "Khan Academy helps teachers provide extra practice without building every question from scratch. It is especially useful when a teacher wants a standards-aligned review option, quick formative data, or a support resource for students who need another explanation.",
+    "artifact": "Assign a short Khan Academy practice set connected to a current math standard, then use the class report to plan a small-group reteaching activity.",
+    "screenshots": [],
+    "pros": [
+      "Free access to a broad set of instructional resources",
+      "Useful for self-paced review, practice, and enrichment",
+      "Teacher tools can support progress monitoring and targeted follow-up"
+    ],
+    "cons": [
+      "Practice should be paired with discussion, reasoning, and teacher feedback",
+      "Students may need help choosing the right level or course",
+      "Internet access and account setup can affect classroom implementation"
+    ],
+    "iste": [
+      "ISTE Student 1.1 Empowered Learner",
+      "ISTE Student 1.3 Knowledge Constructor",
+      "ISTE Educator 2.7 Analyst"
+    ],
+    "sources": [
+      "Khan Academy official website",
+      "Khan Academy support resources for teachers",
+      "Khan Academy mission and nonprofit information"
+    ]
+  },
+  {
+    "slug": "magicschool-ai",
+    "name": "MagicSchool AI",
+    "category": "AI",
+    "location": "https://www.magicschool.ai",
+    "cost": "Free with paid upgrades",
+    "description": "MagicSchool AI is an AI tool made specifically for teachers. It can help with lesson planning, rubrics, differentiation, assessments, and communication. Since it is designed for education, many of the tools are already set up around common classroom tasks.",
+    "pedagogicalUses": "Teachers can use MagicSchool AI to create rubrics, lesson plans, writing prompts, scaffolds, text-level adjustments, and parent communication drafts. It can also help take one idea and turn it into several versions for different student needs.",
+    "teacherValue": "MagicSchool AI can save teachers time because it gives them a starting point for routine planning tasks. I think its biggest value is that it is education-focused, so the tools feel more connected to what teachers actually do. The teacher still has to review and revise the output, but it can make the first draft much easier to create.",
+    "artifact": "Example Teacher Prompt: Create a simple 8th grade science rubric for a student project about Newton’s Three Laws of Motion. The project should require students to explain each law, give a real-life example, and include a visual model or demonstration. Use student-friendly language and make the rubric easy to grade.",
+    "screenshots": [
+      {
+        "src": "tools/magicschool-ai/images/Screenshot 2026-07-02 162612.png",
+        "alt": "MagicSchool AI screenshot 1",
+        "caption": "MagicSchool AI Screenshot 1"
+      },
+      {
+        "src": "tools/magicschool-ai/images/Screenshot 2026-07-02 162705.png",
+        "alt": "MagicSchool AI screenshot 2",
+        "caption": "MagicSchool AI Screenshot 2"
+      },
+      {
+        "src": "tools/magicschool-ai/images/Screenshot 2026-07-02 162719.png",
+        "alt": "MagicSchool AI screenshot 3",
+        "caption": "MagicSchool AI Screenshot 3"
+      },
+      {
+        "src": "tools/magicschool-ai/images/Screenshot 2026-07-02 163218.png",
+        "alt": "MagicSchool AI screenshot 4",
+        "caption": "MagicSchool AI Screenshot 4"
+      }
+    ],
+    "pros": [
+      "Specific for Education with a lot of directed templates",
+      "Good for differentiation and scaffolded learning",
+      "Very quickly create draft materials"
+    ],
+    "cons": [
+      "Outputs requires revision and review",
+      "School district policies may not approve using AI in school",
+      "Teacher needs to develop curriculum that matches standards"
+    ],
+    "iste": [
+      "ISTE Educator 2.5 Designer",
+      "ISTE Educator 2.7 Analyst"
+    ],
+    "sources": [
+      "MagicSchool AI official website"
+    ]
+  },
+  {
+    "slug": "monday-com",
+    "name": "monday.com",
+    "category": "Collaboration and Productivity",
+    "location": "https://monday.com/",
+    "cost": "Free plan with paid plans and organization/team options",
+    "description": "monday.com is a work management platform for organizing tasks, projects, timelines, forms, dashboards, automations, and team workflows.",
+    "pedagogicalUses": "Teachers can use monday.com to manage long-term projects, group responsibilities, classroom production calendars, club planning, or professional team workflows. Students can use a shared board to track project steps, assign roles, update progress, and make group work more visible.",
+    "teacherValue": "monday.com is useful when a teacher wants students or colleagues to see the status of many moving parts at once. It can make project-based learning more manageable by turning vague group work into visible tasks, owners, dates, and progress updates.",
+    "artifact": "Create a project board for a student research presentation with columns for task, owner, due date, status, evidence link, and teacher feedback.",
+    "screenshots": [],
+    "pros": [
+      "Visual boards make project progress easy to scan",
+      "Dashboards, forms, automations, and views can support complex workflows",
+      "Useful for group projects, department planning, and recurring tasks"
+    ],
+    "cons": [
+      "Full classroom use may require a paid plan depending on class size and features",
+      "Setup can become too complex for simple assignments",
+      "Students need clear routines for updating tasks honestly and consistently"
+    ],
+    "iste": [
+      "ISTE Student 1.7 Global Collaborator",
+      "ISTE Student 1.4 Innovative Designer",
+      "ISTE Educator 2.4 Collaborator"
+    ],
+    "sources": [
+      "monday.com official website",
+      "monday.com pricing page",
+      "monday.com platform overview"
+    ]
+  },
+  {
+    "slug": "notion",
+    "name": "Notion",
+    "category": "Collaboration",
+    "location": "https://www.notion.com",
+    "cost": "Free with paid upgrades",
+    "description": "Notion is a flexible workspace that can be used for notes, planning pages, databases, checklists, and organizing resources. It can work like a digital binder where a teacher keeps lesson plans, project materials, links, calendars, and classroom resources in one place.",
+    "pedagogicalUses": "Teachers can use Notion to organize course materials, lesson plans, student project hubs, research notes, and collaborative planning spaces. Students could also use it to collect research, track project steps, and organize group work.",
+    "teacherValue": "Notion is useful because it can become one central place for planning and documentation. I could see using it to organize a class project, keep track of teaching resources, or build a simple portfolio of classroom materials. The main value is that it keeps information organized instead of spread across different files, notes, and websites.",
+    "artifact": "The screenshots show a Notion workspace for an 8th grade science class. It shows a list of videos, notes, and activities is presented to the class through the smartboard. Each notion page is a daily lesson.",
+    "screenshots": [
+      {
+        "src": "tools/notion/images/Screenshot 2026-07-02 160956.png",
+        "alt": "Notion screenshot 1",
+        "caption": "Notion Screenshot 1"
+      },
+      {
+        "src": "tools/notion/images/Screenshot 2026-07-02 161040.png",
+        "alt": "Notion screenshot 2",
+        "caption": "Notion Screenshot 2"
+      },
+      {
+        "src": "tools/notion/images/Screenshot 2026-07-02 161124.png",
+        "alt": "Notion screenshot 3",
+        "caption": "Notion Screenshot 3"
+      },
+      {
+        "src": "tools/notion/images/Screenshot 2026-07-02 161218.png",
+        "alt": "Notion screenshot 4",
+        "caption": "Notion Screenshot 4"
+      },
+      {
+        "src": "tools/notion/images/Screenshot 2026-07-02 161307.png",
+        "alt": "Notion screenshot 5",
+        "caption": "Notion Screenshot 5"
+      },
+      {
+        "src": "tools/notion/images/Screenshot 2026-07-02 161327.png",
+        "alt": "Notion screenshot 6",
+        "caption": "Notion Screenshot 6"
+      },
+      {
+        "src": "tools/notion/images/Screenshot 2026-07-02 161411.png",
+        "alt": "Notion screenshot 7",
+        "caption": "Notion Screenshot 7"
+      }
+    ],
+    "pros": [
+      "Flexible pages and databases",
+      "Strong organization tools",
+      "Useful for planning and portfolios",
+      "Keep classroom materials in one place, videos, lectures, etc."
+    ],
+    "cons": [
+      "Can become confusing if not continually organized",
+      "Students may need direction how to use it",
+      "It takes a lot of time to build a useful setup"
+    ],
+    "iste": [
+      "ISTE Student 1.3 Knowledge Constructor",
+      "ISTE Student 1.7 Global Collaborator"
+    ],
+    "sources": [
+      "Notion official website"
+    ]
+  },
+  {
+    "slug": "pocket-prep-com",
+    "name": "Pocket Prep",
+    "category": "Assessment and Review",
+    "location": "https://www.pocketprep.com/",
+    "cost": "Free account options and paid Premium exam-prep plans; pricing varies by exam and access level",
+    "description": "Pocket Prep is a mobile-focused exam preparation platform with practice questions, quizzes, progress tracking, and study tools for certification and licensing exams.",
+    "pedagogicalUses": "Teachers can use Pocket Prep with students preparing for career and technical education exams, healthcare certifications, IT credentials, fitness certifications, public safety exams, or other professional pathways. It works best as a supplemental practice tool alongside teacher instruction, discussion, and review.",
+    "teacherValue": "Pocket Prep gives students a structured way to practice exam-style questions in short sessions. For teachers supporting certification pathways, it can help students build routine, confidence, and familiarity with the style of questions they may see on credentialing exams.",
+    "artifact": "Create a weekly exam-prep routine where students complete a short Pocket Prep quiz, record missed-question topics, and choose one concept to review with the teacher or peer group.",
+    "screenshots": [],
+    "pros": [
+      "Mobile-friendly practice supports short, repeated study sessions",
+      "Covers many professional certification and licensing exams",
+      "Progress tracking can help students identify weak areas"
+    ],
+    "cons": [
+      "Full access often requires a paid Premium plan",
+      "Question practice should not replace instruction or hands-on skill development",
+      "Exam availability and pricing depend on the specific certification area"
+    ],
+    "iste": [
+      "ISTE Student 1.1 Empowered Learner",
+      "ISTE Student 1.3 Knowledge Constructor",
+      "ISTE Educator 2.7 Analyst"
+    ],
+    "sources": [
+      "Pocket Prep official website",
+      "Pocket Prep exam prep overview",
+      "Pocket Prep financial support information"
+    ]
+  },
+  {
     "slug": "powerpoint",
     "name": "PowerPoint",
     "category": "Creativity and Media",
@@ -371,41 +871,25 @@ window.tools = [
     ]
   },
   {
-    "slug": "ixl",
-    "name": "IXL",
-    "category": "Math, STEM, and Coding",
-    "location": "https://www.ixl.com/materials/i_guides/IXL_for_Daily_Instruction_Implementation_Guide.pdf",
-    "cost": "Paid subscription with family, classroom, school, and district options",
-    "description": "IXL is a personalized learning platform with standards-aligned practice, diagnostics, recommendations, and analytics across math and other K-12 subjects.",
-    "pedagogicalUses": "Students can practice targeted math skills, receive immediate feedback, build fluency, and work from diagnostic recommendations that support intervention, enrichment, and standards review.",
-    "teacherValue": "IXL helps teachers identify skill gaps, assign standards-aligned math practice, monitor progress, and use analytics to plan reteaching or small-group support.",
-    "artifact": "Add screenshot or sample standards-aligned math skill practice.",
-    "screenshots": [
-      {
-        "src": "tools/ixl/images/Screenshot 2026-06-21 144027.png",
-        "alt": "IXL screenshot 1",
-        "caption": "IXL Screenshot 1"
-      },
-      {
-        "src": "tools/ixl/images/Screenshot 2026-06-21 144116.png",
-        "alt": "IXL screenshot 2",
-        "caption": "IXL Screenshot 2"
-      },
-      {
-        "src": "tools/ixl/images/Screenshot 2026-06-21 144204.png",
-        "alt": "IXL screenshot 3",
-        "caption": "IXL Screenshot 3"
-      }
-    ],
+    "slug": "study-com",
+    "name": "Study.com",
+    "category": "Assessment and Review",
+    "location": "https://study.com/",
+    "cost": "Paid subscription plans with some free previews and resources",
+    "description": "Study.com is an online learning platform with short video lessons, quizzes, test prep, teacher certification resources, college credit pathways, and K-12 subject review materials.",
+    "pedagogicalUses": "Teachers can use Study.com to find supplemental review lessons, practice quizzes, test-prep resources, and short explanations for students who need another presentation of a concept. It may also support teacher certification review or professional exam preparation.",
+    "teacherValue": "Study.com can save planning time when a teacher needs a concise review resource or practice activity. It is most useful when the teacher previews the lesson, checks alignment, and uses it as a supplement rather than as the main curriculum.",
+    "artifact": "Choose one Study.com lesson connected to a current unit, pair it with a teacher-made reflection question, and use the quiz results as a quick readiness check.",
+    "screenshots": [],
     "pros": [
-      "Large bank of standards-aligned math practice",
-      "Immediate feedback for students",
-      "Analytics can support differentiation and intervention planning"
+      "Large library of short lessons and quizzes",
+      "Useful for review, test prep, and independent study",
+      "Includes resources for K-12, college credit, and teacher certification pathways"
     ],
     "cons": [
-      "Full access requires a paid membership or school subscription",
-      "Practice can feel repetitive without teacher framing",
-      "Best used alongside discussion, modeling, and problem-solving tasks"
+      "Most full features require a paid subscription",
+      "Content should be checked for alignment with local standards and course goals",
+      "Students may need guidance to avoid passive video watching"
     ],
     "iste": [
       "ISTE Student 1.1 Empowered Learner",
@@ -413,237 +897,105 @@ window.tools = [
       "ISTE Educator 2.7 Analyst"
     ],
     "sources": [
-      "IXL official website"
+      "Study.com official website",
+      "Study.com test prep pages",
+      "Study.com college credit and K-12 resources"
     ]
   },
   {
-    "slug": "desmos",
-    "name": "Desmos",
-    "category": "Math, STEM, and Coding",
-    "location": "https://www.desmos.com",
-    "cost": "Free",
-    "description": "An online graphing calculator and activity platform for mathematics instruction.",
-    "pedagogicalUses": "Students can explore functions, transformations, systems of equations, and mathematical modeling through visual, interactive tasks.",
-    "teacherValue": "Desmos helps make abstract math concepts visible and supports inquiry-based lessons. It has graphing applications for math visualizations.",
-    "artifact": "The screenshots show some interactive examples from Desmos.",
-    "screenshots": [
-      {
-        "src": "tools/desmos/images/Screenshot 2026-06-21 143718.png",
-        "alt": "Desmos screenshot 1",
-        "caption": "Desmos Screenshot 1"
-      },
-      {
-        "src": "tools/desmos/images/Screenshot 2026-06-21 143802.png",
-        "alt": "Desmos screenshot 2",
-        "caption": "Desmos Screenshot 2"
-      },
-      {
-        "src": "tools/desmos/images/Screenshot 2026-06-21 143838.png",
-        "alt": "Desmos screenshot 3",
-        "caption": "Desmos Screenshot 3"
-      },
-      {
-        "src": "tools/desmos/images/Screenshot 2026-06-21 144004.png",
-        "alt": "Desmos screenshot 4",
-        "caption": "Desmos Screenshot 4"
-      },
-      {
-        "src": "tools/desmos/images/Screenshot 2026-06-21 145256.png",
-        "alt": "Desmos screenshot 5",
-        "caption": "Desmos Screenshot 5"
-      },
-      {
-        "src": "tools/desmos/images/Screenshot 2026-06-21 145401.png",
-        "alt": "Desmos screenshot 6",
-        "caption": "Desmos Screenshot 6"
-      },
-      {
-        "src": "tools/desmos/images/Screenshot 2026-06-21 145428.png",
-        "alt": "Desmos screenshot 7",
-        "caption": "Desmos Screenshot 7"
-      },
-      {
-        "src": "tools/desmos/images/Screenshot 2026-06-21 145443.png",
-        "alt": "Desmos screenshot 8",
-        "caption": "Desmos Screenshot 8"
-      }
-    ],
+    "slug": "webquest-tool",
+    "name": "WebQuest Tool",
+    "category": "Collaboration and Productivity",
+    "location": "https://webquest.org/",
+    "cost": "Free instructional format; publishing cost depends on the tool used to build and host the WebQuest",
+    "description": "A WebQuest is a structured inquiry activity in which students use teacher-selected web resources to investigate a question, complete a meaningful task, and produce a final learning artifact.",
+    "pedagogicalUses": "Teachers can use a WebQuest to guide students through research, role-based collaboration, source analysis, problem solving, and product creation. The teacher selects the resources in advance so students spend more time using information thoughtfully and less time wandering through unrelated search results.",
+    "teacherValue": "The WebQuest format helps teachers turn web research into a purposeful lesson sequence. It supports inquiry, collaboration, and higher-order thinking while still giving students enough structure to stay focused.",
+    "artifact": "Create a WebQuest in Google Sites, Google Slides, or another simple publishing tool with sections for introduction, task, process, resources, evaluation rubric, and conclusion.",
+    "screenshots": [],
     "pros": [
-      "Strong visual math support",
-      "Easy student access",
-      "Useful activity library"
+      "Encourages inquiry, collaboration, and critical thinking",
+      "Teacher-selected resources can keep research focused and age-appropriate",
+      "Flexible enough to build with common classroom tools such as Google Sites, Slides, or a document"
     ],
     "cons": [
-      "Requires internet access",
-      "Advanced activity creation takes practice"
-    ],
-    "iste": [
-      "ISTE Student 1.4 Innovative Designer",
-      "ISTE Student 1.5 Computational Thinker"
-    ],
-    "sources": [
-      "Desmos official website"
-    ]
-  },
-  {
-    "slug": "chatgpt",
-    "name": "ChatGPT",
-    "category": "AI",
-    "location": "https://chatgpt.com",
-    "cost": "Free with paid upgrades",
-    "description": "ChatGPT is an AI is a useful support tool for teachers. ChatGPT can help with brainstorming and creating lesson materials.",
-    "pedagogicalUses": "Teachers can use ChatGPT to come up with lesson ideas, create examples, adjust materials for different student levels, and draft feedback. The teacher still needs to review everything and make sure it fits the class, the lesson objective, and the students.",
-    "teacherValue": "ChatGPT can save time during planning and help teachers think through different ways to teach the same concept.",
-    "artifact": "Example Teacher Prompt: Create an 8th grade science lesson about Photosynthesis. The lesson should take about 45 minutes and include a short introduction, one hands-on activity, vocabulary words, and a short exit ticket. Keep the language appropriate for middle school students and make sure the lesson connects to real-life examples.",
-    "screenshots": [
-      {
-        "src": "tools/chatgpt/images/Screenshot 2026-07-02 161200.png",
-        "alt": "ChatGPT screenshot 1",
-        "caption": "ChatGPT Screenshot 1"
-      },
-      {
-        "src": "tools/chatgpt/images/Screenshot 2026-07-02 161827.png",
-        "alt": "ChatGPT screenshot 2",
-        "caption": "ChatGPT Screenshot 2"
-      },
-      {
-        "src": "tools/chatgpt/images/Screenshot 2026-07-02 162037.png",
-        "alt": "ChatGPT screenshot 3",
-        "caption": "ChatGPT Screenshot 3"
-      }
-    ],
-    "pros": [
-      "Fast brainstorming, generate ideas quickly",
-      "Helpful for differentiation",
-      "Good for revising and improving drafts"
-    ],
-    "cons": [
-      "Information needs to be checked repeatedly",
-      "Teachers need to be careful with student privacy",
-      "Work should be cited properly"
-    ],
-    "iste": [
-      "ISTE Educator 2.4 Collaborator",
-      "ISTE Educator 2.5 Designer"
-    ],
-    "sources": [
-      "OpenAI ChatGPT website"
-    ]
-  },
-  {
-    "slug": "magicschool-ai",
-    "name": "MagicSchool AI",
-    "category": "AI",
-    "location": "https://www.magicschool.ai",
-    "cost": "Free with paid upgrades",
-    "description": "MagicSchool AI is an AI tool made specifically for teachers. It can help with lesson planning, rubrics, differentiation, assessments, and communication. Since it is designed for education, many of the tools are already set up around common classroom tasks.",
-    "pedagogicalUses": "Teachers can use MagicSchool AI to create rubrics, lesson plans, writing prompts, scaffolds, text-level adjustments, and parent communication drafts. It can also help take one idea and turn it into several versions for different student needs.",
-    "teacherValue": "MagicSchool AI can save teachers time because it gives them a starting point for routine planning tasks. I think its biggest value is that it is education-focused, so the tools feel more connected to what teachers actually do. The teacher still has to review and revise the output, but it can make the first draft much easier to create.",
-    "artifact": "Example Teacher Prompt: Create a simple 8th grade science rubric for a student project about Newton’s Three Laws of Motion. The project should require students to explain each law, give a real-life example, and include a visual model or demonstration. Use student-friendly language and make the rubric easy to grade.",
-    "screenshots": [
-      {
-        "src": "tools/magicschool-ai/images/Screenshot 2026-07-02 162612.png",
-        "alt": "MagicSchool AI screenshot 1",
-        "caption": "MagicSchool AI Screenshot 1"
-      },
-      {
-        "src": "tools/magicschool-ai/images/Screenshot 2026-07-02 162705.png",
-        "alt": "MagicSchool AI screenshot 2",
-        "caption": "MagicSchool AI Screenshot 2"
-      },
-      {
-        "src": "tools/magicschool-ai/images/Screenshot 2026-07-02 162719.png",
-        "alt": "MagicSchool AI screenshot 3",
-        "caption": "MagicSchool AI Screenshot 3"
-      },
-      {
-        "src": "tools/magicschool-ai/images/Screenshot 2026-07-02 163218.png",
-        "alt": "MagicSchool AI screenshot 4",
-        "caption": "MagicSchool AI Screenshot 4"
-      }
-    ],
-    "pros": [
-      "Specific for Education with a lot of directed templates",
-      "Good for differentiation and scaffolded learning",
-      "Very quickly create draft materials"
-    ],
-    "cons": [
-      "Outputs requires revision and review",
-      "School district policies may not approve using AI in school",
-      "Teacher needs to develop curriculum that matches standards"
-    ],
-    "iste": [
-      "ISTE Educator 2.5 Designer",
-      "ISTE Educator 2.7 Analyst"
-    ],
-    "sources": [
-      "MagicSchool AI official website"
-    ]
-  },
-  {
-    "slug": "notion",
-    "name": "Notion",
-    "category": "Collaboration",
-    "location": "https://www.notion.com",
-    "cost": "Free with paid upgrades",
-    "description": "Notion is a flexible workspace that can be used for notes, planning pages, databases, checklists, and organizing resources. It can work like a digital binder where a teacher keeps lesson plans, project materials, links, calendars, and classroom resources in one place.",
-    "pedagogicalUses": "Teachers can use Notion to organize course materials, lesson plans, student project hubs, research notes, and collaborative planning spaces. Students could also use it to collect research, track project steps, and organize group work.",
-    "teacherValue": "Notion is useful because it can become one central place for planning and documentation. I could see using it to organize a class project, keep track of teaching resources, or build a simple portfolio of classroom materials. The main value is that it keeps information organized instead of spread across different files, notes, and websites.",
-    "artifact": "The screenshots show a Notion workspace for an 8th grade science class. It shows a list of videos, notes, and activities is presented to the class through the smartboard. Each notion page is a daily lesson.",
-    "screenshots": [
-      {
-        "src": "tools/notion/images/Screenshot 2026-07-02 160956.png",
-        "alt": "Notion screenshot 1",
-        "caption": "Notion Screenshot 1"
-      },
-      {
-        "src": "tools/notion/images/Screenshot 2026-07-02 161040.png",
-        "alt": "Notion screenshot 2",
-        "caption": "Notion Screenshot 2"
-      },
-      {
-        "src": "tools/notion/images/Screenshot 2026-07-02 161124.png",
-        "alt": "Notion screenshot 3",
-        "caption": "Notion Screenshot 3"
-      },
-      {
-        "src": "tools/notion/images/Screenshot 2026-07-02 161218.png",
-        "alt": "Notion screenshot 4",
-        "caption": "Notion Screenshot 4"
-      },
-      {
-        "src": "tools/notion/images/Screenshot 2026-07-02 161307.png",
-        "alt": "Notion screenshot 5",
-        "caption": "Notion Screenshot 5"
-      },
-      {
-        "src": "tools/notion/images/Screenshot 2026-07-02 161327.png",
-        "alt": "Notion screenshot 6",
-        "caption": "Notion Screenshot 6"
-      },
-      {
-        "src": "tools/notion/images/Screenshot 2026-07-02 161411.png",
-        "alt": "Notion screenshot 7",
-        "caption": "Notion Screenshot 7"
-      }
-    ],
-    "pros": [
-      "Flexible pages and databases",
-      "Strong organization tools",
-      "Useful for planning and portfolios",
-      "Keep classroom materials in one place, videos, lectures, etc."
-    ],
-    "cons": [
-      "Can become confusing if not continually organized",
-      "Students may need direction how to use it",
-      "It takes a lot of time to build a useful setup"
+      "Requires careful teacher curation of reliable sources",
+      "Poorly designed WebQuests can become simple worksheet hunts",
+      "Links need ongoing maintenance because web resources change"
     ],
     "iste": [
       "ISTE Student 1.3 Knowledge Constructor",
-      "ISTE Student 1.7 Global Collaborator"
+      "ISTE Student 1.7 Global Collaborator",
+      "ISTE Educator 2.5 Designer"
     ],
     "sources": [
-      "Notion official website"
+      "WebQuest.org",
+      "WebQuest model overview from San Diego State University/Bernie Dodge materials",
+      "WebQuest research and education summaries"
+    ]
+  },
+  {
+    "slug": "wolfram-alpha",
+    "name": "Wolfram|Alpha",
+    "category": "Math, STEM, and Coding",
+    "location": "https://www.wolframalpha.com/",
+    "cost": "Free basic access with paid Pro, student, and educator options",
+    "description": "Wolfram|Alpha is a computational knowledge engine that answers math, science, data, and general knowledge questions by computing results from curated data and algorithms.",
+    "pedagogicalUses": "Teachers can use Wolfram|Alpha to check calculations, explore graphs, compare units, model functions, investigate statistics, and support STEM problem solving. Students can use it to test conjectures, verify work, and ask computational questions when they also explain their reasoning.",
+    "teacherValue": "Wolfram|Alpha is valuable because it can quickly generate exact answers, graphs, step-by-step support, and alternative representations. It is strongest when the teacher frames it as a reasoning and verification tool rather than a shortcut around showing work.",
+    "artifact": "Ask students to solve a system of equations by hand, verify the result in Wolfram|Alpha, and write a short comparison of the algebraic solution and the graph.",
+    "screenshots": [],
+    "pros": [
+      "Strong support for mathematics, science, units, graphs, and data",
+      "Helpful for checking work and exploring alternate representations",
+      "Paid Pro features add step-by-step solutions, uploads, and expanded tools"
+    ],
+    "cons": [
+      "Students may overuse it as an answer machine",
+      "Some advanced explanations and step-by-step features require Pro access",
+      "Teachers need to set expectations for showing reasoning and citing tool use"
+    ],
+    "iste": [
+      "ISTE Student 1.5 Computational Thinker",
+      "ISTE Student 1.3 Knowledge Constructor",
+      "ISTE Educator 2.5 Designer"
+    ],
+    "sources": [
+      "Wolfram|Alpha official website",
+      "Wolfram|Alpha Pro official page",
+      "Wolfram education resources"
+    ]
+  },
+  {
+    "slug": "wolfram-mathematica",
+    "name": "Wolfram Mathematica",
+    "category": "Math, STEM, and Coding",
+    "location": "https://www.wolfram.com/mathematica/",
+    "cost": "Paid license with free trial, student, educator, school, and institutional licensing options",
+    "description": "Wolfram Mathematica is a technical computing environment for symbolic mathematics, numerical computation, visualization, data analysis, modeling, simulation, programming, and interactive notebooks.",
+    "pedagogicalUses": "Teachers can use Mathematica in advanced math, STEM, engineering, statistics, computer science, and research settings where students need to model problems, manipulate symbolic expressions, visualize data, or explore computational thinking in notebooks.",
+    "teacherValue": "Mathematica is powerful for classrooms where computation, modeling, and visualization are central to the learning goal. It allows teachers and students to move from a question to symbolic work, numerical testing, graphs, and written explanation in one notebook environment.",
+    "artifact": "Create a Mathematica notebook that models projectile motion, includes sliders for initial velocity and angle, and asks students to interpret how the graph changes.",
+    "screenshots": [],
+    "pros": [
+      "Deep symbolic, numeric, visualization, and notebook tools",
+      "Excellent fit for advanced STEM modeling and computational exploration",
+      "Education licensing and institutional access options are available"
+    ],
+    "cons": [
+      "Paid licensing can limit access",
+      "The tool has a steep learning curve for beginners",
+      "It may be more powerful than needed for basic classroom calculations"
+    ],
+    "iste": [
+      "ISTE Student 1.5 Computational Thinker",
+      "ISTE Student 1.4 Innovative Designer",
+      "ISTE Educator 2.5 Designer"
+    ],
+    "sources": [
+      "Wolfram Mathematica official website",
+      "Wolfram Mathematica pricing page",
+      "Wolfram education resources"
     ]
   }
 ];

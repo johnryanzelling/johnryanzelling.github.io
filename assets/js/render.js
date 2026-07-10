@@ -3,6 +3,9 @@
   const LIVE_MODULES_DATA = "data/live_modules.json";
   const FALLBACK_LIVE_TOOLS = [];
   const FALLBACK_LIVE_MODULES = [];
+  const LIGHTBOX_MIN_ZOOM = 1;
+  const LIGHTBOX_MAX_ZOOM = 3;
+  const LIGHTBOX_ZOOM_STEP = 0.25;
   const toolList = document.querySelector("#tool-list");
   const toolCount = document.querySelector("#tool-count");
   const moduleList = document.querySelector("#module-list");
@@ -16,6 +19,16 @@
   let liveModuleOrder = new Map();
   let lightboxElement = null;
   let lightboxPreviousFocus = null;
+  let lightboxItems = [];
+  let lightboxIndex = 0;
+  let lightboxZoom = LIGHTBOX_MIN_ZOOM;
+  let lightboxPanX = 0;
+  let lightboxPanY = 0;
+  let lightboxIsPanning = false;
+  let lightboxPanStartX = 0;
+  let lightboxPanStartY = 0;
+  let lightboxPanOriginX = 0;
+  let lightboxPanOriginY = 0;
 
   function normalizeSlug(value) {
     return String(value || "")
@@ -366,8 +379,11 @@
   function closeLightbox() {
     if (!lightboxElement || lightboxElement.hidden) return;
 
+    resetLightboxZoom();
     lightboxElement.hidden = true;
     document.body.classList.remove("lightbox-open");
+    lightboxItems = [];
+    lightboxIndex = 0;
 
     if (lightboxPreviousFocus) {
       lightboxPreviousFocus.focus();
@@ -387,22 +403,77 @@
     lightboxElement.innerHTML = `
       <div class="lightbox-panel">
         <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close enlarged screenshot">Close</button>
-        <figure class="lightbox-figure">
-          <img class="lightbox-image" src="" alt="">
-          <figcaption class="lightbox-caption"></figcaption>
-        </figure>
+        <div class="lightbox-toolbar" aria-label="Image zoom controls">
+          <button class="lightbox-tool" type="button" data-lightbox-zoom-out aria-label="Zoom out">Zoom Out</button>
+          <button class="lightbox-tool" type="button" data-lightbox-zoom-in aria-label="Zoom in">Zoom In</button>
+          <button class="lightbox-tool" type="button" data-lightbox-zoom-reset aria-label="Reset zoom">Reset</button>
+          <span class="lightbox-zoom-status" aria-live="polite">100%</span>
+        </div>
+        <div class="lightbox-viewer">
+          <button class="lightbox-nav previous" type="button" data-lightbox-previous aria-label="Previous screenshot">&lsaquo;</button>
+          <figure class="lightbox-figure">
+            <div class="lightbox-image-frame">
+              <img class="lightbox-image" src="" alt="" draggable="false">
+            </div>
+            <figcaption class="lightbox-caption"></figcaption>
+          </figure>
+          <button class="lightbox-nav next" type="button" data-lightbox-next aria-label="Next screenshot">&rsaquo;</button>
+        </div>
       </div>
     `;
 
     lightboxElement.addEventListener("click", (event) => {
       if (event.target === lightboxElement || event.target.closest("[data-lightbox-close]")) {
         closeLightbox();
+        return;
+      }
+
+      if (event.target.closest("[data-lightbox-previous]")) {
+        showLightboxImage(lightboxIndex - 1);
+        return;
+      }
+
+      if (event.target.closest("[data-lightbox-next]")) {
+        showLightboxImage(lightboxIndex + 1);
+        return;
+      }
+
+      if (event.target.closest("[data-lightbox-zoom-out]")) {
+        setLightboxZoom(lightboxZoom - LIGHTBOX_ZOOM_STEP);
+        return;
+      }
+
+      if (event.target.closest("[data-lightbox-zoom-in]")) {
+        setLightboxZoom(lightboxZoom + LIGHTBOX_ZOOM_STEP);
+        return;
+      }
+
+      if (event.target.closest("[data-lightbox-zoom-reset]")) {
+        resetLightboxZoom();
       }
     });
+
+    lightboxElement.querySelector(".lightbox-image-frame").addEventListener("mousedown", startLightboxPan);
+
+    document.addEventListener("mousemove", moveLightboxPan);
+    document.addEventListener("mouseup", endLightboxPan);
 
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape") {
         closeLightbox();
+        return;
+      }
+
+      if (!lightboxElement || lightboxElement.hidden) return;
+
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        showLightboxImage(lightboxIndex - 1);
+      }
+
+      if (event.key === "ArrowRight") {
+        event.preventDefault();
+        showLightboxImage(lightboxIndex + 1);
       }
     });
 
@@ -410,18 +481,142 @@
     return lightboxElement;
   }
 
+  function clampValue(value, min, max) {
+    return Math.min(Math.max(value, min), max);
+  }
+
+  function getLightboxPanBounds() {
+    if (!lightboxElement || lightboxZoom <= LIGHTBOX_MIN_ZOOM) {
+      return { x: 0, y: 0 };
+    }
+
+    const image = lightboxElement.querySelector(".lightbox-image");
+    const frame = lightboxElement.querySelector(".lightbox-image-frame");
+    const imageWidth = image.clientWidth || frame.clientWidth || 0;
+    const imageHeight = image.clientHeight || frame.clientHeight || 0;
+
+    return {
+      x: Math.max(0, (imageWidth * (lightboxZoom - 1)) / 2),
+      y: Math.max(0, (imageHeight * (lightboxZoom - 1)) / 2)
+    };
+  }
+
+  function updateLightboxTransform() {
+    if (!lightboxElement) return;
+
+    const image = lightboxElement.querySelector(".lightbox-image");
+    const frame = lightboxElement.querySelector(".lightbox-image-frame");
+    const zoomStatus = lightboxElement.querySelector(".lightbox-zoom-status");
+    const zoomOutButton = lightboxElement.querySelector("[data-lightbox-zoom-out]");
+    const zoomInButton = lightboxElement.querySelector("[data-lightbox-zoom-in]");
+    const resetButton = lightboxElement.querySelector("[data-lightbox-zoom-reset]");
+    const panBounds = getLightboxPanBounds();
+
+    lightboxPanX = clampValue(lightboxPanX, -panBounds.x, panBounds.x);
+    lightboxPanY = clampValue(lightboxPanY, -panBounds.y, panBounds.y);
+    image.style.transform = `translate(${lightboxPanX}px, ${lightboxPanY}px) scale(${lightboxZoom})`;
+    image.classList.toggle("is-zoomed", lightboxZoom > LIGHTBOX_MIN_ZOOM);
+    frame.classList.toggle("is-zoomed", lightboxZoom > LIGHTBOX_MIN_ZOOM);
+    zoomStatus.textContent = `${Math.round(lightboxZoom * 100)}%`;
+    zoomOutButton.disabled = lightboxZoom <= LIGHTBOX_MIN_ZOOM;
+    zoomInButton.disabled = lightboxZoom >= LIGHTBOX_MAX_ZOOM;
+    resetButton.disabled = lightboxZoom === LIGHTBOX_MIN_ZOOM && lightboxPanX === 0 && lightboxPanY === 0;
+  }
+
+  function setLightboxZoom(value) {
+    const nextZoom = clampValue(value, LIGHTBOX_MIN_ZOOM, LIGHTBOX_MAX_ZOOM);
+
+    if (nextZoom === LIGHTBOX_MIN_ZOOM) {
+      lightboxPanX = 0;
+      lightboxPanY = 0;
+    }
+
+    lightboxZoom = nextZoom;
+    updateLightboxTransform();
+  }
+
+  function resetLightboxZoom() {
+    lightboxZoom = LIGHTBOX_MIN_ZOOM;
+    lightboxPanX = 0;
+    lightboxPanY = 0;
+    lightboxIsPanning = false;
+    updateLightboxTransform();
+  }
+
+  function startLightboxPan(event) {
+    if (!lightboxElement || lightboxElement.hidden || lightboxZoom <= LIGHTBOX_MIN_ZOOM) return;
+
+    lightboxIsPanning = true;
+    lightboxPanStartX = event.clientX;
+    lightboxPanStartY = event.clientY;
+    lightboxPanOriginX = lightboxPanX;
+    lightboxPanOriginY = lightboxPanY;
+    lightboxElement.querySelector(".lightbox-image-frame").classList.add("is-panning");
+    event.preventDefault();
+  }
+
+  function moveLightboxPan(event) {
+    if (!lightboxIsPanning || lightboxZoom <= LIGHTBOX_MIN_ZOOM) return;
+
+    const panBounds = getLightboxPanBounds();
+    lightboxPanX = clampValue(lightboxPanOriginX + event.clientX - lightboxPanStartX, -panBounds.x, panBounds.x);
+    lightboxPanY = clampValue(lightboxPanOriginY + event.clientY - lightboxPanStartY, -panBounds.y, panBounds.y);
+    updateLightboxTransform();
+  }
+
+  function endLightboxPan() {
+    if (!lightboxIsPanning) return;
+
+    lightboxIsPanning = false;
+    if (lightboxElement) {
+      lightboxElement.querySelector(".lightbox-image-frame").classList.remove("is-panning");
+    }
+  }
+
+  function getLightboxItem(trigger) {
+    return {
+      src: trigger.dataset.lightboxSrc,
+      alt: trigger.dataset.lightboxAlt || "",
+      caption: trigger.dataset.lightboxCaption || trigger.dataset.lightboxAlt || "",
+      index: Number(trigger.dataset.lightboxIndex)
+    };
+  }
+
+  function showLightboxImage(index) {
+    if (!lightboxElement || !lightboxItems.length) return;
+
+    const maxIndex = lightboxItems.length - 1;
+    const image = lightboxElement.querySelector(".lightbox-image");
+    const caption = lightboxElement.querySelector(".lightbox-caption");
+    const previousButton = lightboxElement.querySelector("[data-lightbox-previous]");
+    const nextButton = lightboxElement.querySelector("[data-lightbox-next]");
+    const hasMultipleImages = lightboxItems.length > 1;
+
+    lightboxIndex = Math.min(Math.max(index, 0), maxIndex);
+    resetLightboxZoom();
+    image.src = lightboxItems[lightboxIndex].src;
+    image.alt = lightboxItems[lightboxIndex].alt;
+    caption.textContent = lightboxItems[lightboxIndex].caption;
+    previousButton.hidden = !hasMultipleImages;
+    nextButton.hidden = !hasMultipleImages;
+    previousButton.disabled = !hasMultipleImages || lightboxIndex === 0;
+    nextButton.disabled = !hasMultipleImages || lightboxIndex === maxIndex;
+  }
+
   function openLightbox(trigger) {
     const lightbox = ensureLightbox();
     if (!lightbox) return;
 
-    const image = lightbox.querySelector(".lightbox-image");
-    const caption = lightbox.querySelector(".lightbox-caption");
+    const galleryId = trigger.dataset.lightboxGallery;
+    const clickedIndex = Number(trigger.dataset.lightboxIndex);
     const closeButton = lightbox.querySelector(".lightbox-close");
+    const galleryTriggers = Array.from(document.querySelectorAll(".lightbox-trigger"))
+      .filter((button) => button.dataset.lightboxGallery === galleryId);
+    const selectedIndex = galleryTriggers.findIndex((button) => Number(button.dataset.lightboxIndex) === clickedIndex);
 
     lightboxPreviousFocus = trigger;
-    image.src = trigger.dataset.lightboxSrc;
-    image.alt = trigger.dataset.lightboxAlt || "";
-    caption.textContent = trigger.dataset.lightboxCaption || trigger.dataset.lightboxAlt || "";
+    lightboxItems = galleryTriggers.length ? galleryTriggers.map(getLightboxItem) : [getLightboxItem(trigger)];
+    showLightboxImage(selectedIndex >= 0 ? selectedIndex : 0);
     lightbox.hidden = false;
     document.body.classList.add("lightbox-open");
     closeButton.focus();
@@ -462,7 +657,7 @@
               const imageCaption = escapeHtml(image.caption);
               return `
                 <figure class="gallery-slide">
-                  <button class="lightbox-trigger" type="button" data-lightbox-src="${imageSrc}" data-lightbox-alt="${imageAlt}" data-lightbox-caption="${imageCaption}" aria-label="Open ${imageAlt} larger">
+                  <button class="lightbox-trigger" type="button" data-lightbox-gallery="${galleryId}" data-lightbox-index="${imageIndex}" data-lightbox-src="${imageSrc}" data-lightbox-alt="${imageAlt}" data-lightbox-caption="${imageCaption}" aria-label="Open ${imageAlt} larger">
                     <img src="${imageSrc}" alt="${imageAlt}" loading="lazy">
                   </button>
                   <figcaption>${imageCaption}</figcaption>

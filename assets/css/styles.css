@@ -674,6 +674,56 @@ main {
   max-height: calc(100vh - 36px);
 }
 
+.lightbox-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.lightbox-tool,
+.lightbox-zoom-status {
+  min-height: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 900;
+  padding: 6px 10px;
+}
+
+.lightbox-tool {
+  cursor: pointer;
+}
+
+.lightbox-tool:hover:not(:disabled),
+.lightbox-tool:focus-visible:not(:disabled) {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: white;
+}
+
+.lightbox-tool:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.lightbox-zoom-status {
+  display: inline-grid;
+  min-width: 58px;
+  place-items: center;
+  color: var(--teal-dark);
+}
+
+.lightbox-viewer {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+}
+
 .lightbox-close {
   justify-self: end;
   min-height: 38px;
@@ -694,6 +744,38 @@ main {
   color: white;
 }
 
+.lightbox-nav {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.lightbox-nav:hover:not(:disabled),
+.lightbox-nav:focus-visible:not(:disabled) {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: white;
+}
+
+.lightbox-nav:disabled {
+  cursor: not-allowed;
+  opacity: 0.38;
+}
+
+.lightbox-nav[hidden] {
+  display: none;
+}
+
 .lightbox-figure {
   display: grid;
   gap: 10px;
@@ -705,13 +787,31 @@ main {
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.36);
 }
 
+.lightbox-image-frame {
+  max-height: calc(100vh - 220px);
+  overflow: hidden;
+  border-radius: 8px;
+  background: #f5f8f5;
+  cursor: default;
+}
+
+.lightbox-image-frame.is-zoomed {
+  cursor: grab;
+}
+
+.lightbox-image-frame.is-panning {
+  cursor: grabbing;
+}
+
 .lightbox-image {
   display: block;
   width: 100%;
-  max-height: calc(100vh - 180px);
+  max-height: calc(100vh - 220px);
   object-fit: contain;
-  border-radius: 8px;
   background: #f5f8f5;
+  transform-origin: center;
+  transition: transform 140ms ease;
+  user-select: none;
 }
 
 .lightbox-caption {
@@ -719,6 +819,18 @@ main {
   font-size: 0.92rem;
   font-weight: 800;
   text-align: center;
+}
+
+@media (max-width: 640px) {
+  .lightbox-viewer {
+    gap: 6px;
+  }
+
+  .lightbox-nav {
+    width: 36px;
+    height: 36px;
+    font-size: 1.45rem;
+  }
 }
 
 .tool-details div,

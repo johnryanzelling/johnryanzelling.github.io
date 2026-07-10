@@ -647,7 +647,7 @@ window.tools = [
     "description": "Khan Academy is a learning platform with instructional videos, articles, practice exercises, mastery learning tools, teacher dashboards, and resources across math, science, computing, humanities, test preparation, and more.",
     "pedagogicalUses": "Teachers can use Khan Academy for skill practice, review stations, intervention, enrichment, flipped learning, and independent practice. Students can work through assigned skills, receive immediate feedback, and revisit explanations at their own pace.",
     "teacherValue": "Khan Academy helps teachers provide extra practice without building every question from scratch. It is especially useful when a teacher wants a standards-aligned review option, quick formative data, or a support resource for students who need another explanation.",
-    "artifact": "The screenshots show Khan academy example pages",
+    "artifact": "The screenshots show Khan academy example pages, including an Algebra course and badge tracking page.",
     "screenshots": [
       {
         "src": "tools/khan-academy/images/Screenshot 2026-07-10 030356.png",
@@ -676,7 +676,7 @@ window.tools = [
       }
     ],
     "pros": [
-      "Free access to a broad set of instructional resources",
+      "Free access to a valuable set of instructional resources",
       "Useful for self-paced review, practice, and enrichment",
       "Teacher tools can support progress monitoring and targeted follow-up"
     ],
@@ -751,20 +751,36 @@ window.tools = [
     "name": "monday.com",
     "category": "Collaboration and Productivity",
     "location": "https://monday.com/",
-    "cost": "Free plan with paid plans and organization/team options",
+    "cost": "Free plan",
     "description": "monday.com is a work management platform for organizing tasks, projects, timelines, forms, dashboards, automations, and team workflows.",
     "pedagogicalUses": "Teachers can use monday.com to manage long-term projects, group responsibilities, classroom production calendars, club planning, or professional team workflows. Students can use a shared board to track project steps, assign roles, update progress, and make group work more visible.",
-    "teacherValue": "monday.com is useful when a teacher wants students or colleagues to see the status of many moving parts at once. It can make project-based learning more manageable by turning vague group work into visible tasks, owners, dates, and progress updates.",
-    "artifact": "Create a project board for a student research presentation with columns for task, owner, due date, status, evidence link, and teacher feedback.",
-    "screenshots": [],
+    "teacherValue": "monday.com is useful when a teacher wants students or colleagues to see the status of many ongoing projects at once. It can make project-based learning more manageable by turning vague group work into visible tasks, owners, dates, and progress updates.",
+    "artifact": "The screenshots show my personal monday.com dashboard where i track the progress of my various projects including VCSU degree program progress.",
+    "screenshots": [
+      {
+        "src": "tools/monday-com/images/Screenshot 2026-07-10 052845.png",
+        "alt": "monday.com screenshot 1",
+        "caption": "monday.com Screenshot 1"
+      },
+      {
+        "src": "tools/monday-com/images/Screenshot 2026-07-10 052942.png",
+        "alt": "monday.com screenshot 2",
+        "caption": "monday.com Screenshot 2"
+      },
+      {
+        "src": "tools/monday-com/images/Screenshot 2026-07-10 053047.png",
+        "alt": "monday.com screenshot 3",
+        "caption": "monday.com Screenshot 3"
+      }
+    ],
     "pros": [
       "Visual boards make project progress easy to scan",
       "Dashboards, forms, automations, and views can support complex workflows",
       "Useful for group projects, department planning, and recurring tasks"
     ],
     "cons": [
-      "Full classroom use may require a paid plan depending on class size and features",
-      "Setup can become too complex for simple assignments",
+      "Classroom use may require a paid plan depending on class size and features",
+      "Setup isn't meant for simple assignments, only longer term projects",
       "Students need clear routines for updating tasks honestly and consistently"
     ],
     "iste": [
@@ -852,16 +868,47 @@ window.tools = [
     "cost": "Free account options and paid Premium exam-prep plans; pricing varies by exam and access level",
     "description": "Pocket Prep is a mobile-focused exam preparation platform with practice questions, quizzes, progress tracking, and study tools for certification and licensing exams.",
     "pedagogicalUses": "Teachers can use Pocket Prep with students preparing for career and technical education exams, healthcare certifications, IT credentials, fitness certifications, public safety exams, or other professional pathways. It works best as a supplemental practice tool alongside teacher instruction, discussion, and review.",
-    "teacherValue": "Pocket Prep gives students a structured way to practice exam-style questions in short sessions. For teachers supporting certification pathways, it can help students build routine, confidence, and familiarity with the style of questions they may see on credentialing exams.",
-    "artifact": "Create a weekly exam-prep routine where students complete a short Pocket Prep quiz, record missed-question topics, and choose one concept to review with the teacher or peer group.",
-    "screenshots": [],
+    "teacherValue": "Pocket Prep gives students a structured way to practice exam-style questions in short sessions. For teachers supporting certification pathways, it can help students build routine, confidence, and familiarity with the style of questions they may see on credentialing exams. Students get an early start on career thinking.",
+    "artifact": "The screenshots show some sample exams in the medical, nursing, IT field. It also shows how pocketprep tracks exam study progress, and a daily sample quiz.",
+    "screenshots": [
+      {
+        "src": "tools/pocket-prep-com/images/Screenshot 2026-07-10 053329.png",
+        "alt": "Pocket Prep screenshot 1",
+        "caption": "Pocket Prep Screenshot 1"
+      },
+      {
+        "src": "tools/pocket-prep-com/images/Screenshot 2026-07-10 053439.png",
+        "alt": "Pocket Prep screenshot 2",
+        "caption": "Pocket Prep Screenshot 2"
+      },
+      {
+        "src": "tools/pocket-prep-com/images/Screenshot 2026-07-10 053459.png",
+        "alt": "Pocket Prep screenshot 3",
+        "caption": "Pocket Prep Screenshot 3"
+      },
+      {
+        "src": "tools/pocket-prep-com/images/Screenshot 2026-07-10 053549.png",
+        "alt": "Pocket Prep screenshot 4",
+        "caption": "Pocket Prep Screenshot 4"
+      },
+      {
+        "src": "tools/pocket-prep-com/images/Screenshot 2026-07-10 053607.png",
+        "alt": "Pocket Prep screenshot 5",
+        "caption": "Pocket Prep Screenshot 5"
+      },
+      {
+        "src": "tools/pocket-prep-com/images/Screenshot 2026-07-10 053624.png",
+        "alt": "Pocket Prep screenshot 6",
+        "caption": "Pocket Prep Screenshot 6"
+      }
+    ],
     "pros": [
       "Mobile-friendly practice supports short, repeated study sessions",
       "Covers many professional certification and licensing exams",
       "Progress tracking can help students identify weak areas"
     ],
     "cons": [
-      "Full access often requires a paid Premium plan",
+      "Full access mostly requires a paid Premium plan",
       "Question practice should not replace instruction or hands-on skill development",
       "Exam availability and pricing depend on the specific certification area"
     ],
@@ -1000,19 +1047,40 @@ window.tools = [
     "name": "Study.com",
     "category": "Assessment and Review",
     "location": "https://study.com/",
-    "cost": "Paid subscription plans with some free previews and resources",
+    "cost": "Paid subscription plans with teacher discounts",
     "description": "Study.com is an online learning platform with short video lessons, quizzes, test prep, teacher certification resources, college credit pathways, and K-12 subject review materials.",
     "pedagogicalUses": "Teachers can use Study.com to find supplemental review lessons, practice quizzes, test-prep resources, and short explanations for students who need another presentation of a concept. It may also support teacher certification review or professional exam preparation.",
-    "teacherValue": "Study.com can save planning time when a teacher needs a concise review resource or practice activity. It is most useful when the teacher previews the lesson, checks alignment, and uses it as a supplement rather than as the main curriculum.",
-    "artifact": "Choose one Study.com lesson connected to a current unit, pair it with a teacher-made reflection question, and use the quiz results as a quick readiness check.",
-    "screenshots": [],
+    "teacherValue": "Study.com can save planning time when a teacher needs a concise review resource or practice activity. It is most useful when the teacher previews the lesson, checks alignment, and uses it as a supplement rather than as the main curriculum. It is useful for studying for teacher certification exams, such as the Praxis.",
+    "artifact": "Screenshots show the available plans. At the time of the screenshots, my plan was no longer active but there are many educational resources for teachers to use in the classroom.",
+    "screenshots": [
+      {
+        "src": "tools/study-com/images/Screenshot 2026-07-10 053958.png",
+        "alt": "Study.com screenshot 1",
+        "caption": "Study.com Screenshot 1"
+      },
+      {
+        "src": "tools/study-com/images/Screenshot 2026-07-10 054058.png",
+        "alt": "Study.com screenshot 2",
+        "caption": "Study.com Screenshot 2"
+      },
+      {
+        "src": "tools/study-com/images/Screenshot 2026-07-10 054121.png",
+        "alt": "Study.com screenshot 3",
+        "caption": "Study.com Screenshot 3"
+      },
+      {
+        "src": "tools/study-com/images/Screenshot 2026-07-10 054201.png",
+        "alt": "Study.com screenshot 4",
+        "caption": "Study.com Screenshot 4"
+      }
+    ],
     "pros": [
       "Large library of short lessons and quizzes",
       "Useful for review, test prep, and independent study",
       "Includes resources for K-12, college credit, and teacher certification pathways"
     ],
     "cons": [
-      "Most full features require a paid subscription",
+      "Features require a paid subscription, educational discounts available.",
       "Content should be checked for alignment with local standards and course goals",
       "Students may need guidance to avoid passive video watching"
     ],
@@ -1036,8 +1104,24 @@ window.tools = [
     "description": "A WebQuest is a structured inquiry activity in which students use teacher-selected web resources to investigate a question, complete a meaningful task, and produce a final learning artifact.",
     "pedagogicalUses": "Teachers can use a WebQuest to guide students through research, role-based collaboration, source analysis, problem solving, and product creation. The teacher selects the resources in advance so students spend more time using information thoughtfully and less time wandering through unrelated search results.",
     "teacherValue": "The WebQuest format helps teachers turn web research into a purposeful lesson sequence. It supports inquiry, collaboration, and higher-order thinking while still giving students enough structure to stay focused.",
-    "artifact": "Create a WebQuest in Google Sites, Google Slides, or another simple publishing tool with sections for introduction, task, process, resources, evaluation rubric, and conclusion.",
-    "screenshots": [],
+    "artifact": "The screenshots show a WebQuest using a simple publishing tool with sections for introduction, task, process, resources, evaluation rubric, and conclusion.",
+    "screenshots": [
+      {
+        "src": "tools/webquest-tool/images/Screenshot 2026-07-09 170032.png",
+        "alt": "WebQuest Tool screenshot 1",
+        "caption": "WebQuest Tool Screenshot 1"
+      },
+      {
+        "src": "tools/webquest-tool/images/Screenshot 2026-07-09 171959.png",
+        "alt": "WebQuest Tool screenshot 2",
+        "caption": "WebQuest Tool Screenshot 2"
+      },
+      {
+        "src": "tools/webquest-tool/images/Screenshot 2026-07-09 172122.png",
+        "alt": "WebQuest Tool screenshot 3",
+        "caption": "WebQuest Tool Screenshot 3"
+      }
+    ],
     "pros": [
       "Encourages inquiry, collaboration, and critical thinking",
       "Teacher-selected resources can keep research focused and age-appropriate",
@@ -1061,15 +1145,46 @@ window.tools = [
   },
   {
     "slug": "wolfram-alpha",
-    "name": "Wolfram|Alpha",
+    "name": "Wolfram Alpha",
     "category": "Math, STEM, and Coding",
     "location": "https://www.wolframalpha.com/",
     "cost": "Free basic access with paid Pro, student, and educator options",
-    "description": "Wolfram|Alpha is a computational knowledge engine that answers math, science, data, and general knowledge questions by computing results from curated data and algorithms.",
-    "pedagogicalUses": "Teachers can use Wolfram|Alpha to check calculations, explore graphs, compare units, model functions, investigate statistics, and support STEM problem solving. Students can use it to test conjectures, verify work, and ask computational questions when they also explain their reasoning.",
-    "teacherValue": "Wolfram|Alpha is valuable because it can quickly generate exact answers, graphs, step-by-step support, and alternative representations. It is strongest when the teacher frames it as a reasoning and verification tool rather than a shortcut around showing work.",
-    "artifact": "Ask students to solve a system of equations by hand, verify the result in Wolfram|Alpha, and write a short comparison of the algebraic solution and the graph.",
-    "screenshots": [],
+    "description": "Wolfram Alpha is a computational knowledge engine that answers math, science, data, and general knowledge questions by computing results from curated data and algorithms.",
+    "pedagogicalUses": "Teachers can use Wolfram Alpha to check calculations, explore graphs, compare units, model functions, investigate statistics, and support STEM problem solving. Students can use it to test conjectures, verify work, and ask questions when they also explain their reasoning.",
+    "teacherValue": "Wolfram Alpha is valuable because it can quickly generate exact answers, graphs, step-by-step support, and alternative representations. It is strongest when the teacher frames it as a reasoning and verification tool rather than a shortcut around showing work or solving problems for students.",
+    "artifact": "Screenshots showing Wolfram Alpha demonstration for various math problems, showing the step by step solutions and alternate visual representations.",
+    "screenshots": [
+      {
+        "src": "tools/wolfram-alpha/images/Screenshot 2026-07-10 035352.png",
+        "alt": "Wolfram Alpha screenshot 1",
+        "caption": "Wolfram Alpha Screenshot 1"
+      },
+      {
+        "src": "tools/wolfram-alpha/images/Screenshot 2026-07-10 054759.png",
+        "alt": "Wolfram Alpha screenshot 2",
+        "caption": "Wolfram Alpha Screenshot 2"
+      },
+      {
+        "src": "tools/wolfram-alpha/images/Screenshot 2026-07-10 054834.png",
+        "alt": "Wolfram Alpha screenshot 3",
+        "caption": "Wolfram Alpha Screenshot 3"
+      },
+      {
+        "src": "tools/wolfram-alpha/images/Screenshot 2026-07-10 054931.png",
+        "alt": "Wolfram Alpha screenshot 4",
+        "caption": "Wolfram Alpha Screenshot 4"
+      },
+      {
+        "src": "tools/wolfram-alpha/images/Screenshot 2026-07-10 055101.png",
+        "alt": "Wolfram Alpha screenshot 5",
+        "caption": "Wolfram Alpha Screenshot 5"
+      },
+      {
+        "src": "tools/wolfram-alpha/images/Screenshot 2026-07-10 055123.png",
+        "alt": "Wolfram Alpha screenshot 6",
+        "caption": "Wolfram Alpha Screenshot 6"
+      }
+    ],
     "pros": [
       "Strong support for mathematics, science, units, graphs, and data",
       "Helpful for checking work and exploring alternate representations",
@@ -1098,17 +1213,48 @@ window.tools = [
     "location": "https://www.wolfram.com/mathematica/",
     "cost": "Paid license with free trial, student, educator, school, and institutional licensing options",
     "description": "Wolfram Mathematica is a technical computing environment for symbolic mathematics, numerical computation, visualization, data analysis, modeling, simulation, programming, and interactive notebooks.",
-    "pedagogicalUses": "Teachers can use Mathematica in advanced math, STEM, engineering, statistics, computer science, and research settings where students need to model problems, manipulate symbolic expressions, visualize data, or explore computational thinking in notebooks.",
+    "pedagogicalUses": "Teachers can use Mathematica in advanced math, STEM, engineering, statistics, computer science, and research settings where students need to model problems, manipulate symbolic expressions, visualize data, or explore computational thinking in notebooks. Teachers can also use it to create classroom visuals for lessons involving graphics and numerical problems.",
     "teacherValue": "Mathematica is powerful for classrooms where computation, modeling, and visualization are central to the learning goal. It allows teachers and students to move from a question to symbolic work, numerical testing, graphs, and written explanation in one notebook environment.",
-    "artifact": "Create a Mathematica notebook that models projectile motion, includes sliders for initial velocity and angle, and asks students to interpret how the graph changes.",
-    "screenshots": [],
+    "artifact": "The screenshots show demonstration projects that can be used in classrooms, as well as other functionality of the software.",
+    "screenshots": [
+      {
+        "src": "tools/wolfram-mathematica/images/Screenshot 2026-07-10 010431.png",
+        "alt": "Wolfram Mathematica screenshot 1",
+        "caption": "Wolfram Mathematica Screenshot 1"
+      },
+      {
+        "src": "tools/wolfram-mathematica/images/Screenshot 2026-07-10 055627.png",
+        "alt": "Wolfram Mathematica screenshot 2",
+        "caption": "Wolfram Mathematica Screenshot 2"
+      },
+      {
+        "src": "tools/wolfram-mathematica/images/Screenshot 2026-07-10 055658.png",
+        "alt": "Wolfram Mathematica screenshot 3",
+        "caption": "Wolfram Mathematica Screenshot 3"
+      },
+      {
+        "src": "tools/wolfram-mathematica/images/Screenshot 2026-07-10 060059.png",
+        "alt": "Wolfram Mathematica screenshot 4",
+        "caption": "Wolfram Mathematica Screenshot 4"
+      },
+      {
+        "src": "tools/wolfram-mathematica/images/Screenshot 2026-07-10 060224.png",
+        "alt": "Wolfram Mathematica screenshot 5",
+        "caption": "Wolfram Mathematica Screenshot 5"
+      },
+      {
+        "src": "tools/wolfram-mathematica/images/Screenshot 2026-07-10 060309.png",
+        "alt": "Wolfram Mathematica screenshot 6",
+        "caption": "Wolfram Mathematica Screenshot 6"
+      }
+    ],
     "pros": [
       "Deep symbolic, numeric, visualization, and notebook tools",
       "Excellent fit for advanced STEM modeling and computational exploration",
       "Education licensing and institutional access options are available"
     ],
     "cons": [
-      "Paid licensing can limit access",
+      "Unpaid access without a license may limit access",
       "The tool has a steep learning curve for beginners",
       "It may be more powerful than needed for basic classroom calculations"
     ],

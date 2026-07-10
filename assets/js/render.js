@@ -14,6 +14,8 @@
   let liveToolOrder = new Map();
   let liveModuleSlugs = null;
   let liveModuleOrder = new Map();
+  let lightboxElement = null;
+  let lightboxPreviousFocus = null;
 
   function normalizeSlug(value) {
     return String(value || "")
@@ -361,6 +363,70 @@
     };
   }
 
+  function closeLightbox() {
+    if (!lightboxElement || lightboxElement.hidden) return;
+
+    lightboxElement.hidden = true;
+    document.body.classList.remove("lightbox-open");
+
+    if (lightboxPreviousFocus) {
+      lightboxPreviousFocus.focus();
+      lightboxPreviousFocus = null;
+    }
+  }
+
+  function ensureLightbox() {
+    if (lightboxElement || !document.body) return lightboxElement;
+
+    lightboxElement = document.createElement("div");
+    lightboxElement.className = "lightbox";
+    lightboxElement.hidden = true;
+    lightboxElement.setAttribute("role", "dialog");
+    lightboxElement.setAttribute("aria-modal", "true");
+    lightboxElement.setAttribute("aria-label", "Enlarged screenshot");
+    lightboxElement.innerHTML = `
+      <div class="lightbox-panel">
+        <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close enlarged screenshot">Close</button>
+        <figure class="lightbox-figure">
+          <img class="lightbox-image" src="" alt="">
+          <figcaption class="lightbox-caption"></figcaption>
+        </figure>
+      </div>
+    `;
+
+    lightboxElement.addEventListener("click", (event) => {
+      if (event.target === lightboxElement || event.target.closest("[data-lightbox-close]")) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeLightbox();
+      }
+    });
+
+    document.body.appendChild(lightboxElement);
+    return lightboxElement;
+  }
+
+  function openLightbox(trigger) {
+    const lightbox = ensureLightbox();
+    if (!lightbox) return;
+
+    const image = lightbox.querySelector(".lightbox-image");
+    const caption = lightbox.querySelector(".lightbox-caption");
+    const closeButton = lightbox.querySelector(".lightbox-close");
+
+    lightboxPreviousFocus = trigger;
+    image.src = trigger.dataset.lightboxSrc;
+    image.alt = trigger.dataset.lightboxAlt || "";
+    caption.textContent = trigger.dataset.lightboxCaption || trigger.dataset.lightboxAlt || "";
+    lightbox.hidden = false;
+    document.body.classList.add("lightbox-open");
+    closeButton.focus();
+  }
+
   function renderGallery(tool, toolIndex) {
     const screenshots = getGalleryItems(tool);
 
@@ -391,10 +457,15 @@
           <div id="${galleryId}" class="gallery-track" tabindex="0">
             ${screenshots.map((item, imageIndex) => {
               const image = getScreenshotData(item, imageIndex, tool.name);
+              const imageSrc = escapeHtml(image.src);
+              const imageAlt = escapeHtml(image.alt);
+              const imageCaption = escapeHtml(image.caption);
               return `
                 <figure class="gallery-slide">
-                  <img src="${image.src}" alt="${image.alt}" loading="lazy">
-                  <figcaption>${image.caption}</figcaption>
+                  <button class="lightbox-trigger" type="button" data-lightbox-src="${imageSrc}" data-lightbox-alt="${imageAlt}" data-lightbox-caption="${imageCaption}" aria-label="Open ${imageAlt} larger">
+                    <img src="${imageSrc}" alt="${imageAlt}" loading="lazy">
+                  </button>
+                  <figcaption>${imageCaption}</figcaption>
                 </figure>
               `;
             }).join("")}
@@ -443,6 +514,12 @@
 
     document.querySelectorAll(".gallery-track").forEach((track) => {
       track.addEventListener("scroll", () => window.requestAnimationFrame(() => updateGalleryDots(track)));
+    });
+  }
+
+  function connectLightboxTriggers() {
+    document.querySelectorAll(".lightbox-trigger").forEach((button) => {
+      button.addEventListener("click", () => openLightbox(button));
     });
   }
 
@@ -500,6 +577,7 @@
     }
 
     connectGalleries();
+    connectLightboxTriggers();
   }
 
   function renderModules() {

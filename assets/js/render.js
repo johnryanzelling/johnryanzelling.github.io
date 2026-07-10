@@ -454,6 +454,7 @@
     });
 
     lightboxElement.querySelector(".lightbox-image-frame").addEventListener("mousedown", startLightboxPan);
+    lightboxElement.querySelector(".lightbox-image-frame").addEventListener("wheel", zoomLightboxWithWheel, { passive: false });
 
     document.addEventListener("mousemove", moveLightboxPan);
     document.addEventListener("mouseup", endLightboxPan);
@@ -571,6 +572,13 @@
     if (lightboxElement) {
       lightboxElement.querySelector(".lightbox-image-frame").classList.remove("is-panning");
     }
+  }
+
+  function zoomLightboxWithWheel(event) {
+    if (!lightboxElement || lightboxElement.hidden || event.deltaY === 0) return;
+
+    event.preventDefault();
+    setLightboxZoom(lightboxZoom + (event.deltaY < 0 ? LIGHTBOX_ZOOM_STEP : -LIGHTBOX_ZOOM_STEP));
   }
 
   function getLightboxItem(trigger) {

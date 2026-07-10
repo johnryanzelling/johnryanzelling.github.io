@@ -6,6 +6,7 @@
   const LIGHTBOX_MIN_ZOOM = 1;
   const LIGHTBOX_MAX_ZOOM = 3;
   const LIGHTBOX_ZOOM_STEP = 0.25;
+  const LIGHTBOX_SWIPE_MIN_DISTANCE = 48;
   const toolList = document.querySelector("#tool-list");
   const toolCount = document.querySelector("#tool-count");
   const moduleList = document.querySelector("#module-list");
@@ -29,6 +30,9 @@
   let lightboxPanStartY = 0;
   let lightboxPanOriginX = 0;
   let lightboxPanOriginY = 0;
+  let lightboxTouchMode = "";
+  let lightboxTouchStartX = 0;
+  let lightboxTouchStartY = 0;
 
   function normalizeSlug(value) {
     return String(value || "")
@@ -455,6 +459,10 @@
 
     lightboxElement.querySelector(".lightbox-image-frame").addEventListener("mousedown", startLightboxPan);
     lightboxElement.querySelector(".lightbox-image-frame").addEventListener("wheel", zoomLightboxWithWheel, { passive: false });
+    lightboxElement.querySelector(".lightbox-image-frame").addEventListener("touchstart", startLightboxTouch, { passive: false });
+    lightboxElement.querySelector(".lightbox-image-frame").addEventListener("touchmove", moveLightboxTouch, { passive: false });
+    lightboxElement.querySelector(".lightbox-image-frame").addEventListener("touchend", endLightboxTouch);
+    lightboxElement.querySelector(".lightbox-image-frame").addEventListener("touchcancel", endLightboxTouch);
 
     document.addEventListener("mousemove", moveLightboxPan);
     document.addEventListener("mouseup", endLightboxPan);
@@ -541,6 +549,10 @@
     lightboxPanX = 0;
     lightboxPanY = 0;
     lightboxIsPanning = false;
+    lightboxTouchMode = "";
+    if (lightboxElement) {
+      lightboxElement.querySelector(".lightbox-image-frame").classList.remove("is-panning");
+    }
     updateLightboxTransform();
   }
 
@@ -572,6 +584,72 @@
     if (lightboxElement) {
       lightboxElement.querySelector(".lightbox-image-frame").classList.remove("is-panning");
     }
+  }
+
+  function getTouchPoint(event) {
+    if (event.touches && event.touches.length) return event.touches[0];
+    if (event.changedTouches && event.changedTouches.length) return event.changedTouches[0];
+
+    return null;
+  }
+
+  function startLightboxTouch(event) {
+    if (!lightboxElement || lightboxElement.hidden || !event.touches || event.touches.length !== 1) return;
+
+    const touch = getTouchPoint(event);
+    if (!touch) return;
+
+    lightboxTouchStartX = touch.clientX;
+    lightboxTouchStartY = touch.clientY;
+
+    if (lightboxZoom > LIGHTBOX_MIN_ZOOM) {
+      lightboxTouchMode = "pan";
+      lightboxIsPanning = true;
+      lightboxPanStartX = touch.clientX;
+      lightboxPanStartY = touch.clientY;
+      lightboxPanOriginX = lightboxPanX;
+      lightboxPanOriginY = lightboxPanY;
+      lightboxElement.querySelector(".lightbox-image-frame").classList.add("is-panning");
+      event.preventDefault();
+      return;
+    }
+
+    lightboxTouchMode = "swipe";
+  }
+
+  function moveLightboxTouch(event) {
+    const touch = getTouchPoint(event);
+    if (!touch) return;
+
+    if (lightboxTouchMode === "pan" && lightboxZoom > LIGHTBOX_MIN_ZOOM) {
+      const panBounds = getLightboxPanBounds();
+      lightboxPanX = clampValue(lightboxPanOriginX + touch.clientX - lightboxPanStartX, -panBounds.x, panBounds.x);
+      lightboxPanY = clampValue(lightboxPanOriginY + touch.clientY - lightboxPanStartY, -panBounds.y, panBounds.y);
+      updateLightboxTransform();
+      event.preventDefault();
+    }
+  }
+
+  function endLightboxTouch(event) {
+    const touch = getTouchPoint(event);
+
+    if (lightboxTouchMode === "pan") {
+      endLightboxPan();
+      lightboxTouchMode = "";
+      return;
+    }
+
+    if (lightboxTouchMode === "swipe" && touch && lightboxItems.length > 1) {
+      const deltaX = touch.clientX - lightboxTouchStartX;
+      const deltaY = touch.clientY - lightboxTouchStartY;
+      const isHorizontalSwipe = Math.abs(deltaX) >= LIGHTBOX_SWIPE_MIN_DISTANCE && Math.abs(deltaX) > Math.abs(deltaY) * 1.25;
+
+      if (isHorizontalSwipe) {
+        showLightboxImage(lightboxIndex + (deltaX < 0 ? 1 : -1));
+      }
+    }
+
+    lightboxTouchMode = "";
   }
 
   function zoomLightboxWithWheel(event) {

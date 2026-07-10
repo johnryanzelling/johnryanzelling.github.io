@@ -24,5 +24,7 @@ window.liveTools = [
 
 window.liveModules = [
   "module1",
-  "module2"
+  "module2",
+  "module3",
+  "module4"
 ];

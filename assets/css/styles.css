@@ -299,6 +299,9 @@ main {
 }
 
 .filter-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
   min-height: 40px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -310,11 +313,35 @@ main {
   padding: 8px 12px;
 }
 
+.filter-label {
+  line-height: 1;
+}
+
+.filter-count {
+  display: inline-grid;
+  min-width: 20px;
+  height: 20px;
+  place-items: center;
+  border-radius: 999px;
+  background: #e4f2ef;
+  color: var(--teal-dark);
+  font-size: 0.72rem;
+  font-weight: 900;
+  line-height: 1;
+  padding: 0 6px;
+}
+
 .filter-button:hover,
 .filter-button.active {
   background: var(--teal);
   border-color: var(--teal);
   color: white;
+}
+
+.filter-button:hover .filter-count,
+.filter-button.active .filter-count {
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--teal-dark);
 }
 
 .tool-count {

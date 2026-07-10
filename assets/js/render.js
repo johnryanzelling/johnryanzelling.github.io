@@ -316,6 +316,31 @@
     }
   }
 
+  function getToolCategoryCount(filter) {
+    return getLiveTools().filter((tool) => matchesToolCategory(tool, filter)).length;
+  }
+
+  function updateFilterButtonCounts() {
+    document.querySelectorAll(".filter-button").forEach((button) => {
+      const filter = button.dataset.filter || "All";
+      const label = button.dataset.label || button.textContent.trim();
+      const count = getToolCategoryCount(filter);
+      const labelElement = document.createElement("span");
+      const countElement = document.createElement("span");
+
+      button.dataset.label = label;
+      button.textContent = "";
+      labelElement.className = "filter-label";
+      labelElement.textContent = label;
+      countElement.className = "filter-count";
+      countElement.textContent = String(count);
+      countElement.setAttribute("aria-hidden", "true");
+      button.setAttribute("aria-label", `${label}: ${count} ${count === 1 ? "tool" : "tools"}`);
+      button.appendChild(labelElement);
+      button.appendChild(countElement);
+    });
+  }
+
   function getGalleryItems(tool) {
     return Array.isArray(tool.screenshots) ? tool.screenshots : [];
   }
@@ -503,6 +528,7 @@
       loadLiveModuleSlugs()
     ]);
     updateLiveCountsAndLabels();
+    updateFilterButtonCounts();
     renderTools();
     renderModules();
   }

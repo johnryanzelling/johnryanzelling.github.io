@@ -56,20 +56,51 @@ window.tools = [
     "name": "Camtasia",
     "category": "Creativity and Media",
     "location": "https://www.techsmith.com/camtasia/",
-    "cost": "Paid subscription with free download or trial options and education/team licensing options",
+    "cost": "Paid subscription with free download or education licensing options",
     "description": "Camtasia is a screen recording and video editing tool for creating instructional videos, tutorials, demonstrations, narrated lessons, and polished classroom media.",
     "pedagogicalUses": "Teachers can use Camtasia to record mini-lessons, model software steps, create flipped classroom videos, add captions, and build reusable explanations for students who need review or absent-work support. Students can also use it to produce narrated process videos or project reflections when video creation is part of the assignment.",
-    "teacherValue": "Camtasia is valuable when a teacher needs clearer video than a quick screen capture can provide. It gives teachers a practical way to record, edit, caption, and reuse explanations so direct instruction can be paused, replayed, and revisited outside the live lesson.",
-    "artifact": "Create a short video walkthrough that explains how to solve a multi-step math problem, with screen recording, voice narration, callouts, and captions for accessibility.",
-    "screenshots": [],
+    "teacherValue": "Camtasia is valuable when a teacher needs clearer video than a quick screen capture can provide. It gives professional video editing but has an easier learning curve. Allows to export mp4 videos to share.",
+    "artifact": "The screenshots show a video that I made for a class, along with some screenshots from Camtasia software.",
+    "screenshots": [
+      {
+        "src": "tools/camtasia/images/Screenshot 2026-07-09 201852.png",
+        "alt": "Camtasia screenshot 1",
+        "caption": "Camtasia Screenshot 1"
+      },
+      {
+        "src": "tools/camtasia/images/Screenshot 2026-07-09 202013.png",
+        "alt": "Camtasia screenshot 2",
+        "caption": "Camtasia Screenshot 2"
+      },
+      {
+        "src": "tools/camtasia/images/Screenshot 2026-07-09 202135.png",
+        "alt": "Camtasia screenshot 3",
+        "caption": "Camtasia Screenshot 3"
+      },
+      {
+        "src": "tools/camtasia/images/Screenshot 2026-07-09 202208.png",
+        "alt": "Camtasia screenshot 4",
+        "caption": "Camtasia Screenshot 4"
+      },
+      {
+        "src": "tools/camtasia/images/Screenshot 2026-07-09 202241.png",
+        "alt": "Camtasia screenshot 5",
+        "caption": "Camtasia Screenshot 5"
+      },
+      {
+        "src": "tools/camtasia/images/Screenshot 2026-07-09 202300.png",
+        "alt": "Camtasia screenshot 6",
+        "caption": "Camtasia Screenshot 6"
+      }
+    ],
     "pros": [
       "Strong screen recording and editing tools in one program",
-      "Useful for flipped lessons, tutorials, and substitute plans",
+      "Useful for classroom lessons or other screen casting needs",
       "Captions, callouts, cursor effects, and templates can make videos easier to follow"
     ],
     "cons": [
-      "Full access requires a paid plan",
-      "Video editing takes time if the teacher wants a polished final product",
+      "Full access requires a paid plan, but educational license is for one year",
+      "Video editing takes time, although produces a quality result",
       "Large video files may need careful storage and sharing decisions"
     ],
     "iste": [
@@ -206,20 +237,51 @@ window.tools = [
     "name": "Coursera",
     "category": "Collaboration and Productivity",
     "location": "https://www.coursera.org/",
-    "cost": "Free account options with paid certificates, subscriptions, degree programs, and institutional plans",
+    "cost": "Free account options, monthly paid options, paid subscriptions, paid degree programs.",
     "description": "Coursera is an online learning platform that offers courses, professional certificates, guided projects, and degree programs from universities, companies, and other expert partners.",
     "pedagogicalUses": "Teachers can use Coursera as an enrichment or professional learning resource, especially for career-connected topics such as technology, business, data, AI, and project management. For older students, selected courses or course previews can support independent study, career exploration, and extension work connected to college and workforce readiness.",
-    "teacherValue": "Coursera gives teachers access to structured, expert-developed learning materials that can support personal professional growth or help students see how classroom skills connect to real careers. It is most useful when a teacher curates a specific course, module, or certificate pathway instead of sending students into the catalog without direction.",
-    "artifact": "Create a career exploration choice board that links students to selected Coursera course previews or professional certificate pages related to computer science, data analytics, education, or business careers.",
-    "screenshots": [],
+    "teacherValue": "Coursera gives teachers access to structured, expert-developed learning materials that can support personal professional growth or help students see how classroom skills connect to real careers. It can be used by teachers that need to have quality videos on an educational topic for their class.",
+    "artifact": "The screenshots show some of the classes I have completed, and also a class that I have showed when substitute teaching for a CTE construction technology program.",
+    "screenshots": [
+      {
+        "src": "tools/coursera/images/Screenshot 2026-07-09 201117.png",
+        "alt": "Coursera screenshot 1",
+        "caption": "Coursera Screenshot 1"
+      },
+      {
+        "src": "tools/coursera/images/Screenshot 2026-07-09 202815.png",
+        "alt": "Coursera screenshot 2",
+        "caption": "Coursera Screenshot 2"
+      },
+      {
+        "src": "tools/coursera/images/Screenshot 2026-07-09 203032.png",
+        "alt": "Coursera screenshot 3",
+        "caption": "Coursera Screenshot 3"
+      },
+      {
+        "src": "tools/coursera/images/Screenshot 2026-07-09 203145.png",
+        "alt": "Coursera screenshot 4",
+        "caption": "Coursera Screenshot 4"
+      },
+      {
+        "src": "tools/coursera/images/Screenshot 2026-07-09 203237.png",
+        "alt": "Coursera screenshot 5",
+        "caption": "Coursera Screenshot 5"
+      },
+      {
+        "src": "tools/coursera/images/Screenshot 2026-07-09 203404.png",
+        "alt": "Coursera screenshot 6",
+        "caption": "Coursera Screenshot 6"
+      }
+    ],
     "pros": [
-      "Large catalog from universities and industry partners",
-      "Strong fit for professional learning and career exploration",
+      "Large catalog of subjects, from real universities and industry partners",
+      "Strong professional learning and career exploration options, including education",
       "Certificates and guided projects can help learners document skill growth"
     ],
     "cons": [
       "Full certificates and many programs require payment",
-      "The catalog can overwhelm students without teacher curation",
+      "The catalog can overwhelm students",
       "Course difficulty and time commitment vary widely"
     ],
     "iste": [
@@ -307,12 +369,33 @@ window.tools = [
     "name": "GitHub",
     "category": "Math, STEM, and Coding",
     "location": "https://github.com/",
-    "cost": "Free individual accounts with paid team and enterprise plans; GitHub Education benefits are available at no cost for eligible students, teachers, and schools",
-    "description": "GitHub is a cloud platform for storing code, tracking changes with Git, collaborating on projects, reviewing work, managing issues, and publishing software or documentation.",
-    "pedagogicalUses": "Teachers can use GitHub in coding, STEM, robotics, data, and web design courses to help students practice version control, document projects, collaborate on code, and build portfolios. GitHub Classroom can support distributing assignments, collecting student work, and using automated checks when that workflow fits the course.",
+    "cost": "Free individual accounts",
+    "description": "GitHub is a cloud platform for storing code and tracking changes with Git. This teacher toolbox website is hosted through github.",
+    "pedagogicalUses": "Teachers can use GitHub in coding, STEM, robotics, data, and web design courses to help students practice version control, document projects, collaborate on code, and build portfolios.",
     "teacherValue": "GitHub helps teachers move student coding work beyond isolated files. It gives students a professional workflow for saving progress, explaining changes, collaborating responsibly, and showing evidence of learning over time.",
-    "artifact": "Create a class repository where students publish a simple HTML project, use commits to document progress, and write a README explaining the purpose of their code.",
-    "screenshots": [],
+    "artifact": "The artifact shows screenshots of github being used for this project.",
+    "screenshots": [
+      {
+        "src": "tools/github/images/Screenshot 2026-07-10 025327.png",
+        "alt": "GitHub screenshot 1",
+        "caption": "GitHub Screenshot 1"
+      },
+      {
+        "src": "tools/github/images/Screenshot 2026-07-10 025408.png",
+        "alt": "GitHub screenshot 2",
+        "caption": "GitHub Screenshot 2"
+      },
+      {
+        "src": "tools/github/images/Screenshot 2026-07-10 025437.png",
+        "alt": "GitHub screenshot 3",
+        "caption": "GitHub Screenshot 3"
+      },
+      {
+        "src": "tools/github/images/Screenshot 2026-07-10 025805.png",
+        "alt": "GitHub screenshot 4",
+        "caption": "GitHub Screenshot 4"
+      }
+    ],
     "pros": [
       "Industry-standard workflow for code, version control, and collaboration",
       "Strong portfolio value for students",
@@ -340,19 +423,35 @@ window.tools = [
     "name": "Google Classroom",
     "category": "Communication and Classroom Management",
     "location": "https://classroom.google.com/",
-    "cost": "Included with Google Workspace for Education; Education Fundamentals is no cost for qualifying institutions, with paid editions and add-ons available",
+    "cost": "Education Fundamentals is no cost for qualifying institutions, with paid editions and add-ons available",
     "description": "Google Classroom is a classroom management and assignment platform that helps teachers create classes, post materials, assign work, collect submissions, give feedback, and communicate with students.",
-    "pedagogicalUses": "Teachers can use Google Classroom to organize daily lessons, share directions, attach Google Drive files, collect assignments, post announcements, grade work, and give real-time feedback. Students can use it to track classwork, submit assignments, review grades, and find resources in one consistent place.",
+    "pedagogicalUses": "Teachers can use Google Classroom to organize daily lessons, bell ringers, communicate directions, attach files, collect assignments, post announcements, grade work, and give real-time feedback. Students use it to track classwork, submit assignments, review grades, and find resources in one consistent place.",
     "teacherValue": "Google Classroom is valuable because it reduces the friction around distributing work and collecting evidence of learning. It works especially well when teachers already use Google Docs, Slides, Forms, Drive, Calendar, and Meet.",
-    "artifact": "Create a weekly topic in Google Classroom with lesson materials, one assignment, a Google Forms exit ticket, and a class announcement that summarizes the learning target.",
-    "screenshots": [],
+    "artifact": "The screenshots show the google classroom when logged in through an account that does not have any classes. Normally my school account is linked to classes through the school email system.",
+    "screenshots": [
+      {
+        "src": "tools/google-classroom/images/Screenshot 2026-07-10 030048.png",
+        "alt": "Google Classroom screenshot 1",
+        "caption": "Google Classroom Screenshot 1"
+      },
+      {
+        "src": "tools/google-classroom/images/Screenshot 2026-07-10 030127.png",
+        "alt": "Google Classroom screenshot 2",
+        "caption": "Google Classroom Screenshot 2"
+      },
+      {
+        "src": "tools/google-classroom/images/Screenshot 2026-07-10 030146.png",
+        "alt": "Google Classroom screenshot 3",
+        "caption": "Google Classroom Screenshot 3"
+      }
+    ],
     "pros": [
       "Familiar workflow for schools using Google Workspace",
       "Central place for assignments, materials, feedback, and communication",
       "Integrates with Docs, Drive, Forms, Calendar, and other Google tools"
     ],
     "cons": [
-      "Works best when students and teachers already have managed Google accounts",
+      "Requires students and teachers to have managed Google accounts",
       "Classroom organization depends on consistent teacher naming and posting habits",
       "Some advanced features require paid Workspace editions or add-ons"
     ],
@@ -545,11 +644,37 @@ window.tools = [
     "category": "Assessment and Review",
     "location": "https://www.khanacademy.org/",
     "cost": "Free",
-    "description": "Khan Academy is a nonprofit learning platform with instructional videos, articles, practice exercises, mastery learning tools, teacher dashboards, and resources across math, science, computing, humanities, test preparation, and more.",
+    "description": "Khan Academy is a learning platform with instructional videos, articles, practice exercises, mastery learning tools, teacher dashboards, and resources across math, science, computing, humanities, test preparation, and more.",
     "pedagogicalUses": "Teachers can use Khan Academy for skill practice, review stations, intervention, enrichment, flipped learning, and independent practice. Students can work through assigned skills, receive immediate feedback, and revisit explanations at their own pace.",
     "teacherValue": "Khan Academy helps teachers provide extra practice without building every question from scratch. It is especially useful when a teacher wants a standards-aligned review option, quick formative data, or a support resource for students who need another explanation.",
-    "artifact": "Assign a short Khan Academy practice set connected to a current math standard, then use the class report to plan a small-group reteaching activity.",
-    "screenshots": [],
+    "artifact": "The screenshots show Khan academy example pages",
+    "screenshots": [
+      {
+        "src": "tools/khan-academy/images/Screenshot 2026-07-10 030356.png",
+        "alt": "Khan Academy screenshot 1",
+        "caption": "Khan Academy Screenshot 1"
+      },
+      {
+        "src": "tools/khan-academy/images/Screenshot 2026-07-10 030457.png",
+        "alt": "Khan Academy screenshot 2",
+        "caption": "Khan Academy Screenshot 2"
+      },
+      {
+        "src": "tools/khan-academy/images/Screenshot 2026-07-10 030549.png",
+        "alt": "Khan Academy screenshot 3",
+        "caption": "Khan Academy Screenshot 3"
+      },
+      {
+        "src": "tools/khan-academy/images/Screenshot 2026-07-10 030728.png",
+        "alt": "Khan Academy screenshot 4",
+        "caption": "Khan Academy Screenshot 4"
+      },
+      {
+        "src": "tools/khan-academy/images/Screenshot 2026-07-10 030813.png",
+        "alt": "Khan Academy screenshot 5",
+        "caption": "Khan Academy Screenshot 5"
+      }
+    ],
     "pros": [
       "Free access to a broad set of instructional resources",
       "Useful for self-paced review, practice, and enrichment",

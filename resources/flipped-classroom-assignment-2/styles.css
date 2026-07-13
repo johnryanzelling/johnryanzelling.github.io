@@ -227,7 +227,8 @@ html {
 .placeholder-message,
 .media-placeholder,
 .overview-card,
-.external-video-card {
+.external-video-card,
+.material-link-card {
   border: 1px solid var(--lesson-line);
   border-radius: 8px;
   background: var(--lesson-surface);
@@ -244,7 +245,9 @@ html {
 }
 
 .overview-grid,
-.external-video-grid {
+.external-video-grid,
+.material-link-groups,
+.access-support-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
@@ -252,13 +255,15 @@ html {
 }
 
 .overview-card,
-.external-video-card {
+.external-video-card,
+.material-link-card {
   padding: 18px;
 }
 
 .overview-card h3,
 .external-video-card h3,
-.video-outline h3 {
+.video-outline h3,
+.material-link-card h3 {
   margin: 0 0 10px;
   color: var(--lesson-ink);
   font-size: 1.08rem;
@@ -267,7 +272,8 @@ html {
 
 .overview-card ul,
 .video-outline ol,
-.sequence-list {
+.sequence-list,
+.material-link-card ul {
   margin: 0;
   padding-left: 20px;
   color: var(--lesson-muted);
@@ -275,7 +281,8 @@ html {
 
 .overview-card li + li,
 .video-outline li + li,
-.sequence-list li + li {
+.sequence-list li + li,
+.material-link-card li + li {
   margin-top: 8px;
 }
 
@@ -286,6 +293,24 @@ html {
 
 .sequence-list strong {
   color: var(--lesson-ink);
+}
+
+.material-link-groups {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 920px;
+}
+
+.access-support-grid {
+  max-width: 920px;
+}
+
+.material-link-card.educator-only {
+  border-left: 5px solid var(--lesson-blue);
+}
+
+.material-link-card a {
+  color: var(--lesson-teal-dark);
+  font-weight: 800;
 }
 
 .placeholder-message,
@@ -472,6 +497,10 @@ html {
 
 .practice-activity {
   margin-top: 30px;
+}
+
+.exit-ticket-activity {
+  max-width: 920px;
 }
 
 .activity-heading,
@@ -945,6 +974,8 @@ html {
 
   .overview-grid,
   .external-video-grid,
+  .material-link-groups,
+  .access-support-grid,
   .teacher-video-layout,
   .practice-grid,
   .escape-grid,

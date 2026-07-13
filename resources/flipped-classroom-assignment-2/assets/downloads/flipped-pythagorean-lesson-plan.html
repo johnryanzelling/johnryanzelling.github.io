@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flipped Pythagorean Lesson Plan</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #f7f8f5;
+        color: #111111;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.45;
+      }
+
+      main {
+        width: min(980px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0 40px;
+      }
+
+      header,
+      section {
+        margin-bottom: 16px;
+        padding: 18px;
+        border: 1px solid #222222;
+        border-radius: 8px;
+        background: #ffffff;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        margin-bottom: 8px;
+        font-size: 2rem;
+        line-height: 1.1;
+      }
+
+      h2 {
+        margin-bottom: 10px;
+        font-size: 1.25rem;
+      }
+
+      h3 {
+        margin-bottom: 8px;
+        font-size: 1.05rem;
+      }
+
+      .two-column {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .print-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 16px;
+      }
+
+      .print-actions a,
+      .print-actions button {
+        min-height: 42px;
+        border: 1px solid #222222;
+        border-radius: 8px;
+        background: #ffffff;
+        color: #111111;
+        cursor: pointer;
+        font: inherit;
+        font-weight: 800;
+        padding: 8px 12px;
+        text-decoration: none;
+      }
+
+      .print-actions a:hover,
+      .print-actions button:hover,
+      .print-actions a:focus-visible,
+      .print-actions button:focus-visible {
+        outline: 3px solid #666666;
+        outline-offset: 2px;
+      }
+
+      ol,
+      ul {
+        margin: 0;
+        padding-left: 22px;
+      }
+
+      li + li {
+        margin-top: 6px;
+      }
+
+      .label-list {
+        display: grid;
+        gap: 8px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .label-list li {
+        border: 1px solid #444444;
+        border-radius: 8px;
+        padding: 10px;
+      }
+
+      @media (max-width: 760px) {
+        .two-column {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media print {
+        body {
+          background: #ffffff;
+        }
+
+        main {
+          width: 100%;
+          padding: 0;
+        }
+
+        header,
+        section {
+          break-inside: avoid;
+          margin-bottom: 10px;
+          padding: 12px;
+          border-radius: 0;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        h2 {
+          font-size: 1.05rem;
+        }
+
+        .print-actions {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Unlocking the Pythagorean Theorem: A Flipped Escape-Room Lesson</h1>
+        <p><strong>Grade/course placement:</strong> Regular Grade 7 Mathematics — Remedial Pre-Algebra Bridge</p>
+        <p><strong>Duration:</strong> One 60-minute class period after short pre-class preparation.</p>
+        <p>
+          This is remedial preparation and bridge instruction toward later Pre-Algebra or Algebra expectations.
+          It does not describe the Pythagorean theorem as a normal Grade 7 mastery requirement.
+        </p>
+        <div class="print-actions" aria-label="Lesson plan actions">
+          <a href="../../flipped-classroom-assignment-2.html">Back to lesson</a>
+          <button type="button" onclick="window.print()">Print lesson plan</button>
+        </div>
+      </header>
+
+      <section aria-labelledby="purpose-heading">
+        <h2 id="purpose-heading">Remedial Bridge Purpose</h2>
+        <p>
+          Students use familiar square areas, square roots, and Pythagorean triples to connect prior
+          arithmetic and geometry knowledge to right-triangle distance problems. The flipped sequence keeps
+          direct instruction short so class time can be used for supported reasoning and collaboration.
+        </p>
+      </section>
+
+      <section aria-labelledby="question-heading">
+        <h2 id="question-heading">Essential Question</h2>
+        <p>How can the areas of squares help determine an unknown distance in a right triangle?</p>
+      </section>
+
+      <section aria-labelledby="objectives-heading">
+        <h2 id="objectives-heading">Learning Objectives</h2>
+        <ul>
+          <li>Identify the legs and hypotenuse of a right triangle.</li>
+          <li>Find a missing hypotenuse when both legs are known.</li>
+          <li>Determine whether familiar side lengths form a right triangle.</li>
+          <li>Apply the theorem to simple real-world distance problems.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="standards-heading">
+        <h2 id="standards-heading">Academic Standards</h2>
+        <p>
+          Remedial bridge toward later Pythagorean theorem expectations in Pre-Algebra or Algebra readiness,
+          with attention to mathematical reasoning, modeling, and explaining calculations. Teachers should
+          align this bridge lesson to the local district sequence and state standards documentation.
+        </p>
+      </section>
+
+      <div class="two-column">
+        <section aria-labelledby="prior-heading">
+          <h2 id="prior-heading">Prior Knowledge</h2>
+          <ul>
+            <li>Area of a square.</li>
+            <li>Side length of a square from its area.</li>
+            <li>Area of a right triangle.</li>
+            <li>Solving simple square equations with perfect squares.</li>
+            <li>Identifying the hypotenuse as the side opposite the right angle.</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="materials-heading">
+          <h2 id="materials-heading">Materials</h2>
+          <ul>
+            <li>School laptop or classroom device.</li>
+            <li>Headphones for pre-class videos.</li>
+            <li>Guided notes.</li>
+            <li>Escape-room recording sheet.</li>
+            <li>Exit ticket.</li>
+            <li>Pencil and scratch paper; no calculator required.</li>
+          </ul>
+        </section>
+      </div>
+
+      <section aria-labelledby="technology-heading">
+        <h2 id="technology-heading">Technology</h2>
+        <ul>
+          <li>Static GitHub Pages lesson.</li>
+          <li>Teacher-created Camtasia video slot with captions and transcript support.</li>
+          <li>Privacy-enhanced YouTube embeds with direct links.</li>
+          <li>Browser localStorage for optional local progress and written responses.</li>
+          <li>Microsoft Forms survey embed or direct link when configured by the teacher.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="before-heading">
+        <h2 id="before-heading">Before-Class Sequence</h2>
+        <ol>
+          <li>Watch the teacher-created Camtasia mini lesson.</li>
+          <li>Watch the required Khan Academy and TED-Ed videos.</li>
+          <li>Use the guided notes to record examples and questions.</li>
+          <li>Complete the prerequisite review and readiness check.</li>
+          <li>Record one question or idea to bring to class.</li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="video-heading">
+        <h2 id="video-heading">Teacher-Created Camtasia Video</h2>
+        <p>
+          The teacher video should be approximately 4-6 minutes. It introduces the hook, identifies right
+          angle, legs, and hypotenuse, connects square areas to a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>,
+          models 3-4-5, verifies 6-8-10, pauses on 5-12-13, and directs students to the readiness check.
+        </p>
+      </section>
+
+      <section aria-labelledby="external-heading">
+        <h2 id="external-heading">External Videos</h2>
+        <ul>
+          <li>Khan Academy: The Pythagorean theorem intro.</li>
+          <li>TED-Ed: How many ways are there to prove the Pythagorean theorem?</li>
+          <li>Optional refresher: Khan Academy introduction to square roots.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="notes-heading">
+        <h2 id="notes-heading">Guided Notes</h2>
+        <p>
+          Students use the guided notes to label a right triangle, record the formula, connect square areas
+          to side lengths, review the completed 3-4-5 example, and prepare one question for class.
+        </p>
+      </section>
+
+      <section aria-labelledby="readiness-heading">
+        <h2 id="readiness-heading">Readiness Check</h2>
+        <p>
+          The readiness check reviews hypotenuse identification, 4 squared, square side length from area 81,
+          hypotenuse from legs 6 and 8, and one student question or idea. Responses stay local to the browser.
+        </p>
+      </section>
+
+      <section aria-labelledby="schedule-heading">
+        <h2 id="schedule-heading">In-Class Sequence</h2>
+        <ol>
+          <li><strong>0-5 minutes:</strong> individual readiness problem.</li>
+          <li><strong>5-12 minutes:</strong> targeted review.</li>
+          <li><strong>12-17 minutes:</strong> groups and escape-room directions.</li>
+          <li><strong>17-47 minutes:</strong> collaborative escape room.</li>
+          <li><strong>47-54 minutes:</strong> solution review and error discussion.</li>
+          <li><strong>54-58 minutes:</strong> individual exit ticket.</li>
+          <li><strong>58-60 minutes:</strong> student survey.</li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="escape-heading">
+        <h2 id="escape-heading">Escape-Room Activity</h2>
+        <p>
+          Groups complete four sequential locks and one final challenge. The locks address hypotenuse
+          identification, square and square-root matches, missing hypotenuse problems, right-triangle checks,
+          and real-world distances. The final completion code is produced from the final challenge answers.
+        </p>
+      </section>
+
+      <section aria-labelledby="exit-heading">
+        <h2 id="exit-heading">Exit Ticket</h2>
+        <p>
+          Students independently solve the 8-15 hypotenuse problem, explain side c, determine whether 7, 10,
+          and 12 form a right triangle, and state one important step for using the theorem.
+        </p>
+      </section>
+
+      <section aria-labelledby="survey-heading">
+        <h2 id="survey-heading">Microsoft Forms Survey</h2>
+        <p>
+          Students complete a brief survey during the final two minutes when the teacher has configured a
+          verified Microsoft Forms embed URL or direct HTTPS link in the local lesson configuration.
+        </p>
+      </section>
+
+      <section aria-labelledby="assessment-heading">
+        <h2 id="assessment-heading">Formative and Summative Assessment</h2>
+        <ul>
+          <li><strong>Formative:</strong> readiness check, teacher observation, group recording sheet, lock feedback, and solution review.</li>
+          <li><strong>Summative for the lesson:</strong> individual exit ticket and teacher review of written reasoning.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="differentiation-heading">
+        <h2 id="differentiation-heading">Differentiation</h2>
+        <ul>
+          <li>Use the catch-up station for students who missed pre-class work.</li>
+          <li>Use roles so each group member has a clear contribution.</li>
+          <li>Provide paper recording sheets for students who need written workspace.</li>
+          <li>Use hints that prompt reasoning without immediately giving answers.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="accessibility-heading">
+        <h2 id="accessibility-heading">Accessibility</h2>
+        <ul>
+          <li>Captions and transcript support for the teacher-created video.</li>
+          <li>Printable guided notes, recording sheet, and exit ticket.</li>
+          <li>Keyboard-accessible controls and visible focus states.</li>
+          <li>Reduced-motion support and readable contrast.</li>
+          <li>Direct links for blocked embeds and meaningful iframe titles.</li>
+          <li>No student account required for the custom GitHub Pages lesson.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="accountability-heading">
+        <h2 id="accountability-heading">Accountability Plan</h2>
+        <ul>
+          <li>Pre-class work is expected before the lesson.</li>
+          <li>The teacher reviews readiness responses at the beginning of class.</li>
+          <li>Unprepared students use the five-minute catch-up station.</li>
+          <li>The whole class does not rewatch the complete lecture.</li>
+          <li>Completion and mastery are tracked separately.</li>
+          <li>Repeated "I will do it at home" patterns require teacher follow-up.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="catch-up-heading">
+        <h2 id="catch-up-heading">Catch-Up Station</h2>
+        <ol>
+          <li>Read a short explanation of a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>.</li>
+          <li>Label one right triangle.</li>
+          <li>Review the 3-4-5 example.</li>
+          <li>Answer one readiness question.</li>
+          <li>Join a group.</li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="extension-heading">
+        <h2 id="extension-heading">Early-Finisher Extension</h2>
+        <p>
+          Early finishers create one new no-calculator Pythagorean clue using a familiar triple. They include
+          a context, worked solution, and one useful hint.
+        </p>
+      </section>
+
+      <section aria-labelledby="reflection-heading">
+        <h2 id="reflection-heading">Teacher Reflection and Revision Plan</h2>
+        <p>
+          Review readiness results, exit-ticket reasoning, group recording sheets, and survey responses.
+          Revise the video length, hints, grouping plan, and catch-up supports before reteaching or reusing
+          the lesson.
+        </p>
+      </section>
+
+      <section aria-labelledby="links-heading">
+        <h2 id="links-heading">Linked Lesson Materials</h2>
+        <ul>
+          <li><a href="../../flipped-classroom-assignment-2.html">Main lesson page</a></li>
+          <li><a href="pythagorean-guided-notes.html">Guided notes</a></li>
+          <li><a href="pythagorean-escape-room-recording-sheet.html">Escape-room group recording sheet</a></li>
+          <li><a href="pythagorean-escape-room-teacher-materials.html">Escape-room teacher materials and answer key</a></li>
+          <li><a href="pythagorean-exit-ticket.html">Printable exit ticket</a></li>
+          <li><a href="microsoft-forms-survey-question-bank.html">Microsoft Forms survey question bank</a></li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

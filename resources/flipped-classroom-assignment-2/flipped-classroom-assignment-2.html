@@ -851,10 +851,87 @@
           <p class="section-kicker">Wrap Up</p>
           <h2>Exit Ticket</h2>
           <p>
-            Students will finish with a short reflection or problem that shows whether they can choose and use the Pythagorean theorem.
+            Complete this independently during the final minutes of class. The first and third items can be
+            checked in the browser. The written responses stay on this device only; they are not transmitted
+            to the teacher and do not collect names, emails, or personal data.
           </p>
-          <div class="placeholder-message">
-            <strong>Placeholder:</strong> Exit-ticket prompts will be added in a later update.
+          <div class="guided-notes-actions" aria-label="Exit ticket actions">
+            <a class="button primary" href="assets/downloads/pythagorean-exit-ticket.html" target="_blank" rel="noreferrer">Open printable exit ticket</a>
+          </div>
+          <div class="privacy-note" data-exit-storage-status role="status">
+            Exit-ticket written responses are stored only in this browser when local storage is available.
+          </div>
+          <section class="practice-activity exit-ticket-activity" data-exit-ticket aria-labelledby="exit-ticket-heading">
+            <div class="activity-heading">
+              <div>
+                <p class="section-kicker">Independent Work</p>
+                <h3 id="exit-ticket-heading">Individual Exit Ticket</h3>
+              </div>
+              <span class="status-pill" data-exit-ticket-status>Not complete yet</span>
+            </div>
+            <div class="practice-grid">
+              <article class="check-card" data-exit-question="hypotenuse-8-15" data-answer="17">
+                <h4>1. Find the Hypotenuse</h4>
+                <svg class="math-diagram" viewBox="0 0 190 140" role="img" aria-labelledby="exit-hypotenuse-title exit-hypotenuse-desc">
+                  <title id="exit-hypotenuse-title">Right triangle with legs 8 and 15</title>
+                  <desc id="exit-hypotenuse-desc">A right triangle with legs labeled 8 and 15, and the hypotenuse marked c.</desc>
+                  <path d="M42 106 L158 106 L42 38 Z"></path>
+                  <path class="right-angle" d="M42 86 L62 86 L62 106"></path>
+                  <text x="94" y="124">15</text>
+                  <text x="18" y="74">8</text>
+                  <text x="106" y="67">c</text>
+                </svg>
+                <label for="exit-hypotenuse-8-15">A right triangle has legs 8 and 15. Find the hypotenuse.</label>
+                <div class="answer-row">
+                  <input id="exit-hypotenuse-8-15" inputmode="numeric" pattern="[0-9]*" autocomplete="off" data-exit-input>
+                  <button type="button" class="button secondary" data-check-exit-item>Check item 1</button>
+                </div>
+                <p class="feedback" id="feedback-exit-hypotenuse-8-15" aria-live="polite" data-exit-feedback></p>
+              </article>
+
+              <article class="check-card" data-exit-question="identify-c" data-open-response="true">
+                <h4>2. Identify Side c</h4>
+                <label for="exit-identify-c">Explain how to identify side c.</label>
+                <textarea id="exit-identify-c" rows="5" data-exit-open-response="sideC"></textarea>
+                <button type="button" class="button secondary" data-save-exit-response>Save response</button>
+                <p class="feedback" id="feedback-exit-identify-c" aria-live="polite" data-exit-feedback></p>
+              </article>
+
+              <article class="check-card" data-exit-question="right-triangle-7-10-12" data-answer="no">
+                <h4>3. Right Triangle Check</h4>
+                <p class="math-prompt">
+                  Determine whether side lengths 7, 10, and 12 form a right triangle.
+                </p>
+                <fieldset>
+                  <legend>Do 7, 10, and 12 form a right triangle?</legend>
+                  <label><input type="radio" name="exit-right-triangle-7-10-12" value="yes" data-exit-input> Yes</label>
+                  <label><input type="radio" name="exit-right-triangle-7-10-12" value="no" data-exit-input> No</label>
+                </fieldset>
+                <button type="button" class="button secondary" data-check-exit-item>Check item 3</button>
+                <p class="feedback" id="feedback-exit-right-triangle-7-10-12" aria-live="polite" data-exit-feedback></p>
+              </article>
+
+              <article class="check-card" data-exit-question="important-step" data-open-response="true">
+                <h4>4. Important Step</h4>
+                <label for="exit-important-step">State one important step when using the Pythagorean theorem.</label>
+                <textarea id="exit-important-step" rows="5" data-exit-open-response="importantStep"></textarea>
+                <button type="button" class="button secondary" data-save-exit-response>Save response</button>
+                <p class="feedback" id="feedback-exit-important-step" aria-live="polite" data-exit-feedback></p>
+              </article>
+            </div>
+            <section class="completion-summary" aria-labelledby="exit-ticket-summary-heading">
+              <div>
+                <p class="section-kicker">Local Summary</p>
+                <h3 id="exit-ticket-summary-heading">Exit-Ticket Summary</h3>
+                <p data-exit-ticket-summary>Exit ticket: not complete yet.</p>
+              </div>
+              <button type="button" class="button secondary reset-button" data-reset-exit-ticket>Reset exit-ticket responses</button>
+              <p class="feedback" id="exit-ticket-reset-feedback" aria-live="polite" data-exit-reset-feedback></p>
+            </section>
+          </section>
+          <div class="no-js-activity-note">
+            <strong>Without JavaScript:</strong> You can still read and print the exit ticket.
+            Immediate checking, local response persistence, and reset behavior require JavaScript.
           </div>
         </div>
       </section>
@@ -864,12 +941,15 @@
           <p class="section-kicker">Student Voice</p>
           <h2>Student Survey</h2>
           <p>
-            This section will gather student feedback about the flipped format, the videos, and the escape-room activity.
+            The final two minutes are reserved for a short Microsoft Forms reflection about the flipped format,
+            the videos, and the escape-room activity. Survey URLs are configured only in
+            <code>lesson-config.js</code>; no survey URL has been fabricated here.
           </p>
           <div class="survey-slot" data-survey-slot>
             <div class="placeholder-message" role="status">
               <strong>Placeholder:</strong> Microsoft Forms survey URLs are not configured yet. Add the embed
-              URL and direct fallback URL in <code>lesson-config.js</code> when the survey is ready.
+              URL and direct fallback URL in <code>lesson-config.js</code> when the survey is ready. Do not assume
+              anonymous access works until the configured form has been checked.
             </div>
           </div>
         </div>
@@ -883,12 +963,28 @@
             Teacher-facing pacing guidance, answer keys, facilitation questions, hints, catch-up directions,
             and extensions are separated from the student escape-room questions.
           </p>
-          <div class="teacher-material-actions" aria-label="Teacher materials links">
-            <a class="button primary" href="assets/downloads/pythagorean-escape-room-teacher-materials.html" target="_blank" rel="noreferrer">Open teacher materials and answer key</a>
+          <div class="material-link-groups">
+            <section class="material-link-card" aria-labelledby="student-materials-heading">
+              <h3 id="student-materials-heading">Student Materials</h3>
+              <ul>
+                <li><a href="assets/downloads/pythagorean-guided-notes.html" target="_blank" rel="noreferrer">Printable guided notes</a></li>
+                <li><a href="assets/downloads/pythagorean-escape-room-recording-sheet.html" target="_blank" rel="noreferrer">Escape-room group recording sheet</a></li>
+                <li><a href="assets/downloads/pythagorean-exit-ticket.html" target="_blank" rel="noreferrer">Printable exit ticket</a></li>
+                <li><a href="#catch-up-station">Catch-up station information</a></li>
+              </ul>
+            </section>
+            <section class="material-link-card educator-only" aria-labelledby="educator-materials-heading">
+              <h3 id="educator-materials-heading">Educator-Only Materials</h3>
+              <ul>
+                <li><a href="assets/downloads/flipped-pythagorean-lesson-plan.html" target="_blank" rel="noreferrer">Complete printable lesson plan</a></li>
+                <li><a href="assets/downloads/pythagorean-escape-room-teacher-materials.html" target="_blank" rel="noreferrer">Escape-room teacher materials and answer key</a></li>
+                <li><a href="assets/downloads/microsoft-forms-survey-question-bank.html" target="_blank" rel="noreferrer">Microsoft Forms survey question bank</a></li>
+              </ul>
+            </section>
           </div>
           <div class="placeholder-message">
             <strong>Teacher-facing note:</strong> This public demonstration answer key is intentionally linked
-            only from the educator section, not beside the student lock questions.
+            only from the educator section, not beside the student lock questions or exit-ticket prompts.
           </div>
         </div>
       </section>
@@ -902,22 +998,55 @@
             live feedback regions, accessible SVG diagrams, and reduced-motion support. Escape-room progress
             is optional local browser storage only.
           </p>
-          <div class="placeholder-message">
-            <strong>Media note:</strong> Captions and transcripts for the teacher-created video will be added when the final media files are ready.
+          <div class="access-support-grid">
+            <article class="overview-card">
+              <h3>Media and Reading Supports</h3>
+              <ul>
+                <li>Teacher-video captions are supported when a local captions file is configured.</li>
+                <li>The teacher-video transcript link appears when a transcript path is configured; otherwise the video slot gives an honest unconfigured notice.</li>
+                <li>Printable guided notes and written worked examples are available for students who need a paper path.</li>
+                <li>External video embeds include direct links for environments that block embeds.</li>
+              </ul>
+            </article>
+            <article class="overview-card">
+              <h3>Activity Access</h3>
+              <ul>
+                <li>Printable escape-room sheet and printable exit ticket support offline or paper-based work.</li>
+                <li>Controls are keyboard accessible with visible focus and live feedback announcements.</li>
+                <li>Reduced-motion CSS is included for students who request less motion.</li>
+                <li>Diagrams include text alternatives and visible right-angle markers.</li>
+              </ul>
+            </article>
+            <article class="overview-card">
+              <h3>Classroom Access</h3>
+              <ul>
+                <li>No calculator is required; numbers use familiar triples and whole-number arithmetic.</li>
+                <li>No student account is required for the custom GitHub Pages lesson.</li>
+                <li>The school-based catch-up station supports students who missed the pre-class work.</li>
+                <li>If localStorage is unavailable, the page remains usable during the visit and reports that progress may not survive refresh.</li>
+              </ul>
+            </article>
           </div>
         </div>
       </section>
 
       <section id="instructor-access" class="lesson-section">
         <div class="lesson-section-inner">
-          <p class="section-kicker">Instructor Review</p>
-          <h2>Instructor Access</h2>
+          <p class="section-kicker">Educator Accountability</p>
+          <h2>Accountability Plan</h2>
           <p>
-            This area will provide review notes or access directions for course evaluation while keeping student-facing materials clear.
+            The flipped structure preserves class time for collaborative problem-solving instead of passive
+            screen use. Completion and mastery are tracked separately so students are supported without
+            turning the class period into a repeated lecture.
           </p>
-          <div class="placeholder-message">
-            <strong>Placeholder:</strong> Instructor access details will be added only when they are ready to share.
-          </div>
+          <ul class="timeline-list">
+            <li>Students are expected to complete the pre-class video sequence, guided notes, and readiness check before class.</li>
+            <li>The teacher reviews readiness responses at the beginning of class and chooses a short targeted review.</li>
+            <li>Students who are unprepared complete the five-minute catch-up station, then join a group.</li>
+            <li>The whole class does not rewatch the complete lecture.</li>
+            <li>Completion and mastery are documented separately through readiness work, group reasoning, and the individual exit ticket.</li>
+            <li>Repeated statements such as "I will do it at home" require teacher follow-up and a plan for completion.</li>
+          </ul>
         </div>
       </section>
     </main>

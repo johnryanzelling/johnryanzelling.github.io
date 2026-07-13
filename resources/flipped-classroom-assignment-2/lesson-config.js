@@ -19,7 +19,10 @@ window.FlippedClassroomLesson = {
       guidedNotes: "assets/downloads/pythagorean-guided-notes.html",
       readinessCheck: "",
       groupRecordingSheet: "assets/downloads/pythagorean-escape-room-recording-sheet.html",
-      teacherMaterials: "assets/downloads/pythagorean-escape-room-teacher-materials.html"
+      teacherMaterials: "assets/downloads/pythagorean-escape-room-teacher-materials.html",
+      exitTicket: "assets/downloads/pythagorean-exit-ticket.html",
+      surveyQuestionBank: "assets/downloads/microsoft-forms-survey-question-bank.html",
+      lessonPlan: "assets/downloads/flipped-pythagorean-lesson-plan.html"
     }
   },
   visuals: {

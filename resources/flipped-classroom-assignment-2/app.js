@@ -100,6 +100,27 @@
     5: "Final challenge complete. Your completion code is 10-15-13."
   };
 
+  var exitTicketMessages = {
+    "hypotenuse-8-15": {
+      blank: "Try a hypotenuse length before checking. Use the two legs, 8 and 15.",
+      correct: "Correct. The hypotenuse is 17.",
+      retry: "Not yet. Square both legs, add those square areas, then take the positive square root."
+    },
+    "right-triangle-7-10-12": {
+      blank: "Choose yes or no before checking. Compare 7 squared plus 10 squared with 12 squared.",
+      correct: "Correct. These side lengths do not form a right triangle because the square-area comparison does not match.",
+      retry: "Not yet. A yes answer only works when a squared plus b squared equals c squared."
+    },
+    "identify-c": {
+      blank: "Write a response before saving. Include where side c is located in a right triangle.",
+      correct: "Saved locally. A strong response identifies c as the hypotenuse, opposite the right angle and the longest side."
+    },
+    "important-step": {
+      blank: "Write one important step before saving.",
+      correct: "Saved locally. Bring this step into the class discussion if the teacher asks for examples."
+    }
+  };
+
   document.documentElement.classList.add("lesson-js");
   document.documentElement.dataset.lessonTitle = config.title || "Unlocking the Pythagorean Theorem";
 
@@ -109,7 +130,8 @@
       readinessComplete: false,
       currentSection: "lesson-overview",
       openResponse: "",
-      escapeRoom: defaultEscapeProgress()
+      escapeRoom: defaultEscapeProgress(),
+      exitTicket: defaultExitTicketProgress()
     };
   }
 
@@ -118,6 +140,15 @@
       currentStep: 1,
       completedSteps: [],
       finalCode: ""
+    };
+  }
+
+  function defaultExitTicketProgress() {
+    return {
+      hypotenuseComplete: false,
+      rightTriangleComplete: false,
+      sideCResponse: "",
+      importantStepResponse: ""
     };
   }
 
@@ -142,6 +173,7 @@
     clean.currentSection = hasValue(candidate.currentSection) ? candidate.currentSection : clean.currentSection;
     clean.openResponse = hasValue(candidate.openResponse) ? candidate.openResponse.slice(0, 500) : "";
     clean.escapeRoom = sanitizeEscapeProgress(candidate.escapeRoom);
+    clean.exitTicket = sanitizeExitTicketProgress(candidate.exitTicket);
     return clean;
   }
 
@@ -178,6 +210,18 @@
       clean.finalCode = candidate.finalCode.slice(0, 40);
     }
 
+    return clean;
+  }
+
+  function sanitizeExitTicketProgress(candidate) {
+    var clean = defaultExitTicketProgress();
+    if (!candidate || typeof candidate !== "object") {
+      return clean;
+    }
+    clean.hypotenuseComplete = candidate.hypotenuseComplete === true;
+    clean.rightTriangleComplete = candidate.rightTriangleComplete === true;
+    clean.sideCResponse = hasValue(candidate.sideCResponse) ? candidate.sideCResponse.slice(0, 700) : "";
+    clean.importantStepResponse = hasValue(candidate.importantStepResponse) ? candidate.importantStepResponse.slice(0, 700) : "";
     return clean;
   }
 
@@ -245,6 +289,17 @@
     link.href = href;
     link.textContent = label;
     return link;
+  }
+
+  function isHttpsUrl(value) {
+    if (!hasValue(value)) {
+      return false;
+    }
+    try {
+      return new URL(value).protocol === "https:";
+    } catch (error) {
+      return false;
+    }
   }
 
   function renderTeacherVideo() {
@@ -343,6 +398,8 @@
 
     var embedUrl = surveyConfig.embedUrl || "";
     var directUrl = surveyConfig.directUrl || "";
+    var hasValidEmbedUrl = isHttpsUrl(embedUrl);
+    var hasValidDirectUrl = isHttpsUrl(directUrl);
 
     if (!hasValue(embedUrl) && !hasValue(directUrl)) {
       return;
@@ -350,24 +407,31 @@
 
     var children = [];
 
-    if (hasValue(embedUrl)) {
+    if (hasValidEmbedUrl) {
       var frame = document.createElement("div");
       frame.className = "survey-frame";
       var iframe = document.createElement("iframe");
       iframe.src = embedUrl;
-      iframe.title = "Student feedback survey";
+      iframe.title = "Microsoft Forms student feedback survey";
       iframe.loading = "lazy";
       frame.appendChild(iframe);
       children.push(frame);
-    } else {
-      children.push(createPlaceholder("Microsoft Forms embed URL is not configured yet."));
+    } else if (hasValue(embedUrl)) {
+      children.push(createPlaceholder("Microsoft Forms embed URL must be a configured HTTPS URL before the survey can be embedded."));
+    } else if (!hasValidDirectUrl) {
+      children.push(createPlaceholder("Microsoft Forms survey URLs are not configured yet. Add a verified HTTPS embed URL or direct URL in lesson-config.js."));
     }
 
-    if (hasValue(directUrl)) {
+    if (hasValidDirectUrl) {
       var fallback = document.createElement("p");
-      fallback.appendChild(createLink(directUrl, "Open the student survey directly"));
+      fallback.appendChild(createLink(directUrl, "Open survey in a new tab"));
       children.push(fallback);
-    } else {
+    } else if (hasValue(directUrl)) {
+      var invalidFallback = document.createElement("p");
+      invalidFallback.className = "placeholder-message";
+      invalidFallback.textContent = "Microsoft Forms direct fallback URL must be HTTPS before it can be shown.";
+      children.push(invalidFallback);
+    } else if (hasValidEmbedUrl) {
       var fallbackNote = document.createElement("p");
       fallbackNote.className = "placeholder-message";
       fallbackNote.textContent = "Microsoft Forms direct fallback URL is not configured yet.";
@@ -558,6 +622,7 @@
         : "Question for class: not recorded yet.";
     }
 
+    updateExitTicketUi();
     updateEscapeRoomUi();
   }
 
@@ -565,6 +630,18 @@
     var input = document.querySelector("[data-open-response-input]");
     if (input && hasValue(progress.openResponse)) {
       input.value = progress.openResponse;
+    }
+  }
+
+  function restoreExitTicketResponses() {
+    var exitProgress = getExitTicketProgress();
+    var sideCInput = document.querySelector("[data-exit-open-response='sideC']");
+    var stepInput = document.querySelector("[data-exit-open-response='importantStep']");
+    if (sideCInput && hasValue(exitProgress.sideCResponse)) {
+      sideCInput.value = exitProgress.sideCResponse;
+    }
+    if (stepInput && hasValue(exitProgress.importantStepResponse)) {
+      stepInput.value = exitProgress.importantStepResponse;
     }
   }
 
@@ -643,6 +720,8 @@
         }
       });
     });
+    progress.exitTicket = defaultExitTicketProgress();
+    resetExitTicketInputs();
     resetEscapeInputs();
     updateProgressUi();
     if (feedback) {
@@ -705,6 +784,242 @@
     }
 
     updateEscapeRoomUi();
+  }
+
+  function setupExitTicket() {
+    var ticket = document.querySelector("[data-exit-ticket]");
+    if (!ticket) {
+      return;
+    }
+
+    Array.prototype.slice.call(ticket.querySelectorAll("[data-exit-input], [data-exit-open-response]")).forEach(function (input) {
+      var card = input.closest("[data-exit-question]");
+      var feedback = card ? card.querySelector("[data-exit-feedback]") : null;
+      if (feedback && feedback.id) {
+        input.setAttribute("aria-describedby", feedback.id);
+      }
+    });
+
+    Array.prototype.slice.call(ticket.querySelectorAll("[data-check-exit-item]")).forEach(function (button) {
+      setupButtonKeyboardActivation(button);
+      button.addEventListener("click", function () {
+        var card = button.closest("[data-exit-question]");
+        if (card) {
+          checkExitTicketItem(card);
+        }
+      });
+    });
+
+    Array.prototype.slice.call(ticket.querySelectorAll("[data-save-exit-response]")).forEach(function (button) {
+      setupButtonKeyboardActivation(button);
+      button.addEventListener("click", function () {
+        var card = button.closest("[data-exit-question]");
+        if (card) {
+          saveExitTicketResponse(card);
+        }
+      });
+    });
+
+    Array.prototype.slice.call(ticket.querySelectorAll("[data-exit-open-response]")).forEach(function (input) {
+      input.addEventListener("input", function () {
+        saveExitTicketOpenValue(input, false);
+      });
+    });
+
+    var resetButton = document.querySelector("[data-reset-exit-ticket]");
+    if (resetButton) {
+      setupButtonKeyboardActivation(resetButton);
+      resetButton.addEventListener("click", resetExitTicketProgress);
+    }
+
+    updateExitTicketUi();
+  }
+
+  function getExitTicketProgress() {
+    progress.exitTicket = sanitizeExitTicketProgress(progress.exitTicket);
+    return progress.exitTicket;
+  }
+
+  function getExitTicketResponse(card) {
+    var checked = card.querySelector("input[type='radio'][data-exit-input]:checked");
+    if (checked) {
+      return checked.value;
+    }
+    if (card.querySelector("input[type='radio'][data-exit-input]")) {
+      return "";
+    }
+    var input = card.querySelector("[data-exit-input]");
+    return input ? input.value : "";
+  }
+
+  function setExitFeedback(card, state, message) {
+    var feedback = card.querySelector("[data-exit-feedback]");
+    if (!feedback) {
+      return;
+    }
+    feedback.textContent = message;
+    feedback.classList.remove("is-correct", "needs-retry");
+    card.classList.remove("is-correct", "needs-retry");
+    if (state === "correct") {
+      feedback.classList.add("is-correct");
+      card.classList.add("is-correct");
+    } else if (state === "retry") {
+      feedback.classList.add("needs-retry");
+      card.classList.add("needs-retry");
+    }
+  }
+
+  function checkExitTicketItem(card) {
+    var questionId = card.getAttribute("data-exit-question") || "";
+    var messages = exitTicketMessages[questionId] || {
+      blank: "Try a response before checking.",
+      correct: "Correct.",
+      retry: "Not yet. Try again using your work from the lesson."
+    };
+    var response = getExitTicketResponse(card);
+    if (!hasValue(response)) {
+      setExitFeedback(card, "retry", messages.blank);
+      updateExitTicketUi();
+      return false;
+    }
+    if (normalizeAnswer(response) === normalizeAnswer(card.getAttribute("data-answer"))) {
+      var exitProgress = getExitTicketProgress();
+      if (questionId === "hypotenuse-8-15") {
+        exitProgress.hypotenuseComplete = true;
+      }
+      if (questionId === "right-triangle-7-10-12") {
+        exitProgress.rightTriangleComplete = true;
+      }
+      progress.exitTicket = exitProgress;
+      saveProgress();
+      setExitFeedback(card, "correct", messages.correct);
+      updateExitTicketUi();
+      return true;
+    }
+    setExitFeedback(card, "retry", messages.retry);
+    updateExitTicketUi();
+    return false;
+  }
+
+  function saveExitTicketOpenValue(input, shouldShowFeedback) {
+    var key = input.getAttribute("data-exit-open-response");
+    var exitProgress = getExitTicketProgress();
+    if (key === "sideC") {
+      exitProgress.sideCResponse = input.value.trim().slice(0, 700);
+    } else if (key === "importantStep") {
+      exitProgress.importantStepResponse = input.value.trim().slice(0, 700);
+    }
+    progress.exitTicket = exitProgress;
+    saveProgress();
+    if (shouldShowFeedback) {
+      var card = input.closest("[data-exit-question]");
+      if (card) {
+        var messages = exitTicketMessages[card.getAttribute("data-exit-question")] || {};
+        setExitFeedback(card, "correct", messages.correct || "Saved locally.");
+      }
+    }
+    updateExitTicketUi();
+  }
+
+  function saveExitTicketResponse(card) {
+    var input = card.querySelector("[data-exit-open-response]");
+    var messages = exitTicketMessages[card.getAttribute("data-exit-question")] || {
+      blank: "Write a response before saving.",
+      correct: "Saved locally."
+    };
+    if (!input || !hasValue(input.value)) {
+      setExitFeedback(card, "retry", messages.blank);
+      return false;
+    }
+    saveExitTicketOpenValue(input, true);
+    return true;
+  }
+
+  function updateExitTicketUi() {
+    var ticket = document.querySelector("[data-exit-ticket]");
+    if (!ticket) {
+      return;
+    }
+    var exitProgress = getExitTicketProgress();
+    updateExitStorageNotice();
+    var isComplete =
+      exitProgress.hypotenuseComplete &&
+      exitProgress.rightTriangleComplete &&
+      hasValue(exitProgress.sideCResponse) &&
+      hasValue(exitProgress.importantStepResponse);
+    var status = document.querySelector("[data-exit-ticket-status]");
+    if (status) {
+      status.textContent = isComplete ? "Complete in this browser" : "Not complete yet";
+      status.classList.toggle("is-complete", isComplete);
+    }
+    var summary = document.querySelector("[data-exit-ticket-summary]");
+    if (summary) {
+      summary.textContent =
+        "Exit ticket: " +
+        (isComplete ? "complete" : "not complete yet") +
+        ". Item 1: " +
+        (exitProgress.hypotenuseComplete ? "checked" : "not checked yet") +
+        ". Item 3: " +
+        (exitProgress.rightTriangleComplete ? "checked" : "not checked yet") +
+        ". Written responses: " +
+        (hasValue(exitProgress.sideCResponse) && hasValue(exitProgress.importantStepResponse) ? "saved" : "not fully saved yet") +
+        ".";
+    }
+  }
+
+  function updateExitStorageNotice() {
+    var notice = document.querySelector("[data-exit-storage-status]");
+    if (!notice) {
+      return;
+    }
+    if (storageAvailable) {
+      notice.textContent =
+        "Exit-ticket written responses are stored only in this browser. No names, emails, or responses are sent to the teacher.";
+    } else {
+      notice.textContent =
+        "Local storage is unavailable, so exit-ticket responses can be used during this visit but may not survive a refresh. No responses are sent to the teacher.";
+    }
+  }
+
+  function resetExitTicketInputs() {
+    var ticket = document.querySelector("[data-exit-ticket]");
+    if (!ticket) {
+      return;
+    }
+    Array.prototype.slice.call(ticket.querySelectorAll("[data-exit-input], [data-exit-open-response]")).forEach(function (input) {
+      if (input.type === "radio") {
+        input.checked = false;
+      } else {
+        input.value = "";
+      }
+    });
+    Array.prototype.slice.call(ticket.querySelectorAll("[data-exit-feedback]")).forEach(function (feedback) {
+      feedback.textContent = "";
+      feedback.classList.remove("is-correct", "needs-retry");
+    });
+    Array.prototype.slice.call(ticket.querySelectorAll("[data-exit-question]")).forEach(function (card) {
+      card.classList.remove("is-correct", "needs-retry");
+    });
+  }
+
+  function resetExitTicketProgress() {
+    var confirmed = window.confirm(
+      "Reset exit-ticket responses for this browser? This clears local written responses and checked status."
+    );
+    var feedback = document.querySelector("[data-exit-reset-feedback]");
+    if (!confirmed) {
+      if (feedback) {
+        feedback.textContent = "Reset canceled. Exit-ticket responses are unchanged.";
+      }
+      return;
+    }
+    progress.exitTicket = defaultExitTicketProgress();
+    resetExitTicketInputs();
+    saveProgress();
+    updateExitTicketUi();
+    if (feedback) {
+      feedback.textContent = "Exit-ticket responses have been reset.";
+    }
   }
 
   function getEscapeProgress() {
@@ -963,8 +1278,10 @@
   renderSurveySlot();
   renderInfographic();
   restoreOpenResponse();
+  restoreExitTicketResponses();
   setupPractice();
   setupGuidedNotesPrint();
+  setupExitTicket();
   setupEscapeRoom();
   updateProgressUi();
 

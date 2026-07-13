@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pythagorean Theorem Exit Ticket</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #f7f8f5;
+        color: #111111;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.45;
+      }
+
+      main {
+        width: min(920px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0 36px;
+      }
+
+      header,
+      section {
+        margin-bottom: 16px;
+        padding: 16px;
+        border: 1px solid #222222;
+        border-radius: 8px;
+        background: #ffffff;
+      }
+
+      h1,
+      h2,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        margin-bottom: 8px;
+        font-size: 2rem;
+        line-height: 1.1;
+      }
+
+      h2 {
+        margin-bottom: 8px;
+        font-size: 1.15rem;
+      }
+
+      .student-lines {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-top: 18px;
+      }
+
+      .line {
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px solid #111111;
+      }
+
+      .workspace {
+        min-height: 96px;
+        margin-top: 10px;
+        border: 1px dashed #444444;
+        border-radius: 8px;
+      }
+
+      .print-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 16px;
+      }
+
+      .print-actions a,
+      .print-actions button {
+        min-height: 42px;
+        border: 1px solid #222222;
+        border-radius: 8px;
+        background: #ffffff;
+        color: #111111;
+        cursor: pointer;
+        font: inherit;
+        font-weight: 800;
+        padding: 8px 12px;
+        text-decoration: none;
+      }
+
+      .print-actions a:hover,
+      .print-actions button:hover,
+      .print-actions a:focus-visible,
+      .print-actions button:focus-visible {
+        outline: 3px solid #666666;
+        outline-offset: 2px;
+      }
+
+      @media (max-width: 700px) {
+        .student-lines {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media print {
+        body {
+          background: #ffffff;
+        }
+
+        main {
+          width: 100%;
+          padding: 0;
+        }
+
+        header,
+        section {
+          break-inside: avoid;
+          margin-bottom: 10px;
+          padding: 12px;
+          border-radius: 0;
+        }
+
+        h1 {
+          font-size: 1.45rem;
+        }
+
+        h2 {
+          font-size: 1rem;
+        }
+
+        .print-actions {
+          display: none;
+        }
+
+        .workspace {
+          min-height: 76px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Unlocking the Pythagorean Theorem</h1>
+        <p>Individual Exit Ticket: Independent Work</p>
+        <div class="student-lines">
+          <p>Name: <span class="line" aria-hidden="true"></span></p>
+          <p>Date: <span class="line" aria-hidden="true"></span></p>
+        </div>
+        <div class="print-actions" aria-label="Exit ticket actions">
+          <a href="../../flipped-classroom-assignment-2.html">Back to lesson</a>
+          <button type="button" onclick="window.print()">Print exit ticket</button>
+        </div>
+      </header>
+
+      <section aria-labelledby="exit-item-1">
+        <h2 id="exit-item-1">1. Find the Hypotenuse</h2>
+        <p>A right triangle has legs 8 and 15. Find the hypotenuse.</p>
+        <div class="workspace" aria-label="Workspace for item 1"></div>
+      </section>
+
+      <section aria-labelledby="exit-item-2">
+        <h2 id="exit-item-2">2. Explain Side c</h2>
+        <p>Explain how to identify side c.</p>
+        <div class="workspace" aria-label="Workspace for item 2"></div>
+      </section>
+
+      <section aria-labelledby="exit-item-3">
+        <h2 id="exit-item-3">3. Right Triangle Check</h2>
+        <p>Determine whether side lengths 7, 10, and 12 form a right triangle. Explain your comparison.</p>
+        <div class="workspace" aria-label="Workspace for item 3"></div>
+      </section>
+
+      <section aria-labelledby="exit-item-4">
+        <h2 id="exit-item-4">4. Important Step</h2>
+        <p>State one important step when using the Pythagorean theorem.</p>
+        <div class="workspace" aria-label="Workspace for item 4"></div>
+      </section>
+    </main>
+  </body>
+</html>

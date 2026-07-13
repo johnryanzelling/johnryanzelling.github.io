@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pythagorean Theorem Guided Notes</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #f7f8f5;
+        color: #111111;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.45;
+      }
+
+      main {
+        width: min(940px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0 36px;
+      }
+
+      header,
+      section {
+        margin-bottom: 18px;
+        padding: 18px;
+        border: 1px solid #222222;
+        border-radius: 8px;
+        background: #ffffff;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        margin-bottom: 8px;
+        font-size: 2rem;
+        line-height: 1.1;
+      }
+
+      h2 {
+        margin-bottom: 10px;
+        font-size: 1.25rem;
+      }
+
+      h3 {
+        margin-bottom: 8px;
+        font-size: 1.05rem;
+      }
+
+      .student-lines {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+        margin-top: 20px;
+      }
+
+      .line {
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px solid #111111;
+      }
+
+      .notes-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .formula {
+        display: inline-block;
+        margin: 8px 0;
+        padding: 8px 12px;
+        border: 1px solid #111111;
+        font-size: 1.35rem;
+        font-weight: 800;
+      }
+
+      .diagram {
+        display: block;
+        max-width: 320px;
+        margin: 8px 0;
+      }
+
+      .diagram path,
+      .diagram rect {
+        fill: #ffffff;
+        stroke: #111111;
+        stroke-width: 3;
+      }
+
+      .diagram .right-angle {
+        fill: none;
+        stroke: #111111;
+        stroke-width: 3;
+      }
+
+      .diagram text {
+        fill: #111111;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 800;
+        text-anchor: middle;
+      }
+
+      ol,
+      ul {
+        margin: 0;
+        padding-left: 22px;
+      }
+
+      li + li {
+        margin-top: 6px;
+      }
+
+      .work-space {
+        min-height: 86px;
+        margin-top: 10px;
+        border: 1px dashed #444444;
+        border-radius: 8px;
+      }
+
+      .question-space {
+        min-height: 70px;
+      }
+
+      .print-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 16px;
+      }
+
+      .print-actions a,
+      .print-actions button {
+        min-height: 42px;
+        border: 1px solid #222222;
+        border-radius: 8px;
+        background: #ffffff;
+        color: #111111;
+        cursor: pointer;
+        font: inherit;
+        font-weight: 800;
+        padding: 8px 12px;
+        text-decoration: none;
+      }
+
+      .print-actions a:hover,
+      .print-actions button:hover,
+      .print-actions a:focus-visible,
+      .print-actions button:focus-visible {
+        outline: 3px solid #666666;
+        outline-offset: 2px;
+      }
+
+      @media (max-width: 700px) {
+        .student-lines,
+        .notes-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media print {
+        body {
+          background: #ffffff;
+        }
+
+        main {
+          width: 100%;
+          padding: 0;
+        }
+
+        header,
+        section {
+          break-inside: avoid;
+          margin-bottom: 10px;
+          padding: 12px;
+          border-radius: 0;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        h2 {
+          font-size: 1.05rem;
+        }
+
+        .print-actions {
+          display: none;
+        }
+
+        .work-space {
+          min-height: 74px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Unlocking the Pythagorean Theorem</h1>
+        <p>Guided Notes: A Flipped Escape-Room Lesson</p>
+        <div class="student-lines">
+          <p>Name: <span class="line" aria-hidden="true"></span></p>
+          <p>Date: <span class="line" aria-hidden="true"></span></p>
+        </div>
+        <div class="print-actions" aria-label="Guided notes actions">
+          <a href="../../flipped-classroom-assignment-2.html">Back to lesson</a>
+          <button type="button" onclick="window.print()">Print guided notes</button>
+        </div>
+      </header>
+
+      <section aria-labelledby="triangle-labels">
+        <h2 id="triangle-labels">1. Label the Right Triangle</h2>
+        <p>Label the two legs as <strong>a</strong> and <strong>b</strong>. Label the hypotenuse as <strong>c</strong>.</p>
+        <svg class="diagram" viewBox="0 0 300 190" role="img" aria-labelledby="notes-triangle-title notes-triangle-desc">
+          <title id="notes-triangle-title">Right triangle for labeling</title>
+          <desc id="notes-triangle-desc">A right triangle with a visible right-angle marker and blank labels for the two legs and hypotenuse.</desc>
+          <path d="M55 150 L245 150 L55 45 Z"></path>
+          <path class="right-angle" d="M55 124 L81 124 L81 150"></path>
+          <text x="145" y="178">b = ______</text>
+          <text x="28" y="102">a = ______</text>
+          <text x="164" y="88">c = ______</text>
+        </svg>
+      </section>
+
+      <div class="notes-grid">
+        <section aria-labelledby="formula-heading">
+          <h2 id="formula-heading">2. Formula</h2>
+          <p class="formula">a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
+          <p>The legs are the two sides that make the right angle. The hypotenuse is across from the right angle.</p>
+        </section>
+
+        <section aria-labelledby="area-heading">
+          <h2 id="area-heading">3. Area of Squares</h2>
+          <p>Squaring a side length gives the area of a square built on that side.</p>
+          <ul>
+            <li>Square on leg a: area is a<sup>2</sup>.</li>
+            <li>Square on leg b: area is b<sup>2</sup>.</li>
+            <li>Square on hypotenuse c: area is c<sup>2</sup>.</li>
+          </ul>
+        </section>
+      </div>
+
+      <section aria-labelledby="steps-heading">
+        <h2 id="steps-heading">4. Steps for Finding a Hypotenuse</h2>
+        <ol>
+          <li>Identify the two legs and the hypotenuse.</li>
+          <li>Square each leg.</li>
+          <li>Add the two square areas.</li>
+          <li>Find the positive side length whose square equals that total.</li>
+          <li>State the hypotenuse with units when units are given.</li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="example-heading">
+        <h2 id="example-heading">5. Completed Example: 3-4-5</h2>
+        <p>Legs: 3 and 4</p>
+        <p>3<sup>2</sup> + 4<sup>2</sup> = c<sup>2</sup></p>
+        <p>9 + 16 = c<sup>2</sup></p>
+        <p>25 = c<sup>2</sup></p>
+        <p><strong>c = 5</strong></p>
+      </section>
+
+      <section aria-labelledby="practice-heading">
+        <h2 id="practice-heading">6. Student Practice</h2>
+        <p>A right triangle has legs 5 and 12. Find the hypotenuse.</p>
+        <p>5<sup>2</sup> + 12<sup>2</sup> = c<sup>2</sup></p>
+        <div class="work-space" aria-label="Space to solve the practice problem"></div>
+      </section>
+
+      <section aria-labelledby="question-heading">
+        <h2 id="question-heading">7. One Question for Class</h2>
+        <p>Write one question or idea you want to bring to class.</p>
+        <div class="work-space question-space" aria-label="Space to write one question for class"></div>
+      </section>
+    </main>
+  </body>
+</html>

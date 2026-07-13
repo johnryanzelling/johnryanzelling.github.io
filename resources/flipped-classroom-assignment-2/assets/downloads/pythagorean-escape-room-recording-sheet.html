@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pythagorean Escape Room Group Recording Sheet</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #f7f8f5;
+        color: #111111;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.42;
+      }
+
+      main {
+        width: min(960px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0 36px;
+      }
+
+      header,
+      section {
+        margin-bottom: 14px;
+        padding: 16px;
+        border: 1px solid #222222;
+        border-radius: 8px;
+        background: #ffffff;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        margin-bottom: 8px;
+        font-size: 2rem;
+        line-height: 1.1;
+      }
+
+      h2 {
+        margin-bottom: 8px;
+        font-size: 1.18rem;
+      }
+
+      h3 {
+        margin-bottom: 6px;
+        font-size: 1rem;
+      }
+
+      .print-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 16px;
+      }
+
+      .print-actions a,
+      .print-actions button {
+        min-height: 42px;
+        border: 1px solid #222222;
+        border-radius: 8px;
+        background: #ffffff;
+        color: #111111;
+        cursor: pointer;
+        font: inherit;
+        font-weight: 800;
+        padding: 8px 12px;
+        text-decoration: none;
+      }
+
+      .print-actions a:focus-visible,
+      .print-actions button:focus-visible,
+      .print-actions a:hover,
+      .print-actions button:hover {
+        outline: 3px solid #666666;
+        outline-offset: 2px;
+      }
+
+      .line-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px 18px;
+      }
+
+      .line {
+        display: inline-block;
+        width: 100%;
+        min-width: 120px;
+        border-bottom: 1px solid #111111;
+      }
+
+      .roles {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 8px;
+        margin-top: 10px;
+      }
+
+      .role-box,
+      .workspace,
+      .formula-box {
+        border: 1px solid #333333;
+        border-radius: 8px;
+        padding: 10px;
+      }
+
+      .formula-box {
+        display: inline-block;
+        font-size: 1.2rem;
+        font-weight: 800;
+      }
+
+      .workspace {
+        min-height: 92px;
+        margin-top: 8px;
+        border-style: dashed;
+      }
+
+      .workspace.short {
+        min-height: 58px;
+      }
+
+      .two-column {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      ol,
+      ul {
+        margin: 0;
+        padding-left: 22px;
+      }
+
+      li + li {
+        margin-top: 5px;
+      }
+
+      @media (max-width: 720px) {
+        .line-grid,
+        .roles,
+        .two-column {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media print {
+        body {
+          background: #ffffff;
+        }
+
+        main {
+          width: 100%;
+          padding: 0;
+        }
+
+        header,
+        section {
+          break-inside: avoid;
+          margin-bottom: 8px;
+          padding: 10px;
+          border-radius: 0;
+        }
+
+        h1 {
+          font-size: 1.45rem;
+        }
+
+        h2 {
+          font-size: 1rem;
+        }
+
+        .print-actions {
+          display: none;
+        }
+
+        .workspace {
+          min-height: 72px;
+        }
+
+        .workspace.short {
+          min-height: 44px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Unlocking the Pythagorean Theorem</h1>
+        <p>Pythagorean Escape Room Group Recording Sheet</p>
+        <div class="line-grid" aria-label="Group member name lines">
+          <p>Group member: <span class="line" aria-hidden="true"></span></p>
+          <p>Group member: <span class="line" aria-hidden="true"></span></p>
+          <p>Group member: <span class="line" aria-hidden="true"></span></p>
+          <p>Group member: <span class="line" aria-hidden="true"></span></p>
+        </div>
+        <div class="print-actions" aria-label="Recording sheet actions">
+          <a href="../../flipped-classroom-assignment-2.html">Back to lesson</a>
+          <button type="button" onclick="window.print()">Print recording sheet</button>
+        </div>
+      </header>
+
+      <section aria-labelledby="roles-heading">
+        <h2 id="roles-heading">Group Roles</h2>
+        <div class="roles">
+          <div class="role-box"><strong>Reader</strong><br>Name: <span class="line" aria-hidden="true"></span></div>
+          <div class="role-box"><strong>Recorder</strong><br>Name: <span class="line" aria-hidden="true"></span></div>
+          <div class="role-box"><strong>Checker</strong><br>Name: <span class="line" aria-hidden="true"></span></div>
+          <div class="role-box"><strong>Reporter</strong><br>Name: <span class="line" aria-hidden="true"></span></div>
+        </div>
+      </section>
+
+      <section aria-labelledby="formula-heading">
+        <h2 id="formula-heading">Formula Reference</h2>
+        <p class="formula-box">a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
+        <p>The legs are a and b. The hypotenuse is c, across from the right angle.</p>
+      </section>
+
+      <div class="two-column">
+        <section aria-labelledby="lock1-heading">
+          <h2 id="lock1-heading">Lock 1: Identify the Hypotenuse</h2>
+          <p>Record the side opposite the right angle for each triangle.</p>
+          <div class="workspace" aria-label="Workspace for Lock 1"></div>
+        </section>
+
+        <section aria-labelledby="lock2-heading">
+          <h2 id="lock2-heading">Lock 2: Squares and Square Roots</h2>
+          <p>Match each side length with its square area and reverse the relationship.</p>
+          <div class="workspace" aria-label="Workspace for Lock 2"></div>
+        </section>
+      </div>
+
+      <section aria-labelledby="lock3-heading">
+        <h2 id="lock3-heading">Lock 3: Find the Missing Hypotenuse</h2>
+        <p>For each triangle, show substitution, squaring, addition, and the positive square root.</p>
+        <div class="workspace" aria-label="Workspace for Lock 3"></div>
+      </section>
+
+      <section aria-labelledby="lock4-heading">
+        <h2 id="lock4-heading">Lock 4: Determine Whether It Is a Right Triangle</h2>
+        <p>Compare a<sup>2</sup> + b<sup>2</sup> with c<sup>2</sup>. Record the comparison and decision.</p>
+        <div class="workspace" aria-label="Workspace for Lock 4"></div>
+      </section>
+
+      <section aria-labelledby="final-heading">
+        <h2 id="final-heading">Final Challenge: Real-World Distances</h2>
+        <p>Record the three real-world distances and use them to form the completion code.</p>
+        <div class="workspace" aria-label="Workspace for final challenge"></div>
+        <p>Final completion code: <span class="line" aria-hidden="true"></span></p>
+      </section>
+
+      <section aria-labelledby="reflection-heading">
+        <h2 id="reflection-heading">Reflection</h2>
+        <p>&ldquo;Which clue required the most reasoning, and why?&rdquo;</p>
+        <div class="workspace short" aria-label="Workspace for reflection"></div>
+      </section>
+    </main>
+  </body>
+</html>

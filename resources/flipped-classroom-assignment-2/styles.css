@@ -16,6 +16,16 @@ html {
   scroll-behavior: smooth;
 }
 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .lesson-page {
   background: var(--lesson-paper);
 }
@@ -326,6 +336,7 @@ html {
 
 .video-slot,
 .embed-frame,
+.teacher-embed-frame,
 .survey-frame {
   min-width: 0;
 }
@@ -373,6 +384,7 @@ html {
 }
 
 .embed-frame,
+.teacher-embed-frame,
 .survey-frame {
   position: relative;
   overflow: hidden;
@@ -390,6 +402,7 @@ html {
 }
 
 .embed-frame iframe,
+.teacher-embed-frame iframe,
 .survey-frame iframe {
   position: absolute;
   inset: 0;
@@ -423,6 +436,472 @@ html {
 
 .optional-review .external-video-card {
   margin: 0 16px 16px;
+}
+
+.guided-notes-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.escape-resource-actions,
+.teacher-material-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.privacy-note,
+.no-js-activity-note,
+.completion-summary {
+  max-width: 820px;
+  margin-top: 18px;
+  padding: 16px;
+  border: 1px solid var(--lesson-line);
+  border-left: 5px solid var(--lesson-teal);
+  border-radius: 8px;
+  background: var(--lesson-surface);
+  color: var(--lesson-muted);
+}
+
+.no-js-activity-note {
+  border-left-color: var(--lesson-gold);
+}
+
+.practice-activity {
+  margin-top: 30px;
+}
+
+.activity-heading,
+.completion-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.activity-heading h3,
+.completion-summary h3 {
+  margin: 0;
+  color: var(--lesson-ink);
+  font-size: 1.45rem;
+  line-height: 1.2;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  border: 1px solid var(--lesson-line);
+  border-radius: 999px;
+  background: var(--lesson-surface);
+  color: var(--lesson-muted);
+  font-size: 0.82rem;
+  font-weight: 900;
+  padding: 5px 12px;
+}
+
+.status-pill.is-complete {
+  border-color: var(--lesson-teal);
+  background: #e4f2ef;
+  color: var(--lesson-teal-dark);
+}
+
+.practice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.check-card {
+  display: grid;
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid var(--lesson-line);
+  border-radius: 8px;
+  background: var(--lesson-surface);
+}
+
+.check-card.is-correct {
+  border-color: var(--lesson-teal);
+  box-shadow: inset 5px 0 0 var(--lesson-teal);
+}
+
+.check-card.needs-retry {
+  border-color: var(--lesson-gold);
+  box-shadow: inset 5px 0 0 var(--lesson-gold);
+}
+
+.check-card h4,
+.check-card p,
+.check-card fieldset {
+  margin: 0;
+}
+
+.check-card h4 {
+  color: var(--lesson-ink);
+  font-size: 1.05rem;
+}
+
+.math-diagram {
+  display: block;
+  width: min(240px, 100%);
+  height: auto;
+}
+
+.math-diagram rect,
+.math-diagram path {
+  fill: #ffffff;
+  stroke: var(--lesson-teal-dark);
+  stroke-width: 3;
+}
+
+.math-diagram .right-angle {
+  fill: none;
+  stroke: var(--lesson-rose);
+  stroke-width: 3;
+}
+
+.math-diagram text {
+  fill: var(--lesson-ink);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  text-anchor: middle;
+}
+
+.answer-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.check-card input[type="text"],
+.check-card input:not([type]),
+.check-card textarea {
+  width: min(100%, 260px);
+  min-height: 42px;
+  border: 1px solid var(--lesson-line);
+  border-radius: 8px;
+  background: var(--lesson-paper);
+  color: var(--lesson-ink);
+  font: inherit;
+  padding: 9px 11px;
+}
+
+.check-card textarea {
+  width: 100%;
+  resize: vertical;
+}
+
+.check-card fieldset {
+  display: grid;
+  gap: 8px;
+  padding: 0;
+  border: 0;
+}
+
+.check-card legend,
+.check-card label {
+  color: var(--lesson-ink);
+  font-weight: 800;
+}
+
+.check-card fieldset label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-height: 34px;
+  color: var(--lesson-muted);
+  font-weight: 700;
+}
+
+.feedback {
+  min-height: 1.5em;
+  margin: 0;
+  color: var(--lesson-muted);
+  font-weight: 800;
+}
+
+.feedback.is-correct {
+  color: var(--lesson-teal-dark);
+}
+
+.feedback.needs-retry {
+  color: #7c4a00;
+}
+
+.completion-summary {
+  border-left-color: var(--lesson-blue);
+}
+
+.completion-summary > div {
+  min-width: min(100%, 420px);
+}
+
+.completion-summary p {
+  margin: 8px 0 0;
+}
+
+.reset-button {
+  align-self: start;
+}
+
+.timeline-list,
+.catch-up-station ol {
+  max-width: 820px;
+  margin: 18px 0 0;
+  padding-left: 22px;
+  color: var(--lesson-muted);
+}
+
+.timeline-list li + li,
+.catch-up-station li + li {
+  margin-top: 8px;
+}
+
+.catch-up-station {
+  max-width: 820px;
+  margin-top: 24px;
+  padding: 18px;
+  border: 1px solid var(--lesson-line);
+  border-left: 5px solid var(--lesson-gold);
+  border-radius: 8px;
+  background: var(--lesson-surface);
+}
+
+.catch-up-station h3,
+.escape-lock h3,
+.escape-completion-summary h4 {
+  margin: 0;
+  color: var(--lesson-ink);
+}
+
+.catch-up-station p {
+  margin-top: 10px;
+}
+
+.escape-room-panel {
+  margin-top: 22px;
+}
+
+.escape-progress,
+.escape-lock,
+.escape-reset,
+.escape-completion-summary {
+  max-width: 920px;
+  border: 1px solid var(--lesson-line);
+  border-radius: 8px;
+  background: var(--lesson-surface);
+}
+
+.escape-progress,
+.escape-reset,
+.escape-completion-summary {
+  padding: 16px;
+}
+
+.escape-progress ol {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.escape-progress span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  border: 1px solid var(--lesson-line);
+  border-radius: 8px;
+  background: var(--lesson-paper);
+  color: var(--lesson-muted);
+  font-size: 0.86rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+.escape-progress span.is-current {
+  border-color: var(--lesson-blue);
+  background: #eaf2fb;
+  color: var(--lesson-blue);
+}
+
+.escape-progress span.is-complete {
+  border-color: var(--lesson-teal);
+  background: #e4f2ef;
+  color: var(--lesson-teal-dark);
+}
+
+.escape-progress p:last-child {
+  margin: 12px 0 0;
+  font-weight: 800;
+}
+
+.escape-lock {
+  display: grid;
+  gap: 16px;
+  margin-top: 18px;
+  padding: 18px;
+}
+
+.escape-lock.is-locked {
+  background: #f7f8f5;
+}
+
+.escape-lock.is-complete {
+  border-color: var(--lesson-teal);
+  box-shadow: inset 5px 0 0 var(--lesson-teal);
+}
+
+.escape-lock-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.escape-lock p,
+.escape-lock fieldset,
+.escape-lock h4,
+.escape-reset p,
+.escape-completion-summary p {
+  margin: 0;
+}
+
+.escape-grid,
+.work-grid,
+.match-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.escape-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.work-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.match-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.escape-clue {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--lesson-line);
+  border-radius: 8px;
+  background: #fbfcf8;
+}
+
+.escape-clue h4 {
+  color: var(--lesson-ink);
+  font-size: 1rem;
+}
+
+.escape-diagram {
+  display: block;
+  width: min(260px, 100%);
+  height: auto;
+}
+
+.escape-diagram path {
+  fill: #ffffff;
+  stroke: var(--lesson-teal-dark);
+  stroke-width: 3;
+}
+
+.escape-diagram .right-angle {
+  fill: none;
+  stroke: var(--lesson-rose);
+  stroke-width: 4;
+}
+
+.escape-diagram text {
+  fill: var(--lesson-ink);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.choice-list {
+  display: grid;
+  gap: 8px;
+  padding: 0;
+  border: 0;
+}
+
+.choice-list legend,
+.match-grid label,
+.work-grid label {
+  color: var(--lesson-ink);
+  font-weight: 800;
+}
+
+.choice-list label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  min-height: 34px;
+  color: var(--lesson-muted);
+  font-weight: 700;
+}
+
+.match-grid label,
+.work-grid label {
+  display: block;
+  line-height: 1.5;
+}
+
+.match-grid input,
+.work-grid input {
+  width: 5.5rem;
+  min-height: 38px;
+  margin: 2px 4px;
+  border: 1px solid var(--lesson-line);
+  border-radius: 8px;
+  background: var(--lesson-paper);
+  color: var(--lesson-ink);
+  font: inherit;
+  padding: 7px 9px;
+}
+
+.right-triangle-check {
+  align-content: start;
+}
+
+.escape-completion-summary {
+  margin-top: 8px;
+  border-left: 5px solid var(--lesson-teal);
+}
+
+.completion-code {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  margin-left: 4px;
+  border: 1px solid var(--lesson-teal);
+  border-radius: 8px;
+  background: #e4f2ef;
+  color: var(--lesson-teal-dark);
+  padding: 4px 10px;
+}
+
+.escape-reset {
+  margin-top: 18px;
 }
 
 .lesson-footer {
@@ -466,8 +945,29 @@ html {
 
   .overview-grid,
   .external-video-grid,
-  .teacher-video-layout {
+  .teacher-video-layout,
+  .practice-grid,
+  .escape-grid,
+  .work-grid,
+  .match-grid {
     grid-template-columns: 1fr;
+  }
+
+  .escape-progress ol {
+    grid-template-columns: 1fr;
+  }
+
+  .activity-heading,
+  .completion-summary,
+  .escape-lock-header {
+    display: grid;
+  }
+
+  .answer-row .button,
+  .guided-notes-actions .button,
+  .escape-resource-actions .button,
+  .teacher-material-actions .button {
+    width: 100%;
   }
 
   .lesson-section {
@@ -478,5 +978,42 @@ html {
 
   .lesson-section h2 {
     font-size: 1.6rem;
+  }
+}
+
+@media print {
+  .site-header,
+  .lesson-hero,
+  .lesson-progress,
+  .lesson-section:not(#escape-room),
+  .lesson-footer,
+  .escape-resource-actions,
+  .privacy-note,
+  .escape-lock,
+  .escape-progress,
+  .escape-reset {
+    display: none;
+  }
+
+  #escape-room,
+  .escape-completion-summary {
+    display: block;
+    border: 0;
+    background: #ffffff;
+    box-shadow: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
   }
 }

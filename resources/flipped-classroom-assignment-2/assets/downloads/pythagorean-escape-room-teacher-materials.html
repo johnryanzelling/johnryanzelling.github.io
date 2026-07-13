@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pythagorean Escape Room Teacher Materials and Answer Key</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #f7f8f5;
+        color: #111111;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.45;
+      }
+
+      main {
+        width: min(980px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0 40px;
+      }
+
+      header,
+      section {
+        margin-bottom: 16px;
+        padding: 18px;
+        border: 1px solid #222222;
+        border-radius: 8px;
+        background: #ffffff;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        margin-bottom: 8px;
+        font-size: 2rem;
+        line-height: 1.1;
+      }
+
+      h2 {
+        margin-bottom: 10px;
+        font-size: 1.25rem;
+      }
+
+      h3 {
+        margin-bottom: 8px;
+        font-size: 1.05rem;
+      }
+
+      .print-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 16px;
+      }
+
+      .print-actions a,
+      .print-actions button {
+        min-height: 42px;
+        border: 1px solid #222222;
+        border-radius: 8px;
+        background: #ffffff;
+        color: #111111;
+        cursor: pointer;
+        font: inherit;
+        font-weight: 800;
+        padding: 8px 12px;
+        text-decoration: none;
+      }
+
+      .print-actions a:focus-visible,
+      .print-actions button:focus-visible,
+      .print-actions a:hover,
+      .print-actions button:hover {
+        outline: 3px solid #666666;
+        outline-offset: 2px;
+      }
+
+      .two-column {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .answer-box {
+        margin-top: 10px;
+        padding: 12px;
+        border: 1px solid #444444;
+        border-radius: 8px;
+        background: #f7f8f5;
+      }
+
+      ol,
+      ul {
+        margin: 0;
+        padding-left: 22px;
+      }
+
+      li + li {
+        margin-top: 6px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+
+      th,
+      td {
+        border: 1px solid #333333;
+        padding: 8px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        background: #eeeeee;
+      }
+
+      @media (max-width: 760px) {
+        .two-column {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media print {
+        body {
+          background: #ffffff;
+        }
+
+        main {
+          width: 100%;
+          padding: 0;
+        }
+
+        header,
+        section {
+          break-inside: avoid;
+          margin-bottom: 10px;
+          padding: 12px;
+          border-radius: 0;
+        }
+
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        h2 {
+          font-size: 1.05rem;
+        }
+
+        .print-actions {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Teacher Materials and Answer Key</h1>
+        <p>Unlocking the Pythagorean Theorem: A Flipped Escape-Room Lesson</p>
+        <p>
+          This page is teacher-facing. It contains answers, worked solutions, facilitation moves,
+          and suggested hints for the in-class activity.
+        </p>
+        <div class="print-actions" aria-label="Teacher materials actions">
+          <a href="../../flipped-classroom-assignment-2.html">Back to lesson</a>
+          <button type="button" onclick="window.print()">Print teacher materials</button>
+        </div>
+      </header>
+
+      <section aria-labelledby="timing-heading">
+        <h2 id="timing-heading">Complete 60-Minute Facilitation Plan</h2>
+        <ol>
+          <li><strong>0-5 minutes:</strong> individual readiness problem.</li>
+          <li><strong>5-12 minutes:</strong> targeted review.</li>
+          <li><strong>12-17 minutes:</strong> group assignments and directions.</li>
+          <li><strong>17-47 minutes:</strong> collaborative escape room.</li>
+          <li><strong>47-54 minutes:</strong> solution review and error discussion.</li>
+          <li><strong>54-58 minutes:</strong> individual exit ticket.</li>
+          <li><strong>58-60 minutes:</strong> student survey.</li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="grouping-heading">
+        <h2 id="grouping-heading">Grouping Guidance</h2>
+        <ul>
+          <li>Use groups of three or four so every student has a role.</li>
+          <li>Assign Reader, Recorder, Checker, and Reporter. In a group of three, combine Reader and Reporter.</li>
+          <li>Place students who missed pre-class work near the catch-up station before joining a group.</li>
+          <li>Ask the Checker to verify that every answer includes reasoning, not just a code.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="answers-heading">
+        <h2 id="answers-heading">All Correct Answers</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Activity</th>
+              <th>Correct answers</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lock 1: Hypotenuse</td>
+              <td>Triangle A: BC; Triangle B: DE; Triangle C: GH; Triangle D: JL.</td>
+            </tr>
+            <tr>
+              <td>Lock 2: Squares and square roots</td>
+              <td>3 to 9; 4 to 16; 5 to 25; 8 to 64; 12 to 144; 9 to 3; 16 to 4; 25 to 5; 64 to 8; 144 to 12.</td>
+            </tr>
+            <tr>
+              <td>Lock 3: Missing hypotenuse</td>
+              <td>Legs 3 and 4: 5; legs 6 and 8: 10; legs 5 and 12: 13.</td>
+            </tr>
+            <tr>
+              <td>Lock 4: Right triangle?</td>
+              <td>6, 8, 10: yes; 5, 6, 8: no; 9, 12, 15: yes; 8, 10, 12: no.</td>
+            </tr>
+            <tr>
+              <td>Final challenge</td>
+              <td>Ladder: 10 feet; rectangular screen: 15 inches; field shortcut: 13 units. Completion code: 10-15-13.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section aria-labelledby="solutions-heading">
+        <h2 id="solutions-heading">Worked Solutions</h2>
+        <div class="two-column">
+          <div class="answer-box">
+            <h3>Lock 3</h3>
+            <ul>
+              <li>3<sup>2</sup> + 4<sup>2</sup> = c<sup>2</sup>; 9 + 16 = 25; c = 5.</li>
+              <li>6<sup>2</sup> + 8<sup>2</sup> = c<sup>2</sup>; 36 + 64 = 100; c = 10.</li>
+              <li>5<sup>2</sup> + 12<sup>2</sup> = c<sup>2</sup>; 25 + 144 = 169; c = 13.</li>
+            </ul>
+          </div>
+          <div class="answer-box">
+            <h3>Lock 4</h3>
+            <ul>
+              <li>6, 8, 10: 36 + 64 = 100 and 10<sup>2</sup> = 100, so yes.</li>
+              <li>5, 6, 8: 25 + 36 = 61 and 8<sup>2</sup> = 64, so no.</li>
+              <li>9, 12, 15: 81 + 144 = 225 and 15<sup>2</sup> = 225, so yes.</li>
+              <li>8, 10, 12: 64 + 100 = 164 and 12<sup>2</sup> = 144, so no.</li>
+            </ul>
+          </div>
+          <div class="answer-box">
+            <h3>Final Challenge</h3>
+            <ul>
+              <li>Ladder: 6<sup>2</sup> + 8<sup>2</sup> = 36 + 64 = 100, so the ladder is 10 feet.</li>
+              <li>Screen: 9<sup>2</sup> + 12<sup>2</sup> = 81 + 144 = 225, so the diagonal is 15 inches.</li>
+              <li>Field: 5<sup>2</sup> + 12<sup>2</sup> = 25 + 144 = 169, so the shortcut is 13 units.</li>
+            </ul>
+          </div>
+          <div class="answer-box">
+            <h3>Completion Code</h3>
+            <p>Use the three final challenge answers in order: <strong>10-15-13</strong>.</p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="misconceptions-heading">
+        <h2 id="misconceptions-heading">Common Misconceptions</h2>
+        <ul>
+          <li>Students may assume the hypotenuse is always slanted. Point them back to the side opposite the right angle.</li>
+          <li>Students may add side lengths instead of square areas. Ask, "What does the exponent 2 tell us to do first?"</li>
+          <li>Students may forget to take the square root after finding c<sup>2</sup>.</li>
+          <li>Students may choose yes or no for a right-triangle check without comparing both sides of the equation.</li>
+          <li>Students may treat the longest given side as c without checking that it is opposite the right angle or the largest side in a side-length set.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="questions-heading">
+        <h2 id="questions-heading">Targeted Teacher Questions</h2>
+        <ul>
+          <li>Which side is across from the right-angle marker?</li>
+          <li>What square area belongs to this side length?</li>
+          <li>What does c<sup>2</sup> represent, and what does c represent?</li>
+          <li>How do you know your yes-or-no decision is supported?</li>
+          <li>Where do you see the right triangle in the real-world context?</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="hints-heading">
+        <h2 id="hints-heading">Suggested Hints</h2>
+        <ul>
+          <li><strong>Lock 1:</strong> Put your finger on the right-angle marker, then look across the triangle.</li>
+          <li><strong>Lock 2:</strong> Squaring goes from side length to area; square root goes from area to side length.</li>
+          <li><strong>Lock 3:</strong> Read your work in order: substitute, square, add, square root.</li>
+          <li><strong>Lock 4:</strong> A decision needs two totals: a<sup>2</sup> + b<sup>2</sup> and c<sup>2</sup>.</li>
+          <li><strong>Final challenge:</strong> Draw or imagine the right triangle before calculating.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="catch-up-heading">
+        <h2 id="catch-up-heading">Five-Minute Catch-Up Station</h2>
+        <ol>
+          <li>Read: In a right triangle, the square areas on the legs add to the square area on the hypotenuse: a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>.</li>
+          <li>Label one right triangle by circling the right angle, naming the legs, and identifying the hypotenuse.</li>
+          <li>Review the 3-4-5 example: 3<sup>2</sup> + 4<sup>2</sup> = 9 + 16 = 25, so c = 5.</li>
+          <li>Answer one readiness question: If a square has area 81, what is the side length?</li>
+          <li>Join a group and take a role.</li>
+        </ol>
+        <p>Do not replay the full lecture for the entire class. Use this station for students who need the prerequisite bridge.</p>
+      </section>
+
+      <section aria-labelledby="extension-heading">
+        <h2 id="extension-heading">Extension Activity for Early Finishers</h2>
+        <p>
+          Ask early finishers to create one new no-calculator Pythagorean clue using a familiar triple.
+          They must include a diagram or context, the worked solution, and one hint that helps without giving
+          away the answer.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

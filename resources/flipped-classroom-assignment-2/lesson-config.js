@@ -5,6 +5,7 @@ window.FlippedClassroomLesson = {
   media: {
     teacherVideo: {
       source: "",
+      embedUrl: "",
       type: "video/mp4",
       posterImagePath: "",
       captionsPath: "",
@@ -15,9 +16,10 @@ window.FlippedClassroomLesson = {
       directUrl: ""
     },
     downloads: {
-      guidedNotes: "",
+      guidedNotes: "assets/downloads/pythagorean-guided-notes.html",
       readinessCheck: "",
-      teacherMaterials: ""
+      groupRecordingSheet: "assets/downloads/pythagorean-escape-room-recording-sheet.html",
+      teacherMaterials: "assets/downloads/pythagorean-escape-room-teacher-materials.html"
     }
   },
   visuals: {

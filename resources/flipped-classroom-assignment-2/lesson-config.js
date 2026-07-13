@@ -3,12 +3,25 @@ window.FlippedClassroomLesson = {
   subtitle: "A Flipped Escape-Room Lesson",
   course: "Regular Grade 7 Mathematics - Remedial Pre-Algebra Bridge",
   media: {
-    teacherVideoUrl: "",
-    externalVideos: [],
+    teacherVideo: {
+      source: "",
+      type: "video/mp4",
+      posterImagePath: "",
+      captionsPath: "",
+      transcriptPath: ""
+    },
+    microsoftFormsSurvey: {
+      embedUrl: "",
+      directUrl: ""
+    },
     downloads: {
       guidedNotes: "",
       readinessCheck: "",
       teacherMaterials: ""
     }
+  },
+  visuals: {
+    expectedInfographicPath: "assets/images/pythagorean-theorem-overview.png",
+    infographicPath: ""
   }
 };

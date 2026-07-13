@@ -70,15 +70,64 @@
           <p class="section-kicker">Start Here</p>
           <h2>Lesson Overview</h2>
           <p>
-            This resource is a student-facing shell for a flipped seventh-grade pre-algebra lesson.
-            Students preview the Pythagorean theorem before class, arrive ready for targeted support,
-            and spend class time applying the idea through collaborative puzzles.
+            This flipped lesson introduces the Pythagorean theorem as a bridge from familiar area ideas
+            to right-triangle distance problems. It is designed for one 60-minute in-person class period
+            after a short, purposeful pre-class video sequence.
+          </p>
+          <p class="essential-question">
+            <strong>Essential question:</strong>
+            How can the areas of squares help determine an unknown distance in a right triangle?
           </p>
           <ul class="lesson-facts" aria-label="Lesson facts">
             <li><strong>Topic:</strong> Pythagorean theorem foundations</li>
-            <li><strong>Audience:</strong> Regular Grade 7 Mathematics students who need remedial bridge support</li>
-            <li><strong>Sequence:</strong> Watch, note, check readiness, practice, collaborate, reflect</li>
+            <li><strong>Audience:</strong> Regular Grade 7 Mathematics students who need remedial pre-algebra bridge support</li>
+            <li><strong>Class time:</strong> One 60-minute in-person lesson</li>
+            <li><strong>Estimated pre-class time:</strong> 18-22 minutes</li>
           </ul>
+          <div class="overview-grid" aria-label="Lesson planning details">
+            <article class="overview-card">
+              <h3>Learning Objectives</h3>
+              <ul>
+                <li>Identify the legs and hypotenuse of a right triangle.</li>
+                <li>Find a missing hypotenuse when both legs are known.</li>
+                <li>Determine whether familiar side lengths form a right triangle.</li>
+                <li>Apply the theorem to simple real-world distance problems.</li>
+              </ul>
+            </article>
+            <article class="overview-card">
+              <h3>Required Materials</h3>
+              <ul>
+                <li>School laptop with internet access.</li>
+                <li>Headphones for video viewing.</li>
+                <li>Guided notes for recording examples and questions.</li>
+                <li>Pencil and scratch paper; no calculator should be necessary.</li>
+              </ul>
+            </article>
+            <article class="overview-card">
+              <h3>Prior Knowledge</h3>
+              <ul>
+                <li>Area of a square.</li>
+                <li>Side length of a square when the area is known.</li>
+                <li>Area of a right triangle as half of an enclosing rectangle or square.</li>
+                <li>Solving one-step equations.</li>
+              </ul>
+            </article>
+          </div>
+          <div class="bridge-note">
+            <strong>Bridge lesson note:</strong>
+            This lesson does not assume students have already mastered the Pythagorean theorem. It uses
+            perfect squares and familiar triples to build readiness for the standard expectation.
+          </div>
+          <figure class="infographic-card" data-infographic-slot data-infographic-path="assets/images/pythagorean-theorem-overview.png">
+            <div class="media-placeholder" role="status">
+              Infographic placeholder: add the user-supplied image at
+              <code>assets/images/pythagorean-theorem-overview.png</code> when it is available.
+            </div>
+            <figcaption>
+              The lesson visual will show how square areas on the legs of a right triangle combine to match
+              the square area on the hypotenuse.
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -87,11 +136,36 @@
           <p class="section-kicker">Before Class</p>
           <h2>Prepare for the Lesson</h2>
           <p>
-            Before class, students will watch short videos and complete guided notes so class time can focus
-            on questions, teacher support, and hands-on problem solving.
+            Complete this short sequence before class so we can use class time for questions, guided
+            practice, and the escape-room challenge instead of replaying the whole lecture.
           </p>
-          <div class="placeholder-message">
-            <strong>Placeholder:</strong> The full pre-class checklist and student directions will be added in a later TODO.
+          <ol class="sequence-list" aria-label="Pre-class sequence">
+            <li>
+              <strong>Watch the teacher mini lesson first.</strong>
+              Focus on the vocabulary of right angle, legs, and hypotenuse.
+            </li>
+            <li>
+              <strong>Watch the required external videos.</strong>
+              Use them to reinforce the area model and to see why the theorem works.
+            </li>
+            <li>
+              <strong>Use the guided notes.</strong>
+              Record the key examples, including 3-4-5, 6-8-10, and the 5-12-13 pause problem.
+            </li>
+            <li>
+              <strong>Complete the readiness check.</strong>
+              This helps show what you understand before the in-class practice begins.
+            </li>
+            <li>
+              <strong>Bring one question to class.</strong>
+              Write down one point that felt confusing, surprising, or worth asking about.
+            </li>
+          </ol>
+          <div class="accountability-note">
+            <strong>Accountability:</strong>
+            Students who do not finish the pre-class work will begin at a short catch-up station.
+            The class period will not be used to replay the full lecture, and completion will be
+            checked separately from understanding.
           </div>
         </div>
       </section>
@@ -101,11 +175,32 @@
           <p class="section-kicker">Teacher Video</p>
           <h2>Teacher-Created Mini Lesson</h2>
           <p>
-            This section will hold the teacher-created explanation video for identifying legs, hypotenuse,
-            and the relationship a squared plus b squared equals c squared.
+            Start with the teacher-created Camtasia video. It should be approximately 4-6 minutes and
+            should introduce the lesson vocabulary before the external videos add another perspective.
           </p>
-          <div class="media-placeholder" role="status">
-            Teacher video space reserved. No video has been added yet.
+          <div class="teacher-video-layout">
+            <div class="video-slot" data-teacher-video-slot>
+              <div class="media-placeholder" role="status">
+                Teacher Camtasia video placeholder: configure the video source, poster image,
+                captions, and transcript in <code>lesson-config.js</code> when the final files are ready.
+              </div>
+            </div>
+            <aside class="video-outline" aria-label="Teacher video outline">
+              <h3>Planned Video Outline</h3>
+              <ol>
+                <li>Roof or diagonal-distance hook.</li>
+                <li>Identify right angle, legs, and hypotenuse.</li>
+                <li>Connect square areas to <span class="math-text">a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></span>.</li>
+                <li>Model the 3-4-5 triangle.</li>
+                <li>Verify the 6-8-10 right triangle.</li>
+                <li>Pause problem using 5-12-13.</li>
+                <li>Prompt students to complete the readiness check.</li>
+              </ol>
+            </aside>
+          </div>
+          <div class="viewing-question">
+            <strong>Focused viewing question:</strong>
+            When you square the two legs of a right triangle, what does their combined area tell you about the hypotenuse?
           </div>
         </div>
       </section>
@@ -115,11 +210,68 @@
           <p class="section-kicker">Additional Support</p>
           <h2>External Videos</h2>
           <p>
-            Later updates will add vetted support videos for students who need another explanation or a quick review.
+            These videos support the teacher-created mini lesson. They do not replace it; they give you
+            another way to see the theorem and why it works.
           </p>
-          <div class="placeholder-message">
-            <strong>Placeholder:</strong> External video links will be configured locally in <code>lesson-config.js</code>.
+          <div class="external-video-grid">
+            <article class="external-video-card">
+              <h3>Khan Academy: The Pythagorean theorem intro</h3>
+              <p>
+                <strong>Purpose:</strong> Review the basic relationship between the sides of a right triangle
+                and see the theorem used with simple numbers.
+              </p>
+              <div class="embed-frame">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/AA6RfgP-AHU"
+                  title="Khan Academy video: The Pythagorean theorem intro"
+                  loading="lazy"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <p class="response-prompt">
+                <strong>Response prompt:</strong> In your notes, label the legs and hypotenuse in one example from the video.
+              </p>
+              <p><a href="https://www.youtube.com/watch?v=AA6RfgP-AHU" target="_blank" rel="noreferrer">Open the Khan Academy video directly</a></p>
+            </article>
+            <article class="external-video-card">
+              <h3>TED-Ed: How many ways are there to prove the Pythagorean theorem?</h3>
+              <p>
+                <strong>Purpose:</strong> See the theorem as an area relationship so the formula feels connected
+                to the squares drawn on each side.
+              </p>
+              <div class="embed-frame">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/YompsDlEdtc"
+                  title="TED-Ed video: How many ways are there to prove the Pythagorean theorem?"
+                  loading="lazy"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <p class="response-prompt">
+                <strong>Response prompt:</strong> Write one sentence explaining how square areas help prove the theorem.
+              </p>
+              <p><a href="https://www.youtube.com/watch?v=YompsDlEdtc" target="_blank" rel="noreferrer">Open the TED-Ed video directly</a></p>
+            </article>
           </div>
+          <details class="optional-review">
+            <summary>Need a square-root refresher?</summary>
+            <article class="external-video-card">
+              <h3>Khan Academy: Introduction to square roots</h3>
+              <p>
+                <strong>Optional purpose:</strong> Review how a square root helps you move from the area
+                of a square back to its side length.
+              </p>
+              <div class="embed-frame">
+                <iframe
+                  src="https://www.youtube-nocookie.com/embed/mbc3_e5lWw0"
+                  title="Khan Academy video: Introduction to square roots"
+                  loading="lazy"
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <p><a href="https://www.youtube.com/watch?v=mbc3_e5lWw0" target="_blank" rel="noreferrer">Open the square-root refresher directly</a></p>
+            </article>
+          </details>
         </div>
       </section>
 
@@ -196,8 +348,11 @@
           <p>
             This section will gather student feedback about the flipped format, the videos, and the escape-room activity.
           </p>
-          <div class="placeholder-message">
-            <strong>Placeholder:</strong> Survey questions are not active yet.
+          <div class="survey-slot" data-survey-slot>
+            <div class="placeholder-message" role="status">
+              <strong>Placeholder:</strong> Microsoft Forms survey URLs are not configured yet. Add the embed
+              URL and direct fallback URL in <code>lesson-config.js</code> when the survey is ready.
+            </div>
           </div>
         </div>
       </section>

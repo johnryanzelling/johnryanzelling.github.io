@@ -1,0 +1,789 @@
+.flipped-classroom-theme {
+  --fc-ink: #17223b;
+  --fc-muted: #42526e;
+  --fc-paper: #fffaf0;
+  --fc-surface: #ffffff;
+  --fc-grid: rgba(28, 89, 134, 0.16);
+  --fc-line: #c9d7e8;
+  --fc-teal: #087f8c;
+  --fc-teal-dark: #075d68;
+  --fc-purple: #6947a8;
+  --fc-purple-dark: #50327f;
+  --fc-coral: #c7553f;
+  --fc-coral-dark: #9f3e2d;
+  --fc-gold: #b47705;
+  --fc-gold-soft: #fff0bf;
+  --fc-sky: #e8f6ff;
+  --fc-mint: #e8fbf4;
+  --fc-lavender: #f1edff;
+  --fc-cream: #fff8df;
+  --fc-shadow: 0 18px 42px rgba(23, 34, 59, 0.12);
+  --fc-small-shadow: 0 10px 22px rgba(23, 34, 59, 0.1);
+  --lesson-ink: var(--fc-ink);
+  --lesson-muted: var(--fc-muted);
+  --lesson-paper: var(--fc-paper);
+  --lesson-surface: var(--fc-surface);
+  --lesson-soft: var(--fc-sky);
+  --lesson-line: var(--fc-line);
+  --lesson-teal: var(--fc-teal);
+  --lesson-teal-dark: var(--fc-teal-dark);
+  --lesson-gold: var(--fc-gold);
+  --lesson-rose: var(--fc-coral);
+  --lesson-blue: #2563a6;
+  color: var(--fc-ink);
+  background:
+    linear-gradient(var(--fc-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--fc-grid) 1px, transparent 1px),
+    radial-gradient(circle at 16px 16px, rgba(8, 127, 140, 0.1) 0 2px, transparent 2px),
+    var(--fc-paper);
+  background-size: 28px 28px, 28px 28px, 112px 112px, auto;
+  line-height: 1.55;
+}
+
+.flipped-classroom-theme a {
+  color: var(--fc-teal-dark);
+  text-decoration-color: rgba(8, 127, 140, 0.4);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.flipped-classroom-theme a:hover {
+  color: var(--fc-purple-dark);
+  text-decoration-color: currentColor;
+}
+
+.flipped-classroom-theme a:focus-visible,
+.flipped-classroom-theme button:focus-visible,
+.flipped-classroom-theme input:focus-visible,
+.flipped-classroom-theme textarea:focus-visible,
+.flipped-classroom-theme summary:focus-visible {
+  outline: 3px solid #0b7189;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px rgba(251, 191, 36, 0.35);
+}
+
+.flipped-classroom-theme button:disabled,
+.flipped-classroom-theme fieldset:disabled,
+.flipped-classroom-theme input:disabled {
+  opacity: 0.62;
+}
+
+.flipped-classroom-theme .site-header {
+  border-bottom: 4px solid var(--fc-gold);
+  background:
+    linear-gradient(135deg, rgba(23, 34, 59, 0.98), rgba(80, 50, 127, 0.95)),
+    var(--fc-ink);
+  color: #ffffff;
+}
+
+.flipped-classroom-theme .site-header a,
+.flipped-classroom-theme .brand small {
+  color: #ffffff;
+}
+
+.flipped-classroom-theme .brand-mark {
+  background: var(--fc-gold-soft);
+  color: var(--fc-ink);
+}
+
+.flipped-classroom-theme .site-nav a {
+  border-radius: 8px;
+  color: #eef7ff;
+}
+
+.flipped-classroom-theme .site-nav a.active,
+.flipped-classroom-theme .site-nav a:hover,
+.flipped-classroom-theme .site-nav a:focus-visible {
+  background: #ffffff;
+  color: var(--fc-purple-dark);
+}
+
+.flipped-classroom-theme .lesson-hero {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 6px solid var(--fc-gold);
+  background:
+    linear-gradient(135deg, rgba(8, 127, 140, 0.18), transparent 42%),
+    linear-gradient(315deg, rgba(105, 71, 168, 0.18), transparent 46%),
+    linear-gradient(var(--fc-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--fc-grid) 1px, transparent 1px),
+    #fffaf0;
+  background-size: auto, auto, 30px 30px, 30px 30px, auto;
+}
+
+.flipped-classroom-theme .lesson-hero::before,
+.flipped-classroom-theme .lesson-hero::after {
+  position: absolute;
+  content: "";
+  pointer-events: none;
+}
+
+.flipped-classroom-theme .lesson-hero::before {
+  right: clamp(20px, 7vw, 96px);
+  bottom: 22px;
+  width: min(30vw, 260px);
+  aspect-ratio: 1;
+  border-right: 14px solid rgba(8, 127, 140, 0.28);
+  border-bottom: 14px solid rgba(199, 85, 63, 0.26);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.flipped-classroom-theme .lesson-hero::after {
+  right: clamp(42px, 13vw, 170px);
+  bottom: 56px;
+  width: min(18vw, 154px);
+  aspect-ratio: 1;
+  border: 4px dashed rgba(80, 50, 127, 0.45);
+  transform: rotate(12deg);
+}
+
+.flipped-classroom-theme .lesson-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.flipped-classroom-theme .eyebrow,
+.flipped-classroom-theme .section-kicker,
+.flipped-classroom-theme .progress-label {
+  letter-spacing: 0;
+}
+
+.flipped-classroom-theme .eyebrow {
+  display: inline-flex;
+  width: fit-content;
+  border: 2px solid var(--fc-teal);
+  border-radius: 999px;
+  background: var(--fc-mint);
+  color: var(--fc-teal-dark);
+  font-weight: 900;
+  padding: 6px 12px;
+}
+
+.flipped-classroom-theme .lesson-hero h1 {
+  color: var(--fc-ink);
+  text-shadow: 3px 3px 0 rgba(251, 191, 36, 0.28);
+}
+
+.flipped-classroom-theme .lesson-subtitle {
+  color: var(--fc-purple-dark);
+}
+
+.flipped-classroom-theme .course-line {
+  color: var(--fc-coral-dark);
+}
+
+.flipped-classroom-theme .essential-question {
+  border: 2px solid #88d5dd;
+  border-left: 10px solid var(--fc-teal);
+  background:
+    linear-gradient(90deg, rgba(8, 127, 140, 0.12), transparent),
+    var(--fc-surface);
+}
+
+.flipped-classroom-theme .lesson-progress {
+  position: sticky;
+  top: calc(
+    var(--toolbox-navigation-offset, 88px)
+    + var(--lesson-progress-gap, 8px)
+    + env(safe-area-inset-top, 0px)
+  );
+  z-index: 9;
+  overflow: visible;
+  border-bottom: 1px solid var(--fc-line);
+  background: rgba(255, 250, 240, 0.94);
+  backdrop-filter: blur(8px);
+}
+
+.flipped-classroom-theme .lesson-progress-inner {
+  overflow: visible;
+  border-bottom: 3px solid rgba(8, 127, 140, 0.14);
+}
+
+.flipped-classroom-theme .lesson-progress a {
+  min-height: 44px;
+  border: 2px solid #b9cee6;
+  border-radius: 999px;
+  background: #ffffff;
+  color: var(--fc-ink);
+  box-shadow: 0 2px 0 rgba(23, 34, 59, 0.1);
+}
+
+.flipped-classroom-theme .lesson-progress a:hover,
+.flipped-classroom-theme .lesson-progress a:focus-visible,
+.flipped-classroom-theme .lesson-progress a[aria-current="location"] {
+  border-color: var(--fc-teal);
+  background: var(--fc-mint);
+  color: var(--fc-teal-dark);
+}
+
+.flipped-classroom-theme .lesson-section {
+  border-bottom: 0;
+  background: transparent;
+}
+
+.flipped-classroom-theme .lesson-section-inner {
+  position: relative;
+  border: 1px solid rgba(23, 34, 59, 0.08);
+  border-top: 8px solid var(--fc-teal);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: var(--fc-shadow);
+  padding: clamp(20px, 4vw, 34px);
+}
+
+.flipped-classroom-theme .lesson-section-soft .lesson-section-inner {
+  background: rgba(232, 246, 255, 0.95);
+}
+
+.flipped-classroom-theme #before-class .lesson-section-inner,
+.flipped-classroom-theme #teacher-video .lesson-section-inner,
+.flipped-classroom-theme #external-videos .lesson-section-inner,
+.flipped-classroom-theme #guided-notes .lesson-section-inner,
+.flipped-classroom-theme #readiness-check .lesson-section-inner {
+  border-top-color: var(--fc-teal);
+}
+
+.flipped-classroom-theme #in-class .lesson-section-inner,
+.flipped-classroom-theme #escape-room .lesson-section-inner {
+  border-top-color: var(--fc-purple);
+}
+
+.flipped-classroom-theme #exit-ticket .lesson-section-inner,
+.flipped-classroom-theme #student-survey .lesson-section-inner {
+  border-top-color: var(--fc-coral);
+}
+
+.flipped-classroom-theme #teacher-materials .lesson-section-inner,
+.flipped-classroom-theme #accessibility .lesson-section-inner,
+.flipped-classroom-theme #instructor-access .lesson-section-inner {
+  border-top-color: var(--fc-ink);
+}
+
+.flipped-classroom-theme #before-class .section-kicker,
+.flipped-classroom-theme #teacher-video .section-kicker,
+.flipped-classroom-theme #external-videos .section-kicker,
+.flipped-classroom-theme #guided-notes .section-kicker,
+.flipped-classroom-theme #readiness-check .section-kicker {
+  color: var(--fc-teal-dark);
+}
+
+.flipped-classroom-theme #in-class .section-kicker,
+.flipped-classroom-theme #escape-room .section-kicker {
+  color: var(--fc-purple-dark);
+}
+
+.flipped-classroom-theme #exit-ticket .section-kicker,
+.flipped-classroom-theme #student-survey .section-kicker {
+  color: var(--fc-coral-dark);
+}
+
+.flipped-classroom-theme #teacher-materials .section-kicker,
+.flipped-classroom-theme #accessibility .section-kicker,
+.flipped-classroom-theme #instructor-access .section-kicker {
+  color: var(--fc-ink);
+}
+
+.flipped-classroom-theme .lesson-section h2,
+.flipped-classroom-theme .lesson-section h3,
+.flipped-classroom-theme .lesson-section h4 {
+  color: var(--fc-ink);
+}
+
+.flipped-classroom-theme .lesson-facts li,
+.flipped-classroom-theme .overview-card,
+.flipped-classroom-theme .external-video-card,
+.flipped-classroom-theme .material-link-card,
+.flipped-classroom-theme .check-card,
+.flipped-classroom-theme .escape-lock,
+.flipped-classroom-theme .escape-progress,
+.flipped-classroom-theme .escape-reset,
+.flipped-classroom-theme .escape-completion-summary,
+.flipped-classroom-theme .catch-up-station,
+.flipped-classroom-theme .optional-review,
+.flipped-classroom-theme .video-outline,
+.flipped-classroom-theme .placeholder-message,
+.flipped-classroom-theme .media-placeholder,
+.flipped-classroom-theme .privacy-note,
+.flipped-classroom-theme .no-js-activity-note,
+.flipped-classroom-theme .completion-summary,
+.flipped-classroom-theme .bridge-note,
+.flipped-classroom-theme .accountability-note,
+.flipped-classroom-theme .viewing-question,
+.flipped-classroom-theme .infographic-card img {
+  border-color: var(--fc-line);
+  border-radius: 8px;
+  background: var(--fc-surface);
+  box-shadow: var(--fc-small-shadow);
+}
+
+.flipped-classroom-theme .overview-card,
+.flipped-classroom-theme .external-video-card,
+.flipped-classroom-theme .material-link-card,
+.flipped-classroom-theme .check-card,
+.flipped-classroom-theme .escape-clue,
+.flipped-classroom-theme .catch-up-station {
+  position: relative;
+  overflow: hidden;
+}
+
+.flipped-classroom-theme .overview-card::before,
+.flipped-classroom-theme .external-video-card::before,
+.flipped-classroom-theme .material-link-card::before,
+.flipped-classroom-theme .check-card::before,
+.flipped-classroom-theme .escape-clue::before,
+.flipped-classroom-theme .catch-up-station::before {
+  display: block;
+  width: 44px;
+  height: 6px;
+  margin-bottom: 10px;
+  border-radius: 999px;
+  background: var(--fc-teal);
+  content: "";
+}
+
+.flipped-classroom-theme #escape-room .escape-clue::before,
+.flipped-classroom-theme #escape-room .escape-lock::before {
+  background: var(--fc-purple);
+}
+
+.flipped-classroom-theme #exit-ticket .check-card::before,
+.flipped-classroom-theme #student-survey .placeholder-message::before {
+  background: var(--fc-coral);
+}
+
+.flipped-classroom-theme .material-link-card.educator-only {
+  border-left-color: var(--fc-ink);
+  background: linear-gradient(135deg, #ffffff, #eef3f8);
+}
+
+.flipped-classroom-theme .material-link-card:not(.educator-only) {
+  border-left: 5px solid var(--fc-teal);
+  background: linear-gradient(135deg, #ffffff, var(--fc-mint));
+}
+
+.flipped-classroom-theme .math-text,
+.flipped-classroom-theme .math-prompt,
+.flipped-classroom-theme .formula,
+.flipped-classroom-theme .formula-box {
+  color: var(--fc-ink);
+  font-weight: 900;
+}
+
+.flipped-classroom-theme .math-prompt,
+.flipped-classroom-theme .formula,
+.flipped-classroom-theme .formula-box,
+.flipped-classroom-theme .response-prompt {
+  border: 2px solid rgba(180, 119, 5, 0.42);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 240, 191, 0.85), rgba(255, 255, 255, 0.96)),
+    var(--fc-gold-soft);
+}
+
+.flipped-classroom-theme .embed-frame,
+.flipped-classroom-theme .teacher-embed-frame,
+.flipped-classroom-theme .survey-frame,
+.flipped-classroom-theme .video-slot video {
+  border: 4px solid var(--fc-ink);
+  border-radius: 8px;
+  box-shadow: 0 10px 0 rgba(105, 71, 168, 0.18);
+}
+
+.flipped-classroom-theme .button,
+.flipped-classroom-theme .print-actions a,
+.flipped-classroom-theme .print-actions button,
+.flipped-classroom-theme button {
+  border: 2px solid var(--fc-ink);
+  border-radius: 8px;
+  box-shadow: 0 4px 0 rgba(23, 34, 59, 0.24);
+  transition: transform 140ms ease, box-shadow 140ms ease, background-color 140ms ease;
+}
+
+.flipped-classroom-theme .button.primary,
+.flipped-classroom-theme .print-actions a {
+  background: var(--fc-teal);
+  color: #ffffff;
+}
+
+.flipped-classroom-theme .button.secondary,
+.flipped-classroom-theme .print-actions button,
+.flipped-classroom-theme button {
+  background: var(--fc-gold-soft);
+  color: var(--fc-ink);
+}
+
+.flipped-classroom-theme .button:hover,
+.flipped-classroom-theme .print-actions a:hover,
+.flipped-classroom-theme .print-actions button:hover,
+.flipped-classroom-theme button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 0 rgba(23, 34, 59, 0.26);
+}
+
+.flipped-classroom-theme .button:active,
+.flipped-classroom-theme .print-actions a:active,
+.flipped-classroom-theme .print-actions button:active,
+.flipped-classroom-theme button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(23, 34, 59, 0.28);
+}
+
+.flipped-classroom-theme .feedback,
+.flipped-classroom-theme [aria-live="polite"] {
+  color: var(--fc-muted);
+}
+
+.flipped-classroom-theme .feedback.is-correct,
+.flipped-classroom-theme .status-pill.is-complete {
+  border-color: var(--fc-teal);
+  background: var(--fc-mint);
+  color: var(--fc-teal-dark);
+}
+
+.flipped-classroom-theme .feedback.needs-retry,
+.flipped-classroom-theme .check-card.needs-retry {
+  border-color: var(--fc-gold);
+  background: var(--fc-cream);
+  color: #6c4400;
+}
+
+.flipped-classroom-theme .check-card.is-correct,
+.flipped-classroom-theme .escape-lock.is-complete {
+  border-color: var(--fc-teal);
+  background: linear-gradient(135deg, #ffffff, var(--fc-mint));
+  box-shadow: inset 6px 0 0 var(--fc-teal), var(--fc-small-shadow);
+}
+
+.flipped-classroom-theme .status-pill {
+  border: 2px solid var(--fc-line);
+  background: #ffffff;
+  color: var(--fc-muted);
+}
+
+.flipped-classroom-theme .escape-room-panel {
+  border-radius: 8px;
+  background:
+    linear-gradient(45deg, rgba(105, 71, 168, 0.08) 25%, transparent 25% 50%, rgba(105, 71, 168, 0.08) 50% 75%, transparent 75%),
+    var(--fc-lavender);
+  background-size: 28px 28px;
+  padding: 18px;
+}
+
+.flipped-classroom-theme .escape-progress {
+  border: 2px solid var(--fc-purple);
+  background: #ffffff;
+}
+
+.flipped-classroom-theme .escape-progress span {
+  border: 2px solid #cfc2f3;
+  background: #ffffff;
+  color: var(--fc-purple-dark);
+}
+
+.flipped-classroom-theme .escape-progress span.is-current {
+  border-color: var(--fc-gold);
+  background: var(--fc-gold-soft);
+  color: var(--fc-ink);
+}
+
+.flipped-classroom-theme .escape-progress span.is-complete {
+  border-color: var(--fc-teal);
+  background: var(--fc-mint);
+  color: var(--fc-teal-dark);
+}
+
+.flipped-classroom-theme .escape-lock {
+  border: 2px solid #cfc2f3;
+  background:
+    linear-gradient(135deg, #ffffff, rgba(241, 237, 255, 0.9));
+}
+
+.flipped-classroom-theme .escape-lock.is-locked {
+  border-style: dashed;
+  background: #f6f4fb;
+}
+
+.flipped-classroom-theme .escape-lock-header {
+  border-bottom: 2px dashed rgba(105, 71, 168, 0.3);
+  padding-bottom: 12px;
+}
+
+.flipped-classroom-theme .escape-clue {
+  border-color: #cfc2f3;
+  background: #ffffff;
+}
+
+.flipped-classroom-theme .completion-code {
+  border: 2px solid var(--fc-teal);
+  background: var(--fc-mint);
+  color: var(--fc-teal-dark);
+  font-size: 1.08rem;
+}
+
+.flipped-classroom-theme input,
+.flipped-classroom-theme textarea {
+  border: 2px solid #aebfd7;
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--fc-ink);
+}
+
+.flipped-classroom-theme input[type="radio"],
+.flipped-classroom-theme input[type="checkbox"] {
+  accent-color: var(--fc-purple);
+}
+
+.flipped-classroom-theme .math-diagram,
+.flipped-classroom-theme .escape-diagram,
+.flipped-classroom-theme .diagram {
+  border-radius: 8px;
+  background:
+    linear-gradient(rgba(37, 99, 166, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 166, 0.1) 1px, transparent 1px),
+    #ffffff;
+  background-size: 16px 16px;
+  padding: 6px;
+}
+
+.flipped-classroom-theme .math-diagram path,
+.flipped-classroom-theme .math-diagram rect,
+.flipped-classroom-theme .escape-diagram path,
+.flipped-classroom-theme .diagram path,
+.flipped-classroom-theme .diagram rect {
+  stroke: var(--fc-teal-dark);
+}
+
+.flipped-classroom-theme .math-diagram .right-angle,
+.flipped-classroom-theme .escape-diagram .right-angle,
+.flipped-classroom-theme .diagram .right-angle {
+  stroke: var(--fc-coral);
+}
+
+.flipped-classroom-theme .lock-guidance {
+  border-color: rgba(180, 119, 5, 0.5);
+  border-left-color: var(--fc-gold);
+  background: linear-gradient(90deg, rgba(255, 240, 191, 0.95), rgba(232, 246, 255, 0.75));
+}
+
+.flipped-classroom-theme .lock3-diagram,
+.flipped-classroom-theme .lock3-diagram-card {
+  border-color: rgba(8, 127, 140, 0.42);
+}
+
+.flipped-classroom-theme .lock3-diagram text,
+.flipped-classroom-theme .diagram text {
+  fill: var(--fc-ink);
+}
+
+.flipped-classroom-theme .lesson-footer {
+  border-top: 4px solid var(--fc-gold);
+  background: var(--fc-ink);
+  color: #ffffff;
+}
+
+.flipped-classroom-theme .lesson-footer a,
+.flipped-classroom-theme .lesson-footer p {
+  color: #ffffff;
+}
+
+.flipped-classroom-theme:not(.lesson-page) main > header,
+.flipped-classroom-theme:not(.lesson-page) main > section {
+  border-color: var(--fc-line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: var(--fc-small-shadow);
+}
+
+.flipped-classroom-theme:not(.lesson-page) main > header {
+  position: relative;
+  overflow: hidden;
+  border-top: 8px solid var(--fc-teal);
+  background:
+    linear-gradient(135deg, rgba(8, 127, 140, 0.16), rgba(105, 71, 168, 0.12)),
+    #ffffff;
+}
+
+.flipped-classroom-theme:not(.lesson-page) main > header::after {
+  position: absolute;
+  right: 22px;
+  bottom: 18px;
+  width: 92px;
+  height: 92px;
+  border-right: 8px solid rgba(8, 127, 140, 0.3);
+  border-bottom: 8px solid rgba(199, 85, 63, 0.3);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  content: "";
+  pointer-events: none;
+}
+
+.flipped-classroom-theme:not(.lesson-page) main > header > * {
+  position: relative;
+  z-index: 1;
+}
+
+.flipped-classroom-theme:not(.lesson-page) .two-column > section:nth-child(2n),
+.flipped-classroom-theme:not(.lesson-page) main > section:nth-of-type(3n) {
+  background: var(--fc-mint);
+}
+
+.flipped-classroom-theme:not(.lesson-page) main > section:nth-of-type(3n + 1) {
+  background: var(--fc-sky);
+}
+
+.flipped-classroom-theme:not(.lesson-page) main > section:nth-of-type(3n + 2) {
+  background: var(--fc-lavender);
+}
+
+.flipped-classroom-theme .work-space,
+.flipped-classroom-theme .workspace,
+.flipped-classroom-theme .answer-box {
+  border: 2px dashed #6b7d95;
+  border-radius: 8px;
+  background:
+    linear-gradient(rgba(37, 99, 166, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37, 99, 166, 0.12) 1px, transparent 1px),
+    #ffffff;
+  background-size: 18px 18px;
+}
+
+.flipped-classroom-theme .answer-box {
+  border-style: solid;
+  border-left: 6px solid var(--fc-purple);
+  background: #ffffff;
+}
+
+.flipped-classroom-theme table {
+  border-color: var(--fc-ink);
+  background: #ffffff;
+}
+
+.flipped-classroom-theme th {
+  background: var(--fc-ink);
+  color: #ffffff;
+}
+
+.flipped-classroom-theme td {
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.flipped-classroom-theme .line {
+  border-bottom-color: var(--fc-ink);
+}
+
+@media (max-width: 760px) {
+  .flipped-classroom-theme {
+    background-size: 22px 22px, 22px 22px, 88px 88px, auto;
+  }
+
+  .flipped-classroom-theme .lesson-progress {
+    position: sticky;
+  }
+
+  .flipped-classroom-theme .lesson-progress a {
+    width: max-content;
+    min-width: 9rem;
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  .flipped-classroom-theme .lesson-section-inner {
+    padding: 18px;
+  }
+
+  .flipped-classroom-theme .lesson-hero::before,
+  .flipped-classroom-theme .lesson-hero::after,
+  .flipped-classroom-theme:not(.lesson-page) main > header::after {
+    opacity: 0.24;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flipped-classroom-theme *,
+  .flipped-classroom-theme *::before,
+  .flipped-classroom-theme *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+@media print {
+  .flipped-classroom-theme {
+    color: #111111;
+    background: #ffffff !important;
+  }
+
+  .flipped-classroom-theme .site-header,
+  .flipped-classroom-theme .lesson-progress,
+  .flipped-classroom-theme .print-actions,
+  .flipped-classroom-theme .lesson-footer {
+    display: none !important;
+  }
+
+  .flipped-classroom-theme .lesson-hero,
+  .flipped-classroom-theme .lesson-section,
+  .flipped-classroom-theme .lesson-section-inner,
+  .flipped-classroom-theme:not(.lesson-page) main > header,
+  .flipped-classroom-theme:not(.lesson-page) main > section,
+  .flipped-classroom-theme .overview-card,
+  .flipped-classroom-theme .external-video-card,
+  .flipped-classroom-theme .material-link-card,
+  .flipped-classroom-theme .check-card,
+  .flipped-classroom-theme .escape-lock,
+  .flipped-classroom-theme .lock3-diagram,
+  .flipped-classroom-theme .lock3-diagram-card,
+  .flipped-classroom-theme .escape-progress,
+  .flipped-classroom-theme .work-space,
+  .flipped-classroom-theme .workspace,
+  .flipped-classroom-theme .answer-box {
+    color: #111111 !important;
+    border-color: #222222 !important;
+    background: #ffffff !important;
+    box-shadow: none !important;
+  }
+
+  .flipped-classroom-theme .lesson-section-inner,
+  .flipped-classroom-theme:not(.lesson-page) main > header,
+  .flipped-classroom-theme:not(.lesson-page) main > section {
+    border-top-width: 1px !important;
+  }
+
+  .flipped-classroom-theme h1,
+  .flipped-classroom-theme h2,
+  .flipped-classroom-theme h3,
+  .flipped-classroom-theme h4,
+  .flipped-classroom-theme p,
+  .flipped-classroom-theme li,
+  .flipped-classroom-theme td,
+  .flipped-classroom-theme th,
+  .flipped-classroom-theme label,
+  .flipped-classroom-theme legend,
+  .flipped-classroom-theme a {
+    color: #111111 !important;
+  }
+
+  .flipped-classroom-theme .lock3-diagram path,
+  .flipped-classroom-theme .lock3-diagram .right-angle,
+  .flipped-classroom-theme .recording-diagram path,
+  .flipped-classroom-theme .recording-diagram .right-angle {
+    stroke: #111111 !important;
+  }
+
+  .flipped-classroom-theme .lock3-diagram text,
+  .flipped-classroom-theme .recording-diagram text {
+    fill: #111111 !important;
+    stroke: #ffffff !important;
+  }
+
+  .flipped-classroom-theme .lesson-hero::before,
+  .flipped-classroom-theme .lesson-hero::after,
+  .flipped-classroom-theme:not(.lesson-page) main > header::after,
+  .flipped-classroom-theme .overview-card::before,
+  .flipped-classroom-theme .external-video-card::before,
+  .flipped-classroom-theme .material-link-card::before,
+  .flipped-classroom-theme .check-card::before,
+  .flipped-classroom-theme .escape-clue::before,
+  .flipped-classroom-theme .catch-up-station::before {
+    display: none !important;
+  }
+}

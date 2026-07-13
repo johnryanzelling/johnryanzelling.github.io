@@ -7,8 +7,9 @@
     <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
     <link rel="stylesheet" href="../../assets/css/styles.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="flipped-classroom-theme.css">
   </head>
-  <body class="lesson-page">
+  <body class="lesson-page flipped-classroom-theme">
     <header class="site-header">
       <a class="brand" href="../../index.html" aria-label="EDUC 675 Digital Toolbox home">
         <span class="brand-mark">675</span>
@@ -706,11 +707,23 @@
               <p>
                 For each right triangle, show substitution, squaring, addition, and the positive square root.
               </p>
+              <p class="lock-guidance">
+                In each diagram, the two labeled sides meet at the right angle. Use them as a and b. The side marked c is the missing hypotenuse.
+              </p>
               <fieldset data-escape-fieldset disabled>
                 <legend class="visually-hidden">Lock 3 missing hypotenuse work</legend>
                 <div class="work-grid">
                   <section class="escape-clue" aria-labelledby="lock3-a-heading">
                     <h4 id="lock3-a-heading">Legs 3 and 4</h4>
+                    <svg class="escape-diagram lock3-diagram" viewBox="0 0 240 170" role="img" aria-labelledby="lock3-diagram-a-title lock3-diagram-a-desc" focusable="false">
+                      <title id="lock3-diagram-a-title">Right triangle with legs 3 and 4</title>
+                      <desc id="lock3-diagram-a-desc">The sides labeled 3 and 4 meet at the right angle. The side labeled c is opposite the right angle and is the missing hypotenuse.</desc>
+                      <path d="M54 128 L178 128 L54 46 Z"></path>
+                      <path class="right-angle" d="M54 106 L76 106 L76 128"></path>
+                      <text x="112" y="151" text-anchor="middle">4</text>
+                      <text x="34" y="90" text-anchor="middle">3</text>
+                      <text x="128" y="84" text-anchor="middle">c</text>
+                    </svg>
                     <label>Substitution: <input inputmode="numeric" pattern="[0-9]*" autocomplete="off" data-escape-input data-answer="3" aria-label="First substituted leg for 3 and 4"> squared plus <input inputmode="numeric" pattern="[0-9]*" autocomplete="off" data-escape-input data-answer="4" aria-label="Second substituted leg for 3 and 4"> squared equals c squared</label>
                     <label>Squaring: <input inputmode="numeric" pattern="[0-9]*" autocomplete="off" data-escape-input data-answer="9" aria-label="3 squared"> + <input inputmode="numeric" pattern="[0-9]*" autocomplete="off" data-escape-input data-answer="16" aria-label="4 squared"></label>
                     <label>Addition: <input inputmode="numeric" pattern="[0-9]*" autocomplete="off" data-escape-input data-answer="25" aria-label="sum for legs 3 and 4"> = c squared</label>
@@ -718,6 +731,15 @@
                   </section>
                   <section class="escape-clue" aria-labelledby="lock3-b-heading">
                     <h4 id="lock3-b-heading">Legs 6 and 8</h4>
+                    <svg class="escape-diagram lock3-diagram" viewBox="0 0 240 170" role="img" aria-labelledby="lock3-diagram-b-title lock3-diagram-b-desc" focusable="false">
+                      <title id="lock3-diagram-b-title">Right triangle with legs 6 and 8</title>
+                      <desc id="lock3-diagram-b-desc">The sides labeled 6 and 8 meet at the right angle. The side labeled c is opposite the right angle and is the missing hypotenuse.</desc>
+                      <path d="M54 128 L178 128 L54 46 Z"></path>
+                      <path class="right-angle" d="M54 106 L76 106 L76 128"></path>
+                      <text x="112" y="151" text-anchor="middle">8</text>
+                      <text x="34" y="90" text-anchor="middle">6</text>
+                      <text x="128" y="84" text-anchor="middle">c</text>
+                    </svg>
                     <label>Substitution: <input inputmode="numeric" pattern="[0-9]*" autocomplete="off" data-escape-input data-answer="6" aria-label="First substituted leg for 6 and 8"> squared plus <input inputmode="numeric" pattern="[0-9]*" autocomplete="off" data-escape-input data-answer="8" aria-label="Second substituted leg for 6 and 8"> squared equals c squared</label>
                     <label>Squaring: <input inputmode="numeric" pattern="[0-9]*" autocomplete="off" data-escape-input data-answer="36" aria-label="6 squared"> + <input inputmode="numeric" pattern="[0-9]*" autocomplete="off" data-escape-input data-answer="64" aria-label="8 squared"></label>
                     <label>Addition: <input inputmode="numeric" pattern="[0-9]*" autocomplete="off" data-escape-input data-answer="100" aria-label="sum for legs 6 and 8"> = c squared</label>
@@ -725,6 +747,15 @@
                   </section>
                   <section class="escape-clue" aria-labelledby="lock3-c-heading">
                     <h4 id="lock3-c-heading">Legs 5 and 12</h4>
+                    <svg class="escape-diagram lock3-diagram" viewBox="0 0 240 170" role="img" aria-labelledby="lock3-diagram-c-title lock3-diagram-c-desc" focusable="false">
+                      <title id="lock3-diagram-c-title">Right triangle with legs 5 and 12</title>
+                      <desc id="lock3-diagram-c-desc">The sides labeled 5 and 12 meet at the right angle. The side labeled c is opposite the right angle and is the missing hypotenuse.</desc>
+                      <path d="M44 128 L206 128 L44 58 Z"></path>
+                      <path class="right-angle" d="M44 106 L66 106 L66 128"></path>
+                      <text x="125" y="151" text-anchor="middle">12</text>
+                      <text x="25" y="95" text-anchor="middle">5</text>
+                      <text x="134" y="87" text-anchor="middle">c</text>
+                    </svg>
                     <label>Substitution: <input inputmode="numeric" pattern="[0-9]*" autocomplete="off" data-escape-input data-answer="5" aria-label="First substituted leg for 5 and 12"> squared plus <input inputmode="numeric" pattern="[0-9]*" autocomplete="off" data-escape-input data-answer="12" aria-label="Second substituted leg for 5 and 12"> squared equals c squared</label>
                     <label>Squaring: <input inputmode="numeric" pattern="[0-9]*" autocomplete="off" data-escape-input data-answer="25" aria-label="5 squared"> + <input inputmode="numeric" pattern="[0-9]*" autocomplete="off" data-escape-input data-answer="144" aria-label="12 squared"></label>
                     <label>Addition: <input inputmode="numeric" pattern="[0-9]*" autocomplete="off" data-escape-input data-answer="169" aria-label="sum for legs 5 and 12"> = c squared</label>

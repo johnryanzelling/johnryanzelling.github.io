@@ -302,6 +302,114 @@
     }
   }
 
+  function setupStickyNavigationOffset() {
+    var root = document.documentElement;
+    var toolboxHeader = document.querySelector(".site-header");
+    var progressNav = document.querySelector(".lesson-progress");
+    var progressList = progressNav ? progressNav.querySelector("ol") : null;
+    var updateFrame = null;
+    var lastToolboxOffset = null;
+    var lastProgressHeight = null;
+
+    if (!root || !progressNav) {
+      return;
+    }
+
+    function setPixelVariable(name, value) {
+      var pixelValue = Math.max(0, Math.ceil(value)) + "px";
+      root.style.setProperty(name, pixelValue);
+      if (document.body) {
+        document.body.style.setProperty(name, pixelValue);
+      }
+    }
+
+    function getToolboxOffset() {
+      if (!toolboxHeader || !window.getComputedStyle) {
+        return 0;
+      }
+
+      var position = window.getComputedStyle(toolboxHeader).position;
+      if (position !== "sticky" && position !== "fixed") {
+        return 0;
+      }
+
+      var rect = toolboxHeader.getBoundingClientRect();
+      return Math.max(0, rect.bottom);
+    }
+
+    function updateOffsets() {
+      var toolboxOffset = getToolboxOffset();
+      var progressHeight = progressNav.getBoundingClientRect().height;
+
+      if (toolboxOffset !== lastToolboxOffset) {
+        setPixelVariable("--toolbox-navigation-offset", toolboxOffset);
+        lastToolboxOffset = toolboxOffset;
+      }
+
+      if (progressHeight !== lastProgressHeight) {
+        setPixelVariable("--lesson-progress-height", progressHeight);
+        lastProgressHeight = progressHeight;
+      }
+    }
+
+    function queueUpdate() {
+      if (updateFrame !== null) {
+        return;
+      }
+
+      var schedule = window.requestAnimationFrame || function (callback) {
+        return window.setTimeout(callback, 16);
+      };
+
+      updateFrame = schedule(function () {
+        updateFrame = null;
+        updateOffsets();
+      });
+    }
+
+    updateOffsets();
+
+    sectionLinks.forEach(function (link) {
+      link.addEventListener("click", updateOffsets);
+      link.addEventListener("focus", queueUpdate);
+    });
+
+    window.addEventListener("load", queueUpdate);
+    window.addEventListener("resize", queueUpdate);
+    window.addEventListener("orientationchange", queueUpdate);
+
+    if (window.visualViewport) {
+      window.visualViewport.addEventListener("resize", queueUpdate);
+    }
+
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(queueUpdate).catch(function () {});
+    }
+
+    if ("ResizeObserver" in window) {
+      var resizeObserver = new ResizeObserver(queueUpdate);
+      if (toolboxHeader) {
+        resizeObserver.observe(toolboxHeader);
+      }
+      resizeObserver.observe(progressNav);
+      if (progressList) {
+        resizeObserver.observe(progressList);
+      }
+    }
+
+    if (window.location.hash) {
+      window.addEventListener("load", function () {
+        queueUpdate();
+        window.setTimeout(function () {
+          var target = document.getElementById(window.location.hash.slice(1));
+          if (target && target.scrollIntoView) {
+            target.scrollIntoView({ block: "start" });
+          }
+        }, 0);
+      });
+    }
+  }
+
   function renderTeacherVideo() {
     var slot = document.querySelector("[data-teacher-video-slot]");
     if (!slot) {
@@ -1274,6 +1382,7 @@
     });
   });
 
+  setupStickyNavigationOffset();
   renderTeacherVideo();
   renderSurveySlot();
   renderInfographic();

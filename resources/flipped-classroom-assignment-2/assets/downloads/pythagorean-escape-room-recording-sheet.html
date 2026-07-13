@@ -134,6 +134,59 @@
         gap: 14px;
       }
 
+      .lock3-diagram-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+        margin: 10px 0 8px;
+      }
+
+      .lock3-diagram-card {
+        min-width: 0;
+        margin: 0;
+        padding: 8px;
+        border: 1px solid #333333;
+        border-radius: 8px;
+        background: #ffffff;
+      }
+
+      .lock3-diagram-card figcaption {
+        font-size: 0.9rem;
+        font-weight: 700;
+      }
+
+      .lock3-diagram {
+        display: block;
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+        margin: 0 auto 6px;
+      }
+
+      .lock3-diagram path {
+        fill: #ffffff;
+        stroke: #111111;
+        stroke-width: 3;
+        vector-effect: non-scaling-stroke;
+      }
+
+      .lock3-diagram .right-angle {
+        fill: none;
+        stroke: #111111;
+        stroke-width: 4;
+      }
+
+      .lock3-diagram text {
+        fill: #111111;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 900;
+        paint-order: stroke;
+        stroke: #ffffff;
+        stroke-linejoin: round;
+        stroke-width: 4px;
+      }
+
       ol,
       ul {
         margin: 0;
@@ -147,7 +200,8 @@
       @media (max-width: 720px) {
         .line-grid,
         .roles,
-        .two-column {
+        .two-column,
+        .lock3-diagram-grid {
           grid-template-columns: 1fr;
         }
       }
@@ -189,10 +243,36 @@
         .workspace.short {
           min-height: 44px;
         }
+
+        .lock3-diagram-grid {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 6px;
+        }
+
+        .lock3-diagram-card {
+          break-inside: avoid;
+          border-color: #111111;
+          border-radius: 0;
+        }
+
+        .lock3-diagram {
+          max-width: 175px;
+        }
+
+        .lock3-diagram path,
+        .lock3-diagram .right-angle {
+          stroke: #111111 !important;
+        }
+
+        .lock3-diagram text {
+          fill: #111111 !important;
+          stroke: #ffffff !important;
+        }
       }
     </style>
+    <link rel="stylesheet" href="../../flipped-classroom-theme.css">
   </head>
-  <body>
+  <body class="flipped-classroom-theme">
     <main>
       <header>
         <h1>Unlocking the Pythagorean Theorem</h1>
@@ -242,6 +322,45 @@
       <section aria-labelledby="lock3-heading">
         <h2 id="lock3-heading">Lock 3: Find the Missing Hypotenuse</h2>
         <p>For each triangle, show substitution, squaring, addition, and the positive square root.</p>
+        <p>In each diagram, the two labeled sides meet at the right angle. Use them as a and b. The side marked c is the missing hypotenuse.</p>
+        <div class="lock3-diagram-grid" aria-label="Lock 3 right-triangle diagrams">
+          <figure class="lock3-diagram-card">
+            <svg class="diagram lock3-diagram recording-diagram" viewBox="0 0 240 170" role="img" aria-labelledby="recording-lock3-diagram-a-title recording-lock3-diagram-a-desc" focusable="false">
+              <title id="recording-lock3-diagram-a-title">Right triangle with legs 3 and 4</title>
+              <desc id="recording-lock3-diagram-a-desc">The sides labeled 3 and 4 meet at the right angle. The side labeled c is opposite the right angle and is the missing hypotenuse.</desc>
+              <path d="M54 128 L178 128 L54 46 Z"></path>
+              <path class="right-angle" d="M54 106 L76 106 L76 128"></path>
+              <text x="112" y="151" text-anchor="middle">4</text>
+              <text x="34" y="90" text-anchor="middle">3</text>
+              <text x="128" y="84" text-anchor="middle">c</text>
+            </svg>
+            <figcaption>Legs 3 and 4; c is missing.</figcaption>
+          </figure>
+          <figure class="lock3-diagram-card">
+            <svg class="diagram lock3-diagram recording-diagram" viewBox="0 0 240 170" role="img" aria-labelledby="recording-lock3-diagram-b-title recording-lock3-diagram-b-desc" focusable="false">
+              <title id="recording-lock3-diagram-b-title">Right triangle with legs 6 and 8</title>
+              <desc id="recording-lock3-diagram-b-desc">The sides labeled 6 and 8 meet at the right angle. The side labeled c is opposite the right angle and is the missing hypotenuse.</desc>
+              <path d="M54 128 L178 128 L54 46 Z"></path>
+              <path class="right-angle" d="M54 106 L76 106 L76 128"></path>
+              <text x="112" y="151" text-anchor="middle">8</text>
+              <text x="34" y="90" text-anchor="middle">6</text>
+              <text x="128" y="84" text-anchor="middle">c</text>
+            </svg>
+            <figcaption>Legs 6 and 8; c is missing.</figcaption>
+          </figure>
+          <figure class="lock3-diagram-card">
+            <svg class="diagram lock3-diagram recording-diagram" viewBox="0 0 240 170" role="img" aria-labelledby="recording-lock3-diagram-c-title recording-lock3-diagram-c-desc" focusable="false">
+              <title id="recording-lock3-diagram-c-title">Right triangle with legs 5 and 12</title>
+              <desc id="recording-lock3-diagram-c-desc">The sides labeled 5 and 12 meet at the right angle. The side labeled c is opposite the right angle and is the missing hypotenuse.</desc>
+              <path d="M44 128 L206 128 L44 58 Z"></path>
+              <path class="right-angle" d="M44 106 L66 106 L66 128"></path>
+              <text x="125" y="151" text-anchor="middle">12</text>
+              <text x="25" y="95" text-anchor="middle">5</text>
+              <text x="134" y="87" text-anchor="middle">c</text>
+            </svg>
+            <figcaption>Legs 5 and 12; c is missing.</figcaption>
+          </figure>
+        </div>
         <div class="workspace" aria-label="Workspace for Lock 3"></div>
       </section>
 

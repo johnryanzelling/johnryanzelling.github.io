@@ -452,7 +452,7 @@
     if (!hasValue(videoSource) && !hasValue(embedUrl)) {
       slot.replaceChildren(
         createPlaceholder(
-          "Teacher video coming soon. Use the outline, guided notes, and external videos today."
+          "Teacher-created mini lesson video is unavailable. Use the outline, guided notes, and external videos today."
         )
       );
       return;
@@ -475,10 +475,6 @@
 
       if (hasValue(transcriptPath)) {
         embedSupportLinks.appendChild(createLink(transcriptPath, "Open transcript"));
-      } else {
-        var embedTranscriptNote = document.createElement("span");
-        embedTranscriptNote.textContent = "Transcript coming soon.";
-        embedSupportLinks.appendChild(embedTranscriptNote);
       }
 
       slot.replaceChildren(embedFrame, embedSupportLinks);
@@ -487,8 +483,12 @@
 
     var video = document.createElement("video");
     video.controls = true;
-    video.preload = "none";
+    video.autoplay = false;
+    video.preload = "metadata";
+    video.playsInline = true;
+    video.setAttribute("playsinline", "");
     video.setAttribute("aria-label", "Teacher-created Pythagorean theorem mini lesson");
+    video.title = "Teacher-created Pythagorean theorem mini lesson";
 
     if (hasValue(posterImagePath)) {
       video.poster = posterImagePath;
@@ -516,10 +516,6 @@
 
     if (hasValue(transcriptPath)) {
       supportLinks.appendChild(createLink(transcriptPath, "Open transcript"));
-    } else {
-      var transcriptNote = document.createElement("span");
-      transcriptNote.textContent = "Transcript coming soon.";
-      supportLinks.appendChild(transcriptNote);
     }
 
     slot.replaceChildren(video, supportLinks);

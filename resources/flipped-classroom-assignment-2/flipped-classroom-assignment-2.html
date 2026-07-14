@@ -166,12 +166,18 @@
           <p class="section-kicker">Teacher Video</p>
           <h2>Teacher-Created Mini Lesson</h2>
           <p>
-            Here is the teacher-created Camtasia video. It should introduce the lesson vocabulary before the external videos add another perspective.
+            Here is the teacher-created Camtasia video. It plays directly in your browser; Camtasia software is not needed.
+            Watch it before the external videos add another perspective.
           </p>
           <div class="teacher-video-layout">
             <div class="video-slot" data-teacher-video-slot>
-              <div class="media-placeholder" role="status">
-                Teacher video coming soon. Use the outline, guided notes, and external videos today.
+              <video controls preload="metadata" playsinline aria-label="Teacher-created Pythagorean theorem mini lesson">
+                <source src="assets/video/FlippedLearningAssignment2.mp4" type="video/mp4">
+                Your browser does not support embedded video.
+                <a href="assets/video/FlippedLearningAssignment2.mp4">Open teacher video directly</a>.
+              </video>
+              <div class="video-support-links">
+                <a href="assets/video/FlippedLearningAssignment2.mp4">Open teacher video directly</a>
               </div>
             </div>
             <aside class="video-outline" aria-label="Teacher video outline">
@@ -214,8 +220,8 @@
               </p>
               <div class="embed-frame">
                 <iframe
-                  src="https://www.khanacademy.org/math/cc-eighth-grade-math-essentials/x3ef2ca3186360389:geometry/x3ef2ca3186360389:pythagorean-theorem/v/the-pythagorean-theorem?referrer=share_link"
-                  title="Khan Academy video: The Pythagorean theorem intro"
+                  src="https://www.youtube-nocookie.com/embed/AA6RfgP-AHU"
+                  title="Khan Academy lesson video: The Pythagorean theorem"
                   loading="lazy"
                   allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen></iframe>
@@ -223,7 +229,7 @@
               <p class="response-prompt">
                 <strong>Response prompt:</strong> In your notes, label the legs and hypotenuse in one example from the video.
               </p>
-              <p><a href="https://www.youtube.com/watch?v=AA6RfgP-AHU" target="_blank" rel="noreferrer">Open the Khan Academy video directly</a></p>
+              <p><a href="https://www.khanacademy.org/math/cc-eighth-grade-math/cc-8th-geometry/cc-8th-pythagorean-theorem/v/the-pythagorean-theorem" target="_blank" rel="noopener noreferrer">Open the Khan Academy lesson</a></p>
             </article>
             <article class="external-video-card">
               <h3>TED-Ed: How many ways are there to prove the Pythagorean theorem?</h3>
@@ -1111,8 +1117,8 @@
             <article class="overview-card">
             <h3>Media and Reading Supports</h3>
             <ul>
-                <li>Teacher-video captions are supported when a local captions file is added.</li>
-                <li>The teacher-video transcript link appears when a transcript is added; otherwise the video section gives a brief coming-soon note.</li>
+                <li>The teacher-created video plays in the browser with native controls and a direct file link.</li>
+                <li>Captions or a transcript can be added later if those files are created.</li>
                 <li>Printable guided notes and written worked examples are available for students who need a paper path.</li>
                 <li>External video embeds include direct links for environments that block embeds.</li>
               </ul>

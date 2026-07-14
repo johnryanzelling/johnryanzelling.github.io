@@ -4,7 +4,7 @@ window.FlippedClassroomLesson = {
   course: "Regular Grade 7 Mathematics - Remedial Pre-Algebra Bridge",
   media: {
     teacherVideo: {
-      source: "",
+      source: "assets/video/FlippedLearningAssignment2.mp4",
       embedUrl: "",
       type: "video/mp4",
       posterImagePath: "",

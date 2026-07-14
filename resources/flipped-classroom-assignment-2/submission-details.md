@@ -22,18 +22,30 @@ Expected lesson path within this static site:
 
 ## Teacher-Video URL
 
-Placeholder: no final teacher-created Camtasia video URL or file path has been supplied yet.
+The teacher-created Camtasia mini lesson is embedded in the lesson with a native browser video player.
 
-Configure one of these fields in `lesson-config.js` when the final media is ready:
+Configured relative video path:
+
+`assets/video/FlippedLearningAssignment2.mp4`
+
+Configured field:
 
 - `media.teacherVideo.source`
-- `media.teacherVideo.embedUrl`
 
-Expected supporting media fields:
+Video MIME type:
+
+- `video/mp4`
+
+Supporting media fields remain available but are not configured because no poster image, caption file, or transcript file is currently present:
 
 - `media.teacherVideo.posterImagePath`
 - `media.teacherVideo.captionsPath`
 - `media.teacherVideo.transcriptPath`
+
+Video file size:
+
+- `69,936,277` bytes, approximately `66.7 MiB`.
+- This is below GitHub's hard 100 MiB file limit, but above the 50 MiB warning threshold for regular Git repository files.
 
 ## Microsoft Forms URL
 
@@ -86,7 +98,7 @@ The custom lesson, printables, and teacher materials are static GitHub Pages fil
 
 - Lesson overview with essential question, objectives, materials, and prior-knowledge bridge.
 - Static Pythagorean theorem overview infographic.
-- Teacher-created Camtasia video slot with honest unconfigured state.
+- Embedded teacher-created Camtasia video using a native browser video player.
 - 10-slide Camtasia video outline PDF with editable static HTML source.
 - Required external instructional videos with privacy-enhanced YouTube embeds and direct-link fallbacks.
 - Optional square-root refresher video.
@@ -107,8 +119,7 @@ The custom lesson, printables, and teacher materials are static GitHub Pages fil
 Final submission readiness is blocked only by these manual items:
 
 - Add the final hosted GitHub Pages URL in this document and Blackboard.
-- Configure the teacher-created Camtasia video in `lesson-config.js` using `media.teacherVideo.source` or `media.teacherVideo.embedUrl`.
-- Add teacher-video support assets in `lesson-config.js`: `media.teacherVideo.posterImagePath`, `media.teacherVideo.captionsPath`, and `media.teacherVideo.transcriptPath`.
+- Optional: add teacher-video support assets if they are created later, then configure `media.teacherVideo.posterImagePath`, `media.teacherVideo.captionsPath`, and `media.teacherVideo.transcriptPath`.
 - Configure the final Microsoft Forms survey URLs in `lesson-config.js`: `media.microsoftFormsSurvey.embedUrl` and `media.microsoftFormsSurvey.directUrl`.
 - Confirm the configured Microsoft Forms permissions allow the intended students to respond.
 
@@ -116,7 +127,7 @@ Final submission readiness is blocked only by these manual items:
 
 - Confirm the hosted lesson opens without a login in a private browser.
 - Confirm the top Resources navigation link works from the hosted lesson.
-- Confirm the teacher video loads, has captions or transcript access, and does not autoplay after final configuration.
+- Confirm the embedded teacher video loads, plays, pauses, seeks, changes volume, enters fullscreen, and does not autoplay.
 - Confirm all required external videos load or their direct fallbacks open.
 - Confirm guided notes, group recording sheet, exit ticket, survey question bank, lesson plan, and teacher materials open and print.
 - Confirm the Camtasia outline PDF opens and has 10 pages.
@@ -137,8 +148,8 @@ Grade/Course: Regular Grade 7 Mathematics - Remedial Pre-Algebra Bridge
 
 Hosted lesson: [Add final public GitHub Pages URL]
 
-Teacher-created video: [Add final public URL or confirm configured static video file]
+Teacher-created video: Embedded static MP4 at `assets/video/FlippedLearningAssignment2.mp4`
 
 Student survey: Local printable survey included; Microsoft Forms URL can be added later if required.
 
-Begin with the Before Class section and proceed through the page in order. The in-class escape room, printable materials, exit ticket, survey, and teacher materials are housed within the same Flipped Classroom Assignment 2 resource. The static lesson is complete except for the final manually supplied teacher-video media, Microsoft Forms URLs if used, and hosted lesson URL listed in `submission-details.md`.
+Begin with the Before Class section and proceed through the page in order. The teacher-created mini lesson video, in-class escape room, printable materials, exit ticket, survey, and teacher materials are housed within the same Flipped Classroom Assignment 2 resource. The static lesson is complete except for the Microsoft Forms URLs if used and the hosted lesson URL listed in `submission-details.md`.

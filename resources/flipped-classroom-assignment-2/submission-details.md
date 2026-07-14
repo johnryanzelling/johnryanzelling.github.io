@@ -115,7 +115,7 @@ Final submission readiness is blocked only by these manual items:
 ## Final Testing Checklist
 
 - Confirm the hosted lesson opens without a login in a private browser.
-- Confirm the Back to Resources link works from the hosted lesson.
+- Confirm the top Resources navigation link works from the hosted lesson.
 - Confirm the teacher video loads, has captions or transcript access, and does not autoplay after final configuration.
 - Confirm all required external videos load or their direct fallbacks open.
 - Confirm guided notes, group recording sheet, exit ticket, survey question bank, lesson plan, and teacher materials open and print.

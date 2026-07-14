@@ -944,7 +944,7 @@
     }
     setupButtonKeyboardActivation(printButton);
     printButton.addEventListener("click", function () {
-      var notesUrl = "assets/downloads/pythagorean-guided-notes.html";
+      var notesUrl = "assets/documents/pythagorean-guided-notes.html";
       var notesWindow = window.open(notesUrl, "_blank", "noopener");
       if (!notesWindow) {
         window.location.href = notesUrl;

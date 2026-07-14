@@ -16,13 +16,13 @@ window.FlippedClassroomLesson = {
       directUrl: ""
     },
     downloads: {
-      guidedNotes: "assets/downloads/pythagorean-guided-notes.html",
+      guidedNotes: "assets/documents/pythagorean-guided-notes.html",
       readinessCheck: "",
-      groupRecordingSheet: "assets/downloads/pythagorean-escape-room-recording-sheet.html",
-      teacherMaterials: "assets/downloads/pythagorean-escape-room-teacher-materials.html",
-      exitTicket: "assets/downloads/pythagorean-exit-ticket.html",
-      surveyQuestionBank: "assets/downloads/microsoft-forms-survey-question-bank.html",
-      lessonPlan: "assets/downloads/flipped-pythagorean-lesson-plan.html"
+      groupRecordingSheet: "assets/documents/pythagorean-escape-room-recording-sheet.html",
+      teacherMaterials: "assets/documents/pythagorean-escape-room-teacher-materials.html",
+      exitTicket: "assets/documents/pythagorean-exit-ticket.html",
+      surveyQuestionBank: "assets/documents/microsoft-forms-survey-question-bank.html",
+      lessonPlan: "assets/documents/flipped-pythagorean-lesson-plan.html"
     }
   },
   visuals: {

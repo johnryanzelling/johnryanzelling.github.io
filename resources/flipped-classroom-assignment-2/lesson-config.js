@@ -27,6 +27,6 @@ window.FlippedClassroomLesson = {
   },
   visuals: {
     expectedInfographicPath: "assets/images/pythagorean-theorem-overview.png",
-    infographicPath: ""
+    infographicPath: "assets/images/pythagorean-theorem-overview.png"
   }
 };

@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pythagorean Camtasia Video Outline Slides</title>
+    <link rel="stylesheet" href="../flipped-classroom-theme.css">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #fffaf0;
+        color: #17223b;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      main {
+        display: grid;
+        gap: 24px;
+        width: min(1120px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 28px 0;
+      }
+
+      .slide {
+        display: grid;
+        min-height: 630px;
+        padding: 42px;
+        border: 3px solid #17223b;
+        border-radius: 8px;
+        background:
+          linear-gradient(rgba(37, 99, 166, 0.1) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(37, 99, 166, 0.1) 1px, transparent 1px),
+          #ffffff;
+        background-size: 24px 24px;
+        box-shadow: 0 10px 0 rgba(23, 34, 59, 0.18);
+        page-break-after: always;
+      }
+
+      .slide h1,
+      .slide h2 {
+        margin: 0 0 18px;
+        font-size: clamp(2rem, 5vw, 3.3rem);
+        line-height: 1.05;
+      }
+
+      .slide h3 {
+        margin: 0 0 10px;
+        font-size: 1.3rem;
+      }
+
+      .slide p,
+      .slide li {
+        font-size: clamp(1.2rem, 2.5vw, 1.65rem);
+        line-height: 1.35;
+      }
+
+      .slide ul,
+      .slide ol {
+        margin: 0;
+        padding-left: 1.4em;
+      }
+
+      .hook {
+        max-width: 800px;
+        padding: 20px;
+        border-left: 8px solid #087f8c;
+        background: #e8fbf4;
+        font-weight: 800;
+      }
+
+      .two-column {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(280px, 0.85fr);
+        gap: 28px;
+        align-items: center;
+      }
+
+      .formula {
+        display: inline-block;
+        padding: 18px 24px;
+        border: 3px solid #b47705;
+        border-radius: 8px;
+        background: #fff0bf;
+        font-size: clamp(2rem, 6vw, 4rem);
+        font-weight: 900;
+      }
+
+      .steps {
+        display: grid;
+        gap: 10px;
+        font-size: 1.55rem;
+        font-weight: 800;
+      }
+
+      .notes-preview {
+        display: grid;
+        gap: 14px;
+        padding: 22px;
+        border: 2px dashed #17223b;
+        background: rgba(255, 255, 255, 0.86);
+      }
+
+      svg {
+        width: 100%;
+        max-height: 360px;
+      }
+
+      svg path,
+      svg rect {
+        vector-effect: non-scaling-stroke;
+      }
+
+      svg text {
+        fill: #17223b;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 900;
+      }
+
+      @page {
+        size: landscape;
+        margin: 0.35in;
+      }
+
+      @media print {
+        body {
+          background: #ffffff;
+        }
+
+        main {
+          width: 100%;
+          padding: 0;
+        }
+
+        .slide {
+          min-height: 7in;
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body class="flipped-classroom-theme">
+    <main>
+      <section class="slide">
+        <h1>Unlocking the Pythagorean Theorem</h1>
+        <p class="hook">How can a builder find a slanted distance without measuring the slant directly?</p>
+        <p>Speaking purpose: connect the lesson to real construction and diagonal-distance situations.</p>
+      </section>
+
+      <section class="slide">
+        <h2>What Makes a Right Triangle?</h2>
+        <div class="two-column">
+          <ul>
+            <li>The right angle is the square corner.</li>
+            <li>The legs meet at the right angle.</li>
+            <li>The hypotenuse is opposite the right angle.</li>
+          </ul>
+          <svg viewBox="0 0 360 250" role="img" aria-labelledby="slide2-title slide2-desc">
+            <title id="slide2-title">Right triangle labels</title>
+            <desc id="slide2-desc">A right triangle with legs a and b meeting at the right angle and hypotenuse c across from the right angle.</desc>
+            <path d="M72 196 L292 196 L72 58 Z" fill="#e8f6ff" stroke="#075d68" stroke-width="6"></path>
+            <path d="M72 162 L106 162 L106 196" fill="none" stroke="#c7553f" stroke-width="7"></path>
+            <text x="178" y="225" font-size="28" text-anchor="middle">leg a</text>
+            <text x="44" y="132" font-size="28" text-anchor="middle">leg b</text>
+            <text x="190" y="110" font-size="28" text-anchor="middle">hypotenuse c</text>
+          </svg>
+        </div>
+      </section>
+
+      <section class="slide">
+        <h2>Quick Review: Squares and Square Roots</h2>
+        <div class="steps">
+          <p>3<sup>2</sup> = 9</p>
+          <p>4<sup>2</sup> = 16</p>
+          <p>&radic;25 = 5</p>
+        </div>
+        <p>Speaking purpose: remind students that squaring finds area and square roots move back to side length.</p>
+      </section>
+
+      <section class="slide">
+        <h2>The Area Idea</h2>
+        <div class="two-column">
+          <p>The square on side a plus the square on side b matches the square on side c.</p>
+        </div>
+      </section>
+
+      <section class="slide">
+        <h2>The Formula</h2>
+        <p class="formula">a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p>
+        <ul>
+          <li>a and b are the legs.</li>
+          <li>c is the hypotenuse.</li>
+          <li>c is always opposite the right angle.</li>
+        </ul>
+      </section>
+
+      <section class="slide">
+        <h2>Worked Example: 3-4-5 Triangle</h2>
+        <div class="steps">
+          <p>3<sup>2</sup> + 4<sup>2</sup> = c<sup>2</sup></p>
+          <p>9 + 16 = c<sup>2</sup></p>
+          <p>25 = c<sup>2</sup></p>
+          <p>c = 5</p>
+        </div>
+      </section>
+
+      <section class="slide">
+        <h2>Check a Right Triangle: 6-8-10</h2>
+        <div class="steps">
+          <p>6<sup>2</sup> + 8<sup>2</sup> = 10<sup>2</sup></p>
+          <p>36 + 64 = 100</p>
+          <p>100 = 100</p>
+          <p>Therefore, it is a right triangle.</p>
+        </div>
+      </section>
+
+      <section class="slide">
+        <h2>Your Turn: 5-12-13</h2>
+        <p>Pause and solve for c using legs 5 and 12.</p>
+        <div class="notes-preview">
+          <p>5<sup>2</sup> + 12<sup>2</sup> = c<sup>2</sup></p>
+          <p>____ + ____ = c<sup>2</sup></p>
+          <p>____ = c<sup>2</sup></p>
+          <p>c = ____</p>
+        </div>
+      </section>
+
+      <section class="slide">
+        <h2>Guided Notes Handout - Part 1</h2>
+        <div class="notes-preview">
+          <p>1. Label a, b, and c.</p>
+          <p>2. Write the formula: a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>.</p>
+          <p>3. Copy the worked 3-4-5 example.</p>
+        </div>
+      </section>
+
+      <section class="slide">
+        <h2>Guided Notes Handout - Part 2 and What Comes Next</h2>
+        <ul>
+          <li>Try the student practice problem.</li>
+          <li>Write one question to bring to class.</li>
+          <li>Class time will be used for the escape room and teacher support.</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

@@ -306,6 +306,10 @@
 .flipped-classroom-theme .privacy-note,
 .flipped-classroom-theme .no-js-activity-note,
 .flipped-classroom-theme .completion-summary,
+.flipped-classroom-theme .local-survey,
+.flipped-classroom-theme .survey-question,
+.flipped-classroom-theme .survey-print-summary,
+.flipped-classroom-theme .survey-question-bank,
 .flipped-classroom-theme .bridge-note,
 .flipped-classroom-theme .accountability-note,
 .flipped-classroom-theme .viewing-question,
@@ -320,6 +324,7 @@
 .flipped-classroom-theme .external-video-card,
 .flipped-classroom-theme .material-link-card,
 .flipped-classroom-theme .check-card,
+.flipped-classroom-theme .survey-question,
 .flipped-classroom-theme .escape-clue,
 .flipped-classroom-theme .catch-up-station {
   position: relative;
@@ -330,6 +335,7 @@
 .flipped-classroom-theme .external-video-card::before,
 .flipped-classroom-theme .material-link-card::before,
 .flipped-classroom-theme .check-card::before,
+.flipped-classroom-theme .survey-question::before,
 .flipped-classroom-theme .escape-clue::before,
 .flipped-classroom-theme .catch-up-station::before {
   display: block;
@@ -347,8 +353,15 @@
 }
 
 .flipped-classroom-theme #exit-ticket .check-card::before,
+.flipped-classroom-theme #student-survey .survey-question::before,
 .flipped-classroom-theme #student-survey .placeholder-message::before {
   background: var(--fc-coral);
+}
+
+.flipped-classroom-theme .local-survey,
+.flipped-classroom-theme .survey-print-summary,
+.flipped-classroom-theme .survey-question-bank {
+  background: linear-gradient(135deg, #ffffff, var(--fc-lavender));
 }
 
 .flipped-classroom-theme .material-link-card.educator-only {

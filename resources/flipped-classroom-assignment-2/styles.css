@@ -455,6 +455,120 @@ html {
   background: #f5f8f5;
 }
 
+.local-survey,
+.survey-question-bank,
+.survey-print-summary,
+.survey-slot {
+  max-width: 920px;
+  margin-top: 18px;
+}
+
+.local-survey,
+.survey-question-bank,
+.survey-print-summary {
+  padding: 18px;
+  border: 1px solid var(--lesson-line);
+  border-radius: 8px;
+  background: var(--lesson-surface);
+}
+
+.local-survey-form {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.survey-question {
+  display: grid;
+  gap: 10px;
+  min-width: 0;
+  margin: 0;
+  padding: 14px;
+  border: 1px solid var(--lesson-line);
+  border-radius: 8px;
+  background: #fbfcf8;
+  color: var(--lesson-ink);
+  font-weight: 800;
+}
+
+.survey-question legend,
+.survey-question span {
+  color: var(--lesson-ink);
+  font-weight: 900;
+}
+
+.survey-question label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  margin-right: 14px;
+  color: var(--lesson-muted);
+  font-weight: 800;
+}
+
+.survey-question textarea {
+  width: 100%;
+  min-height: 92px;
+  resize: vertical;
+  border: 1px solid var(--lesson-line);
+  border-radius: 8px;
+  padding: 10px;
+  color: var(--lesson-ink);
+  font: inherit;
+}
+
+.survey-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.survey-actions .feedback {
+  margin: 0;
+}
+
+.survey-print-summary dl {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+}
+
+.survey-print-summary div {
+  display: grid;
+  gap: 4px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--lesson-line);
+}
+
+.survey-print-summary div:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.survey-print-summary dt {
+  color: var(--lesson-ink);
+  font-weight: 900;
+}
+
+.survey-print-summary dd {
+  margin: 0;
+  color: var(--lesson-muted);
+}
+
+.survey-question-bank summary {
+  min-height: 44px;
+  cursor: pointer;
+  color: var(--lesson-ink);
+  font-weight: 900;
+}
+
+.survey-question-bank ol {
+  margin-bottom: 0;
+}
+
 .optional-review {
   max-width: 820px;
   margin-top: 18px;
@@ -1071,25 +1185,46 @@ html {
 }
 
 @media print {
-  .site-header,
-  .lesson-hero,
-  .lesson-progress,
-  .lesson-section:not(#escape-room),
-  .lesson-footer,
-  .escape-resource-actions,
-  .privacy-note,
-  .escape-lock,
-  .escape-progress,
-  .escape-reset {
+  body:not(.print-local-survey) .site-header,
+  body:not(.print-local-survey) .lesson-hero,
+  body:not(.print-local-survey) .lesson-progress,
+  body:not(.print-local-survey) .lesson-section:not(#escape-room),
+  body:not(.print-local-survey) .lesson-footer,
+  body:not(.print-local-survey) .escape-resource-actions,
+  body:not(.print-local-survey) .privacy-note,
+  body:not(.print-local-survey) .escape-lock,
+  body:not(.print-local-survey) .escape-progress,
+  body:not(.print-local-survey) .escape-reset,
+  body.print-local-survey .site-header,
+  body.print-local-survey .lesson-hero,
+  body.print-local-survey .lesson-progress,
+  body.print-local-survey .lesson-section:not(#student-survey),
+  body.print-local-survey .lesson-footer,
+  body.print-local-survey .survey-actions,
+  body.print-local-survey .survey-question-bank,
+  body.print-local-survey .survey-slot {
     display: none;
   }
 
-  #escape-room,
-  .escape-completion-summary {
+  body:not(.print-local-survey) #escape-room,
+  body:not(.print-local-survey) .escape-completion-summary,
+  body.print-local-survey #student-survey,
+  body.print-local-survey .local-survey,
+  body.print-local-survey .survey-print-summary {
     display: block;
     border: 0;
     background: #ffffff;
     box-shadow: none;
+  }
+
+  body.print-local-survey .lesson-section-inner {
+    max-width: none;
+    padding: 0;
+  }
+
+  body.print-local-survey .survey-question,
+  body.print-local-survey .survey-print-summary div {
+    break-inside: avoid;
   }
 }
 

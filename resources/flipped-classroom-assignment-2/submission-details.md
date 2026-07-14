@@ -46,15 +46,23 @@ Configure these fields in `lesson-config.js` when the final survey is ready:
 
 ## Infographic Asset
 
-Placeholder: no final infographic file has been supplied yet.
-
-Expected static file path:
+Created static overview image:
 
 `resources/flipped-classroom-assignment-2/assets/images/pythagorean-theorem-overview.png`
 
-Configure this field in `lesson-config.js` when the final image is ready:
+Configured field:
 
 - `visuals.infographicPath`
+
+## Camtasia Video Outline
+
+Created static 10-slide PDF:
+
+`resources/flipped-classroom-assignment-2/outline/pythagorean-camtasia-video-outline.pdf`
+
+Editable static HTML source:
+
+`resources/flipped-classroom-assignment-2/outline/pythagorean-camtasia-video-outline.html`
 
 ## Access Instructions
 
@@ -72,12 +80,14 @@ Open the final hosted lesson URL and begin with the Before Class section. Procee
 10. Student Survey
 11. Teacher Materials
 
-The custom lesson, printables, and teacher materials are static GitHub Pages files and do not require a username, password, backend, database, or login. The Microsoft Forms survey access setting must be confirmed after the final Forms URL is configured.
+The custom lesson, printables, and teacher materials are static GitHub Pages files and do not require a username, password, login, or live submission system. The Microsoft Forms survey access setting must be confirmed after the final Forms URL is configured.
 
 ## Included Lesson Components
 
 - Lesson overview with essential question, objectives, materials, and prior-knowledge bridge.
+- Static Pythagorean theorem overview infographic.
 - Teacher-created Camtasia video slot with honest unconfigured state.
+- 10-slide Camtasia video outline PDF with editable static HTML source.
 - Required external instructional videos with privacy-enhanced YouTube embeds and direct-link fallbacks.
 - Optional square-root refresher video.
 - Printable guided notes.
@@ -87,7 +97,8 @@ The custom lesson, printables, and teacher materials are static GitHub Pages fil
 - Collaborative four-lock Pythagorean escape room and final challenge.
 - Printable group recording sheet.
 - Printable exit ticket.
-- Microsoft Forms survey slot and printable survey question bank.
+- Local print-friendly student feedback survey.
+- Optional Microsoft Forms area and printable survey question bank.
 - Teacher materials with facilitation plan, answer keys, worked solutions, misconceptions, hints, catch-up station, and extension.
 - Complete printable lesson plan.
 
@@ -99,7 +110,6 @@ Final submission readiness is blocked only by these manual items:
 - Configure the teacher-created Camtasia video in `lesson-config.js` using `media.teacherVideo.source` or `media.teacherVideo.embedUrl`.
 - Add teacher-video support assets in `lesson-config.js`: `media.teacherVideo.posterImagePath`, `media.teacherVideo.captionsPath`, and `media.teacherVideo.transcriptPath`.
 - Configure the final Microsoft Forms survey URLs in `lesson-config.js`: `media.microsoftFormsSurvey.embedUrl` and `media.microsoftFormsSurvey.directUrl`.
-- Add the final infographic at `resources/flipped-classroom-assignment-2/assets/images/pythagorean-theorem-overview.png` and set `visuals.infographicPath` in `lesson-config.js`, if the infographic is intended for use.
 - Confirm the configured Microsoft Forms permissions allow the intended students to respond.
 
 ## Final Testing Checklist
@@ -109,6 +119,8 @@ Final submission readiness is blocked only by these manual items:
 - Confirm the teacher video loads, has captions or transcript access, and does not autoplay after final configuration.
 - Confirm all required external videos load or their direct fallbacks open.
 - Confirm guided notes, group recording sheet, exit ticket, survey question bank, lesson plan, and teacher materials open and print.
+- Confirm the Camtasia outline PDF opens and has 10 pages.
+- Confirm the local student survey can be completed and printed.
 - Confirm readiness-check correct, incorrect, blank, retry, reset, refresh-persistence, and localStorage-fallback states.
 - Confirm escape-room correct, incorrect, blank, hint, lock-order, final-code, reset, refresh-persistence, and localStorage-fallback states.
 - Confirm exit-ticket correct, incorrect, blank, retry, reset, and localStorage-fallback states.
@@ -127,6 +139,6 @@ Hosted lesson: [Add final public GitHub Pages URL]
 
 Teacher-created video: [Add final public URL or confirm configured static video file]
 
-Student survey: [Add final Microsoft Forms direct URL]
+Student survey: Local printable survey included; Microsoft Forms URL can be added later if required.
 
-Begin with the Before Class section and proceed through the page in order. The in-class escape room, printable materials, exit ticket, survey, and teacher materials are housed within the same Flipped Classroom Assignment 2 resource. The static lesson is complete except for the final manually supplied teacher-video media, Microsoft Forms URLs, hosted lesson URL, and optional infographic listed in `submission-details.md`.
+Begin with the Before Class section and proceed through the page in order. The in-class escape room, printable materials, exit ticket, survey, and teacher materials are housed within the same Flipped Classroom Assignment 2 resource. The static lesson is complete except for the final manually supplied teacher-video media, Microsoft Forms URLs if used, and hosted lesson URL listed in `submission-details.md`.

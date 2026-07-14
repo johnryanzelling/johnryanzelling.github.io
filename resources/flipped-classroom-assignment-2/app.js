@@ -131,7 +131,8 @@
       currentSection: "lesson-overview",
       openResponse: "",
       escapeRoom: defaultEscapeProgress(),
-      exitTicket: defaultExitTicketProgress()
+      exitTicket: defaultExitTicketProgress(),
+      localSurvey: defaultLocalSurveyProgress()
     };
   }
 
@@ -149,6 +150,17 @@
       rightTriangleComplete: false,
       sideCResponse: "",
       importantStepResponse: ""
+    };
+  }
+
+  function defaultLocalSurveyProgress() {
+    return {
+      understanding: "",
+      videos: "",
+      escapeRoom: "",
+      helpedMost: "",
+      learnMore: "",
+      teacherChange: ""
     };
   }
 
@@ -174,6 +186,7 @@
     clean.openResponse = hasValue(candidate.openResponse) ? candidate.openResponse.slice(0, 500) : "";
     clean.escapeRoom = sanitizeEscapeProgress(candidate.escapeRoom);
     clean.exitTicket = sanitizeExitTicketProgress(candidate.exitTicket);
+    clean.localSurvey = sanitizeLocalSurveyProgress(candidate.localSurvey);
     return clean;
   }
 
@@ -222,6 +235,20 @@
     clean.rightTriangleComplete = candidate.rightTriangleComplete === true;
     clean.sideCResponse = hasValue(candidate.sideCResponse) ? candidate.sideCResponse.slice(0, 700) : "";
     clean.importantStepResponse = hasValue(candidate.importantStepResponse) ? candidate.importantStepResponse.slice(0, 700) : "";
+    return clean;
+  }
+
+  function sanitizeLocalSurveyProgress(candidate) {
+    var clean = defaultLocalSurveyProgress();
+    if (!candidate || typeof candidate !== "object") {
+      return clean;
+    }
+    clean.understanding = hasValue(candidate.understanding) ? candidate.understanding.slice(0, 40) : "";
+    clean.videos = hasValue(candidate.videos) ? candidate.videos.slice(0, 40) : "";
+    clean.escapeRoom = hasValue(candidate.escapeRoom) ? candidate.escapeRoom.slice(0, 40) : "";
+    clean.helpedMost = hasValue(candidate.helpedMost) ? candidate.helpedMost.slice(0, 700) : "";
+    clean.learnMore = hasValue(candidate.learnMore) ? candidate.learnMore.slice(0, 700) : "";
+    clean.teacherChange = hasValue(candidate.teacherChange) ? candidate.teacherChange.slice(0, 700) : "";
     return clean;
   }
 
@@ -425,7 +452,7 @@
     if (!hasValue(videoSource) && !hasValue(embedUrl)) {
       slot.replaceChildren(
         createPlaceholder(
-          "Teacher Camtasia video is not configured yet. Add a source or public embed URL, poster image, captions, and transcript paths in lesson-config.js when the final files are ready."
+          "Teacher video coming soon. Use the outline, guided notes, and external videos today."
         )
       );
       return;
@@ -450,7 +477,7 @@
         embedSupportLinks.appendChild(createLink(transcriptPath, "Open transcript"));
       } else {
         var embedTranscriptNote = document.createElement("span");
-        embedTranscriptNote.textContent = "Transcript not configured yet.";
+        embedTranscriptNote.textContent = "Transcript coming soon.";
         embedSupportLinks.appendChild(embedTranscriptNote);
       }
 
@@ -491,7 +518,7 @@
       supportLinks.appendChild(createLink(transcriptPath, "Open transcript"));
     } else {
       var transcriptNote = document.createElement("span");
-      transcriptNote.textContent = "Transcript not configured yet.";
+      transcriptNote.textContent = "Transcript coming soon.";
       supportLinks.appendChild(transcriptNote);
     }
 
@@ -525,9 +552,9 @@
       frame.appendChild(iframe);
       children.push(frame);
     } else if (hasValue(embedUrl)) {
-      children.push(createPlaceholder("Microsoft Forms embed URL must be a configured HTTPS URL before the survey can be embedded."));
+      children.push(createPlaceholder("A Microsoft Forms version can be added later if needed."));
     } else if (!hasValidDirectUrl) {
-      children.push(createPlaceholder("Microsoft Forms survey URLs are not configured yet. Add a verified HTTPS embed URL or direct URL in lesson-config.js."));
+      children.push(createPlaceholder("A Microsoft Forms version can be added later if needed."));
     }
 
     if (hasValidDirectUrl) {
@@ -537,12 +564,12 @@
     } else if (hasValue(directUrl)) {
       var invalidFallback = document.createElement("p");
       invalidFallback.className = "placeholder-message";
-      invalidFallback.textContent = "Microsoft Forms direct fallback URL must be HTTPS before it can be shown.";
+      invalidFallback.textContent = "A Microsoft Forms version can be added later if needed.";
       children.push(invalidFallback);
     } else if (hasValidEmbedUrl) {
       var fallbackNote = document.createElement("p");
       fallbackNote.className = "placeholder-message";
-      fallbackNote.textContent = "Microsoft Forms direct fallback URL is not configured yet.";
+      fallbackNote.textContent = "A direct Microsoft Forms link can be added later if needed.";
       children.push(fallbackNote);
     }
 
@@ -688,10 +715,10 @@
     }
     if (storageAvailable) {
       storageStatus.textContent =
-        "This lesson stores only local progress, the current section, and your class question in this browser. It does not collect names, emails, cookies, analytics, or personal data. Responses are not transmitted to the teacher.";
+        "Your practice progress and class question stay on this device. This page does not collect names, emails, cookies, analytics, or personal data. Responses are not transmitted to the teacher.";
     } else {
       storageStatus.textContent =
-        "Local storage is unavailable, so progress can be used during this visit but may not survive a refresh. Responses are still not transmitted to the teacher.";
+        "Progress can be used during this visit, but it may not stay after a refresh. Responses are still not transmitted to the teacher.";
     }
   }
 
@@ -732,6 +759,7 @@
 
     updateExitTicketUi();
     updateEscapeRoomUi();
+    updateLocalSurveyUi();
   }
 
   function restoreOpenResponse() {
@@ -751,6 +779,80 @@
     if (stepInput && hasValue(exitProgress.importantStepResponse)) {
       stepInput.value = exitProgress.importantStepResponse;
     }
+  }
+
+  function restoreLocalSurveyResponses() {
+    var surveyProgress = getLocalSurveyProgress();
+    Object.keys(surveyProgress).forEach(function (key) {
+      var scaleQuestion = document.querySelector("[data-local-survey-question='" + key + "']");
+      if (scaleQuestion) {
+        Array.prototype.slice.call(scaleQuestion.querySelectorAll("[data-local-survey-scale]")).forEach(function (input) {
+          input.checked = input.value === surveyProgress[key];
+        });
+      }
+      var responseInput = document.querySelector("[data-local-survey-response='" + key + "']");
+      if (responseInput && hasValue(surveyProgress[key])) {
+        responseInput.value = surveyProgress[key];
+      }
+    });
+  }
+
+  function getLocalSurveyProgress() {
+    progress.localSurvey = sanitizeLocalSurveyProgress(progress.localSurvey);
+    return progress.localSurvey;
+  }
+
+  function updateLocalSurveyUi() {
+    var survey = document.querySelector("[data-local-survey]");
+    if (!survey) {
+      return;
+    }
+    var surveyProgress = getLocalSurveyProgress();
+    var hasAnyResponse = Object.keys(surveyProgress).some(function (key) {
+      return hasValue(surveyProgress[key]);
+    });
+    var status = survey.querySelector("[data-local-survey-status]");
+    if (status) {
+      status.textContent = hasAnyResponse ? "Saved on this device" : "Not saved yet";
+      status.classList.toggle("is-complete", hasAnyResponse);
+    }
+    var storageStatus = survey.querySelector("[data-local-survey-storage-status]");
+    if (storageStatus) {
+      storageStatus.textContent = storageAvailable
+        ? "This survey does not submit online. Your feedback stays on this device unless you print it."
+        : "This survey does not submit online. Print your feedback before leaving the page.";
+    }
+    Object.keys(surveyProgress).forEach(function (key) {
+      var summary = survey.querySelector("[data-local-survey-summary='" + key + "']");
+      if (summary) {
+        summary.textContent = hasValue(surveyProgress[key]) ? surveyProgress[key] : "No response yet.";
+      }
+    });
+  }
+
+  function updateLocalSurveyResponse(input) {
+    var surveyProgress = getLocalSurveyProgress();
+    var key = input.getAttribute("data-local-survey-response");
+    if (key) {
+      surveyProgress[key] = input.value.trim().slice(0, 700);
+    }
+    var question = input.closest("[data-local-survey-question]");
+    if (question && input.matches("[data-local-survey-scale]")) {
+      var scaleKey = question.getAttribute("data-local-survey-question");
+      surveyProgress[scaleKey] = input.checked ? input.value : surveyProgress[scaleKey];
+    }
+    progress.localSurvey = surveyProgress;
+    saveProgress();
+    updateLocalSurveyUi();
+  }
+
+  function resetLocalSurveyInputs() {
+    Array.prototype.slice.call(document.querySelectorAll("[data-local-survey-scale]")).forEach(function (input) {
+      input.checked = false;
+    });
+    Array.prototype.slice.call(document.querySelectorAll("[data-local-survey-response]")).forEach(function (input) {
+      input.value = "";
+    });
   }
 
   function setupPractice() {
@@ -801,7 +903,7 @@
 
   function resetLessonProgress() {
     var confirmed = window.confirm(
-      "Reset local lesson progress for this browser? This clears completion status and your saved class question."
+      "Reset local lesson progress for this browser? This clears completion status, your saved class question, and local survey responses."
     );
     var feedback = document.querySelector("[data-reset-feedback]");
     if (!confirmed) {
@@ -831,6 +933,8 @@
     progress.exitTicket = defaultExitTicketProgress();
     resetExitTicketInputs();
     resetEscapeInputs();
+    progress.localSurvey = defaultLocalSurveyProgress();
+    resetLocalSurveyInputs();
     updateProgressUi();
     if (feedback) {
       feedback.textContent = "Local lesson progress has been reset.";
@@ -854,6 +958,49 @@
         notesWindow.print();
       });
     });
+  }
+
+  function setupLocalSurvey() {
+    var survey = document.querySelector("[data-local-survey]");
+    if (!survey) {
+      return;
+    }
+
+    var form = survey.querySelector("[data-local-survey-form]");
+    if (form) {
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+      });
+    }
+
+    Array.prototype.slice.call(survey.querySelectorAll("[data-local-survey-scale], [data-local-survey-response]")).forEach(function (input) {
+      input.addEventListener("change", function () {
+        updateLocalSurveyResponse(input);
+      });
+      input.addEventListener("input", function () {
+        updateLocalSurveyResponse(input);
+      });
+    });
+
+    var printButton = survey.querySelector("[data-print-local-survey]");
+    if (printButton) {
+      setupButtonKeyboardActivation(printButton);
+      printButton.addEventListener("click", function () {
+        updateLocalSurveyUi();
+        var feedback = survey.querySelector("[data-local-survey-feedback]");
+        document.body.classList.add("print-local-survey");
+        if (feedback) {
+          feedback.textContent = "Choose your printer settings, then print or save your feedback.";
+        }
+        var clearPrintMode = function () {
+          document.body.classList.remove("print-local-survey");
+          window.removeEventListener("afterprint", clearPrintMode);
+        };
+        window.addEventListener("afterprint", clearPrintMode);
+        window.print();
+        window.setTimeout(clearPrintMode, 1000);
+      });
+    }
   }
 
   function setupEscapeRoom() {
@@ -1388,8 +1535,10 @@
   renderInfographic();
   restoreOpenResponse();
   restoreExitTicketResponses();
+  restoreLocalSurveyResponses();
   setupPractice();
   setupGuidedNotesPrint();
+  setupLocalSurvey();
   setupExitTicket();
   setupEscapeRoom();
   updateProgressUi();

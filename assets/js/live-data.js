@@ -26,5 +26,7 @@ window.liveModules = [
   "module1",
   "module2",
   "module3",
-  "module4"
+  "module4",
+  "module5",
+  "module6"
 ];

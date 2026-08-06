@@ -92,3 +92,21 @@ Because final project-local status and exit records contribute to freshness, a f
 - The TODO/governance and script directories are intentionally ignored by this repository; validation reads them directly rather than relying on ordinary `git status` visibility.
 - No browser rendering pass was run because no public site file changed. Static paths, JavaScript syntax, JSON parsing, and the exact tracked public-tree hash provide the relevant regression coverage for this lifecycle-only repair.
 - No commit, staging, remote operation, publication, deployment, or GitHub action was performed.
+
+## Approval Lifecycle Validation — August 6, 2026
+
+The user explicitly approved all open TODO and maintenance work. Maintenance 001 was the only open record.
+
+- Moved `TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md` to `TODO/completed/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md`.
+- Updated its status to `Approved and completed` and recorded the August 6, 2026 approval.
+- Updated `PROJECT_STATUS.md`, `TODO/MASTER_PROJECT_ROADMAP.md`, and `TODO/LIFECYCLE_RECONCILIATIONS.json` to show zero active tasks and completed Maintenance 001 placement.
+- Extended the lifecycle validator to recognize `approved-completed` state and completed placement.
+- `node --check scripts/validate-lifecycle-evidence.js` — passed.
+- `node scripts/validate-lifecycle-evidence.js` — passed 28 repository checks, 28 disposable clean-fixture checks, and duplicate-ID mutation rejection.
+- Lifecycle reconciliation JSON parsing — passed.
+- Active feature/maintenance count — 0.
+- Completed Maintenance 001 count — 1.
+- `git diff --check` — passed after correcting one status-header whitespace issue.
+- Staged files — none.
+
+The approval lifecycle changed only governance, validation, and status evidence. Public site content and behavior remain unchanged.

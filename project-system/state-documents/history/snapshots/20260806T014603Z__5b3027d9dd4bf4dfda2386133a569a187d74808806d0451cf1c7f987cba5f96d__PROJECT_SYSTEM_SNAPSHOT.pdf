@@ -1,0 +1,157 @@
+%PDF-1.4
+%JZCC
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+3 0 obj
+<< /Length 5503 >>
+stream
+0.05 0.37 0.67 RG 1.5 w 54 770 m 558 770 l S
+BT /F2 7 Tf 0.3 0.34 0.4 rg 54 785 Td
+(johnryanzelling.github.io | Current Project Systems Snapshot) Tj ET
+BT /F2 20 Tf 0.06 0.16 0.29 rg 54 726 Td (johnryanzelling.github.io - Current Project Systems Snapshot) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 719 Td () Tj ET
+BT /F2 14 Tf 0.05 0.37 0.67 rg 54 702 Td (1. Document control) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 695 Td () Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 683 Td (-  Contract: Project State Documents 1.0.0) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 671 Td (-  Project key: johnryanzelling.github.io) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 659 Td (-  Publication observation: 5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 647 Td (-  Observed at: 2026-08-06T01:44:38.800Z) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 635 Td (-  Published at: 2026-08-06T01:46:03.400Z) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 623 Td (-  Canonical state hash: 1b4d286a4fa6bef80ae7671800c27410c77dab5985fd492801198a9ab1b23493) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 616 Td () Tj ET
+BT /F2 14 Tf 0.05 0.37 0.67 rg 54 599 Td (2. Project identity and purpose) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 592 Td () Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 580 Td (johnryanzelling.github.io is identified by stable project ID) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 568 Td (275bec87-de66-4b61-a0e8-8db00c9b7f88. This document uses project-relative evidence references) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 556 Td (and does not expose the private absolute root.) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 549 Td () Tj ET
+BT /F2 14 Tf 0.05 0.37 0.67 rg 54 532 Td (3. Current work and approval) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 525 Td () Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 513 Td (-  Workflow state: Ready for Review) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 501 Td (-  Controlling task: MAINTENANCE 001) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 489 Td (-  Next owner: USER) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 477 Td (-  Next action: Approve MAINTENANCE 001 or request correction) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 465 Td (-  Finalization destination:) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 453 Td (  TODO/completed/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 446 Td () Tj ET
+BT /F2 14 Tf 0.05 0.37 0.67 rg 54 429 Td (4. Twenty-cell state summary) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 422 Td () Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 410 Td (# Measure Current value Class) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 398 Td (---: --- --- ---) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 386 Td (1 workflow.documented Yellow - Compatible legacy satisfied; counts toward maturity partial) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 374 Td (2 workflow.governed Red - Missing error) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 362 Td (3 workflow.controlled Red - Missing error) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 350 Td (4 workflow.validated Red - Missing error) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 338 Td (5 workflow.institutionalized Red - Missing error) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 326 Td (6 work.current Awaiting Approval: MAINTENANCE 001 user-action) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 314 Td (7 work.start-authority not required neutral) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 302 Td (8 work.implementation implemented neutral) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 290 Td (9 work.validation validation recorded neutral) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 278 Td (10 work.approval-finalization awaiting user approval user-action) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 266 Td (11 dynamics.observability Current evidence uniquely identifies the relevant lifecycle state and) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 254 Td (nearest decision. satisfied) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 242 Td (12 dynamics.reachability A permitted first transition is known and respects current lifecycle,) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 230 Td (dependency, migration, and preservation constraints. actionable) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 218 Td (13 dynamics.preservation-safety The proposed first transition remains inside the declared) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 206 Td (preservation and non-regression boundary. satisfied) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 194 Td (14 dynamics.target-relation Approve or request correction for MAINTENANCE 001 actionable) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 182 Td (15 dynamics.recommendation-confidence high recommendation confidence satisfied) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 170 Td (16 portfolio.next-owner Needs you user-action) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 158 Td (17 portfolio.standard-alignment Compatible Legacy partial) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 146 Td (18 portfolio.evidence-freshness The projection was derived from the current filesystem and) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 134 Td (adapter-normalized observation. satisfied) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 122 Td (19 portfolio.model-confidence Current filesystem evidence and the selected workflow adapter) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 110 Td (strongly agree. satisfied) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 98 Td (20 portfolio.recent-activity Meaningful activity within 24 hours neutral) Tj ET
+BT /F1 7 Tf 0.3 0.34 0.4 rg 54 28 Td (johnryanzelling.github.io) Tj ET
+BT /F1 7 Tf 0.3 0.34 0.4 rg 520 28 Td (Page 1 of 2) Tj ET
+endstream
+endobj
+4 0 obj
+<< /Type /Page /Parent 7 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 3 0 R >>
+endobj
+5 0 obj
+<< /Length 4572 >>
+stream
+0.05 0.37 0.67 RG 1.5 w 54 770 m 558 770 l S
+BT /F2 7 Tf 0.3 0.34 0.4 rg 54 785 Td
+(johnryanzelling.github.io | Current Project Systems Snapshot) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 741 Td () Tj ET
+BT /F2 14 Tf 0.05 0.37 0.67 rg 54 724 Td (5. Target and first safe step) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 717 Td () Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 705 Td (-  Target: Approve or request correction for MAINTENANCE 001) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 693 Td (-  First safe step: Review MAINTENANCE 001) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 686 Td () Tj ET
+BT /F2 14 Tf 0.05 0.37 0.67 rg 54 669 Td (6. Document inventory) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 662 Td () Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 650 Td (The registry maps exactly twenty stable measures to twenty logical Markdown/PDF pairs. Open) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 638 Td (each atomic PDF from its Systems Mosaic cell.) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 631 Td () Tj ET
+BT /F2 14 Tf 0.05 0.37 0.67 rg 54 614 Td (7. Current project-file inventory) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 607 Td () Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 595 Td (-  README.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 583 Td (-  AGENTS.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 571 Td (-  PROJECT_STATUS.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 559 Td (-  TODO/MASTER_PROJECT_ROADMAP.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 547 Td (-  TODO/archive/TODO_33_FINAL_FLIPPED_LESSON_VALIDATION.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 535 Td (-  TODO/archive/TODO_34_FLIPPED_CLASSROOM_VISUAL_THEME.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 523 Td (-  TODO/archive/TODO_35_FIX_LESSON_PROGRESS_STICKY_OFFSET.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 511 Td (-  TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 499 Td (-  TODO/archive/TODO_38_INFOGRAPHIC_OUTLINE_SURVEY_CLEANUP.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 487 Td (-  TODO/completed/TODO_28_ADD_FLIPPED_CLASSROOM_RESOURCE_SHELL.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 475 Td (-  TODO/completed/TODO_29_BUILD_FLIPPED_PRECLASS_VIDEO_SECTION.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 463 Td (-  TODO/completed/TODO_30_ADD_GUIDED_NOTES_AND_READINESS_CHECK.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 451 Td (-  TODO/completed/TODO_31_BUILD_PYTHAGOREAN_ESCAPE_ROOM.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 439 Td (-  TODO/completed/TODO_32_ADD_SURVEY_LESSON_PLAN_AND_ACCESS_SUPPORTS.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 427 Td (-  TODO/completed/TODO_39_FIX_FIRST_KHAN_ACADEMY_VIDEO_LINK.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 415 Td (-  TODO/completed/TODO_40_ADD_TEACHER_VIDEO.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 403 Td (-  TODO/completed/TODO_41_SIMPLIFY_VIDEO_AND_GUIDED_NOTES_WORDING.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 391 Td (-  TODO/completed/TODO_42_CLEAN_FLIPPED_CLASSROOM_DIRECTORY.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 379 Td (-  TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 372 Td () Tj ET
+BT /F2 14 Tf 0.05 0.37 0.67 rg 54 355 Td (8. Concise project history) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 348 Td () Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 336 Td (-  21 completed TODOs; 0 completed maintenance records.) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 324 Td (-  0 queued TODOs; 0 queued maintenance records.) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 312 Td (-  Last meaningful activity: 2026-08-05T21:35:55.397Z.) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 305 Td () Tj ET
+BT /F2 14 Tf 0.05 0.37 0.67 rg 54 288 Td (9. Tutorial legend and limitations) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 281 Td () Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 269 Td (The matrix is a deterministic multidimensional projection, not an overall health score.) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 257 Td (Publication observation IDs record provenance; currentness uses the deterministic canonical) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 245 Td (state hash so an unchanged read-only scan does not stale the document. A generated PDF does not) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 233 Td (create governance, validation, approval, or compliance. Missing documents and missing) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 221 Td (underlying evidence are separate conditions. Scans and copied commands remain read-only.) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 214 Td () Tj ET
+BT /F1 7 Tf 0.3 0.34 0.4 rg 54 28 Td (johnryanzelling.github.io) Tj ET
+BT /F1 7 Tf 0.3 0.34 0.4 rg 520 28 Td (Page 2 of 2) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 7 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Type /Pages /Count 2 /Kids [4 0 R 6 0 R] >>
+endobj
+8 0 obj
+<< /Type /Catalog /Pages 7 0 R >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000085 00000 n 
+0000000160 00000 n 
+0000005715 00000 n 
+0000005851 00000 n 
+0000010475 00000 n 
+0000010611 00000 n 
+0000010674 00000 n 
+trailer << /Size 9 /Root 8 0 R >>
+startxref
+10723
+%%EOF

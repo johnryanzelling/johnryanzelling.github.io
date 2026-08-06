@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "contractVersion": "1.0.0",
+  "projectDisplayTitle": "johnryanzelling.github.io",
+  "projectIconReference": null,
+  "accentColorRoles": {
+    "primary": "#1d67ae",
+    "text": "#10294a",
+    "muted": "#5b6472"
+  },
+  "headerText": "johnryanzelling.github.io",
+  "footerText": "Project State Documents 1.0.0",
+  "logoPath": null,
+  "coverSubtitle": "Evidence-backed project systems record",
+  "semanticColorsFixed": true,
+  "remoteAssetsAllowed": false
+}

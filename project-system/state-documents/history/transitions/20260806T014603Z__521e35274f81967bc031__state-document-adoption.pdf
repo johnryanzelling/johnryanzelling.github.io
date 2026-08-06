@@ -1,0 +1,69 @@
+%PDF-1.4
+%JZCC
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+3 0 obj
+<< /Length 2871 >>
+stream
+0.05 0.37 0.67 RG 1.5 w 54 770 m 558 770 l S
+BT /F2 7 Tf 0.3 0.34 0.4 rg 54 785 Td
+(johnryanzelling.github.io | Project State Transition) Tj ET
+BT /F2 20 Tf 0.06 0.16 0.29 rg 54 726 Td (johnryanzelling.github.io - Project State Transition) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 719 Td () Tj ET
+BT /F2 14 Tf 0.05 0.37 0.67 rg 54 702 Td (Document control) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 695 Td () Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 683 Td (-  Event ID: 521e35274f81967bc031) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 671 Td (-  Event time: 2026-08-06T01:46:03.400Z) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 659 Td (-  Actor/owner: CODEX) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 647 Td (-  Project: johnryanzelling.github.io) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 635 Td (-  Task: MAINTENANCE 001) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 628 Td () Tj ET
+BT /F2 14 Tf 0.05 0.37 0.67 rg 54 611 Td (Transition) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 604 Td () Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 592 Td (-  Previous state hash: not adopted) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 580 Td (-  Resulting state hash: 1b4d286a4fa6bef80ae7671800c27410c77dab5985fd492801198a9ab1b23493) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 568 Td (-  Previous workflow state: state documents not adopted) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 556 Td (-  Resulting workflow state: Ready for Review) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 544 Td (-  Affected atomic measures: workflow.documented, workflow.governed, workflow.controlled,) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 532 Td (  workflow.validated, workflow.institutionalized, work.current, work.start-authority,) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 520 Td (  work.implementation, work.validation, work.approval-finalization, dynamics.observability,) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 508 Td (  dynamics.reachability, dynamics.preservation-safety, dynamics.target-relation,) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 496 Td (  dynamics.recommendation-confidence, portfolio.next-owner, portfolio.standard-alignment,) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 484 Td (  portfolio.evidence-freshness, portfolio.model-confidence, portfolio.recent-activity) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 472 Td (-  Files changed: managed Project State Documents only) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 460 Td (-  User authority required: yes) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 448 Td (-  Codex still must act: no) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 436 Td (-  Result: success) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 429 Td () Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 417 Td (Clipboard copies and read-only scans do not create transition records.) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 410 Td () Tj ET
+BT /F1 7 Tf 0.3 0.34 0.4 rg 54 28 Td (johnryanzelling.github.io) Tj ET
+BT /F1 7 Tf 0.3 0.34 0.4 rg 520 28 Td (Page 1 of 1) Tj ET
+endstream
+endobj
+4 0 obj
+<< /Type /Page /Parent 5 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 3 0 R >>
+endobj
+5 0 obj
+<< /Type /Pages /Count 1 /Kids [4 0 R] >>
+endobj
+6 0 obj
+<< /Type /Catalog /Pages 5 0 R >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000085 00000 n 
+0000000160 00000 n 
+0000003083 00000 n 
+0000003219 00000 n 
+0000003276 00000 n 
+trailer << /Size 7 /Root 6 0 R >>
+startxref
+3325
+%%EOF

@@ -3,15 +3,18 @@
 ## 1. Document control
 
 - Contract: Project State Documents 1.0.0
-- Published at: 2026-08-06T01:46:03.400Z
-- Current observation: 5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d
+- Published at: 2026-08-06T21:21:28.233Z
+- Current observation: df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6
 
 ## 2. Current controlling state
 
-- Workflow state: Ready for Review
-- Owner: USER
-- Action: Review Result
+- Workflow state: Completed
+- Owner: NO_ACTION
+- Action: Open Project History
 - Task: MAINTENANCE 001
+- Exact task path: TODO/completed/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md
+- Approval recorded: yes
+- User approval needed: no
 
 ## 3. Feature and maintenance lifecycle history
 
@@ -38,7 +41,7 @@
 | 2026-07-14T03:46:32.142Z | TODO 041 | Feature TODO | Completed | TODO/completed/TODO_41_SIMPLIFY_VIDEO_AND_GUIDED_NOTES_WORDING.md |
 | 2026-07-14T04:11:33.374Z | TODO 042 | Feature TODO | Completed | TODO/completed/TODO_42_CLEAN_FLIPPED_CLASSROOM_DIRECTORY.md |
 | 2026-08-05T21:28:41.176Z | TODO 043 | Feature TODO | Completed | TODO/completed/TODO_43_AUTHOR_MODULE_5_AND_6_REFLECTIONS.md |
-| 2026-08-05T21:35:55.397Z | MAINTENANCE 001 | Feature TODO | Active | TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md |
+| 2026-08-06T20:47:55.356Z | MAINTENANCE 001 | Feature TODO | Completed | TODO/completed/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md |
 
 ## 4. Transition chronology
 
@@ -46,7 +49,7 @@ Immutable transition records under history/transitions record state-changing act
 
 ## 5. Approval and finalization chronology
 
-Approval is a user decision. Completed is shown only after the authoritative filesystem placement is reobserved. The current approval/finalization state is Ready for Review.
+Approval is a user decision. Completed is shown only after the authoritative filesystem placement is reobserved. The current approval/finalization state is Completed. The lifecycle subject is MAINTENANCE 001 at TODO/completed/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md.
 
 ## 6. Migration and compliance milestones
 

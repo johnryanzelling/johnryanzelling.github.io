@@ -6,9 +6,9 @@
 | --- | --- |
 | Measure | dynamics.observability (matrix D-O, position 11) |
 | Contract | Project State Documents 1.0.0 |
-| Observation | 5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d at 2026-08-06T01:44:38.800Z |
-| Source-state SHA-256 | 839fdff1e960aa7e16e56b4e086298722f79cbced2fd1c22d28b3d33baf8706a |
-| Published | 2026-08-06T01:46:03.400Z |
+| Observation | df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6 at 2026-08-06T21:19:38.303Z |
+| Source-state SHA-256 | 13bee730e5992160337076550a7dad45d04ee0a7df21c69de63067368a40d922 |
+| Published | 2026-08-06T21:21:28.233Z |
 | Published PDF SHA-256 | Recorded in PROJECT_STATE_DOCUMENT_REGISTRY.json after rendering |
 | Delivery state | current |
 
@@ -18,13 +18,13 @@ This Project Dynamics measure describes an evidence-backed model for the current
 
 ## 3. Current atomic state
 
-- Canonical value: Clear
-- Plain-language value: Current evidence uniquely identifies the relevant lifecycle state and nearest decision.
-- State class: satisfied
+- Canonical value: Partial
+- Plain-language value: Useful evidence exists, but missing or stale evidence limits the current decision.
+- State class: partial
 - Blocks the current action: no
-- Next owner: USER
-- Exact next action: Approve MAINTENANCE 001 or request correction
-- User input still required: Current evidence ties implementation and fresh required validation to one controlling task.
+- Next owner: NO_ACTION
+- Exact next action: Nothing is required now
+- User input still required: No routine input; explicit approval and special authority remain separate.
 - Codex handles: bounded implementation, validation, document repair, and lifecycle mechanics supported by repository evidence.
 
 ## 4. Why this state was assigned
@@ -37,7 +37,6 @@ The canonical Project System, lifecycle, Project Dynamics, target, responsibilit
 - README.md
 - AGENTS.md
 - PROJECT_STATUS.md
-- TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md
 - TODO/MASTER_PROJECT_ROADMAP.md
 - TODO/archive/TODO_33_FINAL_FLIPPED_LESSON_VALIDATION.md
 - TODO/archive/TODO_34_FLIPPED_CLASSROOM_VISUAL_THEME.md
@@ -48,7 +47,6 @@ The canonical Project System, lifecycle, Project Dynamics, target, responsibilit
 - README.md
 - AGENTS.md
 - PROJECT_STATUS.md
-- TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md
 - TODO/MASTER_PROJECT_ROADMAP.md
 - TODO/archive/TODO_33_FINAL_FLIPPED_LESSON_VALIDATION.md
 - TODO/archive/TODO_34_FLIPPED_CLASSROOM_VISUAL_THEME.md
@@ -60,26 +58,28 @@ The canonical Project System, lifecycle, Project Dynamics, target, responsibilit
 
 ## 6. Current systems relationship
 
-- Observed state: Current evidence uniquely identifies the relevant lifecycle state and nearest decision.
-- Target: Approve or request correction for MAINTENANCE 001
-- Current gap: Safe copied Codex command: missing
-- First safe transition: Review MAINTENANCE 001
+- Observed state: Useful evidence exists, but missing or stale evidence limits the current decision.
+- Target: Level 3
+- Current gap: Maintenance lifecycle: partial
+- First safe transition: Nothing is required now
 - Preservation boundary: project identity, source, content, data, assets, outputs, approved history, and unrelated governance remain protected.
 - Confidence: High; Current filesystem evidence and the selected workflow adapter strongly agree.
 
 ## 7. Measure-specific history
 
-- This is the first adopted document observation for this measure.
+- Previous value: Clear
+- Current value: Useful evidence exists, but missing or stale evidence limits the current decision.
+- Prior material change: 2026-08-06T01:46:03.400Z
 - Controlling work: MAINTENANCE 001
-- Current owner: USER
+- Current owner: NO_ACTION
 - Transition records: ../../history/transitions/
 
 ## 8. Evidence references
 
-- Project Dynamics observability - canonical evidence reference for observation 5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d
-- README.md - canonical evidence reference for observation 5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d
-- AGENTS.md - canonical evidence reference for observation 5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d
-- PROJECT_STATUS.md - canonical evidence reference for observation 5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d
+- Project Dynamics observability - canonical evidence reference for observation df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6
+- README.md - canonical evidence reference for observation df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6
+- AGENTS.md - canonical evidence reference for observation df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6
+- PROJECT_STATUS.md - canonical evidence reference for observation df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6
 
 ## 9. Known limitations and next review trigger
 

@@ -6,9 +6,9 @@
 | --- | --- |
 | Measure | work.implementation (matrix C-I, position 8) |
 | Contract | Project State Documents 1.0.0 |
-| Observation | 5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d at 2026-08-06T01:44:38.800Z |
-| Source-state SHA-256 | 12f4f02f6ff22924e2cf38c53fca7a082336bffb75cbfc49bd4f8d73b36cb53a |
-| Published | 2026-08-06T01:46:03.400Z |
+| Observation | df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6 at 2026-08-06T21:19:38.303Z |
+| Source-state SHA-256 | 1ff971298bf84ace5b2a6f9def16d11ff6077b0e83b0438acccf30f1349ec145 |
+| Published | 2026-08-06T21:21:28.233Z |
 | Published PDF SHA-256 | Recorded in PROJECT_STATE_DOCUMENT_REGISTRY.json after rendering |
 | Delivery state | current |
 
@@ -18,13 +18,13 @@ This work-control measure separates placement, start authority, implementation, 
 
 ## 3. Current atomic state
 
-- Canonical value: implemented
-- Plain-language value: implemented
+- Canonical value: not-started
+- Plain-language value: not started
 - State class: neutral
 - Blocks the current action: no
-- Next owner: USER
-- Exact next action: Approve MAINTENANCE 001 or request correction
-- User input still required: Current evidence ties implementation and fresh required validation to one controlling task.
+- Next owner: NO_ACTION
+- Exact next action: Nothing is required now
+- User input still required: No routine input; explicit approval and special authority remain separate.
 - Codex handles: bounded implementation, validation, document repair, and lifecycle mechanics supported by repository evidence.
 
 ## 4. Why this state was assigned
@@ -34,7 +34,6 @@ The canonical Project System, lifecycle, Project Dynamics, target, responsibilit
 ## 5. Required and present project files
 
 ### Required
-- TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md
 - README.md
 - AGENTS.md
 - PROJECT_STATUS.md
@@ -45,7 +44,6 @@ The canonical Project System, lifecycle, Project Dynamics, target, responsibilit
 - TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md
 
 ### Present
-- TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md
 - README.md
 - AGENTS.md
 - PROJECT_STATUS.md
@@ -60,24 +58,25 @@ The canonical Project System, lifecycle, Project Dynamics, target, responsibilit
 
 ## 6. Current systems relationship
 
-- Observed state: implemented
-- Target: Approve or request correction for MAINTENANCE 001
-- Current gap: Safe copied Codex command: missing
-- First safe transition: Review MAINTENANCE 001
+- Observed state: not started
+- Target: Level 3
+- Current gap: Maintenance lifecycle: partial
+- First safe transition: Nothing is required now
 - Preservation boundary: project identity, source, content, data, assets, outputs, approved history, and unrelated governance remain protected.
 - Confidence: High; Current filesystem evidence and the selected workflow adapter strongly agree.
 
 ## 7. Measure-specific history
 
-- This is the first adopted document observation for this measure.
+- Previous value: implemented
+- Current value: not started
+- Prior material change: 2026-08-06T01:46:03.400Z
 - Controlling work: MAINTENANCE 001
-- Current owner: USER
+- Current owner: NO_ACTION
 - Transition records: ../../history/transitions/
 
 ## 8. Evidence references
 
-- Filesystem-authoritative lifecycle resolver - canonical evidence reference for observation 5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d
-- TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md - canonical evidence reference for observation 5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d
+- Filesystem-authoritative lifecycle resolver - canonical evidence reference for observation df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6
 
 ## 9. Known limitations and next review trigger
 

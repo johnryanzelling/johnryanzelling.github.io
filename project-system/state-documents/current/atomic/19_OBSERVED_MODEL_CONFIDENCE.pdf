@@ -7,7 +7,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
 endobj
 3 0 obj
-<< /Length 4942 >>
+<< /Length 4850 >>
 stream
 0.05 0.37 0.67 RG 1.5 w 54 770 m 558 770 l S
 BT /F2 7 Tf 0.3 0.34 0.4 rg 54 785 Td
@@ -20,10 +20,10 @@ BT /F1 9 Tf 0.06 0.16 0.29 rg 54 683 Td (Field Value) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 671 Td (--- ---) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 659 Td (Measure portfolio.model-confidence \(matrix A-C, position 19\)) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 647 Td (Contract Project State Documents 1.0.0) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 635 Td (Observation 5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d at) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 623 Td (2026-08-06T01:44:38.800Z) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 635 Td (Observation df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6 at) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 623 Td (2026-08-06T21:19:38.303Z) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 611 Td (Source-state SHA-256 5ca1dbc796abf873717bb56518d9b4f17a428a2a9dae19fa5973dd44c26249f9) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 599 Td (Published 2026-08-06T01:46:03.400Z) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 599 Td (Published 2026-08-06T21:21:28.233Z) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 587 Td (Published PDF SHA-256 Recorded in PROJECT_STATE_DOCUMENT_REGISTRY.json after rendering) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 575 Td (Delivery state current) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 568 Td () Tj ET
@@ -40,10 +40,10 @@ BT /F1 9 Tf 0.06 0.16 0.29 rg 54 453 Td (-  Plain-language value: Current filesy
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 441 Td (  agree.) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 429 Td (-  State class: satisfied) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 417 Td (-  Blocks the current action: no) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 405 Td (-  Next owner: USER) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 393 Td (-  Exact next action: Approve MAINTENANCE 001 or request correction) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 381 Td (-  User input still required: Current evidence ties implementation and fresh required) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 369 Td (  validation to one controlling task.) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 405 Td (-  Next owner: NO_ACTION) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 393 Td (-  Exact next action: Nothing is required now) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 381 Td (-  User input still required: No routine input; explicit approval and special authority remain) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 369 Td (  separate.) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 357 Td (-  Codex handles: bounded implementation, validation, document repair, and lifecycle mechanics) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 345 Td (  supported by repository evidence.) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 338 Td () Tj ET
@@ -56,17 +56,17 @@ BT /F1 9 Tf 0.06 0.16 0.29 rg 54 271 Td () Tj ET
 BT /F2 14 Tf 0.05 0.37 0.67 rg 54 254 Td (5. Required and present project files) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 247 Td () Tj ET
 BT /F2 11 Tf 0.06 0.16 0.29 rg 54 233 Td (Required) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 221 Td (-  TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 209 Td (-  README.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 197 Td (-  AGENTS.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 185 Td (-  PROJECT_STATUS.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 173 Td (-  TODO/MASTER_PROJECT_ROADMAP.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 161 Td (-  TODO/archive/TODO_33_FINAL_FLIPPED_LESSON_VALIDATION.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 149 Td (-  TODO/archive/TODO_34_FLIPPED_CLASSROOM_VISUAL_THEME.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 137 Td (-  TODO/archive/TODO_35_FIX_LESSON_PROGRESS_STICKY_OFFSET.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 125 Td (-  TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 118 Td () Tj ET
-BT /F2 11 Tf 0.06 0.16 0.29 rg 54 104 Td (Present) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 221 Td (-  README.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 209 Td (-  AGENTS.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 197 Td (-  PROJECT_STATUS.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 185 Td (-  TODO/MASTER_PROJECT_ROADMAP.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 173 Td (-  TODO/archive/TODO_33_FINAL_FLIPPED_LESSON_VALIDATION.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 161 Td (-  TODO/archive/TODO_34_FLIPPED_CLASSROOM_VISUAL_THEME.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 149 Td (-  TODO/archive/TODO_35_FIX_LESSON_PROGRESS_STICKY_OFFSET.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 137 Td (-  TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 130 Td () Tj ET
+BT /F2 11 Tf 0.06 0.16 0.29 rg 54 116 Td (Present) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 104 Td (-  README.md) Tj ET
 BT /F1 7 Tf 0.3 0.34 0.4 rg 54 28 Td (johnryanzelling.github.io) Tj ET
 BT /F1 7 Tf 0.3 0.34 0.4 rg 520 28 Td (Page 1 of 2) Tj ET
 endstream
@@ -75,47 +75,47 @@ endobj
 << /Type /Page /Parent 7 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 3 0 R >>
 endobj
 5 0 obj
-<< /Length 4101 >>
+<< /Length 4080 >>
 stream
 0.05 0.37 0.67 RG 1.5 w 54 770 m 558 770 l S
 BT /F2 7 Tf 0.3 0.34 0.4 rg 54 785 Td
 (johnryanzelling.github.io | Observed Model Confidence) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 736 Td (-  TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 724 Td (-  README.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 712 Td (-  AGENTS.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 700 Td (-  PROJECT_STATUS.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 688 Td (-  TODO/MASTER_PROJECT_ROADMAP.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 676 Td (-  TODO/archive/TODO_33_FINAL_FLIPPED_LESSON_VALIDATION.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 664 Td (-  TODO/archive/TODO_34_FLIPPED_CLASSROOM_VISUAL_THEME.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 652 Td (-  TODO/archive/TODO_35_FIX_LESSON_PROGRESS_STICKY_OFFSET.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 640 Td (-  TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 633 Td () Tj ET
-BT /F2 11 Tf 0.06 0.16 0.29 rg 54 619 Td (Missing or unresolved) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 607 Td (-  None identified by the bounded path check.) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 736 Td (-  AGENTS.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 724 Td (-  PROJECT_STATUS.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 712 Td (-  TODO/MASTER_PROJECT_ROADMAP.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 700 Td (-  TODO/archive/TODO_33_FINAL_FLIPPED_LESSON_VALIDATION.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 688 Td (-  TODO/archive/TODO_34_FLIPPED_CLASSROOM_VISUAL_THEME.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 676 Td (-  TODO/archive/TODO_35_FIX_LESSON_PROGRESS_STICKY_OFFSET.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 664 Td (-  TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 657 Td () Tj ET
+BT /F2 11 Tf 0.06 0.16 0.29 rg 54 643 Td (Missing or unresolved) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 631 Td (-  None identified by the bounded path check.) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 624 Td () Tj ET
+BT /F2 14 Tf 0.05 0.37 0.67 rg 54 607 Td (6. Current systems relationship) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 600 Td () Tj ET
-BT /F2 14 Tf 0.05 0.37 0.67 rg 54 583 Td (6. Current systems relationship) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 576 Td () Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 564 Td (-  Observed state: Current filesystem evidence and the selected workflow adapter strongly) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 552 Td (  agree.) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 540 Td (-  Target: Approve or request correction for MAINTENANCE 001) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 528 Td (-  Current gap: Safe copied Codex command: missing) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 516 Td (-  First safe transition: Review MAINTENANCE 001) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 504 Td (-  Preservation boundary: project identity, source, content, data, assets, outputs, approved) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 492 Td (  history, and unrelated governance remain protected.) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 480 Td (-  Confidence: High; Current filesystem evidence and the selected workflow adapter strongly) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 468 Td (  agree.) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 588 Td (-  Observed state: Current filesystem evidence and the selected workflow adapter strongly) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 576 Td (  agree.) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 564 Td (-  Target: Level 3) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 552 Td (-  Current gap: Maintenance lifecycle: partial) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 540 Td (-  First safe transition: Nothing is required now) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 528 Td (-  Preservation boundary: project identity, source, content, data, assets, outputs, approved) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 516 Td (  history, and unrelated governance remain protected.) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 504 Td (-  Confidence: High; Current filesystem evidence and the selected workflow adapter strongly) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 492 Td (  agree.) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 485 Td () Tj ET
+BT /F2 14 Tf 0.05 0.37 0.67 rg 54 468 Td (7. Measure-specific history) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 461 Td () Tj ET
-BT /F2 14 Tf 0.05 0.37 0.67 rg 54 444 Td (7. Measure-specific history) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 437 Td () Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 425 Td (-  This is the first adopted document observation for this measure.) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 449 Td (-  Previous value: High) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 437 Td (-  Current value: Current filesystem evidence and the selected workflow adapter strongly agree.) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 425 Td (-  Prior material change: 2026-08-06T01:46:03.400Z) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 413 Td (-  Controlling work: MAINTENANCE 001) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 401 Td (-  Current owner: USER) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 401 Td (-  Current owner: NO_ACTION) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 389 Td (-  Transition records: ../../history/transitions/) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 382 Td () Tj ET
 BT /F2 14 Tf 0.05 0.37 0.67 rg 54 365 Td (8. Evidence references) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 358 Td () Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 346 Td (-  Canonical Project System model-confidence resolver - canonical evidence reference for) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 334 Td (  observation 5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 334 Td (  observation df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 327 Td () Tj ET
 BT /F2 14 Tf 0.05 0.37 0.67 rg 54 310 Td (9. Known limitations and next review trigger) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 303 Td () Tj ET
@@ -143,12 +143,12 @@ xref
 0000000015 00000 n 
 0000000085 00000 n 
 0000000160 00000 n 
-0000005154 00000 n 
-0000005290 00000 n 
-0000009443 00000 n 
-0000009579 00000 n 
-0000009642 00000 n 
+0000005062 00000 n 
+0000005198 00000 n 
+0000009330 00000 n 
+0000009466 00000 n 
+0000009529 00000 n 
 trailer << /Size 9 /Root 8 0 R >>
 startxref
-9691
+9578
 %%EOF

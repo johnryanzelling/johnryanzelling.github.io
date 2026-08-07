@@ -5,9 +5,9 @@
   "projectKey": "johnryanzelling.github.io",
   "projectDisplayName": "johnryanzelling.github.io",
   "stateDocumentRoot": "project-system/state-documents",
-  "observationId": "5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d",
-  "observedAt": "2026-08-06T01:44:38.800Z",
-  "coreStateHash": "1b4d286a4fa6bef80ae7671800c27410c77dab5985fd492801198a9ab1b23493",
+  "observationId": "df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6",
+  "observedAt": "2026-08-06T21:19:38.303Z",
+  "coreStateHash": "718aa14dd11f3ba3bb8b2fc04b95bf79ebef6f5b8485adc3014c57cc73d1c54b",
   "measureDocuments": [
     {
       "documentId": "atomic-01",
@@ -21,14 +21,13 @@
       "measureStateClass": "partial",
       "blockingCurrentAction": false,
       "responsibilityOwner": null,
-      "sourceObservationId": "5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d",
+      "sourceObservationId": "df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6",
       "sourceStateHash": "aeb2e28610bb68e0f84b79cb4a82e11c0b20abd5fbc193155dbddbf5be39b4f9",
-      "sourceMarkdownHash": "90d12bdfe4a88d68436b8623ee029660e9ed48b4ca21aa26bc5ff083c0c9d5cc",
-      "publishedPdfHash": "e4be2770d407da2ca7e2c1b0a69074d9f6aaf36061c0ed09a487ecd2335447ed",
-      "publishedAt": "2026-08-06T01:46:03.400Z",
+      "sourceMarkdownHash": "0c6d7ffff2b687977965428c0d5a7b2ac2ff5285ed35ff8a4f8eafc4db001f35",
+      "publishedPdfHash": "5cfb0710e3ee65fd73b4b3739afbe50cca72cd0367f7f51649e98036601bd422",
+      "publishedAt": "2026-08-06T21:21:28.233Z",
       "documentState": "current",
       "requiredSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -39,7 +38,6 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "presentSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -61,18 +59,17 @@
       "fullLabel": "Workflow Foundation - Governed",
       "sourceMarkdownPath": "project-system/state-documents/current/atomic/02_WORKFLOW_GOVERNED.md",
       "publishedPdfPath": "project-system/state-documents/current/atomic/02_WORKFLOW_GOVERNED.pdf",
-      "currentMeasureValue": "missing",
-      "measureStateClass": "error",
+      "currentMeasureValue": "satisfied-legacy",
+      "measureStateClass": "partial",
       "blockingCurrentAction": false,
       "responsibilityOwner": null,
-      "sourceObservationId": "5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d",
-      "sourceStateHash": "4aca1af84a0ee4d57457f553a0fe0307c424f766b6890ee341be528de271903c",
-      "sourceMarkdownHash": "096e62b9666250153100f4db4889dd10b47a1ebea65927de88826f0b5d5f4502",
-      "publishedPdfHash": "cb66ea345fd4346f0940f4a5610ed55c1c84b4f1e1d5e70f25d4ced88dc807a0",
-      "publishedAt": "2026-08-06T01:46:03.400Z",
+      "sourceObservationId": "df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6",
+      "sourceStateHash": "88d78e15e4effbc6657e455094fa13e7ef63d041fb1aae80ba59126fe76ae4e1",
+      "sourceMarkdownHash": "fbd6309299f212fcae123552b1a8bf080f79950bfc48f4518450a7a9091b5db6",
+      "publishedPdfHash": "90bc04a88a9e480ecb3e8c3b39c20f92c6eb8c6b5e589ea44f1bec290c0f9f8f",
+      "publishedAt": "2026-08-06T21:21:28.233Z",
       "documentState": "current",
       "requiredSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -83,7 +80,6 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "presentSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -94,8 +90,8 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "missingSourceReferences": [],
-      "historyEntryCount": 1,
-      "lastMaterialChangeAt": "2026-08-06T01:46:03.400Z"
+      "historyEntryCount": 2,
+      "lastMaterialChangeAt": "2026-08-06T21:21:28.233Z"
     },
     {
       "documentId": "atomic-03",
@@ -105,18 +101,17 @@
       "fullLabel": "Workflow Foundation - Controlled",
       "sourceMarkdownPath": "project-system/state-documents/current/atomic/03_WORKFLOW_CONTROLLED.md",
       "publishedPdfPath": "project-system/state-documents/current/atomic/03_WORKFLOW_CONTROLLED.pdf",
-      "currentMeasureValue": "missing",
-      "measureStateClass": "error",
+      "currentMeasureValue": "partial",
+      "measureStateClass": "partial",
       "blockingCurrentAction": false,
       "responsibilityOwner": null,
-      "sourceObservationId": "5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d",
-      "sourceStateHash": "ab416bd2d2044263275c913281ce258aaf287bf315bfa5aa6d0d7d84c25ac845",
-      "sourceMarkdownHash": "fe4cf8be17b4024ec0d0a35df79a7d75144a7d700b87877f9352011f35e3d1b5",
-      "publishedPdfHash": "8945aa236008e3e12e5008c9c77ab532169ce2baca93cb32f87b6b536bef0c11",
-      "publishedAt": "2026-08-06T01:46:03.400Z",
+      "sourceObservationId": "df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6",
+      "sourceStateHash": "4ca53a72d591e61c7c07eac89df6c687d6cf37046a393fa09331cea110094d1a",
+      "sourceMarkdownHash": "a7d1507fe9f82a081b11eec9a56eb6e7e0ea4e55df4eb36d862733342de99b8d",
+      "publishedPdfHash": "764e9e3cf6183a5d1aae0009ccc58cc93499131a7973816c359764df72ca0b15",
+      "publishedAt": "2026-08-06T21:21:28.233Z",
       "documentState": "current",
       "requiredSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -127,7 +122,6 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "presentSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -138,8 +132,8 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "missingSourceReferences": [],
-      "historyEntryCount": 1,
-      "lastMaterialChangeAt": "2026-08-06T01:46:03.400Z"
+      "historyEntryCount": 2,
+      "lastMaterialChangeAt": "2026-08-06T21:21:28.233Z"
     },
     {
       "documentId": "atomic-04",
@@ -153,14 +147,13 @@
       "measureStateClass": "error",
       "blockingCurrentAction": false,
       "responsibilityOwner": null,
-      "sourceObservationId": "5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d",
+      "sourceObservationId": "df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6",
       "sourceStateHash": "5ef143e9952672c56f2c932f5f3483406f95df7bf3f9c065a5e47c4257093fb6",
-      "sourceMarkdownHash": "458dfc8703efa9ed578fb38e32191e932d74df08d5bbc29ed7a7033d9e640cf5",
-      "publishedPdfHash": "0c1cf7b570c32b29b7d7f9ba26e5c2793384300ed8e970189f11fca198a90097",
-      "publishedAt": "2026-08-06T01:46:03.400Z",
+      "sourceMarkdownHash": "81a67cc71c7e61a4af7ad6a639d97e4a4483f3dd06de73543d819fd1cc5e07f3",
+      "publishedPdfHash": "385123aea9524549edc9a16ea6340e013cbd2581757fef06979a4a2eb6847f13",
+      "publishedAt": "2026-08-06T21:21:28.233Z",
       "documentState": "current",
       "requiredSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -171,7 +164,6 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "presentSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -197,14 +189,13 @@
       "measureStateClass": "error",
       "blockingCurrentAction": false,
       "responsibilityOwner": null,
-      "sourceObservationId": "5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d",
+      "sourceObservationId": "df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6",
       "sourceStateHash": "eac7db4cf43efe365ba25cc2f06e16d9f4ede829a11d22e3a8a2a4fe3511718f",
-      "sourceMarkdownHash": "5c61286de3c0e9ec91d889fda89ad06dc7ec9bf4cbc032bde8e2339b773a81e9",
-      "publishedPdfHash": "4b7fa0e771398d23c8b18c093115c8a5c2edc6ead8632ba728028dd32429174d",
-      "publishedAt": "2026-08-06T01:46:03.400Z",
+      "sourceMarkdownHash": "bd1cf09bfa9871673cb2d027aaac15808fae281505d5f727fd6e015ea1860d13",
+      "publishedPdfHash": "b09fdee5f230c8164ee1a3a85583b4915a2c5bd7827d69e55879177ec274573c",
+      "publishedAt": "2026-08-06T21:21:28.233Z",
       "documentState": "current",
       "requiredSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -215,7 +206,6 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "presentSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -237,18 +227,17 @@
       "fullLabel": "Current Controlling Work",
       "sourceMarkdownPath": "project-system/state-documents/current/atomic/06_CURRENT_CONTROLLING_WORK.md",
       "publishedPdfPath": "project-system/state-documents/current/atomic/06_CURRENT_CONTROLLING_WORK.pdf",
-      "currentMeasureValue": "Awaiting Approval",
-      "measureStateClass": "user-action",
+      "currentMeasureValue": "Archived",
+      "measureStateClass": "neutral",
       "blockingCurrentAction": false,
-      "responsibilityOwner": "USER",
-      "sourceObservationId": "5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d",
-      "sourceStateHash": "4bc64221f9adfaca603e764d501fbe4195e6105740e01a6d60037d7f23b74f85",
-      "sourceMarkdownHash": "69b9fcba0ca6a302b2be9ea3d59eba5e14d66cfa1acedbe7930401651583221c",
-      "publishedPdfHash": "f84c2de60265ebbbcde3f246a132fb8034d596965cd3e64f790f2154580dbbc3",
-      "publishedAt": "2026-08-06T01:46:03.400Z",
+      "responsibilityOwner": "NO_ACTION",
+      "sourceObservationId": "df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6",
+      "sourceStateHash": "ad4166b24d446818b4e80e3a51589f698d03cb67244c20787a684039b9d6e22c",
+      "sourceMarkdownHash": "d7770bb214e3743b1efb4d3e3bd01ac01e3d319627fc9286fcde0a2bf5175275",
+      "publishedPdfHash": "2187475aca315c659ae420adc671553eb6858f38968eb78a6362dab1f19890b2",
+      "publishedAt": "2026-08-06T21:21:28.233Z",
       "documentState": "current",
       "requiredSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -259,7 +248,6 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "presentSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -270,8 +258,8 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "missingSourceReferences": [],
-      "historyEntryCount": 1,
-      "lastMaterialChangeAt": "2026-08-06T01:46:03.400Z"
+      "historyEntryCount": 2,
+      "lastMaterialChangeAt": "2026-08-06T21:21:28.233Z"
     },
     {
       "documentId": "atomic-07",
@@ -284,15 +272,14 @@
       "currentMeasureValue": "NOT_REQUIRED",
       "measureStateClass": "neutral",
       "blockingCurrentAction": false,
-      "responsibilityOwner": "USER",
-      "sourceObservationId": "5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d",
-      "sourceStateHash": "541bcc5c53ada0734c90b66c71d1b18e3deb4e0673ddb125c37dcd2d1fd31c03",
-      "sourceMarkdownHash": "fc5d5b2362c3172467c761fb24a0eb11deb43d99b6f54d6e9dc1d5990fdd11ca",
-      "publishedPdfHash": "1b567aec665e24c178e47ed92c5c96abbd89a04ac6cf0587e04f077d8a2d19f4",
-      "publishedAt": "2026-08-06T01:46:03.400Z",
+      "responsibilityOwner": "NO_ACTION",
+      "sourceObservationId": "df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6",
+      "sourceStateHash": "329c67cd5c99579500f70e39fd95b3c0e2ab827b4cb90402680da642c345a8cc",
+      "sourceMarkdownHash": "b0277383d09314f49555b89a22c204ecccda77ddc3fd610c799af58d38d1c832",
+      "publishedPdfHash": "8bbf191813f9163f8fc776e8460aa3f66d5aadd992d136195aefe677cbe77d3a",
+      "publishedAt": "2026-08-06T21:21:28.233Z",
       "documentState": "current",
       "requiredSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -303,7 +290,6 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "presentSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -314,8 +300,8 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "missingSourceReferences": [],
-      "historyEntryCount": 1,
-      "lastMaterialChangeAt": "2026-08-06T01:46:03.400Z"
+      "historyEntryCount": 2,
+      "lastMaterialChangeAt": "2026-08-06T21:21:28.233Z"
     },
     {
       "documentId": "atomic-08",
@@ -325,18 +311,17 @@
       "fullLabel": "Implementation State",
       "sourceMarkdownPath": "project-system/state-documents/current/atomic/08_IMPLEMENTATION_STATE.md",
       "publishedPdfPath": "project-system/state-documents/current/atomic/08_IMPLEMENTATION_STATE.pdf",
-      "currentMeasureValue": "implemented",
+      "currentMeasureValue": "not-started",
       "measureStateClass": "neutral",
       "blockingCurrentAction": false,
       "responsibilityOwner": null,
-      "sourceObservationId": "5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d",
-      "sourceStateHash": "12f4f02f6ff22924e2cf38c53fca7a082336bffb75cbfc49bd4f8d73b36cb53a",
-      "sourceMarkdownHash": "deaccf4b4f160ae354c88c678738405213afafa90e90954adfa48bcf32526ad4",
-      "publishedPdfHash": "62b39fe222ab572ba0ad5ae494f4121c47d1670930562161b1255bca58b09c3f",
-      "publishedAt": "2026-08-06T01:46:03.400Z",
+      "sourceObservationId": "df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6",
+      "sourceStateHash": "1ff971298bf84ace5b2a6f9def16d11ff6077b0e83b0438acccf30f1349ec145",
+      "sourceMarkdownHash": "e0b63b025dcd4bd1727991f6ed4a4ada4c0fbc02a72b53267d4b22c8225799ed",
+      "publishedPdfHash": "f3bd7cb29eaf01ee70457a8ff1bcc2f2db3280a6057a0e1ccfab9cb2620abe0e",
+      "publishedAt": "2026-08-06T21:21:28.233Z",
       "documentState": "current",
       "requiredSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -347,7 +332,6 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "presentSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -358,8 +342,8 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "missingSourceReferences": [],
-      "historyEntryCount": 1,
-      "lastMaterialChangeAt": "2026-08-06T01:46:03.400Z"
+      "historyEntryCount": 2,
+      "lastMaterialChangeAt": "2026-08-06T21:21:28.233Z"
     },
     {
       "documentId": "atomic-09",
@@ -369,18 +353,17 @@
       "fullLabel": "Validation State",
       "sourceMarkdownPath": "project-system/state-documents/current/atomic/09_VALIDATION_STATE.md",
       "publishedPdfPath": "project-system/state-documents/current/atomic/09_VALIDATION_STATE.pdf",
-      "currentMeasureValue": "validation-recorded",
+      "currentMeasureValue": "not-requested",
       "measureStateClass": "neutral",
       "blockingCurrentAction": false,
       "responsibilityOwner": null,
-      "sourceObservationId": "5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d",
-      "sourceStateHash": "9d01c9c7d192d53a57f173d6b8305896b218905bf34f4ad1b5e9d8134cb8309e",
-      "sourceMarkdownHash": "e4390bac5f1f91bf80e5ea5e868271a78be2c87debe8cf71f5ff7adb35072740",
-      "publishedPdfHash": "befd266cf8ab357aef7c7e432d86c483e0725f129b7292fb142d84dcbfeaba5f",
-      "publishedAt": "2026-08-06T01:46:03.400Z",
+      "sourceObservationId": "df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6",
+      "sourceStateHash": "7653f2c9cac4871364b59b5b1a400e9a42a34ebe283976c382b33a83ee6d8279",
+      "sourceMarkdownHash": "77cf1ed781a3d4ab4b87bc7b13b5ae4931b7ab93550a5ac2613a991f01eadffb",
+      "publishedPdfHash": "cb1e7d75cbab40e8f7f1ecc9682435156acd7a8a885472488fcfc01429e50934",
+      "publishedAt": "2026-08-06T21:21:28.233Z",
       "documentState": "current",
       "requiredSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -391,7 +374,6 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "presentSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -402,8 +384,8 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "missingSourceReferences": [],
-      "historyEntryCount": 1,
-      "lastMaterialChangeAt": "2026-08-06T01:46:03.400Z"
+      "historyEntryCount": 2,
+      "lastMaterialChangeAt": "2026-08-06T21:21:28.233Z"
     },
     {
       "documentId": "atomic-10",
@@ -413,18 +395,17 @@
       "fullLabel": "Approval and Finalization State",
       "sourceMarkdownPath": "project-system/state-documents/current/atomic/10_APPROVAL_AND_FINALIZATION_STATE.md",
       "publishedPdfPath": "project-system/state-documents/current/atomic/10_APPROVAL_AND_FINALIZATION_STATE.pdf",
-      "currentMeasureValue": "awaiting-user-approval",
-      "measureStateClass": "user-action",
+      "currentMeasureValue": "approved-complete",
+      "measureStateClass": "satisfied",
       "blockingCurrentAction": false,
-      "responsibilityOwner": "USER",
-      "sourceObservationId": "5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d",
-      "sourceStateHash": "d2d783c5f0b5fa434a24932c0b9e3fba9867e6a83840b79c80e253bea58f95e4",
-      "sourceMarkdownHash": "efb7fe0da738df7b9d76ba73233cc77158552cbe4079b68197a4a6b53b2820cd",
-      "publishedPdfHash": "f685ebf3657bbaa06cd5383dcaeb9de5f506c4d85c02f3766ea474fd36bd2e69",
-      "publishedAt": "2026-08-06T01:46:03.400Z",
+      "responsibilityOwner": null,
+      "sourceObservationId": "df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6",
+      "sourceStateHash": "0ddc51f45a5361a28da961eb99856a8c418fe8872e5e0047ab2b4bd4fac0cdae",
+      "sourceMarkdownHash": "1ee45374eb6489d138c2fc1e95c6525ced787c011e1468c292a0e3da9e7bedac",
+      "publishedPdfHash": "64b24b1d882c3f4cf6ee04a7fcb70e5e9b546bf4eddf9f6c42552bb83d35e222",
+      "publishedAt": "2026-08-06T21:21:28.233Z",
       "documentState": "current",
       "requiredSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -435,7 +416,6 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "presentSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -446,8 +426,8 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "missingSourceReferences": [],
-      "historyEntryCount": 1,
-      "lastMaterialChangeAt": "2026-08-06T01:46:03.400Z"
+      "historyEntryCount": 2,
+      "lastMaterialChangeAt": "2026-08-06T21:21:28.233Z"
     },
     {
       "documentId": "atomic-11",
@@ -457,21 +437,20 @@
       "fullLabel": "Project Observability",
       "sourceMarkdownPath": "project-system/state-documents/current/atomic/11_PROJECT_OBSERVABILITY.md",
       "publishedPdfPath": "project-system/state-documents/current/atomic/11_PROJECT_OBSERVABILITY.pdf",
-      "currentMeasureValue": "Clear",
-      "measureStateClass": "satisfied",
+      "currentMeasureValue": "Partial",
+      "measureStateClass": "partial",
       "blockingCurrentAction": false,
       "responsibilityOwner": null,
-      "sourceObservationId": "5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d",
-      "sourceStateHash": "839fdff1e960aa7e16e56b4e086298722f79cbced2fd1c22d28b3d33baf8706a",
-      "sourceMarkdownHash": "6eefc6f8ddb4e06a2f73e52507b93ff5187926da01a0a6bbb88f9ae2ab5de267",
-      "publishedPdfHash": "1832a9aa2ef2be77c90cdaf98c7f3d2709211fca1c50a169922ddb0b808a47a3",
-      "publishedAt": "2026-08-06T01:46:03.400Z",
+      "sourceObservationId": "df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6",
+      "sourceStateHash": "13bee730e5992160337076550a7dad45d04ee0a7df21c69de63067368a40d922",
+      "sourceMarkdownHash": "8dbefa86412d05e26b8436328d187579a24d2b2e6ecf36f12250c68a682cc17b",
+      "publishedPdfHash": "a753f825165d21728c69d573a0de481d020225a566387a47b2ba18b047db8551",
+      "publishedAt": "2026-08-06T21:21:28.233Z",
       "documentState": "current",
       "requiredSourceReferences": [
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "TODO/MASTER_PROJECT_ROADMAP.md",
         "TODO/archive/TODO_33_FINAL_FLIPPED_LESSON_VALIDATION.md",
         "TODO/archive/TODO_34_FLIPPED_CLASSROOM_VISUAL_THEME.md",
@@ -482,7 +461,6 @@
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "TODO/MASTER_PROJECT_ROADMAP.md",
         "TODO/archive/TODO_33_FINAL_FLIPPED_LESSON_VALIDATION.md",
         "TODO/archive/TODO_34_FLIPPED_CLASSROOM_VISUAL_THEME.md",
@@ -490,8 +468,8 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "missingSourceReferences": [],
-      "historyEntryCount": 1,
-      "lastMaterialChangeAt": "2026-08-06T01:46:03.400Z"
+      "historyEntryCount": 2,
+      "lastMaterialChangeAt": "2026-08-06T21:21:28.233Z"
     },
     {
       "documentId": "atomic-12",
@@ -501,18 +479,17 @@
       "fullLabel": "Transition Reachability",
       "sourceMarkdownPath": "project-system/state-documents/current/atomic/12_TRANSITION_REACHABILITY.md",
       "publishedPdfPath": "project-system/state-documents/current/atomic/12_TRANSITION_REACHABILITY.pdf",
-      "currentMeasureValue": "Reachable",
-      "measureStateClass": "actionable",
+      "currentMeasureValue": "Target Satisfied",
+      "measureStateClass": "satisfied",
       "blockingCurrentAction": false,
-      "responsibilityOwner": "USER",
-      "sourceObservationId": "5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d",
-      "sourceStateHash": "15dc2bd085b3558863ad7acd63849c6df3c44c9784953ac876ff2c582edb7c01",
-      "sourceMarkdownHash": "813a6019e5fd14ba2fd55af001d18a8b84e24f1859c3c27eefffa3370bd3d1b2",
-      "publishedPdfHash": "4ca1d737a9cfb8829923e1cf41aafc14eec7198438a347345bf4f1b1c9f93fa7",
-      "publishedAt": "2026-08-06T01:46:03.400Z",
+      "responsibilityOwner": "NO_ACTION",
+      "sourceObservationId": "df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6",
+      "sourceStateHash": "1a86cf5cbb765a28c6540ced1913b98d284af2ba2b96f7b72ce4b2afca4c161d",
+      "sourceMarkdownHash": "030fc7fb4452fd151682389d6907f49c9b98f27ce09169e1a0f6293ac32b63b6",
+      "publishedPdfHash": "e5d007e09bfb9ca8d1304fc232fc85fd0bfef64123753f49768b7658574eba7b",
+      "publishedAt": "2026-08-06T21:21:28.233Z",
       "documentState": "current",
       "requiredSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -523,7 +500,6 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "presentSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -534,8 +510,8 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "missingSourceReferences": [],
-      "historyEntryCount": 1,
-      "lastMaterialChangeAt": "2026-08-06T01:46:03.400Z"
+      "historyEntryCount": 2,
+      "lastMaterialChangeAt": "2026-08-06T21:21:28.233Z"
     },
     {
       "documentId": "atomic-13",
@@ -549,14 +525,13 @@
       "measureStateClass": "satisfied",
       "blockingCurrentAction": false,
       "responsibilityOwner": null,
-      "sourceObservationId": "5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d",
+      "sourceObservationId": "df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6",
       "sourceStateHash": "c1e12a93b50e1f7b29c3400e65194ed73a3457c531a1e5e792f7faf721eb6a21",
-      "sourceMarkdownHash": "f01e54b3f5d824266b19db828024b824dfc8edf6d18b799c8aeb0a17bc3a022a",
-      "publishedPdfHash": "2472709616a2f69890a5340b462b965cf677f82a7fa98a8c3abcd08d08291398",
-      "publishedAt": "2026-08-06T01:46:03.400Z",
+      "sourceMarkdownHash": "a10660b6906a893fce0beb014201ab984faad69d51aa09d59be20a1ca543e008",
+      "publishedPdfHash": "6d200376f6725049239978cf0bc9b9103c24bdaa9202706f407c9424ba8cad18",
+      "publishedAt": "2026-08-06T21:21:28.233Z",
       "documentState": "current",
       "requiredSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -567,7 +542,6 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "presentSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -589,18 +563,17 @@
       "fullLabel": "Target State and Gap",
       "sourceMarkdownPath": "project-system/state-documents/current/atomic/14_TARGET_STATE_AND_GAP.md",
       "publishedPdfPath": "project-system/state-documents/current/atomic/14_TARGET_STATE_AND_GAP.pdf",
-      "currentMeasureValue": "lifecycle:review-maintenance-001",
-      "measureStateClass": "actionable",
+      "currentMeasureValue": "maturity-gate:level-3",
+      "measureStateClass": "satisfied",
       "blockingCurrentAction": false,
       "responsibilityOwner": null,
-      "sourceObservationId": "5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d",
-      "sourceStateHash": "e1744f7e3591b22f514577b28825e2a007467566366fa0bb7333550676e770a2",
-      "sourceMarkdownHash": "ca917a0aed35fc27f88f92863807ab6ab9222933d0ea62572f4cdc12e0032099",
-      "publishedPdfHash": "56a6176ab4854e2c206577a8850220c15826281dda20ef37a7272af5accd9a84",
-      "publishedAt": "2026-08-06T01:46:03.400Z",
+      "sourceObservationId": "df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6",
+      "sourceStateHash": "78947da84db0d7b3f86ebba4b134de5e72f953fb7a15d281223307f97c3e3646",
+      "sourceMarkdownHash": "124a8e0dc3b8a5a69263b18982814a4d0f0c39d27f7940785a03bbaf34c49533",
+      "publishedPdfHash": "ffcaef77efb917e143269e6b35a034e3f003355efb1fe9a98b0c0947960d790e",
+      "publishedAt": "2026-08-06T21:21:28.233Z",
       "documentState": "current",
       "requiredSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -611,7 +584,6 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "presentSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -622,8 +594,8 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "missingSourceReferences": [],
-      "historyEntryCount": 1,
-      "lastMaterialChangeAt": "2026-08-06T01:46:03.400Z"
+      "historyEntryCount": 2,
+      "lastMaterialChangeAt": "2026-08-06T21:21:28.233Z"
     },
     {
       "documentId": "atomic-15",
@@ -637,14 +609,13 @@
       "measureStateClass": "satisfied",
       "blockingCurrentAction": false,
       "responsibilityOwner": null,
-      "sourceObservationId": "5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d",
+      "sourceObservationId": "df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6",
       "sourceStateHash": "c6a32515939070667dcbbf39a1da8634c17ca150b6e1ac8d5eb4c96e35132df7",
-      "sourceMarkdownHash": "79fae75603823e3920bec83ff02ac77bd0b05f191799b3a23a280bc47303769b",
-      "publishedPdfHash": "1eb380e06aecda841c7bf425b221ac47d79a160c5765783f923531626e75e77f",
-      "publishedAt": "2026-08-06T01:46:03.400Z",
+      "sourceMarkdownHash": "b4c3ac4fc3daaaba948fc2709b120fef648de999153e07a2cba498383e311d4f",
+      "publishedPdfHash": "d94e45ea80e18bfbc99e74723668cb6589df53a06ba922bd48d57a6c7d284f5d",
+      "publishedAt": "2026-08-06T21:21:28.233Z",
       "documentState": "current",
       "requiredSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -655,7 +626,6 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "presentSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -677,18 +647,17 @@
       "fullLabel": "Next Owner and Responsibility Boundary",
       "sourceMarkdownPath": "project-system/state-documents/current/atomic/16_NEXT_OWNER_AND_RESPONSIBILITY.md",
       "publishedPdfPath": "project-system/state-documents/current/atomic/16_NEXT_OWNER_AND_RESPONSIBILITY.pdf",
-      "currentMeasureValue": "USER",
-      "measureStateClass": "user-action",
+      "currentMeasureValue": "NO_ACTION",
+      "measureStateClass": "satisfied",
       "blockingCurrentAction": false,
-      "responsibilityOwner": "USER",
-      "sourceObservationId": "5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d",
-      "sourceStateHash": "c50ce0ec25a7a38e49dee9923303d596d37f520c80b050677c2cd371a35b3979",
-      "sourceMarkdownHash": "2cfa3da849d2072cf68878bfdd65ebfe7f46dae4f5505b61b03413842c9d30c2",
-      "publishedPdfHash": "ec95009d6a918707b3583f54ecb33cde5919542c1af0b8dc29582981a8d055c3",
-      "publishedAt": "2026-08-06T01:46:03.400Z",
+      "responsibilityOwner": "NO_ACTION",
+      "sourceObservationId": "df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6",
+      "sourceStateHash": "15dbf8b0b22b00567667bdfa14308bb3fa614758da7bb8539f08a8e843a00de0",
+      "sourceMarkdownHash": "840691786380e5785af39ebd5aeee577b93c83d65730163dbcd7be283c0a6626",
+      "publishedPdfHash": "da5206dee2c9163682cf7aa7e4d0907b19e40f2ff03c45be0b37abc13086bdc3",
+      "publishedAt": "2026-08-06T21:21:28.233Z",
       "documentState": "current",
       "requiredSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -699,7 +668,6 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "presentSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -710,8 +678,8 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "missingSourceReferences": [],
-      "historyEntryCount": 1,
-      "lastMaterialChangeAt": "2026-08-06T01:46:03.400Z"
+      "historyEntryCount": 2,
+      "lastMaterialChangeAt": "2026-08-06T21:21:28.233Z"
     },
     {
       "documentId": "atomic-17",
@@ -725,17 +693,16 @@
       "measureStateClass": "partial",
       "blockingCurrentAction": false,
       "responsibilityOwner": null,
-      "sourceObservationId": "5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d",
+      "sourceObservationId": "df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6",
       "sourceStateHash": "5bd4f6dda49f649e00946b36dc15ea8821418aa5e469078c940390735c95ecf3",
-      "sourceMarkdownHash": "01839b7288f25d8f7a96fcc23814ea906e74c9ce4969a6def50381edef7f2c87",
-      "publishedPdfHash": "4c4e28b35e852047de7b12ba3baef18478b4e0035807d6236569323fc576c61f",
-      "publishedAt": "2026-08-06T01:46:03.400Z",
+      "sourceMarkdownHash": "62d4345674a2f6e5709819a238672cc547ee3a62b491378e575ab2181dff3de9",
+      "publishedPdfHash": "1e74c2235838348253496fdd14108d8b732db173cdcfcf3bea07c11b8da085a8",
+      "publishedAt": "2026-08-06T21:21:28.233Z",
       "documentState": "missing-source",
       "requiredSourceReferences": [
         "migrations/legacy-to-1.0.0.md",
         "migrations/1.0.0-to-1.1.0.md",
         "migrations/1.1.0-to-1.2.0.md",
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -746,7 +713,6 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "presentSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -776,14 +742,13 @@
       "measureStateClass": "satisfied",
       "blockingCurrentAction": false,
       "responsibilityOwner": null,
-      "sourceObservationId": "5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d",
+      "sourceObservationId": "df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6",
       "sourceStateHash": "9d7c726c547c6224013133b1073d239f09ebc3c52f486a6630e738a4eb1b1385",
-      "sourceMarkdownHash": "ff6a8f11901cb0981f422bb4577de2ce61d307e0811c85e156a929c3d169c285",
-      "publishedPdfHash": "972fb7d819e15acdb26fa031617ed906266a8aeeb2cd7f723dd881d11c6bae84",
-      "publishedAt": "2026-08-06T01:46:03.400Z",
+      "sourceMarkdownHash": "324731ebd29b28a97a3698e064fb095f1ec4e916e73e7b9d86c52651bf3fcacb",
+      "publishedPdfHash": "b4c5e6005cbcab42dfda946d93f5c1f9784c377269abd93fc21229c68f6d9427",
+      "publishedAt": "2026-08-06T21:21:28.233Z",
       "documentState": "current",
       "requiredSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -794,7 +759,6 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "presentSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -820,14 +784,13 @@
       "measureStateClass": "satisfied",
       "blockingCurrentAction": false,
       "responsibilityOwner": null,
-      "sourceObservationId": "5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d",
+      "sourceObservationId": "df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6",
       "sourceStateHash": "5ca1dbc796abf873717bb56518d9b4f17a428a2a9dae19fa5973dd44c26249f9",
-      "sourceMarkdownHash": "e47a3fe59d725ca8c57cebf069fe1b4da3709d2433a25adf2c91bd8c6e7d45e3",
-      "publishedPdfHash": "813a8d1475d50377b58b4ce0933fac1dcfcc68fbe9c7439b10dc89a8a1040723",
-      "publishedAt": "2026-08-06T01:46:03.400Z",
+      "sourceMarkdownHash": "7d3f7e245ad7e725cd471cee640c598bc097a1e5bb1fc8f983ad571a58dbd69e",
+      "publishedPdfHash": "b1ee1c995174500d5fd5db39e9e1d70ee0107e6ff452651967850e29c7dbd166",
+      "publishedAt": "2026-08-06T21:21:28.233Z",
       "documentState": "current",
       "requiredSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -838,7 +801,6 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "presentSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -864,14 +826,13 @@
       "measureStateClass": "neutral",
       "blockingCurrentAction": false,
       "responsibilityOwner": null,
-      "sourceObservationId": "5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d",
-      "sourceStateHash": "eaf8b1ee082d5749687f74b42e04c125d5884c7ec8d0c22aedf88de18efb3875",
-      "sourceMarkdownHash": "7cae2c3df8e0b22508c9a1e22157377690c976f804f10b46fa3339823228024f",
-      "publishedPdfHash": "a7aa4c44bc38ef1442a0cb11fee3aaf2a8b7ee4752618245ac4760ff0df7eec6",
-      "publishedAt": "2026-08-06T01:46:03.400Z",
+      "sourceObservationId": "df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6",
+      "sourceStateHash": "a20cdde77786308206fbb1af9b18afe74693268852be42c81d0a2ca7129f03f9",
+      "sourceMarkdownHash": "b575f09f88fcab9c7f8053bca468a746abe7e891b3ab5502e9a993c6d3edc0d6",
+      "publishedPdfHash": "3e61d2ab0e1cf2542ab54ce6bcc6d9559d3cdefcbb4a45d84ee6973e268b8896",
+      "publishedAt": "2026-08-06T21:21:28.233Z",
       "documentState": "current",
       "requiredSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -882,7 +843,6 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "presentSourceReferences": [
-        "TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md",
         "README.md",
         "AGENTS.md",
         "PROJECT_STATUS.md",
@@ -893,8 +853,8 @@
         "TODO/archive/TODO_36_ADD_LOCK_3_TRIANGLE_DIAGRAMS.md"
       ],
       "missingSourceReferences": [],
-      "historyEntryCount": 1,
-      "lastMaterialChangeAt": "2026-08-06T01:46:03.400Z"
+      "historyEntryCount": 2,
+      "lastMaterialChangeAt": "2026-08-06T21:21:28.233Z"
     }
   ],
   "summaryDocuments": [
@@ -914,5 +874,5 @@
     }
   ],
   "themeReference": "project-system/state-documents/theme/PROJECT_STATE_DOCUMENT_THEME.json",
-  "generationMode": "adopted-template"
+  "generationMode": "direct-current-evidence"
 }

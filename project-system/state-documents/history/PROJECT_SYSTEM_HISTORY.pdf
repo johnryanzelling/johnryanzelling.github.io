@@ -7,7 +7,7 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
 endobj
 3 0 obj
-<< /Length 5678 >>
+<< /Length 5688 >>
 stream
 0.05 0.37 0.67 RG 1.5 w 54 770 m 558 770 l S
 BT /F2 7 Tf 0.3 0.34 0.4 rg 54 785 Td
@@ -17,56 +17,55 @@ BT /F1 9 Tf 0.06 0.16 0.29 rg 54 719 Td () Tj ET
 BT /F2 14 Tf 0.05 0.37 0.67 rg 54 702 Td (1. Document control) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 695 Td () Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 683 Td (-  Contract: Project State Documents 1.0.0) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 671 Td (-  Published at: 2026-08-06T01:46:03.400Z) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 659 Td (-  Current observation: 5b3027d9dd4bf4dfda2386133a569a187d74808806d0451cf1c7f987cba5f96d) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 671 Td (-  Published at: 2026-08-06T21:21:28.233Z) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 659 Td (-  Current observation: df25354cc5ef54a3b0da07b33b8a9c7f0c5ebd7abcd9fac8bfdb843d5cf09ba6) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 652 Td () Tj ET
 BT /F2 14 Tf 0.05 0.37 0.67 rg 54 635 Td (2. Current controlling state) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 628 Td () Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 616 Td (-  Workflow state: Ready for Review) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 604 Td (-  Owner: USER) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 592 Td (-  Action: Review Result) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 616 Td (-  Workflow state: Completed) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 604 Td (-  Owner: NO_ACTION) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 592 Td (-  Action: Open Project History) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 580 Td (-  Task: MAINTENANCE 001) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 573 Td () Tj ET
-BT /F2 14 Tf 0.05 0.37 0.67 rg 54 556 Td (3. Feature and maintenance lifecycle history) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 549 Td () Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 537 Td (Observed modification Work item Kind Placement state Project-relative path) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 525 Td (--- --- --- --- ---) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 513 Td (2026-06-15T04:33:01.355Z TODO 013 Feature TODO Completed TODO/completed/TODO_13.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 501 Td (2026-06-15T04:33:01.404Z TODO 014 Feature TODO Completed TODO/completed/TODO_14.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 489 Td (2026-06-15T05:00:44.431Z TODO 015 Feature TODO Completed TODO/completed/TODO_15.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 477 Td (2026-06-21T19:51:51.860Z TODO 016 Feature TODO Completed TODO/completed/TODO_16.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 465 Td (2026-06-21T20:09:28.325Z TODO 017 Feature TODO Completed TODO/completed/TODO_17.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 453 Td (2026-07-02T20:35:54.040Z TODO 018 Feature TODO Completed TODO/completed/TODO_18.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 441 Td (2026-07-02T20:53:19.803Z TODO 019 Feature TODO Completed TODO/completed/TODO_19.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 429 Td (2026-07-02T21:48:52.925Z TODO 020 Feature TODO Completed TODO/completed/TODO_20.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 417 Td (2026-07-10T20:49:12.599Z TODO 024 Feature TODO Completed TODO/completed/todo_24.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 405 Td (2026-07-10T20:54:27.652Z TODO 025 Feature TODO Completed TODO/completed/todo_25.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 393 Td (2026-07-10T21:06:57.412Z TODO 026 Feature TODO Completed TODO/completed/todo_26.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 381 Td (2026-07-13T19:42:55.313Z TODO 028 Feature TODO Completed) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 369 Td (TODO/completed/TODO_28_ADD_FLIPPED_CLASSROOM_RESOURCE_SHELL.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 357 Td (2026-07-13T19:43:02.259Z TODO 029 Feature TODO Completed) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 345 Td (TODO/completed/TODO_29_BUILD_FLIPPED_PRECLASS_VIDEO_SECTION.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 333 Td (2026-07-13T19:43:09.846Z TODO 030 Feature TODO Completed) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 321 Td (TODO/completed/TODO_30_ADD_GUIDED_NOTES_AND_READINESS_CHECK.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 309 Td (2026-07-13T19:58:49.075Z TODO 031 Feature TODO Completed) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 297 Td (TODO/completed/TODO_31_BUILD_PYTHAGOREAN_ESCAPE_ROOM.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 285 Td (2026-07-13T20:15:51.017Z TODO 032 Feature TODO Completed) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 273 Td (TODO/completed/TODO_32_ADD_SURVEY_LESSON_PLAN_AND_ACCESS_SUPPORTS.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 261 Td (2026-07-14T03:24:22.556Z TODO 039 Feature TODO Completed) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 249 Td (TODO/completed/TODO_39_FIX_FIRST_KHAN_ACADEMY_VIDEO_LINK.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 237 Td (2026-07-14T03:35:00.055Z TODO 040 Feature TODO Completed) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 225 Td (TODO/completed/TODO_40_ADD_TEACHER_VIDEO.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 213 Td (2026-07-14T03:46:32.142Z TODO 041 Feature TODO Completed) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 201 Td (TODO/completed/TODO_41_SIMPLIFY_VIDEO_AND_GUIDED_NOTES_WORDING.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 189 Td (2026-07-14T04:11:33.374Z TODO 042 Feature TODO Completed) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 177 Td (TODO/completed/TODO_42_CLEAN_FLIPPED_CLASSROOM_DIRECTORY.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 165 Td (2026-08-05T21:28:41.176Z TODO 043 Feature TODO Completed) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 153 Td (TODO/completed/TODO_43_AUTHOR_MODULE_5_AND_6_REFLECTIONS.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 141 Td (2026-08-05T21:35:55.397Z MAINTENANCE 001 Feature TODO Active) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 129 Td (TODO/active/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 122 Td () Tj ET
-BT /F2 14 Tf 0.05 0.37 0.67 rg 54 105 Td (4. Transition chronology) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 98 Td () Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 568 Td (-  Exact task path: TODO/completed/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 556 Td (-  Approval recorded: yes) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 544 Td (-  User approval needed: no) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 537 Td () Tj ET
+BT /F2 14 Tf 0.05 0.37 0.67 rg 54 520 Td (3. Feature and maintenance lifecycle history) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 513 Td () Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 501 Td (Observed modification Work item Kind Placement state Project-relative path) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 489 Td (--- --- --- --- ---) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 477 Td (2026-06-15T04:33:01.355Z TODO 013 Feature TODO Completed TODO/completed/TODO_13.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 465 Td (2026-06-15T04:33:01.404Z TODO 014 Feature TODO Completed TODO/completed/TODO_14.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 453 Td (2026-06-15T05:00:44.431Z TODO 015 Feature TODO Completed TODO/completed/TODO_15.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 441 Td (2026-06-21T19:51:51.860Z TODO 016 Feature TODO Completed TODO/completed/TODO_16.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 429 Td (2026-06-21T20:09:28.325Z TODO 017 Feature TODO Completed TODO/completed/TODO_17.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 417 Td (2026-07-02T20:35:54.040Z TODO 018 Feature TODO Completed TODO/completed/TODO_18.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 405 Td (2026-07-02T20:53:19.803Z TODO 019 Feature TODO Completed TODO/completed/TODO_19.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 393 Td (2026-07-02T21:48:52.925Z TODO 020 Feature TODO Completed TODO/completed/TODO_20.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 381 Td (2026-07-10T20:49:12.599Z TODO 024 Feature TODO Completed TODO/completed/todo_24.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 369 Td (2026-07-10T20:54:27.652Z TODO 025 Feature TODO Completed TODO/completed/todo_25.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 357 Td (2026-07-10T21:06:57.412Z TODO 026 Feature TODO Completed TODO/completed/todo_26.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 345 Td (2026-07-13T19:42:55.313Z TODO 028 Feature TODO Completed) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 333 Td (TODO/completed/TODO_28_ADD_FLIPPED_CLASSROOM_RESOURCE_SHELL.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 321 Td (2026-07-13T19:43:02.259Z TODO 029 Feature TODO Completed) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 309 Td (TODO/completed/TODO_29_BUILD_FLIPPED_PRECLASS_VIDEO_SECTION.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 297 Td (2026-07-13T19:43:09.846Z TODO 030 Feature TODO Completed) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 285 Td (TODO/completed/TODO_30_ADD_GUIDED_NOTES_AND_READINESS_CHECK.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 273 Td (2026-07-13T19:58:49.075Z TODO 031 Feature TODO Completed) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 261 Td (TODO/completed/TODO_31_BUILD_PYTHAGOREAN_ESCAPE_ROOM.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 249 Td (2026-07-13T20:15:51.017Z TODO 032 Feature TODO Completed) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 237 Td (TODO/completed/TODO_32_ADD_SURVEY_LESSON_PLAN_AND_ACCESS_SUPPORTS.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 225 Td (2026-07-14T03:24:22.556Z TODO 039 Feature TODO Completed) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 213 Td (TODO/completed/TODO_39_FIX_FIRST_KHAN_ACADEMY_VIDEO_LINK.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 201 Td (2026-07-14T03:35:00.055Z TODO 040 Feature TODO Completed) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 189 Td (TODO/completed/TODO_40_ADD_TEACHER_VIDEO.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 177 Td (2026-07-14T03:46:32.142Z TODO 041 Feature TODO Completed) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 165 Td (TODO/completed/TODO_41_SIMPLIFY_VIDEO_AND_GUIDED_NOTES_WORDING.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 153 Td (2026-07-14T04:11:33.374Z TODO 042 Feature TODO Completed) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 141 Td (TODO/completed/TODO_42_CLEAN_FLIPPED_CLASSROOM_DIRECTORY.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 129 Td (2026-08-05T21:28:41.176Z TODO 043 Feature TODO Completed) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 117 Td (TODO/completed/TODO_43_AUTHOR_MODULE_5_AND_6_REFLECTIONS.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 105 Td (2026-08-06T20:47:55.356Z MAINTENANCE 001 Feature TODO Completed) Tj ET
 BT /F1 7 Tf 0.3 0.34 0.4 rg 54 28 Td (johnryanzelling.github.io) Tj ET
 BT /F1 7 Tf 0.3 0.34 0.4 rg 520 28 Td (Page 1 of 2) Tj ET
 endstream
@@ -75,25 +74,31 @@ endobj
 << /Type /Page /Parent 7 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 3 0 R >>
 endobj
 5 0 obj
-<< /Length 1579 >>
+<< /Length 2075 >>
 stream
 0.05 0.37 0.67 RG 1.5 w 54 770 m 558 770 l S
 BT /F2 7 Tf 0.3 0.34 0.4 rg 54 785 Td
 (johnryanzelling.github.io | Project System History) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 736 Td (Immutable transition records under history/transitions record state-changing actions observed) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 724 Td (through governed operations. Clipboard copies, scans without material change, and PDF) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 712 Td (regeneration do not create transitions.) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 736 Td (TODO/completed/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 729 Td () Tj ET
+BT /F2 14 Tf 0.05 0.37 0.67 rg 54 712 Td (4. Transition chronology) Tj ET
 BT /F1 9 Tf 0.06 0.16 0.29 rg 54 705 Td () Tj ET
-BT /F2 14 Tf 0.05 0.37 0.67 rg 54 688 Td (5. Approval and finalization chronology) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 681 Td () Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 669 Td (Approval is a user decision. Completed is shown only after the authoritative filesystem) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 657 Td (placement is reobserved. The current approval/finalization state is Ready for Review.) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 650 Td () Tj ET
-BT /F2 14 Tf 0.05 0.37 0.67 rg 54 633 Td (6. Migration and compliance milestones) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 626 Td () Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 614 Td (Current Project System alignment is Compatible Legacy. Generated state documents are) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 602 Td (presentation and evidence-delivery artifacts, not compliance authority.) Tj ET
-BT /F1 9 Tf 0.06 0.16 0.29 rg 54 595 Td () Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 693 Td (Immutable transition records under history/transitions record state-changing actions observed) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 681 Td (through governed operations. Clipboard copies, scans without material change, and PDF) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 669 Td (regeneration do not create transitions.) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 662 Td () Tj ET
+BT /F2 14 Tf 0.05 0.37 0.67 rg 54 645 Td (5. Approval and finalization chronology) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 638 Td () Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 626 Td (Approval is a user decision. Completed is shown only after the authoritative filesystem) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 614 Td (placement is reobserved. The current approval/finalization state is Completed. The lifecycle) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 602 Td (subject is MAINTENANCE 001 at) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 590 Td (TODO/completed/MAINTENANCE_001_RECONCILE_TODO_28_LIFECYCLE_EVIDENCE.md.) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 583 Td () Tj ET
+BT /F2 14 Tf 0.05 0.37 0.67 rg 54 566 Td (6. Migration and compliance milestones) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 559 Td () Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 547 Td (Current Project System alignment is Compatible Legacy. Generated state documents are) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 535 Td (presentation and evidence-delivery artifacts, not compliance authority.) Tj ET
+BT /F1 9 Tf 0.06 0.16 0.29 rg 54 528 Td () Tj ET
 BT /F1 7 Tf 0.3 0.34 0.4 rg 54 28 Td (johnryanzelling.github.io) Tj ET
 BT /F1 7 Tf 0.3 0.34 0.4 rg 520 28 Td (Page 2 of 2) Tj ET
 endstream
@@ -113,12 +118,12 @@ xref
 0000000015 00000 n 
 0000000085 00000 n 
 0000000160 00000 n 
-0000005890 00000 n 
-0000006026 00000 n 
-0000007657 00000 n 
-0000007793 00000 n 
-0000007856 00000 n 
+0000005900 00000 n 
+0000006036 00000 n 
+0000008163 00000 n 
+0000008299 00000 n 
+0000008362 00000 n 
 trailer << /Size 9 /Root 8 0 R >>
 startxref
-7905
+8411
 %%EOF
